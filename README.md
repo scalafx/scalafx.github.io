@@ -1,2 +1,1 @@
-scalafx.github.io
-=================
+Future home of the ScalaFX home page source code.
