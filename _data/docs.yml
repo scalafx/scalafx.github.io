@@ -1,0 +1,11 @@
+- title: Getting Started
+  docs:
+  - home
+  - quickstart
+  - installation
+  - usage
+
+- title: Meta
+  docs:
+  - contributing
+  - history

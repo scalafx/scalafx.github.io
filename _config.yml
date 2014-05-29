@@ -1,0 +1,11 @@
+# Site settings
+title: ScalaFX
+email: scalafx-users@googlegroups.com
+description: "ScalaFX - a simpler way of using JavaFX in Scala."
+baseurl: ""
+# url: "http://scalafx.org"
+repository: https://github.com/scalafx/scalafx
+
+# Build settings
+markdown: kramdown
+permalink: pretty
