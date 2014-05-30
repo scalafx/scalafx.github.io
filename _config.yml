@@ -9,3 +9,4 @@ repository: https://github.com/scalafx/scalafx.github.io
 # Build settings
 markdown: kramdown
 permalink: pretty
+relative_permalinks: false
