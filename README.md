@@ -1,9 +1,11 @@
 Source code of the future home of the ScalaFX home page. To preview go to 
 [http://scalafx.github.io/](http://scalafx.github.io/).
 
-Build with [Jekyll](http://jekyllrb.com/).
+[![Build Status](https://travis-ci.org/scalafx/scalafx.github.io.svg?branch=master)](https://travis-ci.org/scalafx/scalafx.github.io)
 
-Based on [Jekyll site code](https://github.com/jekyll/jekyll).
+Created with [Jekyll](http://jekyllrb.com/).
+
+Source code based on [Jekyll site code](https://github.com/jekyll/jekyll).
 
 To build the site locally use command:
 
