@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Welcome
+title: What is ScalaFX?
 next_section: quickstart
 permalink: /docs/home/
 ---
@@ -10,7 +10,7 @@ This means that every ScalaFX application is also a valid Scala application. By 
 
 Some of the features of ScalaFX include:
 
-##A Programmer-Friendly Object-Literal-Like Syntax
+###A Programmer-Friendly Object-Literal-Like Syntax
 
 ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple example that creates a new stage with a rectangle that changes color based on mouse events:
 
@@ -34,11 +34,11 @@ stage = new JFXApp.PrimaryStage {
 
 Unlike the builders you find in the core JavaFX APIs, the ScalaFX object declaration syntax uses the normal object API. This means that you can use the same operators and convenient syntax to create and modify your scene graph. Also, anything that is permissible in a Scala block (such as variable declarations, method calls, binding, etc.) can also be done inline while constructing objects. For JavaFX builders you need to declare binding after you finish creating your objects, which leads to disassociated and hard to maintain code.
 
-##Natural Language Bind Expressions
+###Natural Language Bind Expressions
 
 One of the greatest advantages of using the Scala language as a DSL is the rich support for operators as methods. This is similar to the C++ concept of operator overloading, but much more uniform and clean in its application.
 
-The ScalaFX bind library exposes normal operators such as &&, ||, +, -, *, / on top of all bindable objects. Also, Scala supports operator precedence, so it looks and feels like you are writing normal expressions even though you are creating bound objects under the covers. As a result, you have the full functionality available from the JavaFX 2.0 binding libraries with code that looks akin to mathematical expressions and operators.
+The ScalaFX bind library exposes normal operators such as `&&`, `||`, `+`, `-`, `*`, `/` on top of all bindable objects. Also, Scala supports operator precedence, so it looks and feels like you are writing normal expressions even though you are creating bound objects under the covers. As a result, you have the full functionality available from the JavaFX 2.0 binding libraries with code that looks akin to mathematical expressions and operators.
 
 Here are some examples of what you can do with the ScalaFX bind API:
 
@@ -76,7 +76,7 @@ rect.hover onInvalidate {
 }
 {% endhighlight %}
 
-##Tailored Animation Syntax
+###Tailored Animation Syntax
 
 Animations are very commonly used in creating good UIs, which is why JavaFX Script had a built-in construct to simplify the creation of animations. ScalaFX has a similar syntax that allows you to quickly and easily create animations, which is used in the ColorfulCircles? example:
 
@@ -91,7 +91,7 @@ Seq(
 
 This makes it trivially easy to create complex animations.
 
-##Fully Type-Safe APIs
+###Fully Type-Safe APIs
 
 This may seem like an insignificant point… Type safety is something that Java developers have always had (and often take for granted), and developers in other scripting languages live without (and unknowingly suffer with runtime errors as a result). However, it is a critical feature if you are developing applications that cannot have unexpected runtime errors and bugs after deployment.
 
@@ -99,22 +99,10 @@ A good compiler will be able to pick up many common coding mistakes through comp
 
 ScalaFX gets the best of both worlds with a scripting-like DSL syntax where you can rarely have to explicitly type objects, with the strong type-safety of the Scala compiler that will infer and check the types of every expression and API call. This means less time spent debugging weird code bugs and misspellings, and higher quality code right out of the gate!
 
-##Seamless JavaFX/ScalaFX Interoperability
+###Seamless JavaFX/ScalaFX Interoperability
 
 It is often the case that you do not have complete freedom about the predominant language of the codebase, or of the libraries you are including functionality from. Even in a mixed environment codebase where you have Java, Scala, and possibly other JVM languages, ScalaFX will seamlessly convert and interoperate.
 
 ScalaFX gets this functionality through the implicit operator capabilities of Scala. Anywhere your program expects a JavaFX typed object, it will automatically insert the code to convert form ScalaFX wrapped objects to JavaFX native classes. Any time you use a ScalaFX specific feature, the compiler automatically creates a ScalaFX wrapper object that allows you to call advanced methods and access the full functionality. This all happens behind the scenes, letting you focus on writing clean code, and not fussing about integration and interoperability.
 
-With all this magic interoperability happening behind the scenes, there is some additional overhead on your application. We have taken pains to minimize this using features like @specialize in the Scala language, which allows us to avoid boxing and unboxing costs on primitives. However, without real benchmarks it is hard to tell just how good of a job we have done.
-
-##JavaFX 2 and Scala - Like Milk and Cookies (33rd Degrees, March 2012)
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/12148807" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <a href="https://www.slideshare.net/steveonjava/javafx-2-and-scala-like-milk-and-cookies-33rd-degrees" title="JavaFX 2 and Scala - Like Milk and Cookies (33rd Degrees)" target="_blank">JavaFX 2 and Scala - Like Milk and Cookies (33rd Degrees)</a> from <a href="http://www.slideshare.net/steveonjava" target="_blank">Stephen Chin</a> </div>
-
-##Support ScalaFX Project
-
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QTHP3D2X4F3W4">
-  <img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate">
-</a>
-
-[How Donations Work](https://code.google.com/p/scalafx/wiki/HowDonationsWork)
+With all this magic interoperability happening behind the scenes, there is some additional overhead on your application. We have taken pains to minimize this using features like `@specialize` in the Scala language, which allows us to avoid boxing and unboxing costs on primitives. However, without real benchmarks it is hard to tell just how good of a job we have done.
