@@ -106,3 +106,15 @@ It is often the case that you do not have complete freedom about the predominant
 ScalaFX gets this functionality through the implicit operator capabilities of Scala. Anywhere your program expects a JavaFX typed object, it will automatically insert the code to convert form ScalaFX wrapped objects to JavaFX native classes. Any time you use a ScalaFX specific feature, the compiler automatically creates a ScalaFX wrapper object that allows you to call advanced methods and access the full functionality. This all happens behind the scenes, letting you focus on writing clean code, and not fussing about integration and interoperability.
 
 With all this magic interoperability happening behind the scenes, there is some additional overhead on your application. We have taken pains to minimize this using features like @specialize in the Scala language, which allows us to avoid boxing and unboxing costs on primitives. However, without real benchmarks it is hard to tell just how good of a job we have done.
+
+##JavaFX 2 and Scala - Like Milk and Cookies (33rd Degrees, March 2012)
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/12148807" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <a href="https://www.slideshare.net/steveonjava/javafx-2-and-scala-like-milk-and-cookies-33rd-degrees" title="JavaFX 2 and Scala - Like Milk and Cookies (33rd Degrees)" target="_blank">JavaFX 2 and Scala - Like Milk and Cookies (33rd Degrees)</a> from <a href="http://www.slideshare.net/steveonjava" target="_blank">Stephen Chin</a> </div>
+
+##Support ScalaFX Project
+
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QTHP3D2X4F3W4">
+  <img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate">
+</a>
+
+[How Donations Work](https://code.google.com/p/scalafx/wiki/HowDonationsWork)
