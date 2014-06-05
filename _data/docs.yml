@@ -5,6 +5,11 @@
   - installation
   - usage
 
+- title: FAQ
+  docs:
+  - faq_TableView_with_Custom_cell
+  - faq_Using_unwrapped_JavaFX_components 
+
 - title: Meta
   docs:
   - contributing
