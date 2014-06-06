@@ -2,8 +2,6 @@
   docs:
   - home
   - quickstart
-  - installation
-  - usage
 
 - title: FAQ
   docs:
@@ -14,3 +12,4 @@
   docs:
   - contributing
   - history
+  - how_donations_work
