@@ -1,0 +1,49 @@
+---
+layout: news_item
+title: 'ScalaFX 2.2.60-R9 and 8.0.5-R5 Released'
+date: 2014-03-06 22:45:00 -0400
+author: jpsacha
+version: 2.2.60-R9 and 8.0.5-R5 
+categories: [release]
+---
+
+This the first set of releases after move of the ScalaFX project to GitHub. Here are changes common to all releases: 
+
+* Refactored Color name constants to conform to Scala conventions. 
+  Now we have, for instance, `Color.Blue` instead of Java-like `Color.BLUE`. 
+  The old constants are deprecated and will be removed in a feature release.
+* Fixed issue 124. `JFXApp` now buffers all subclass construction/initialization
+code and executes it during application startup. (Previously, JFXApp didn't
+fully implement the semantics of the `scala.DelayedInit` trait: it only buffered
+the construction code of the leaf sub-class (typically, the user's application
+object).
+* Resolved Issue 126: `Platform.runLater` accepts closures with any return types.
+* Resolved Issue 125: Eliminate need for setting `JAVA_HOME`. It was used to point to location of JavaFX binaries. 
+The binaries are now automatically located in the running JVM.
+* Upgrade to latest version of Scala (2.10.4 and 2.11.1).
+* Adjustments to the `Duration` class so that `javafx.util.Duration` instances are consistently 
+  wrapped within `scalafx.util.Duration` instances.
+* Added an auxiliary constructor to the `Duration` class. 
+* Update to the `KeyFrame.time` method to wrap the retrieved `javafx.util.Duration` object with `scalafx.util.Duration`.
+* Added missing constructors to the `EventType` class.
+* Moved `scalafx-hello-world` sub-project to [separate repo](https://github.com/scalafx/scalafx-hello-world).
+
+### v.2.2.60-R9
+
+ScalaFX 1.0.0 version changed to follow JavaFX it supports (last tested), currently 2.2.60. 
+All changes mentioned above. Binaries are released for Scala 2.9.3, 2.10, and 2.11.
+
+### v.8.0.5-R5
+
+Tested with Java 1.8.0 u5 (JavaFX 8.0.5). Binaries are released for Scala 2.10, and 2.11. 
+All changes mentioned above plus:
+
+* Adjusted all Scaladoc entries so that they now link to JavaFX 8 API pages.
+* Added new ScalaFX wrappers for the JavaFX classes `SkinBase` and `PseudoClass`.
+* Made the `ButtonBase` class abstract (as the wrapped JavaFX `ButtonBase` class is itself abstract).
+* Added ScalaFX wrappers for JFX8 classes `DateCell` and `DatePicker`.
+* Added missing methods to the `Track` class. Deprecated the `language` method in `AudioTrack`.
+* Added wrapper for `SubtitleTrack`.
+* Added wrappers for classes in `javafx.print` package.
+
+For downloads visit [ScalaFX on Sonatype](http://search.maven.org/#search&#124;ga&#124;1&#124;scalafx).
