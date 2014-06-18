@@ -40,4 +40,4 @@ Tested with early release Java 1.8.0 b129 (final release preview of Java 8). All
 
 Binaries are released for Scala 2.10. Scala 2.11.0-RC1 cannot compile current ScalaFX SFX-8 code yet.
 
-For downloads visit ScalaFX on Sonatype.
+For downloads visit [ScalaFX on Sonatype](http://search.maven.org/#search&#124;ga&#124;1&#124;scalafx).
