@@ -12,25 +12,35 @@ Some of the features of ScalaFX include:
 
 ###A Programmer-Friendly Object-Literal-Like Syntax
 
-ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple example that creates a new stage with a rectangle that changes color based on mouse events:
+ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple, complete application example that creates a new stage with a rectangle that changes color based on mouse events:
 
 {% highlight scala %}
-stage = new JFXApp.PrimaryStage {
-  title = "Hello Stage"
-  width = 600
-  height = 450
-  scene = new Scene {
-    fill = Color.LIGHTGREEN
-    content = new Rectangle {
-      x = 25
-      y = 40
-      width = 100
-      height = 100
-      fill <== when (hover) choose Color.GREEN otherwise Color.RED
+import scalafx.Includes._
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scalafx.scene.paint.Color
+import scalafx.scene.shape.Rectangle
+
+object HelloStageDemo extends JFXApp {
+  stage = new JFXApp.PrimaryStage {
+    title.value = "Hello Stage"
+    width = 600
+    height = 450
+    scene = new Scene {
+      fill = Color.LightGreen
+      content = new Rectangle {
+        x = 25
+        y = 40
+        width = 100
+        height = 100
+        fill <== when (hover) choose Color.Green otherwise Color.Red
+      }
     }
   }
 }
 {% endhighlight %}
+
+![HelloStageDemo-2]({{ site.url }}/images/HelloStageDemo-2.png) ![HelloStageDemo-1]({{ site.url }}/images/HelloStageDemo-1.png) 
 
 Unlike the builders you find in the core JavaFX APIs, the ScalaFX object declaration syntax uses the normal object API. This means that you can use the same operators and convenient syntax to create and modify your scene graph. Also, anything that is permissible in a Scala block (such as variable declarations, method calls, binding, etc.) can also be done inline while constructing objects. For JavaFX builders you need to declare binding after you finish creating your objects, which leads to disassociated and hard to maintain code.
 

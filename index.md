@@ -7,21 +7,29 @@ overview: true
 ScalaFX is a UI DSL written within the Scala Language that sits on top of JavaFX 2 and JavaFX 8. 
 Every ScalaFX application is also a valid Scala application. It supports full interoperability with Java and can run anywhere the Java Virtual Machine (JVM) and JavaFX2 or JavaFX8 are supported.
 
-ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple example that creates a new stage (window) with a rectangle that changes color based on mouse events:
+ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple, complete application example that creates a new stage (window) with a rectangle that changes color based on mouse events:
 
 {% highlight scala %}
-stage = new PrimaryStage {
-  title = "Hello Stage"
-  width = 600
-  height = 450
-  scene = new Scene {
-    fill = Color.LIGHTGREEN
-    content = new Rectangle {
-      x = 25
-      y = 40
-      width = 100
-      height = 100
-      fill <== when (hover) choose Color.GREEN otherwise Color.RED
+import scalafx.Includes._
+import scalafx.application.JFXApp
+import scalafx.scene.Scene
+import scalafx.scene.paint.Color
+import scalafx.scene.shape.Rectangle
+
+object HelloStageDemo extends JFXApp {
+  stage = new JFXApp.PrimaryStage {
+    title.value = "Hello Stage"
+    width = 600
+    height = 450
+    scene = new Scene {
+      fill = Color.LightGreen
+      content = new Rectangle {
+        x = 25
+        y = 40
+        width = 100
+        height = 100
+        fill <== when (hover) choose Color.Green otherwise Color.Red
+      }
     }
   }
 }
