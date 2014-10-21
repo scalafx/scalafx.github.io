@@ -21,7 +21,7 @@ class Person(firstName_ : String,
 }
 {% endhighlight %}
 
-Say, you want to display the first and last name of a person as text, but you want to show the favorite color as a circle. Displaying columns with text is simple, you just create a new column and provide `cellValueFactory` that describes how to extract data from `Person` object. `TableColum` knows how to display text:
+Say, you want to display the first and last name of a person as text, but you want to show the favorite color as a circle. Displaying columns with text is simple, you just create a new column and provide `cellValueFactory` that describes how to extract data from `Person` object. `TableColumn` knows how to display text:
 
 {% highlight scala %}
 new TableColumn[Person, String] {
@@ -31,7 +31,7 @@ new TableColumn[Person, String] {
 },
 {% endhighlight %}
 
-Displaying a color circle is not that much more complex, we just need to let the `TableColum` know that the `favoriteColor` should be rendered as a graphic of a specific color. This is done defining custom `cellFactory` for the column. The factory creates a graphic when cell value changes. As before define how to create cell value from `Person` object using `cellValueFactory`:
+Displaying a color circle is not that much more complex, we just need to let the `TableColumn` know that the `favoriteColor` should be rendered as a graphic of a specific color. This is done defining custom `cellFactory` for the column. The factory creates a graphic when cell value changes. As before define how to create cell value from `Person` object using `cellValueFactory`:
 
 {% highlight scala %}
 new TableColumn[Person, Color] {
