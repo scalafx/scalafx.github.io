@@ -1,0 +1,384 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>delegate - ScalaFX API 8.0.20-R6 - scalafx.delegate</title>
+          <meta name="description" content="delegate - ScalaFX API 8.0.20 - R6 - scalafx.delegate" />
+          <meta name="keywords" content="delegate ScalaFX API 8.0.20 R6 scalafx.delegate" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'scalafx.delegate.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="scalafx">scalafx</a></p>
+        <h1>delegate</h1> <span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">delegate</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains traits and objects to help to wrap JavaFx classes in their equivalent ScalaFX classes/traits.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scalafx.delegate"><span>delegate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="scalafx.delegate.AlignmentDelegate" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AlignmentDelegate[J&lt;:scalafx.delegate.AlignmentDelegate.Aligned]extendsSFXDelegate[J]"></a>
+      <a id="AlignmentDelegate[J&lt;:Aligned]:AlignmentDelegate[J]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AlignmentDelegate.html"><span class="name">AlignmentDelegate</span></a><span class="tparams">[<span name="J">J &lt;: <a href="AlignmentDelegate$.html#Aligned=AnyRef{defalignmentProperty():javafx.beans.property.ObjectProperty[javafx.geometry.Pos]}" class="extmbr" name="scalafx.delegate.AlignmentDelegate.Aligned">Aligned</a></span>]</span><span class="result"> extends <a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.AlignmentDelegate.J">J</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@AlignmentDelegate[J&lt;:scalafx.delegate.AlignmentDelegate.Aligned]extendsSFXDelegate[J]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Trait that unifies JavaFX classes that contains properties indicating component's internal alignment,
+represented by <code>alignmentProperty</code> and its respective getter and setters.</p>
+    </li><li name="scalafx.delegate.AlignmentPropertyDelegate" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="AlignmentPropertyDelegateextendsSFXDelegate[javafx.beans.property.ReadOnlyObjectProperty[_]]"></a>
+      <a id="AlignmentPropertyDelegate:AlignmentPropertyDelegate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="AlignmentPropertyDelegate.html"><span class="name">AlignmentPropertyDelegate</span></a><span class="result"> extends <a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</span>[_]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@AlignmentPropertyDelegateextendsSFXDelegate[javafx.beans.property.ReadOnlyObjectProperty[_]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.delegate.DelegateIncludes" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="DelegateIncludesextendsAnyRef"></a>
+      <a id="DelegateIncludes:DelegateIncludes"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DelegateIncludes.html"><span class="name">DelegateIncludes</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@DelegateIncludesextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.delegate.DimensionDelegate" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="DimensionDelegate[J&lt;:scalafx.delegate.DimensionDelegate.Dimensioned]extendsSFXDelegate[J]"></a>
+      <a id="DimensionDelegate[J&lt;:Dimensioned]:DimensionDelegate[J]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="DimensionDelegate.html"><span class="name">DimensionDelegate</span></a><span class="tparams">[<span name="J">J &lt;: <a href="DimensionDelegate$.html#Dimensioned=AnyRef{defheightProperty():javafx.beans.property.DoubleProperty;defwidthProperty():javafx.beans.property.DoubleProperty}" class="extmbr" name="scalafx.delegate.DimensionDelegate.Dimensioned">Dimensioned</a></span>]</span><span class="result"> extends <a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.DimensionDelegate.J">J</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@DimensionDelegate[J&lt;:scalafx.delegate.DimensionDelegate.Dimensioned]extendsSFXDelegate[J]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Trait that unifies JavaFX classes that contains properties indicating height and width,
+represented by <code>heightProperty</code> and <code>widthProperty</code> and their respective getter and setters.</p><div class="fullcomment"><div class="comment cmt"><p>Trait that unifies JavaFX classes that contains properties indicating height and width,
+represented by <code>heightProperty</code> and <code>widthProperty</code> and their respective getter and setters.
+</p></div><dl class="paramcmts block"><dt class="tparam">J</dt><dd class="cmt"><p>Original JavaFX type that contains <code>height</code> and <code>width</code> properties.
+</p></dd></dl></div>
+    </li><li name="scalafx.delegate.FireDelegate" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="FireDelegate[J&lt;:scalafx.delegate.FireDelegate.Fired]extendsSFXDelegate[J]"></a>
+      <a id="FireDelegate[J&lt;:Fired]:FireDelegate[J]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="FireDelegate.html"><span class="name">FireDelegate</span></a><span class="tparams">[<span name="J">J &lt;: <a href="FireDelegate$.html#Fired=AnyRef{deffire():Unit}" class="extmbr" name="scalafx.delegate.FireDelegate.Fired">Fired</a></span>]</span><span class="result"> extends <a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.FireDelegate.J">J</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@FireDelegate[J&lt;:scalafx.delegate.FireDelegate.Fired]extendsSFXDelegate[J]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Unify classes that contains a <code>fire()</code> method that has no return (<code>void</code>)
+</p>
+    </li><li name="scalafx.delegate.PositionDelegate" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="PositionDelegate[J&lt;:scalafx.delegate.PositionDelegate.Positioned]extendsSFXDelegate[J]"></a>
+      <a id="PositionDelegate[J&lt;:Positioned]:PositionDelegate[J]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="PositionDelegate.html"><span class="name">PositionDelegate</span></a><span class="tparams">[<span name="J">J &lt;: <a href="PositionDelegate$.html#Positioned=AnyRef{defxProperty():javafx.beans.property.DoubleProperty;defyProperty():javafx.beans.property.DoubleProperty}" class="extmbr" name="scalafx.delegate.PositionDelegate.Positioned">Positioned</a></span>]</span><span class="result"> extends <a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.PositionDelegate.J">J</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@PositionDelegate[J&lt;:scalafx.delegate.PositionDelegate.Positioned]extendsSFXDelegate[J]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Trait that unifies JavaFX classes that contains properties indicating localization in 2
+dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and their respective getter and setters.</p>
+    </li><li name="scalafx.delegate.SFXDelegate" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SFXDelegate[+D&lt;:Object]extendsAnyRef"></a>
+      <a id="SFXDelegate[+D&lt;:AnyRef]:SFXDelegate[D]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SFXDelegate.html"><span class="name">SFXDelegate</span></a><span class="tparams">[<span name="D">+D &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@SFXDelegate[+D&lt;:Object]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Basic trait for all JavaFX classes wrapping.</p><div class="fullcomment"><div class="comment cmt"><p>Basic trait for all JavaFX classes wrapping.
+</p></div><dl class="paramcmts block"><dt class="tparam">D</dt><dd class="cmt"><p>JavaFX class to be wrapped.
+</p></dd></dl></div>
+    </li><li name="scalafx.delegate.SFXEnumDelegate" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SFXEnumDelegate[E&lt;:Enum[E]]extendsSFXDelegate[E]"></a>
+      <a id="SFXEnumDelegate[E&lt;:Enum[E]]:SFXEnumDelegate[E]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SFXEnumDelegate.html"><span class="name">SFXEnumDelegate</span></a><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="java.lang.Enum">Enum</span>[<span class="extype" name="scalafx.delegate.SFXEnumDelegate.E">E</span>]</span>]</span><span class="result"> extends <a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.SFXEnumDelegate.E">E</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@SFXEnumDelegate[E&lt;:Enum[E]]extendsSFXDelegate[E]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Base trait for JavaFX <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html" target="_blank"><code>enum</code></a> wrappers.</p><div class="fullcomment"><div class="comment cmt"><p>Base trait for JavaFX <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html" target="_blank"><code>enum</code></a> wrappers.
+</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>Original JavaFX <code>enum</code>
+</p></dd></dl></div>
+    </li><li name="scalafx.delegate.SFXEnumDelegateCompanion" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SFXEnumDelegateCompanion[E&lt;:Enum[E],S&lt;:scalafx.delegate.SFXEnumDelegate[E]]extendsAnyRef"></a>
+      <a id="SFXEnumDelegateCompanion[E&lt;:Enum[E],S&lt;:SFXEnumDelegate[E]]:SFXEnumDelegateCompanion[E,S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="SFXEnumDelegateCompanion.html"><span class="name">SFXEnumDelegateCompanion</span></a><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="java.lang.Enum">Enum</span>[<span class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion.E">E</span>]</span>, <span name="S">S &lt;: <a href="SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">SFXEnumDelegate</a>[<span class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion.E">E</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@SFXEnumDelegateCompanion[E&lt;:Enum[E],S&lt;:scalafx.delegate.SFXEnumDelegate[E]]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Base trait for all Companion objects <code>SFXEnumDelegate</code> subclasses.</p><div class="fullcomment"><div class="comment cmt"><p>Base trait for all Companion objects <code>SFXEnumDelegate</code> subclasses. It mirrors static methods for
+<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html" target="_blank"><code>Enum</code></a>.
+</p></div><dl class="paramcmts block"><dt class="tparam">E</dt><dd class="cmt"><p>Original JavaFX <code>enum</code></p></dd><dt class="tparam">S</dt><dd class="cmt"><p><code>SFXEnumDelegate</code> that wrappers <code>E</code>
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scalafx.delegate.AlignmentDelegate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AlignmentDelegate"></a>
+      <a id="AlignmentDelegate:AlignmentDelegate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="AlignmentDelegate$.html"><span class="name">AlignmentDelegate</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@AlignmentDelegate" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.delegate.DelegateIncludes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DelegateIncludes"></a>
+      <a id="DelegateIncludes:DelegateIncludes"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DelegateIncludes$.html"><span class="name">DelegateIncludes</span></a><span class="result"> extends <a href="DelegateIncludes.html" class="extype" name="scalafx.delegate.DelegateIncludes">DelegateIncludes</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@DelegateIncludes" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.delegate.DimensionDelegate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DimensionDelegate"></a>
+      <a id="DimensionDelegate:DimensionDelegate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DimensionDelegate$.html"><span class="name">DimensionDelegate</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@DimensionDelegate" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.delegate.FireDelegate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FireDelegate"></a>
+      <a id="FireDelegate:FireDelegate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="FireDelegate$.html"><span class="name">FireDelegate</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@FireDelegate" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.delegate.PositionDelegate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PositionDelegate"></a>
+      <a id="PositionDelegate:PositionDelegate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PositionDelegate$.html"><span class="name">PositionDelegate</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.package@PositionDelegate" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

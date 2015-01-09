@@ -1,0 +1,1833 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>SceneProperty - ScalaFX API 2.2.67-R10 - scalafx.scene.SceneProperty</title>
+          <meta name="description" content="SceneProperty - ScalaFX API 2.2.67 - R10 - scalafx.scene.SceneProperty" />
+          <meta name="keywords" content="SceneProperty ScalaFX API 2.2.67 R10 scalafx.scene.SceneProperty" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'scalafx.scene.SceneProperty';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="SceneProperty$.html" title="Go to companion"><img src="../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../package.html" class="extype" name="scalafx">scalafx</a>.<a href="package.html" class="extype" name="scalafx.scene">scene</a></p>
+        <h1><a href="SceneProperty$.html" title="Go to companion">SceneProperty</a></h1> <span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SceneProperty</span><span class="result"> extends <a href="../beans/property/ReadOnlyObjectProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</a>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>] with <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</span>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>]]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="../beans/property/ReadOnlyObjectProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</a>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>], <a href="../beans/property/ReadOnlyProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyProperty">ReadOnlyProperty</a>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>, <span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>], <a href="../beans/value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>, <span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>], <a href="../beans/Observable.html" class="extype" name="scalafx.beans.Observable">Observable</a>, <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</span>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>]], <a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scalafx.scene.SceneProperty"><span>SceneProperty</span></li><li class="in" name="scalafx.beans.property.ReadOnlyObjectProperty"><span>ReadOnlyObjectProperty</span></li><li class="in" name="scalafx.beans.property.ReadOnlyProperty"><span>ReadOnlyProperty</span></li><li class="in" name="scalafx.beans.value.ObservableValue"><span>ObservableValue</span></li><li class="in" name="scalafx.beans.Observable"><span>Observable</span></li><li class="in" name="scalafx.delegate.SFXDelegate"><span>SFXDelegate</span></li><li class="in" name="scalafx.beans.binding.ObjectExpression"><span>ObjectExpression</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="scalafx.scene.SceneProperty#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(delegate:javafx.beans.property.ReadOnlyObjectProperty[javafx.scene.Scene]):scalafx.scene.SceneProperty"></a>
+      <a id="&lt;init&gt;:SceneProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SceneProperty</span><span class="params">(<span name="delegate">delegate: <span class="extype" name="javafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</span>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@&lt;init&gt;(delegate:javafx.beans.property.ReadOnlyObjectProperty[javafx.scene.Scene]):scalafx.scene.SceneProperty" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#=!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="=!=(v:AnyRef):javafx.beans.binding.BooleanBinding"></a>
+      <a id="=!=(AnyRef):BooleanBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$bang$eq" class="name">=!=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.BooleanBinding">BooleanBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@=!=(v:AnyRef):javafx.beans.binding.BooleanBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#=!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="=!=[T](v:scalafx.beans.value.ObservableValue[T,T]):javafx.beans.binding.BooleanBinding"></a>
+      <a id="=!=[T](ObservableValue[T,T]):BooleanBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$bang$eq" class="name">=!=</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="v">v: <a href="../beans/value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[<span class="extype" name="scalafx.beans.binding.ObjectExpression.=!=.T">T</span>, <span class="extype" name="scalafx.beans.binding.ObjectExpression.=!=.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.BooleanBinding">BooleanBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@=!=[T](v:scalafx.beans.value.ObservableValue[T,T]):javafx.beans.binding.BooleanBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#=!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="=!=(v:javafx.beans.value.ObservableObjectValue[_]):javafx.beans.binding.BooleanBinding"></a>
+      <a id="=!=(ObservableObjectValue[_]):BooleanBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$bang$eq" class="name">=!=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.beans.value.ObservableObjectValue">ObservableObjectValue</span>[_]</span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.BooleanBinding">BooleanBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@=!=(v:javafx.beans.value.ObservableObjectValue[_]):javafx.beans.binding.BooleanBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#=!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="=!=(v:Null):javafx.beans.binding.BooleanBinding"></a>
+      <a id="=!=(Null):BooleanBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$bang$eq" class="name">=!=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Null">Null</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.BooleanBinding">BooleanBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@=!=(v:Null):javafx.beans.binding.BooleanBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#===" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="===(v:AnyRef):javafx.beans.binding.BooleanBinding"></a>
+      <a id="===(AnyRef):BooleanBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq$eq" class="name">===</span><span class="params">(<span name="v">v: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.BooleanBinding">BooleanBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@===(v:AnyRef):javafx.beans.binding.BooleanBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#===" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="===[T](v:scalafx.beans.value.ObservableValue[T,T]):javafx.beans.binding.BooleanBinding"></a>
+      <a id="===[T](ObservableValue[T,T]):BooleanBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq$eq" class="name">===</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="v">v: <a href="../beans/value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[<span class="extype" name="scalafx.beans.binding.ObjectExpression.===.T">T</span>, <span class="extype" name="scalafx.beans.binding.ObjectExpression.===.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.BooleanBinding">BooleanBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@===[T](v:scalafx.beans.value.ObservableValue[T,T]):javafx.beans.binding.BooleanBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#===" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="===(v:javafx.beans.value.ObservableObjectValue[_]):javafx.beans.binding.BooleanBinding"></a>
+      <a id="===(ObservableObjectValue[_]):BooleanBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq$eq" class="name">===</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.beans.value.ObservableObjectValue">ObservableObjectValue</span>[_]</span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.BooleanBinding">BooleanBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@===(v:javafx.beans.value.ObservableObjectValue[_]):javafx.beans.binding.BooleanBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#===" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="===(v:Null):javafx.beans.binding.BooleanBinding"></a>
+      <a id="===(Null):BooleanBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq$eq" class="name">===</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Null">Null</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.BooleanBinding">BooleanBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@===(v:Null):javafx.beans.binding.BooleanBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.value.ObservableValue#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply():T"></a>
+      <a id="apply():javafx.scene.Scene"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">()</span><span class="result">: <span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@apply():T" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns <code>ObservableValue</code>
+</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>ObservableValue</code>
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>ObservableValue</code>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scalafx.beans.property.ReadOnlyProperty#bean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="bean:Object"></a>
+      <a id="bean:AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bean</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@bean:Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the Object that contains this property.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the Object that contains this property.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/property/ReadOnlyProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyProperty">ReadOnlyProperty</a></dd></dl></div>
+    </li><li name="scalafx.scene.SceneProperty#camera" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="camera:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[javafx.scene.Camera]]"></a>
+      <a id="camera:ObjectBinding[ObjectBinding[javafx.scene.Camera]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">camera</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.scene.Camera">javafx.scene.Camera</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@camera:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[javafx.scene.Camera]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scalafx.scene.SceneProperty#cursor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cursor:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[javafx.scene.Cursor]]"></a>
+      <a id="cursor:ObjectBinding[ObjectBinding[javafx.scene.Cursor]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">cursor</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.scene.Cursor">javafx.scene.Cursor</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@cursor:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[javafx.scene.Cursor]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#delegate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="delegate:javafx.beans.property.ReadOnlyObjectProperty[javafx.scene.Scene]"></a>
+      <a id="delegate:ReadOnlyObjectProperty[javafx.scene.Scene]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">delegate</span><span class="result">: <span class="extype" name="javafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</span>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@delegate:javafx.beans.property.ReadOnlyObjectProperty[javafx.scene.Scene]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">JavaFX object to be wrapped.</p><div class="fullcomment"><div class="comment cmt"><p>JavaFX object to be wrapped.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="scalafx.scene.SceneProperty">SceneProperty</a> → <a href="../beans/property/ReadOnlyObjectProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</a> → <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → <a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.scene.SceneProperty#depthBuffer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="depthBuffer:javafx.beans.binding.BooleanBinding"></a>
+      <a id="depthBuffer:BooleanBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">depthBuffer</span><span class="result">: <span class="extype" name="javafx.beans.binding.BooleanBinding">BooleanBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@depthBuffer:javafx.beans.binding.BooleanBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(ref:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@equals(ref:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Verifies if a object is equals to this delegate.</p><div class="fullcomment"><div class="comment cmt"><p>Verifies if a object is equals to this delegate.
+</p></div><dl class="paramcmts block"><dt class="param">ref</dt><dd class="cmt"><p>Object to be compared.</p></dd><dt>returns</dt><dd class="cmt"><p>if the other object is equals to this delegate or not.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.scene.SceneProperty#eventDispatcher" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="eventDispatcher:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[javafx.event.EventDispatcher]]"></a>
+      <a id="eventDispatcher:ObjectBinding[ObjectBinding[EventDispatcher]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eventDispatcher</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.event.EventDispatcher">EventDispatcher</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@eventDispatcher:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[javafx.event.EventDispatcher]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#fill" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fill:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[javafx.scene.paint.Paint]]"></a>
+      <a id="fill:ObjectBinding[ObjectBinding[Paint]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fill</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.scene.paint.Paint">Paint</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@fill:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[javafx.scene.paint.Paint]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scalafx.scene.SceneProperty#focusOwner" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="focusOwner:javafx.beans.binding.ObjectBinding[javafx.scene.Node]"></a>
+      <a id="focusOwner:ObjectBinding[javafx.scene.Node]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">focusOwner</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.scene.Node">javafx.scene.Node</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@focusOwner:javafx.beans.binding.ObjectBinding[javafx.scene.Node]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The delegate hashcode
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.scene.SceneProperty#height" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="height:javafx.beans.binding.DoubleBinding"></a>
+      <a id="height:DoubleBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">height</span><span class="result">: <span class="extype" name="javafx.beans.binding.DoubleBinding">DoubleBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@height:javafx.beans.binding.DoubleBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scalafx.beans.property.ReadOnlyProperty#name" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="name:String"></a>
+      <a id="name:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@name:String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns the name of this property.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the name of this property.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/property/ReadOnlyProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyProperty">ReadOnlyProperty</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.beans.value.ObservableValue#onChange" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onChange[J1&gt;:J](op:=&gt;Unit):scalafx.event.subscriptions.Subscription"></a>
+      <a id="onChange[J1&gt;:javafx.scene.Scene](⇒Unit):Subscription"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onChange</span><span class="tparams">[<span name="J1">J1 &gt;: <span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span></span>]</span><span class="params">(<span name="op">op: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onChange[J1&gt;:J](op:=&gt;Unit):scalafx.event.subscriptions.Subscription" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Adds a function as a <a href="http://docs.oracle.com/javafx/2/api/javafx/beans/value/ChangeListener.html" target="_blank"><code>ChangeListener</code></a>.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a function as a <a href="http://docs.oracle.com/javafx/2/api/javafx/beans/value/ChangeListener.html" target="_blank"><code>ChangeListener</code></a>. This function has no arguments because it will not handle values changed.
+</p></div><dl class="paramcmts block"><dt class="param">op</dt><dd class="cmt"><p>A Function with no arguments. It will be called when value changes.</p></dd><dt>returns</dt><dd class="cmt"><p>A new <a href="../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">scalafx.event.subscriptions.Subscription</a> to remove <code>ObservableValue</code>.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a></dd></dl></div>
+    </li><li name="scalafx.beans.value.ObservableValue#onChange" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onChange[J1&gt;:J](op:(scalafx.beans.value.ObservableValue[T,J],J1,J1)=&gt;Unit):scalafx.event.subscriptions.Subscription"></a>
+      <a id="onChange[J1&gt;:javafx.scene.Scene]((ObservableValue[javafx.scene.Scene,javafx.scene.Scene],J1,J1)⇒Unit):Subscription"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onChange</span><span class="tparams">[<span name="J1">J1 &gt;: <span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span></span>]</span><span class="params">(<span name="op">op: (<a href="../beans/value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>, <span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>], <span class="extype" name="scalafx.beans.value.ObservableValue.onChange.J1">J1</span>, <span class="extype" name="scalafx.beans.value.ObservableValue.onChange.J1">J1</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onChange[J1&gt;:J](op:(scalafx.beans.value.ObservableValue[T,J],J1,J1)=&gt;Unit):scalafx.event.subscriptions.Subscription" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Adds a function as a <a href="http://docs.oracle.com/javafx/2/api/javafx/beans/value/ChangeListener.html" target="_blank"><code>ChangeListener</code></a>.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a function as a <a href="http://docs.oracle.com/javafx/2/api/javafx/beans/value/ChangeListener.html" target="_blank"><code>ChangeListener</code></a>. This function has all arguments from
+<a href="http://docs.oracle.com/javafx/2/api/javafx/beans/value/ChangeListener.html#changed(javafx.beans.value.ObservableValue," target="_blank">T, T) <code>changed</code></a>
+method from <code>ChangeListener</code>.
+</p></div><dl class="paramcmts block"><dt class="tparam">J1</dt><dd class="cmt"><p>J superclass.</p></dd><dt class="param">op</dt><dd class="cmt"><p>Function that receives a
+          <a href="http://docs.oracle.com/javafx/2/api/javafx/beans/value/ObservableValue.html" target="_blank"><code>ObservableValue</code></a>,
+          the old value and the new value. It will be called when value changes.</p></dd><dt>returns</dt><dd class="cmt"><p>A new <a href="../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">scalafx.event.subscriptions.Subscription</a> to remove <code>ObservableValue</code>.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a></dd></dl></div>
+    </li><li name="scalafx.scene.SceneProperty#onContextMenuRequested" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onContextMenuRequested:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ContextMenuEvent]]"></a>
+      <a id="onContextMenuRequested:ObjectBinding[ObjectBinding[_&gt;:ContextMenuEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onContextMenuRequested</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.ContextMenuEvent">ContextMenuEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onContextMenuRequested:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ContextMenuEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onDragDetected" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onDragDetected:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]"></a>
+      <a id="onDragDetected:ObjectBinding[ObjectBinding[_&gt;:DragEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onDragDetected</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.DragEvent">DragEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onDragDetected:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onDragDone" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onDragDone:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]"></a>
+      <a id="onDragDone:ObjectBinding[ObjectBinding[_&gt;:DragEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onDragDone</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.DragEvent">DragEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onDragDone:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onDragDropped" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onDragDropped:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]"></a>
+      <a id="onDragDropped:ObjectBinding[ObjectBinding[_&gt;:DragEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onDragDropped</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.DragEvent">DragEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onDragDropped:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onDragEntered" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onDragEntered:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]"></a>
+      <a id="onDragEntered:ObjectBinding[ObjectBinding[_&gt;:DragEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onDragEntered</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.DragEvent">DragEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onDragEntered:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onDragExited" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onDragExited:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]"></a>
+      <a id="onDragExited:ObjectBinding[ObjectBinding[_&gt;:DragEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onDragExited</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.DragEvent">DragEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onDragExited:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onDragOver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onDragOver:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]"></a>
+      <a id="onDragOver:ObjectBinding[ObjectBinding[_&gt;:DragEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onDragOver</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.DragEvent">DragEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onDragOver:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.DragEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onInputMethodTextChanged" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onInputMethodTextChanged:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.InputEvent]]"></a>
+      <a id="onInputMethodTextChanged:ObjectBinding[ObjectBinding[_&gt;:InputEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onInputMethodTextChanged</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.InputEvent">InputEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onInputMethodTextChanged:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.InputEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.beans.Observable#onInvalidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onInvalidate(op:=&gt;Unit):scalafx.event.subscriptions.Subscription"></a>
+      <a id="onInvalidate(⇒Unit):Subscription"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onInvalidate</span><span class="params">(<span name="op">op: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onInvalidate(op:=&gt;Unit):scalafx.event.subscriptions.Subscription" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Adds a no argument function as a JavaFX <a href="http://docs.oracle.com/javafx/2/api/javafx/beans/InvalidationListener.html" target="_blank"><code>InvalidationListener</code></a>.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a no argument function as a JavaFX <a href="http://docs.oracle.com/javafx/2/api/javafx/beans/InvalidationListener.html" target="_blank"><code>InvalidationListener</code></a>. This function has no arguments because it will not handle
+invalidated values.
+</p></div><dl class="paramcmts block"><dt class="param">op</dt><dd class="cmt"><p>A Function with no arguments. It will be called when value was invalidated.</p></dd><dt>returns</dt><dd class="cmt"><p>A new <a href="../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">scalafx.event.subscriptions.Subscription</a> to remove JavaFX <code>InvalidationListener</code>.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/Observable.html" class="extype" name="scalafx.beans.Observable">Observable</a></dd></dl></div>
+    </li><li name="scalafx.beans.Observable#onInvalidate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onInvalidate(op:scalafx.beans.Observable=&gt;Unit):scalafx.event.subscriptions.Subscription"></a>
+      <a id="onInvalidate((Observable)⇒Unit):Subscription"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onInvalidate</span><span class="params">(<span name="op">op: (<a href="../beans/Observable.html" class="extype" name="scalafx.beans.Observable">Observable</a>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onInvalidate(op:scalafx.beans.Observable=&gt;Unit):scalafx.event.subscriptions.Subscription" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Adds a function as a JavaFX <a href="http://docs.oracle.com/javafx/2/api/javafx/beans/InvalidationListener.html" target="_blank"><code>InvalidationListener</code></a>.</p><div class="fullcomment"><div class="comment cmt"><p>Adds a function as a JavaFX <a href="http://docs.oracle.com/javafx/2/api/javafx/beans/InvalidationListener.html" target="_blank"><code>InvalidationListener</code></a>. This function has all arguments from
+<a href="http://docs.oracle.com/javafx/2/api/javafx/beans/InvalidationListener.html#invalidated(javafx.beans.Observable)" target="_blank"><code>invalidated</code></a>
+method from <code>InvalidationListener</code>.
+</p></div><dl class="paramcmts block"><dt class="param">op</dt><dd class="cmt"><p>Function that receives a ScalaFX <code>Observable</code>. It will be called when value was invalidated.</p></dd><dt>returns</dt><dd class="cmt"><p>A new <a href="../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">scalafx.event.subscriptions.Subscription</a> to remove JavaFX <code>InvalidationListener</code>.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/Observable.html" class="extype" name="scalafx.beans.Observable">Observable</a></dd></dl></div>
+    </li><li name="scalafx.scene.SceneProperty#onKeyPressed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onKeyPressed:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.KeyEvent]]"></a>
+      <a id="onKeyPressed:ObjectBinding[ObjectBinding[_&gt;:KeyEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onKeyPressed</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.KeyEvent">KeyEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onKeyPressed:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.KeyEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onKeyReleased" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onKeyReleased:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.KeyEvent]]"></a>
+      <a id="onKeyReleased:ObjectBinding[ObjectBinding[_&gt;:KeyEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onKeyReleased</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.KeyEvent">KeyEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onKeyReleased:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.KeyEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onKeyTyped" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onKeyTyped:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.KeyEvent]]"></a>
+      <a id="onKeyTyped:ObjectBinding[ObjectBinding[_&gt;:KeyEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onKeyTyped</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.KeyEvent">KeyEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onKeyTyped:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.KeyEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMouseClicked" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMouseClicked:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMouseClicked:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseClicked</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMouseClicked:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMouseDragEntered" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMouseDragEntered:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMouseDragEntered:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseDragEntered</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMouseDragEntered:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMouseDragExited" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMouseDragExited:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMouseDragExited:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseDragExited</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMouseDragExited:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMouseDragOver" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMouseDragOver:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMouseDragOver:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseDragOver</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMouseDragOver:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMouseDragReleased" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMouseDragReleased:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMouseDragReleased:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseDragReleased</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMouseDragReleased:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMouseDragged" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMouseDragged:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMouseDragged:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseDragged</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMouseDragged:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMouseEntered" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMouseEntered:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMouseEntered:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseEntered</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMouseEntered:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMouseExited" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMouseExited:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMouseExited:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseExited</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMouseExited:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMouseMoved" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMouseMoved:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMouseMoved:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseMoved</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMouseMoved:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMousePressed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMousePressed:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMousePressed:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMousePressed</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMousePressed:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onMouseReleased" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onMouseReleased:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]"></a>
+      <a id="onMouseReleased:ObjectBinding[ObjectBinding[_&gt;:MouseEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseReleased</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.MouseEvent">MouseEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onMouseReleased:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.MouseEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onRotate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onRotate:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.RotateEvent]]"></a>
+      <a id="onRotate:ObjectBinding[ObjectBinding[_&gt;:RotateEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onRotate</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.RotateEvent">RotateEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onRotate:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.RotateEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onRotationFinished" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onRotationFinished:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.RotateEvent]]"></a>
+      <a id="onRotationFinished:ObjectBinding[ObjectBinding[_&gt;:RotateEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onRotationFinished</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.RotateEvent">RotateEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onRotationFinished:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.RotateEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onRotationStarted" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onRotationStarted:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.RotateEvent]]"></a>
+      <a id="onRotationStarted:ObjectBinding[ObjectBinding[_&gt;:RotateEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onRotationStarted</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.RotateEvent">RotateEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onRotationStarted:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.RotateEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onScroll" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onScroll:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ScrollEvent]]"></a>
+      <a id="onScroll:ObjectBinding[ObjectBinding[_&gt;:ScrollEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onScroll</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.ScrollEvent">ScrollEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onScroll:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ScrollEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onScrollFinished" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onScrollFinished:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ScrollEvent]]"></a>
+      <a id="onScrollFinished:ObjectBinding[ObjectBinding[_&gt;:ScrollEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onScrollFinished</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.ScrollEvent">ScrollEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onScrollFinished:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ScrollEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onScrollStarted" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onScrollStarted:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ScrollEvent]]"></a>
+      <a id="onScrollStarted:ObjectBinding[ObjectBinding[_&gt;:ScrollEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onScrollStarted</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.ScrollEvent">ScrollEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onScrollStarted:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ScrollEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onSwipeDown" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onSwipeDown:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.SwipeEvent]]"></a>
+      <a id="onSwipeDown:ObjectBinding[ObjectBinding[_&gt;:SwipeEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSwipeDown</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.SwipeEvent">SwipeEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onSwipeDown:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.SwipeEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onSwipeLeft" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onSwipeLeft:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.SwipeEvent]]"></a>
+      <a id="onSwipeLeft:ObjectBinding[ObjectBinding[_&gt;:SwipeEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSwipeLeft</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.SwipeEvent">SwipeEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onSwipeLeft:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.SwipeEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onSwipeRight" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onSwipeRight:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.SwipeEvent]]"></a>
+      <a id="onSwipeRight:ObjectBinding[ObjectBinding[_&gt;:SwipeEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSwipeRight</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.SwipeEvent">SwipeEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onSwipeRight:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.SwipeEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onSwipeUp" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onSwipeUp:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.SwipeEvent]]"></a>
+      <a id="onSwipeUp:ObjectBinding[ObjectBinding[_&gt;:SwipeEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onSwipeUp</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.SwipeEvent">SwipeEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onSwipeUp:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.SwipeEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onTouchMoved" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onTouchMoved:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.TouchEvent]]"></a>
+      <a id="onTouchMoved:ObjectBinding[ObjectBinding[_&gt;:TouchEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onTouchMoved</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.TouchEvent">TouchEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onTouchMoved:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.TouchEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onTouchPressed" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onTouchPressed:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.TouchEvent]]"></a>
+      <a id="onTouchPressed:ObjectBinding[ObjectBinding[_&gt;:TouchEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onTouchPressed</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.TouchEvent">TouchEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onTouchPressed:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.TouchEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onTouchReleased" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onTouchReleased:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.TouchEvent]]"></a>
+      <a id="onTouchReleased:ObjectBinding[ObjectBinding[_&gt;:TouchEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onTouchReleased</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.TouchEvent">TouchEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onTouchReleased:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.TouchEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onTouchStationary" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onTouchStationary:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.TouchEvent]]"></a>
+      <a id="onTouchStationary:ObjectBinding[ObjectBinding[_&gt;:TouchEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onTouchStationary</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.TouchEvent">TouchEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onTouchStationary:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.TouchEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onZoom" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onZoom:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ZoomEvent]]"></a>
+      <a id="onZoom:ObjectBinding[ObjectBinding[_&gt;:ZoomEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onZoom</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.ZoomEvent">ZoomEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onZoom:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ZoomEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onZoomFinished" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onZoomFinished:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ZoomEvent]]"></a>
+      <a id="onZoomFinished:ObjectBinding[ObjectBinding[_&gt;:ZoomEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onZoomFinished</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.ZoomEvent">ZoomEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onZoomFinished:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ZoomEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#onZoomStarted" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="onZoomStarted:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ZoomEvent]]"></a>
+      <a id="onZoomStarted:ObjectBinding[ObjectBinding[_&gt;:ZoomEvent]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onZoomStarted</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[_ &gt;: <span class="extype" name="javafx.scene.input.ZoomEvent">ZoomEvent</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@onZoomStarted:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[_&gt;:javafx.scene.input.ZoomEvent]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#root" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="root:javafx.beans.binding.ObjectBinding[javafx.scene.Parent]"></a>
+      <a id="root:ObjectBinding[javafx.scene.Parent]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">root</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.scene.Parent">javafx.scene.Parent</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@root:javafx.beans.binding.ObjectBinding[javafx.scene.Parent]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.beans.binding.ObjectExpression#select" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="select[T](s:String):javafx.beans.binding.ObjectBinding[T]"></a>
+      <a id="select[T](String):ObjectBinding[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">select</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="scalafx.beans.binding.ObjectExpression.select.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@select[T](s:String):javafx.beans.binding.ObjectBinding[T]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#selectBoolean" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="selectBoolean(s:String):javafx.beans.binding.BooleanBinding"></a>
+      <a id="selectBoolean(String):BooleanBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">selectBoolean</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.BooleanBinding">BooleanBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@selectBoolean(s:String):javafx.beans.binding.BooleanBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#selectDouble" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="selectDouble(s:String):javafx.beans.binding.DoubleBinding"></a>
+      <a id="selectDouble(String):DoubleBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">selectDouble</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.DoubleBinding">DoubleBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@selectDouble(s:String):javafx.beans.binding.DoubleBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#selectFloat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="selectFloat(s:String):javafx.beans.binding.FloatBinding"></a>
+      <a id="selectFloat(String):FloatBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">selectFloat</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.FloatBinding">FloatBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@selectFloat(s:String):javafx.beans.binding.FloatBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#selectInteger" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="selectInteger(s:String):javafx.beans.binding.IntegerBinding"></a>
+      <a id="selectInteger(String):IntegerBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">selectInteger</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.IntegerBinding">IntegerBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@selectInteger(s:String):javafx.beans.binding.IntegerBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#selectLong" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="selectLong(s:String):javafx.beans.binding.LongBinding"></a>
+      <a id="selectLong(String):LongBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">selectLong</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.LongBinding">LongBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@selectLong(s:String):javafx.beans.binding.LongBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.beans.binding.ObjectExpression#selectString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="selectString(s:String):javafx.beans.binding.StringBinding"></a>
+      <a id="selectString(String):StringBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">selectString</span><span class="params">(<span name="s">s: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.StringBinding">StringBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@selectString(s:String):javafx.beans.binding.StringBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a></dd></dl></div>
+    </li><li name="scalafx.scene.SceneProperty#stylesheets" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="stylesheets:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[javafx.collections.ObservableList[String]]]"></a>
+      <a id="stylesheets:ObjectBinding[ObjectBinding[ObservableList[String]]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">stylesheets</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.collections.ObservableList">ObservableList</span>[<span class="extype" name="scala.Predef.String">String</span>]]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@stylesheets:javafx.beans.binding.ObjectBinding[javafx.beans.binding.ObjectBinding[javafx.collections.ObservableList[String]]]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Returns the original delegate's <code>toString()</code> adding a <code>[SFX]</code> prefix.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.beans.property.ReadOnlyObjectProperty#value" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="value:T"></a>
+      <a id="value:javafx.scene.Scene"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">value</span><span class="result">: <span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@value:T" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns <code>ObservableValue</code>
+</p><div class="fullcomment"><div class="comment cmt"><p>Returns <code>ObservableValue</code>
+</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p><code>ObservableValue</code>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../beans/property/ReadOnlyObjectProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</a> → <a href="../beans/value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scalafx.scene.SceneProperty#width" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="width:javafx.beans.binding.DoubleBinding"></a>
+      <a id="width:DoubleBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">width</span><span class="result">: <span class="extype" name="javafx.beans.binding.DoubleBinding">DoubleBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@width:javafx.beans.binding.DoubleBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#window" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="window:javafx.beans.binding.ObjectBinding[javafx.stage.Window]"></a>
+      <a id="window:ObjectBinding[Window]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">window</span><span class="result">: <span class="extype" name="javafx.beans.binding.ObjectBinding">ObjectBinding</span>[<span class="extype" name="javafx.stage.Window">Window</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@window:javafx.beans.binding.ObjectBinding[javafx.stage.Window]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#x" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="x:javafx.beans.binding.DoubleBinding"></a>
+      <a id="x:DoubleBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">x</span><span class="result">: <span class="extype" name="javafx.beans.binding.DoubleBinding">DoubleBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@x:javafx.beans.binding.DoubleBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.SceneProperty#y" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="y:javafx.beans.binding.DoubleBinding"></a>
+      <a id="y:DoubleBinding"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">y</span><span class="result">: <span class="extype" name="javafx.beans.binding.DoubleBinding">DoubleBinding</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.SceneProperty@y:javafx.beans.binding.DoubleBinding" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scalafx.beans.property.ReadOnlyObjectProperty">
+              <h3>Inherited from <a href="../beans/property/ReadOnlyObjectProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</a>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>]</h3>
+            </div><div class="parent" name="scalafx.beans.property.ReadOnlyProperty">
+              <h3>Inherited from <a href="../beans/property/ReadOnlyProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyProperty">ReadOnlyProperty</a>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>, <span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>]</h3>
+            </div><div class="parent" name="scalafx.beans.value.ObservableValue">
+              <h3>Inherited from <a href="../beans/value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>, <span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>]</h3>
+            </div><div class="parent" name="scalafx.beans.Observable">
+              <h3>Inherited from <a href="../beans/Observable.html" class="extype" name="scalafx.beans.Observable">Observable</a></h3>
+            </div><div class="parent" name="scalafx.delegate.SFXDelegate">
+              <h3>Inherited from <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</span>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>]]</h3>
+            </div><div class="parent" name="scalafx.beans.binding.ObjectExpression">
+              <h3>Inherited from <a href="../beans/binding/ObjectExpression.html" class="extype" name="scalafx.beans.binding.ObjectExpression">ObjectExpression</a>[<span class="extype" name="javafx.scene.Scene">javafx.scene.Scene</span>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

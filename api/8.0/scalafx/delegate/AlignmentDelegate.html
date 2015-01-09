@@ -1,0 +1,547 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>AlignmentDelegate - ScalaFX API 8.0.20-R6 - scalafx.delegate.AlignmentDelegate</title>
+          <meta name="description" content="AlignmentDelegate - ScalaFX API 8.0.20 - R6 - scalafx.delegate.AlignmentDelegate" />
+          <meta name="keywords" content="AlignmentDelegate ScalaFX API 8.0.20 R6 scalafx.delegate.AlignmentDelegate" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'scalafx.delegate.AlignmentDelegate';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="AlignmentDelegate$.html" title="Go to companion"><img src="../../lib/trait_to_object_big.png" /></a>
+        <p id="owner"><a href="../package.html" class="extype" name="scalafx">scalafx</a>.<a href="package.html" class="extype" name="scalafx.delegate">delegate</a></p>
+        <h1><a href="AlignmentDelegate$.html" title="Go to companion">AlignmentDelegate</a></h1> <span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AlignmentDelegate</span><span class="tparams">[<span name="J">J &lt;: <a href="AlignmentDelegate$.html#Aligned=AnyRef{defalignmentProperty():javafx.beans.property.ObjectProperty[javafx.geometry.Pos]}" class="extmbr" name="scalafx.delegate.AlignmentDelegate.Aligned">Aligned</a></span>]</span><span class="result"> extends <a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.AlignmentDelegate.J">J</span>]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Trait that unifies JavaFX classes that contains properties indicating component's internal alignment,
+represented by <code>alignmentProperty</code> and its respective getter and setters.
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.AlignmentDelegate.J">J</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="../scene/control/Button.html" class="extype" name="scalafx.scene.control.Button">Button</a>, <a href="../scene/control/ButtonBase.html" class="extype" name="scalafx.scene.control.ButtonBase">ButtonBase</a>, <a href="../scene/control/Cell.html" class="extype" name="scalafx.scene.control.Cell">Cell</a>, <a href="../scene/control/CheckBox.html" class="extype" name="scalafx.scene.control.CheckBox">CheckBox</a>, <a href="../scene/control/cell/CheckBoxListCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxListCell">CheckBoxListCell</a>, <a href="../scene/control/cell/CheckBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTableCell">CheckBoxTableCell</a>, <a href="../scene/control/cell/CheckBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTreeCell">CheckBoxTreeCell</a>, <a href="../scene/control/cell/CheckBoxTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTreeTableCell">CheckBoxTreeTableCell</a>, <a href="../scene/control/cell/ChoiceBoxListCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxListCell">ChoiceBoxListCell</a>, <a href="../scene/control/cell/ChoiceBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTableCell">ChoiceBoxTableCell</a>, <a href="../scene/control/cell/ChoiceBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTreeCell">ChoiceBoxTreeCell</a>, <a href="../scene/control/cell/ChoiceBoxTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTreeTableCell">ChoiceBoxTreeTableCell</a>, <a href="../scene/control/cell/ComboBoxListCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxListCell">ComboBoxListCell</a>, <a href="../scene/control/cell/ComboBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTableCell">ComboBoxTableCell</a>, <a href="../scene/control/cell/ComboBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTreeCell">ComboBoxTreeCell</a>, <a href="../scene/control/cell/ComboBoxTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTreeTableCell">ComboBoxTreeTableCell</a>, <a href="../scene/control/DateCell.html" class="extype" name="scalafx.scene.control.DateCell">DateCell</a>, <a href="../scene/layout/FlowPane.html" class="extype" name="scalafx.scene.layout.FlowPane">FlowPane</a>, <a href="../scene/layout/GridPane.html" class="extype" name="scalafx.scene.layout.GridPane">GridPane</a>, <a href="../scene/layout/HBox.html" class="extype" name="scalafx.scene.layout.HBox">HBox</a>, <a href="../scene/control/Hyperlink.html" class="extype" name="scalafx.scene.control.Hyperlink">Hyperlink</a>, <a href="../scene/control/IndexedCell.html" class="extype" name="scalafx.scene.control.IndexedCell">IndexedCell</a>, <a href="../scene/control/Label.html" class="extype" name="scalafx.scene.control.Label">Label</a>, <a href="../scene/control/Labeled.html" class="extype" name="scalafx.scene.control.Labeled">Labeled</a>, <a href="../scene/control/ListCell.html" class="extype" name="scalafx.scene.control.ListCell">ListCell</a>, <a href="../scene/control/MenuButton.html" class="extype" name="scalafx.scene.control.MenuButton">MenuButton</a>, <a href="../scene/control/PasswordField.html" class="extype" name="scalafx.scene.control.PasswordField">PasswordField</a>, <a href="../scene/control/cell/ProgressBarTableCell.html" class="extype" name="scalafx.scene.control.cell.ProgressBarTableCell">ProgressBarTableCell</a>, <a href="../scene/control/RadioButton.html" class="extype" name="scalafx.scene.control.RadioButton">RadioButton</a>, <a href="../scene/control/SplitMenuButton.html" class="extype" name="scalafx.scene.control.SplitMenuButton">SplitMenuButton</a>, <a href="../scene/layout/StackPane.html" class="extype" name="scalafx.scene.layout.StackPane">StackPane</a>, <a href="../scene/control/TableCell.html" class="extype" name="scalafx.scene.control.TableCell">TableCell</a>, <a href="../scene/control/TableRow.html" class="extype" name="scalafx.scene.control.TableRow">TableRow</a>, <a href="../scene/control/TextField.html" class="extype" name="scalafx.scene.control.TextField">TextField</a>, <a href="../scene/control/cell/TextFieldListCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldListCell">TextFieldListCell</a>, <a href="../scene/control/cell/TextFieldTableCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTableCell">TextFieldTableCell</a>, <a href="../scene/control/cell/TextFieldTreeCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTreeCell">TextFieldTreeCell</a>, <a href="../scene/control/cell/TextFieldTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTreeTableCell">TextFieldTreeTableCell</a>, <a href="../scene/layout/TilePane.html" class="extype" name="scalafx.scene.layout.TilePane">TilePane</a>, <a href="../scene/control/TitledPane.html" class="extype" name="scalafx.scene.control.TitledPane">TitledPane</a>, <a href="../scene/control/ToggleButton.html" class="extype" name="scalafx.scene.control.ToggleButton">ToggleButton</a>, <a href="../scene/control/TreeCell.html" class="extype" name="scalafx.scene.control.TreeCell">TreeCell</a>, <a href="../scene/control/TreeTableCell.html" class="extype" name="scalafx.scene.control.TreeTableCell">TreeTableCell</a>, <a href="../scene/control/TreeTableRow.html" class="extype" name="scalafx.scene.control.TreeTableRow">TreeTableRow</a>, <a href="../scene/layout/VBox.html" class="extype" name="scalafx.scene.layout.VBox">VBox</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scalafx.delegate.AlignmentDelegate"><span>AlignmentDelegate</span></li><li class="in" name="scalafx.delegate.SFXDelegate"><span>SFXDelegate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="scalafx.delegate.SFXDelegate#delegate" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="delegate:D"></a>
+      <a id="delegate:J"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">delegate</span><span class="result">: <span class="extype" name="scalafx.delegate.AlignmentDelegate.J">J</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@delegate:D" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">JavaFX object to be wrapped.</p><div class="fullcomment"><div class="comment cmt"><p>JavaFX object to be wrapped.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a></dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.delegate.AlignmentDelegate#alignment" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="alignment:scalafx.beans.property.ObjectProperty[javafx.geometry.Pos]"></a>
+      <a id="alignment:ObjectProperty[Pos]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">alignment</span><span class="result">: <a href="../beans/property/ObjectProperty.html" class="extype" name="scalafx.beans.property.ObjectProperty">ObjectProperty</a>[<span class="extype" name="javafx.geometry.Pos">Pos</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@alignment:scalafx.beans.property.ObjectProperty[javafx.geometry.Pos]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The overall alignment of children (or text) within the component's width and height.</p>
+    </li><li name="scalafx.delegate.AlignmentDelegate#alignment_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="alignment_=(v:scalafx.geometry.Pos):Unit"></a>
+      <a id="alignment_=(Pos):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: alignment_$eq" class="name">alignment_=</span><span class="params">(<span name="v">v: <a href="../geometry/Pos.html" class="extype" name="scalafx.geometry.Pos">Pos</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@alignment_=(v:scalafx.geometry.Pos):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(ref:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@equals(ref:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Verifies if a object is equals to this delegate.</p><div class="fullcomment"><div class="comment cmt"><p>Verifies if a object is equals to this delegate.
+</p></div><dl class="paramcmts block"><dt class="param">ref</dt><dd class="cmt"><p>Object to be compared.</p></dd><dt>returns</dt><dd class="cmt"><p>if the other object is equals to this delegate or not.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The delegate hashcode
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Returns the original delegate's <code>toString()</code> adding a <code>[SFX]</code> prefix.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.AlignmentDelegate@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scalafx.delegate.SFXDelegate">
+              <h3>Inherited from <a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.AlignmentDelegate.J">J</span>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

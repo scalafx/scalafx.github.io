@@ -1,0 +1,145 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>root - ScalaFX API 8.0.20-R6 - _root_</title>
+          <meta name="description" content="root - ScalaFX API 8.0.20 - R6 - root " />
+          <meta name="keywords" content="root ScalaFX API 8.0.20 R6 root " />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="lib/template.js"></script>
+      <script type="text/javascript" src="lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = 'index.html';
+            var hash = 'package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="lib/package_big.png" />
+        
+        <h1>root package</h1> <span class="permalink">
+      <a href="index.html#package" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">root</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>ScalaFX is a UI DSL written within the Scala Language that sits on top of JavaFX 2.x and and JavaFX 8.
+ This means that every ScalaFX application is also a valid Scala application.
+ By extension it supports full interoperability with Java and can run anywhere the Java Virtual Machine (JVM)
+ and JavaFX 2.0 or JavaFX 8 are supported.</p><h4> Package Structure </h4><p> ScalaFX package structure corresponds to JavaFX package structure,
+ for instance <a href="scalafx/animation/package.html" class="extype" name="scalafx.animation"><code>scalafx.animation</code></a> corresponds to <code>javafx.animation</code>.</p><h4> Example Usage </h4><p>A basic ScalaFX application is created creating an object that is an instance of <a href="scalafx/application/JFXApp.html" class="extype" name="scalafx.application.JFXApp"><code>JFXApp</code></a>.
+Following Java FX theatre metaphor, it contains a <code>stage</code> that contains a <code>scene</code>.
+A <code>stage</code> roughly corresponds to a window in a typical UI environment.
+The <code>scene</code> holds UI content presented to the user.
+In the example below, the content is a pane with a single <code>label</code> component.</p><pre><span class="kw">package</span> hello
+
+<span class="kw">import</span> scalafx.application.JFXApp
+<span class="kw">import</span> scalafx.application.JFXApp.PrimaryStage
+<span class="kw">import</span> scalafx.geometry.Insets
+<span class="kw">import</span> scalafx.scene.Scene
+<span class="kw">import</span> scalafx.scene.control.Label
+<span class="kw">import</span> scalafx.scene.layout.BorderPane
+
+<span class="kw">object</span> HelloWorld <span class="kw">extends</span> JFXApp {
+  stage = <span class="kw">new</span> PrimaryStage {
+    title = <span class="lit">"Hello"</span>
+    scene = <span class="kw">new</span> Scene {
+      root = <span class="kw">new</span> BorderPane {
+        padding = Insets(<span class="num">25</span>)
+        center = <span class="kw">new</span> Label(<span class="lit">"Hello World"</span>)
+      }
+    }
+  }
+}</pre></div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="_root_.scalafx" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="scalafx"></a>
+      <a id="scalafx:scalafx"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="scalafx/package.html"><span class="name">scalafx</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="index.html#package@scalafx" title="Permalink" target="_top">
+        <img src="lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Base package for ScalaFX classes.</p>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

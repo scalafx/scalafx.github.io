@@ -1,0 +1,510 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>SFXDelegate - ScalaFX API 8.0.20-R6 - scalafx.delegate.SFXDelegate</title>
+          <meta name="description" content="SFXDelegate - ScalaFX API 8.0.20 - R6 - scalafx.delegate.SFXDelegate" />
+          <meta name="keywords" content="SFXDelegate ScalaFX API 8.0.20 R6 scalafx.delegate.SFXDelegate" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'scalafx.delegate.SFXDelegate';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img src="../../lib/trait_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="scalafx">scalafx</a>.<a href="package.html" class="extype" name="scalafx.delegate">delegate</a></p>
+        <h1>SFXDelegate</h1> <span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SFXDelegate</span><span class="tparams">[<span name="D">+D &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Basic trait for all JavaFX classes wrapping.
+</p></div><dl class="paramcmts block"><dt class="tparam">D</dt><dd class="cmt"><p>JavaFX class to be wrapped.
+</p></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div><div class="toggleContainer block">
+            <span class="toggle">Known Subclasses</span>
+            <div class="subClasses hiddenContent"><a href="../scene/control/Accordion.html" class="extype" name="scalafx.scene.control.Accordion">Accordion</a>, <a href="../event/ActionEvent.html" class="extype" name="scalafx.event.ActionEvent">ActionEvent</a>, <a href="../scene/transform/Affine.html" class="extype" name="scalafx.scene.transform.Affine">Affine</a>, <a href="AlignmentDelegate.html" class="extype" name="scalafx.delegate.AlignmentDelegate">AlignmentDelegate</a>, <a href="AlignmentPropertyDelegate.html" class="extype" name="scalafx.delegate.AlignmentPropertyDelegate">AlignmentPropertyDelegate</a>, <a href="../scene/AmbientLight.html" class="extype" name="scalafx.scene.AmbientLight">AmbientLight</a>, <a href="../stage/PopupWindow$$AnchorLocation.html" class="extype" name="scalafx.stage.PopupWindow.AnchorLocation">AnchorLocation</a>, <a href="../scene/layout/AnchorPane.html" class="extype" name="scalafx.scene.layout.AnchorPane">AnchorPane</a>, <a href="../animation/Animation.html" class="extype" name="scalafx.animation.Animation">Animation</a>, <a href="../animation/AnimationTimer.html" class="extype" name="scalafx.animation.AnimationTimer">AnimationTimer</a>, <a href="../scene/shape/Arc.html" class="extype" name="scalafx.scene.shape.Arc">Arc</a>, <a href="../scene/shape/ArcTo.html" class="extype" name="scalafx.scene.shape.ArcTo">ArcTo</a>, <a href="../scene/shape/ArcType.html" class="extype" name="scalafx.scene.shape.ArcType">ArcType</a>, <a href="../scene/chart/AreaChart.html" class="extype" name="scalafx.scene.chart.AreaChart">AreaChart</a>, <a href="../scene/media/AudioClip.html" class="extype" name="scalafx.scene.media.AudioClip">AudioClip</a>, <a href="../scene/media/AudioEqualizer.html" class="extype" name="scalafx.scene.media.AudioEqualizer">AudioEqualizer</a>, <a href="../scene/media/AudioTrack.html" class="extype" name="scalafx.scene.media.AudioTrack">AudioTrack</a>, <a href="../scene/chart/Axis.html" class="extype" name="scalafx.scene.chart.Axis">Axis</a>, <a href="../scene/layout/Background.html" class="extype" name="scalafx.scene.layout.Background">Background</a>, <a href="../scene/layout/BackgroundFill.html" class="extype" name="scalafx.scene.layout.BackgroundFill">BackgroundFill</a>, <a href="../scene/layout/BackgroundImage.html" class="extype" name="scalafx.scene.layout.BackgroundImage">BackgroundImage</a>, <a href="../scene/layout/BackgroundPosition.html" class="extype" name="scalafx.scene.layout.BackgroundPosition">BackgroundPosition</a>, <a href="../scene/layout/BackgroundRepeat.html" class="extype" name="scalafx.scene.layout.BackgroundRepeat">BackgroundRepeat</a>, <a href="../scene/layout/BackgroundSize.html" class="extype" name="scalafx.scene.layout.BackgroundSize">BackgroundSize</a>, <a href="../scene/chart/BarChart.html" class="extype" name="scalafx.scene.chart.BarChart">BarChart</a>, <a href="../util/converter/BigDecimalStringConverter.html" class="extype" name="scalafx.util.converter.BigDecimalStringConverter">BigDecimalStringConverter</a>, <a href="../util/converter/BigIntStringConverter.html" class="extype" name="scalafx.util.converter.BigIntStringConverter">BigIntStringConverter</a>, <a href="../scene/effect/Blend.html" class="extype" name="scalafx.scene.effect.Blend">Blend</a>, <a href="../scene/effect/BlendMode.html" class="extype" name="scalafx.scene.effect.BlendMode">BlendMode</a>, <a href="../scene/effect/Bloom.html" class="extype" name="scalafx.scene.effect.Bloom">Bloom</a>, <a href="../scene/effect/BlurType.html" class="extype" name="scalafx.scene.effect.BlurType">BlurType</a>, <a href="../beans/binding/BooleanBinding.html" class="extype" name="scalafx.beans.binding.BooleanBinding">BooleanBinding</a>, <a href="../beans/property/BooleanProperty.html" class="extype" name="scalafx.beans.property.BooleanProperty">BooleanProperty</a>, <a href="../util/converter/BooleanStringConverter.html" class="extype" name="scalafx.util.converter.BooleanStringConverter">BooleanStringConverter</a>, <a href="../scene/layout/Border.html" class="extype" name="scalafx.scene.layout.Border">Border</a>, <a href="../scene/layout/BorderImage.html" class="extype" name="scalafx.scene.layout.BorderImage">BorderImage</a>, <a href="../scene/layout/BorderPane.html" class="extype" name="scalafx.scene.layout.BorderPane">BorderPane</a>, <a href="../scene/layout/BorderRepeat.html" class="extype" name="scalafx.scene.layout.BorderRepeat">BorderRepeat</a>, <a href="../scene/layout/BorderStroke.html" class="extype" name="scalafx.scene.layout.BorderStroke">BorderStroke</a>, <a href="../scene/layout/BorderStrokeStyle.html" class="extype" name="scalafx.scene.layout.BorderStrokeStyle">BorderStrokeStyle</a>, <a href="../scene/layout/BorderWidths.html" class="extype" name="scalafx.scene.layout.BorderWidths">BorderWidths</a>, <a href="../geometry/BoundingBox.html" class="extype" name="scalafx.geometry.BoundingBox">BoundingBox</a>, <a href="../geometry/Bounds.html" class="extype" name="scalafx.geometry.Bounds">Bounds</a>, <a href="../scene/shape/Box.html" class="extype" name="scalafx.scene.shape.Box">Box</a>, <a href="../scene/effect/BoxBlur.html" class="extype" name="scalafx.scene.effect.BoxBlur">BoxBlur</a>, <a href="../scene/chart/BubbleChart.html" class="extype" name="scalafx.scene.chart.BubbleChart">BubbleChart</a>, <a href="../scene/control/Button.html" class="extype" name="scalafx.scene.control.Button">Button</a>, <a href="../scene/control/ButtonBase.html" class="extype" name="scalafx.scene.control.ButtonBase">ButtonBase</a>, <a href="../util/converter/ByteStringConverter.html" class="extype" name="scalafx.util.converter.ByteStringConverter">ByteStringConverter</a>, <a href="../scene/CacheHint.html" class="extype" name="scalafx.scene.CacheHint">CacheHint</a>, <a href="../scene/Camera.html" class="extype" name="scalafx.scene.Camera">Camera</a>, <a href="../scene/canvas/Canvas.html" class="extype" name="scalafx.scene.canvas.Canvas">Canvas</a>, <a href="../scene/chart/CategoryAxis.html" class="extype" name="scalafx.scene.chart.CategoryAxis">CategoryAxis</a>, <a href="../scene/control/Cell.html" class="extype" name="scalafx.scene.control.Cell">Cell</a>, <a href="../scene/control/TableColumn$$CellDataFeatures.html" class="extype" name="scalafx.scene.control.TableColumn.CellDataFeatures">CellDataFeatures</a>, <a href="../scene/control/TableColumn$$CellEditEvent.html" class="extype" name="scalafx.scene.control.TableColumn.CellEditEvent">CellEditEvent</a>, <a href="../util/converter/CharStringConverter.html" class="extype" name="scalafx.util.converter.CharStringConverter">CharStringConverter</a>, <a href="../scene/chart/Chart.html" class="extype" name="scalafx.scene.chart.Chart">Chart</a>, <a href="../scene/control/CheckBox.html" class="extype" name="scalafx.scene.control.CheckBox">CheckBox</a>, <a href="../scene/control/cell/CheckBoxListCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxListCell">CheckBoxListCell</a>, <a href="../scene/control/cell/CheckBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTableCell">CheckBoxTableCell</a>, <a href="../scene/control/cell/CheckBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTreeCell">CheckBoxTreeCell</a>, <a href="../scene/control/cell/CheckBoxTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTreeTableCell">CheckBoxTreeTableCell</a>, <a href="../scene/control/CheckMenuItem.html" class="extype" name="scalafx.scene.control.CheckMenuItem">CheckMenuItem</a>, <a href="../scene/control/ChoiceBox.html" class="extype" name="scalafx.scene.control.ChoiceBox">ChoiceBox</a>, <a href="../scene/control/cell/ChoiceBoxListCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxListCell">ChoiceBoxListCell</a>, <a href="../scene/control/cell/ChoiceBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTableCell">ChoiceBoxTableCell</a>, <a href="../scene/control/cell/ChoiceBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTreeCell">ChoiceBoxTreeCell</a>, <a href="../scene/control/cell/ChoiceBoxTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTreeTableCell">ChoiceBoxTreeTableCell</a>, <a href="../scene/shape/Circle.html" class="extype" name="scalafx.scene.shape.Circle">Circle</a>, <a href="../scene/input/Clipboard.html" class="extype" name="scalafx.scene.input.Clipboard">Clipboard</a>, <a href="../scene/input/ClipboardContent.html" class="extype" name="scalafx.scene.input.ClipboardContent">ClipboardContent</a>, <a href="../scene/shape/ClosePath.html" class="extype" name="scalafx.scene.shape.ClosePath">ClosePath</a>, <a href="../print/Collation.html" class="extype" name="scalafx.print.Collation">Collation</a>, <a href="../scene/paint/Color.html" class="extype" name="scalafx.scene.paint.Color">Color</a>, <a href="../scene/effect/ColorAdjust.html" class="extype" name="scalafx.scene.effect.ColorAdjust">ColorAdjust</a>, <a href="../scene/effect/package$$ColorDelegate.html" class="extype" name="scalafx.scene.effect.ColorDelegate">ColorDelegate</a>, <a href="../scene/effect/ColorInput.html" class="extype" name="scalafx.scene.effect.ColorInput">ColorInput</a>, <a href="../scene/control/ColorPicker.html" class="extype" name="scalafx.scene.control.ColorPicker">ColorPicker</a>, <a href="../scene/layout/ColumnConstraints.html" class="extype" name="scalafx.scene.layout.ColumnConstraints">ColumnConstraints</a>, <a href="../scene/control/ComboBox.html" class="extype" name="scalafx.scene.control.ComboBox">ComboBox</a>, <a href="../scene/control/ComboBoxBase.html" class="extype" name="scalafx.scene.control.ComboBoxBase">ComboBoxBase</a>, <a href="../scene/control/cell/package$$ComboBoxEditableCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxEditableCell">ComboBoxEditableCell</a>, <a href="../scene/control/cell/ComboBoxListCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxListCell">ComboBoxListCell</a>, <a href="../scene/control/cell/ComboBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTableCell">ComboBoxTableCell</a>, <a href="../scene/control/cell/ComboBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTreeCell">ComboBoxTreeCell</a>, <a href="../scene/control/cell/ComboBoxTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTreeTableCell">ComboBoxTreeTableCell</a>, <a href="../application/ConditionalFeature.html" class="extype" name="scalafx.application.ConditionalFeature">ConditionalFeature</a>, <a href="../scene/layout/ConstraintsBase.html" class="extype" name="scalafx.scene.layout.ConstraintsBase">ConstraintsBase</a>, <a href="../scene/control/ContentDisplay.html" class="extype" name="scalafx.scene.control.ContentDisplay">ContentDisplay</a>, <a href="../scene/control/ContextMenu.html" class="extype" name="scalafx.scene.control.ContextMenu">ContextMenu</a>, <a href="../scene/input/ContextMenuEvent.html" class="extype" name="scalafx.scene.input.ContextMenuEvent">ContextMenuEvent</a>, <a href="../scene/control/Control.html" class="extype" name="scalafx.scene.control.Control">Control</a>, <a href="../scene/control/cell/package$$ConvertableCell.html" class="extype" name="scalafx.scene.control.cell.ConvertableCell">ConvertableCell</a>, <a href="../scene/layout/CornerRadii.html" class="extype" name="scalafx.scene.layout.CornerRadii">CornerRadii</a>, <a href="../scene/shape/CubicCurve.html" class="extype" name="scalafx.scene.shape.CubicCurve">CubicCurve</a>, <a href="../scene/shape/CubicCurveTo.html" class="extype" name="scalafx.scene.shape.CubicCurveTo">CubicCurveTo</a>, <a href="../scene/shape/CullFace.html" class="extype" name="scalafx.scene.shape.CullFace">CullFace</a>, <a href="../scene/Cursor.html" class="extype" name="scalafx.scene.Cursor">Cursor</a>, <a href="../scene/paint/CycleMethod.html" class="extype" name="scalafx.scene.paint.CycleMethod">CycleMethod</a>, <a href="../scene/shape/Cylinder.html" class="extype" name="scalafx.scene.shape.Cylinder">Cylinder</a>, <a href="../scene/chart/XYChart$$Data.html" class="extype" name="scalafx.scene.chart.XYChart.Data">Data</a>, <a href="../scene/chart/PieChart$$Data.html" class="extype" name="scalafx.scene.chart.PieChart.Data">Data</a>, <a href="../scene/input/DataFormat.html" class="extype" name="scalafx.scene.input.DataFormat">DataFormat</a>, <a href="../scene/control/DateCell.html" class="extype" name="scalafx.scene.control.DateCell">DateCell</a>, <a href="../scene/control/DatePicker.html" class="extype" name="scalafx.scene.control.DatePicker">DatePicker</a>, <a href="../scene/chart/NumberAxis$$DefaultFormatter.html" class="extype" name="scalafx.scene.chart.NumberAxis.DefaultFormatter">DefaultFormatter</a>, <a href="../util/converter/DefaultStringConverter.html" class="extype" name="scalafx.util.converter.DefaultStringConverter">DefaultStringConverter</a>, <a href="../scene/DepthTest.html" class="extype" name="scalafx.scene.DepthTest">DepthTest</a>, <a href="../geometry/Dimension2D.html" class="extype" name="scalafx.geometry.Dimension2D">Dimension2D</a>, <a href="DimensionDelegate.html" class="extype" name="scalafx.delegate.DimensionDelegate">DimensionDelegate</a>, <a href="../stage/DirectoryChooser.html" class="extype" name="scalafx.stage.DirectoryChooser">DirectoryChooser</a>, <a href="../scene/effect/DisplacementMap.html" class="extype" name="scalafx.scene.effect.DisplacementMap">DisplacementMap</a>, <a href="../scene/effect/Light$$Distant.html" class="extype" name="scalafx.scene.effect.Light.Distant">Distant</a>, <a href="../scene/control/SplitPane$$Divider.html" class="extype" name="scalafx.scene.control.SplitPane.Divider">Divider</a>, <a href="../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a>, <a href="../util/converter/DoubleStringConverter.html" class="extype" name="scalafx.util.converter.DoubleStringConverter">DoubleStringConverter</a>, <a href="../scene/input/DragEvent.html" class="extype" name="scalafx.scene.input.DragEvent">DragEvent</a>, <a href="../scene/input/Dragboard.html" class="extype" name="scalafx.scene.input.Dragboard">Dragboard</a>, <a href="../scene/shape/DrawMode.html" class="extype" name="scalafx.scene.shape.DrawMode">DrawMode</a>, <a href="../scene/effect/DropShadow.html" class="extype" name="scalafx.scene.effect.DropShadow">DropShadow</a>, <a href="../util/Duration.html" class="extype" name="scalafx.util.Duration">Duration</a>, <a href="../scene/control/TreeView$$EditEvent.html" class="extype" name="scalafx.scene.control.TreeView.EditEvent">EditEvent</a>, <a href="../scene/control/ListView$$EditEvent.html" class="extype" name="scalafx.scene.control.ListView.EditEvent">EditEvent</a>, <a href="../scene/effect/Effect.html" class="extype" name="scalafx.scene.effect.Effect">Effect</a>, <a href="../scene/shape/Ellipse.html" class="extype" name="scalafx.scene.shape.Ellipse">Ellipse</a>, <a href="../scene/media/EqualizerBand.html" class="extype" name="scalafx.scene.media.EqualizerBand">EqualizerBand</a>, <a href="../event/Event.html" class="extype" name="scalafx.event.Event">Event</a>, <a href="../event/EventType.html" class="extype" name="scalafx.event.EventType">EventType</a>, <a href="../stage/FileChooser$$ExtensionFilter.html" class="extype" name="scalafx.stage.FileChooser.ExtensionFilter">ExtensionFilter</a>, <a href="../animation/FadeTransition.html" class="extype" name="scalafx.animation.FadeTransition">FadeTransition</a>, <a href="../stage/FileChooser.html" class="extype" name="scalafx.stage.FileChooser">FileChooser</a>, <a href="../scene/shape/FillRule.html" class="extype" name="scalafx.scene.shape.FillRule">FillRule</a>, <a href="../animation/FillTransition.html" class="extype" name="scalafx.animation.FillTransition">FillTransition</a>, <a href="FireDelegate.html" class="extype" name="scalafx.delegate.FireDelegate">FireDelegate</a>, <a href="../scene/effect/FloatMap.html" class="extype" name="scalafx.scene.effect.FloatMap">FloatMap</a>, <a href="../beans/property/FloatProperty.html" class="extype" name="scalafx.beans.property.FloatProperty">FloatProperty</a>, <a href="../util/converter/FloatStringConverter.html" class="extype" name="scalafx.util.converter.FloatStringConverter">FloatStringConverter</a>, <a href="../scene/layout/FlowPane.html" class="extype" name="scalafx.scene.layout.FlowPane">FlowPane</a>, <a href="../scene/control/FocusModel.html" class="extype" name="scalafx.scene.control.FocusModel">FocusModel</a>, <a href="../scene/text/Font.html" class="extype" name="scalafx.scene.text.Font">Font</a>, <a href="../scene/text/FontPosture.html" class="extype" name="scalafx.scene.text.FontPosture">FontPosture</a>, <a href="../scene/text/FontSmoothingType.html" class="extype" name="scalafx.scene.text.FontSmoothingType">FontSmoothingType</a>, <a href="../scene/text/FontWeight.html" class="extype" name="scalafx.scene.text.FontWeight">FontWeight</a>, <a href="../scene/effect/GaussianBlur.html" class="extype" name="scalafx.scene.effect.GaussianBlur">GaussianBlur</a>, <a href="../scene/input/GestureEvent.html" class="extype" name="scalafx.scene.input.GestureEvent">GestureEvent</a>, <a href="../scene/effect/Glow.html" class="extype" name="scalafx.scene.effect.Glow">Glow</a>, <a href="../scene/canvas/GraphicsContext.html" class="extype" name="scalafx.scene.canvas.GraphicsContext">GraphicsContext</a>, <a href="../scene/layout/GridPane.html" class="extype" name="scalafx.scene.layout.GridPane">GridPane</a>, <a href="../scene/Group.html" class="extype" name="scalafx.scene.Group">Group</a>, <a href="../scene/layout/HBox.html" class="extype" name="scalafx.scene.layout.HBox">HBox</a>, <a href="../scene/shape/HLineTo.html" class="extype" name="scalafx.scene.shape.HLineTo">HLineTo</a>, <a href="../geometry/HPos.html" class="extype" name="scalafx.geometry.HPos">HPos</a>, <a href="../scene/web/HTMLEditor.html" class="extype" name="scalafx.scene.web.HTMLEditor">HTMLEditor</a>, <a href="../geometry/HorizontalDirection.html" class="extype" name="scalafx.geometry.HorizontalDirection">HorizontalDirection</a>, <a href="../scene/input/ScrollEvent$$HorizontalTextScrollUnits.html" class="extype" name="scalafx.scene.input.ScrollEvent.HorizontalTextScrollUnits">HorizontalTextScrollUnits</a>, <a href="../scene/control/Hyperlink.html" class="extype" name="scalafx.scene.control.Hyperlink">Hyperlink</a>, <a href="../scene/image/Image.html" class="extype" name="scalafx.scene.image.Image">Image</a>, <a href="../scene/ImageCursor.html" class="extype" name="scalafx.scene.ImageCursor">ImageCursor</a>, <a href="../scene/effect/ImageInput.html" class="extype" name="scalafx.scene.effect.ImageInput">ImageInput</a>, <a href="../scene/image/ImageView.html" class="extype" name="scalafx.scene.image.ImageView">ImageView</a>, <a href="../scene/control/IndexRange.html" class="extype" name="scalafx.scene.control.IndexRange">IndexRange</a>, <a href="../scene/control/IndexedCell.html" class="extype" name="scalafx.scene.control.IndexedCell">IndexedCell</a>, <a href="../scene/effect/InnerShadow.html" class="extype" name="scalafx.scene.effect.InnerShadow">InnerShadow</a>, <a href="../scene/effect/package$$InputDelegate.html" class="extype" name="scalafx.scene.effect.InputDelegate">InputDelegate</a>, <a href="../scene/input/InputEvent.html" class="extype" name="scalafx.scene.input.InputEvent">InputEvent</a>, <a href="../scene/input/InputMethodEvent.html" class="extype" name="scalafx.scene.input.InputMethodEvent">InputMethodEvent</a>, <a href="../scene/input/InputMethodHighlight.html" class="extype" name="scalafx.scene.input.InputMethodHighlight">InputMethodHighlight</a>, <a href="../scene/input/InputMethodTextRun.html" class="extype" name="scalafx.scene.input.InputMethodTextRun">InputMethodTextRun</a>, <a href="../geometry/Insets.html" class="extype" name="scalafx.geometry.Insets">Insets</a>, <a href="../util/converter/IntStringConverter.html" class="extype" name="scalafx.util.converter.IntStringConverter">IntStringConverter</a>, <a href="../beans/property/IntegerProperty.html" class="extype" name="scalafx.beans.property.IntegerProperty">IntegerProperty</a>, <a href="../scene/control/cell/package$$ItemableCell.html" class="extype" name="scalafx.scene.control.cell.ItemableCell">ItemableCell</a>, <a href="../print/JobSettings.html" class="extype" name="scalafx.print.JobSettings">JobSettings</a>, <a href="../print/PrinterJob$$JobStatus.html" class="extype" name="scalafx.print.PrinterJob.JobStatus">JobStatus</a>, <a href="../scene/input/KeyCharacterCombination.html" class="extype" name="scalafx.scene.input.KeyCharacterCombination">KeyCharacterCombination</a>, <a href="../scene/input/KeyCode.html" class="extype" name="scalafx.scene.input.KeyCode">KeyCode</a>, <a href="../scene/input/KeyCodeCombination.html" class="extype" name="scalafx.scene.input.KeyCodeCombination">KeyCodeCombination</a>, <a href="../scene/input/KeyCombination.html" class="extype" name="scalafx.scene.input.KeyCombination">KeyCombination</a>, <a href="../scene/input/KeyEvent.html" class="extype" name="scalafx.scene.input.KeyEvent">KeyEvent</a>, <a href="../animation/KeyFrame.html" class="extype" name="scalafx.animation.KeyFrame">KeyFrame</a>, <a href="../animation/KeyValue.html" class="extype" name="scalafx.animation.KeyValue">KeyValue</a>, <a href="../scene/control/Label.html" class="extype" name="scalafx.scene.control.Label">Label</a>, <a href="../scene/control/Labeled.html" class="extype" name="scalafx.scene.control.Labeled">Labeled</a>, <a href="../scene/effect/Light.html" class="extype" name="scalafx.scene.effect.Light">Light</a>, <a href="../scene/LightBase.html" class="extype" name="scalafx.scene.LightBase">LightBase</a>, <a href="../scene/effect/Lighting.html" class="extype" name="scalafx.scene.effect.Lighting">Lighting</a>, <a href="../scene/shape/Line.html" class="extype" name="scalafx.scene.shape.Line">Line</a>, <a href="../scene/chart/LineChart.html" class="extype" name="scalafx.scene.chart.LineChart">LineChart</a>, <a href="../scene/shape/LineTo.html" class="extype" name="scalafx.scene.shape.LineTo">LineTo</a>, <a href="../scene/paint/LinearGradient.html" class="extype" name="scalafx.scene.paint.LinearGradient">LinearGradient</a>, <a href="../scene/control/ListCell.html" class="extype" name="scalafx.scene.control.ListCell">ListCell</a>, <a href="../scene/control/ListView.html" class="extype" name="scalafx.scene.control.ListView">ListView</a>, <a href="../beans/property/LongProperty.html" class="extype" name="scalafx.beans.property.LongProperty">LongProperty</a>, <a href="../util/converter/LongStringConverter.html" class="extype" name="scalafx.util.converter.LongStringConverter">LongStringConverter</a>, <a href="../print/Printer$$MarginType.html" class="extype" name="scalafx.print.Printer.MarginType">MarginType</a>, <a href="../scene/paint/Material.html" class="extype" name="scalafx.scene.paint.Material">Material</a>, <a href="../scene/transform/MatrixType.html" class="extype" name="scalafx.scene.transform.MatrixType">MatrixType</a>, <a href="../scene/media/Media.html" class="extype" name="scalafx.scene.media.Media">Media</a>, <a href="../scene/media/MediaErrorEvent.html" class="extype" name="scalafx.scene.media.MediaErrorEvent">MediaErrorEvent</a>, <a href="../scene/media/MediaException.html" class="extype" name="scalafx.scene.media.MediaException">MediaException</a>, <a href="../scene/media/MediaMarkerEvent.html" class="extype" name="scalafx.scene.media.MediaMarkerEvent">MediaMarkerEvent</a>, <a href="../scene/media/MediaPlayer.html" class="extype" name="scalafx.scene.media.MediaPlayer">MediaPlayer</a>, <a href="../scene/media/MediaView.html" class="extype" name="scalafx.scene.media.MediaView">MediaView</a>, <a href="../scene/control/Menu.html" class="extype" name="scalafx.scene.control.Menu">Menu</a>, <a href="../scene/control/MenuBar.html" class="extype" name="scalafx.scene.control.MenuBar">MenuBar</a>, <a href="../scene/control/MenuButton.html" class="extype" name="scalafx.scene.control.MenuButton">MenuButton</a>, <a href="../scene/control/MenuItem.html" class="extype" name="scalafx.scene.control.MenuItem">MenuItem</a>, <a href="../scene/shape/Mesh.html" class="extype" name="scalafx.scene.shape.Mesh">Mesh</a>, <a href="../scene/shape/MeshView.html" class="extype" name="scalafx.scene.shape.MeshView">MeshView</a>, <a href="../scene/input/Mnemonic.html" class="extype" name="scalafx.scene.input.Mnemonic">Mnemonic</a>, <a href="../stage/Modality.html" class="extype" name="scalafx.stage.Modality">Modality</a>, <a href="../scene/input/KeyCombination$$Modifier.html" class="extype" name="scalafx.scene.input.KeyCombination.Modifier">Modifier</a>, <a href="../scene/input/KeyCombination$$ModifierValue.html" class="extype" name="scalafx.scene.input.KeyCombination.ModifierValue">ModifierValue</a>, <a href="../scene/effect/MotionBlur.html" class="extype" name="scalafx.scene.effect.MotionBlur">MotionBlur</a>, <a href="../scene/input/MouseButton.html" class="extype" name="scalafx.scene.input.MouseButton">MouseButton</a>, <a href="../scene/input/MouseDragEvent.html" class="extype" name="scalafx.scene.input.MouseDragEvent">MouseDragEvent</a>, <a href="../scene/input/MouseEvent.html" class="extype" name="scalafx.scene.input.MouseEvent">MouseEvent</a>, <a href="../scene/shape/MoveTo.html" class="extype" name="scalafx.scene.shape.MoveTo">MoveTo</a>, <a href="../scene/control/MultipleSelectionModel.html" class="extype" name="scalafx.scene.control.MultipleSelectionModel">MultipleSelectionModel</a>, <a href="../scene/Node.html" class="extype" name="scalafx.scene.Node">Node</a>, <a href="../geometry/NodeOrientation.html" class="extype" name="scalafx.geometry.NodeOrientation">NodeOrientation</a>, <a href="../scene/transform/NonInvertibleTransformException.html" class="extype" name="scalafx.scene.transform.NonInvertibleTransformException">NonInvertibleTransformException</a>, <a href="../scene/chart/NumberAxis.html" class="extype" name="scalafx.scene.chart.NumberAxis">NumberAxis</a>, <a href="../beans/binding/NumberBinding.html" class="extype" name="scalafx.beans.binding.NumberBinding">NumberBinding</a>, <a href="../beans/binding/ObjectBinding.html" class="extype" name="scalafx.beans.binding.ObjectBinding">ObjectBinding</a>, <a href="../beans/property/ObjectProperty.html" class="extype" name="scalafx.beans.property.ObjectProperty">ObjectProperty</a>, <a href="../beans/Observable.html" class="extype" name="scalafx.beans.Observable">Observable</a>, <a href="../collections/ObservableArray.html" class="extype" name="scalafx.collections.ObservableArray">ObservableArray</a>, <a href="../collections/ObservableBuffer.html" class="extype" name="scalafx.collections.ObservableBuffer">ObservableBuffer</a>, <a href="../collections/ObservableFloatArray.html" class="extype" name="scalafx.collections.ObservableFloatArray">ObservableFloatArray</a>, <a href="../collections/ObservableHashMap.html" class="extype" name="scalafx.collections.ObservableHashMap">ObservableHashMap</a>, <a href="../collections/ObservableHashSet.html" class="extype" name="scalafx.collections.ObservableHashSet">ObservableHashSet</a>, <a href="../collections/ObservableIntegerArray.html" class="extype" name="scalafx.collections.ObservableIntegerArray">ObservableIntegerArray</a>, <a href="../collections/ObservableMap.html" class="extype" name="scalafx.collections.ObservableMap">ObservableMap</a>, <a href="../collections/ObservableSet.html" class="extype" name="scalafx.collections.ObservableSet">ObservableSet</a>, <a href="../beans/value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>, <a href="../geometry/Orientation.html" class="extype" name="scalafx.geometry.Orientation">Orientation</a>, <a href="../animation/PathTransition$$OrientationType.html" class="extype" name="scalafx.animation.PathTransition.OrientationType">OrientationType</a>, <a href="../scene/control/OverrunStyle.html" class="extype" name="scalafx.scene.control.OverrunStyle">OverrunStyle</a>, <a href="../print/PageLayout.html" class="extype" name="scalafx.print.PageLayout">PageLayout</a>, <a href="../print/PageOrientation.html" class="extype" name="scalafx.print.PageOrientation">PageOrientation</a>, <a href="../print/PageRange.html" class="extype" name="scalafx.print.PageRange">PageRange</a>, <a href="../scene/control/Pagination.html" class="extype" name="scalafx.scene.control.Pagination">Pagination</a>, <a href="../scene/paint/Paint.html" class="extype" name="scalafx.scene.paint.Paint">Paint</a>, <a href="../scene/layout/Pane.html" class="extype" name="scalafx.scene.layout.Pane">Pane</a>, <a href="../print/Paper.html" class="extype" name="scalafx.print.Paper">Paper</a>, <a href="../print/PaperSource.html" class="extype" name="scalafx.print.PaperSource">PaperSource</a>, <a href="../scene/ParallelCamera.html" class="extype" name="scalafx.scene.ParallelCamera">ParallelCamera</a>, <a href="../animation/ParallelTransition.html" class="extype" name="scalafx.animation.ParallelTransition">ParallelTransition</a>, <a href="../application/JFXApp$$Parameters.html" class="extype" name="scalafx.application.JFXApp.Parameters">Parameters</a>, <a href="../scene/Parent.html" class="extype" name="scalafx.scene.Parent">Parent</a>, <a href="../scene/control/PasswordField.html" class="extype" name="scalafx.scene.control.PasswordField">PasswordField</a>, <a href="../scene/shape/Path.html" class="extype" name="scalafx.scene.shape.Path">Path</a>, <a href="../scene/shape/PathElement.html" class="extype" name="scalafx.scene.shape.PathElement">PathElement</a>, <a href="../animation/PathTransition.html" class="extype" name="scalafx.animation.PathTransition">PathTransition</a>, <a href="../animation/PauseTransition.html" class="extype" name="scalafx.animation.PauseTransition">PauseTransition</a>, <a href="../scene/PerspectiveCamera.html" class="extype" name="scalafx.scene.PerspectiveCamera">PerspectiveCamera</a>, <a href="../scene/effect/PerspectiveTransform.html" class="extype" name="scalafx.scene.effect.PerspectiveTransform">PerspectiveTransform</a>, <a href="../scene/paint/PhongMaterial.html" class="extype" name="scalafx.scene.paint.PhongMaterial">PhongMaterial</a>, <a href="../scene/input/PickResult.html" class="extype" name="scalafx.scene.input.PickResult">PickResult</a>, <a href="../scene/chart/PieChart.html" class="extype" name="scalafx.scene.chart.PieChart">PieChart</a>, <a href="../scene/image/PixelFormat.html" class="extype" name="scalafx.scene.image.PixelFormat">PixelFormat</a>, <a href="../scene/image/PixelReader.html" class="extype" name="scalafx.scene.image.PixelReader">PixelReader</a>, <a href="../scene/image/PixelWriter.html" class="extype" name="scalafx.scene.image.PixelWriter">PixelWriter</a>, <a href="../scene/effect/Light$$Point.html" class="extype" name="scalafx.scene.effect.Light.Point">Point</a>, <a href="../geometry/Point2D.html" class="extype" name="scalafx.geometry.Point2D">Point2D</a>, <a href="../geometry/Point3D.html" class="extype" name="scalafx.geometry.Point3D">Point3D</a>, <a href="../scene/PointLight.html" class="extype" name="scalafx.scene.PointLight">PointLight</a>, <a href="../scene/shape/Polygon.html" class="extype" name="scalafx.scene.shape.Polygon">Polygon</a>, <a href="../scene/shape/Polyline.html" class="extype" name="scalafx.scene.shape.Polyline">Polyline</a>, <a href="../stage/Popup.html" class="extype" name="scalafx.stage.Popup">Popup</a>, <a href="../scene/control/PopupControl.html" class="extype" name="scalafx.scene.control.PopupControl">PopupControl</a>, <a href="../scene/web/PopupFeatures.html" class="extype" name="scalafx.scene.web.PopupFeatures">PopupFeatures</a>, <a href="../stage/PopupWindow.html" class="extype" name="scalafx.stage.PopupWindow">PopupWindow</a>, <a href="../geometry/Pos.html" class="extype" name="scalafx.geometry.Pos">Pos</a>, <a href="PositionDelegate.html" class="extype" name="scalafx.delegate.PositionDelegate">PositionDelegate</a>, <a href="../application/JFXApp$$PrimaryStage.html" class="extype" name="scalafx.application.JFXApp.PrimaryStage">PrimaryStage</a>, <a href="../print/PrintColor.html" class="extype" name="scalafx.print.PrintColor">PrintColor</a>, <a href="../print/PrintQuality.html" class="extype" name="scalafx.print.PrintQuality">PrintQuality</a>, <a href="../print/PrintResolution.html" class="extype" name="scalafx.print.PrintResolution">PrintResolution</a>, <a href="../print/PrintSides.html" class="extype" name="scalafx.print.PrintSides">PrintSides</a>, <a href="../print/Printer.html" class="extype" name="scalafx.print.Printer">Printer</a>, <a href="../print/PrinterAttributes.html" class="extype" name="scalafx.print.PrinterAttributes">PrinterAttributes</a>, <a href="../print/PrinterJob.html" class="extype" name="scalafx.print.PrinterJob">PrinterJob</a>, <a href="../scene/layout/Priority.html" class="extype" name="scalafx.scene.layout.Priority">Priority</a>, <a href="../scene/control/ProgressBar.html" class="extype" name="scalafx.scene.control.ProgressBar">ProgressBar</a>, <a href="../scene/control/cell/ProgressBarTableCell.html" class="extype" name="scalafx.scene.control.cell.ProgressBarTableCell">ProgressBarTableCell</a>, <a href="../scene/control/ProgressIndicator.html" class="extype" name="scalafx.scene.control.ProgressIndicator">ProgressIndicator</a>, <a href="../scene/web/PromptData.html" class="extype" name="scalafx.scene.web.PromptData">PromptData</a>, <a href="../beans/property/Property.html" class="extype" name="scalafx.beans.property.Property">Property</a>, <a href="../css/PseudoClass.html" class="extype" name="scalafx.css.PseudoClass">PseudoClass</a>, <a href="../scene/shape/QuadCurve.html" class="extype" name="scalafx.scene.shape.QuadCurve">QuadCurve</a>, <a href="../scene/shape/QuadCurveTo.html" class="extype" name="scalafx.scene.shape.QuadCurveTo">QuadCurveTo</a>, <a href="../scene/paint/RadialGradient.html" class="extype" name="scalafx.scene.paint.RadialGradient">RadialGradient</a>, <a href="../scene/control/RadioButton.html" class="extype" name="scalafx.scene.control.RadioButton">RadioButton</a>, <a href="../scene/control/RadioMenuItem.html" class="extype" name="scalafx.scene.control.RadioMenuItem">RadioMenuItem</a>, <a href="../beans/property/ReadOnlyBooleanProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyBooleanProperty">ReadOnlyBooleanProperty</a>, <a href="../beans/property/ReadOnlyBooleanWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyBooleanWrapper">ReadOnlyBooleanWrapper</a>, <a href="../beans/property/ReadOnlyDoubleProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyDoubleProperty">ReadOnlyDoubleProperty</a>, <a href="../beans/property/ReadOnlyDoubleWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyDoubleWrapper">ReadOnlyDoubleWrapper</a>, <a href="../beans/property/ReadOnlyFloatProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyFloatProperty">ReadOnlyFloatProperty</a>, <a href="../beans/property/ReadOnlyFloatWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyFloatWrapper">ReadOnlyFloatWrapper</a>, <a href="../beans/property/ReadOnlyIntegerProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyIntegerProperty">ReadOnlyIntegerProperty</a>, <a href="../beans/property/ReadOnlyIntegerWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyIntegerWrapper">ReadOnlyIntegerWrapper</a>, <a href="../beans/property/ReadOnlyLongProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyLongProperty">ReadOnlyLongProperty</a>, <a href="../beans/property/ReadOnlyLongWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyLongWrapper">ReadOnlyLongWrapper</a>, <a href="../beans/property/ReadOnlyObjectProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyObjectProperty">ReadOnlyObjectProperty</a>, <a href="../beans/property/ReadOnlyObjectWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyObjectWrapper">ReadOnlyObjectWrapper</a>, <a href="../beans/property/ReadOnlyProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyProperty">ReadOnlyProperty</a>, <a href="../beans/property/ReadOnlyStringProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyStringProperty">ReadOnlyStringProperty</a>, <a href="../beans/property/ReadOnlyStringWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyStringWrapper">ReadOnlyStringWrapper</a>, <a href="../scene/shape/Rectangle.html" class="extype" name="scalafx.scene.shape.Rectangle">Rectangle</a>, <a href="../geometry/Rectangle2D.html" class="extype" name="scalafx.geometry.Rectangle2D">Rectangle2D</a>, <a href="../scene/effect/Reflection.html" class="extype" name="scalafx.scene.effect.Reflection">Reflection</a>, <a href="../scene/layout/Region.html" class="extype" name="scalafx.scene.layout.Region">Region</a>, <a href="../scene/control/TableView$$ResizeFeatures.html" class="extype" name="scalafx.scene.control.TableView.ResizeFeatures">ResizeFeatures</a>, <a href="../scene/control/ResizeFeaturesBase.html" class="extype" name="scalafx.scene.control.ResizeFeaturesBase">ResizeFeaturesBase</a>, <a href="../scene/transform/Rotate.html" class="extype" name="scalafx.scene.transform.Rotate">Rotate</a>, <a href="../scene/input/RotateEvent.html" class="extype" name="scalafx.scene.input.RotateEvent">RotateEvent</a>, <a href="../animation/RotateTransition.html" class="extype" name="scalafx.animation.RotateTransition">RotateTransition</a>, <a href="../scene/layout/RowConstraints.html" class="extype" name="scalafx.scene.layout.RowConstraints">RowConstraints</a>, <a href="SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">SFXEnumDelegate</a>, <a href="../embed/swing/SFXPanel.html" class="extype" name="scalafx.embed.swing.SFXPanel">SFXPanel</a>, <a href="../scene/shape/SVGPath.html" class="extype" name="scalafx.scene.shape.SVGPath">SVGPath</a>, <a href="../scene/transform/Scale.html" class="extype" name="scalafx.scene.transform.Scale">Scale</a>, <a href="../animation/ScaleTransition.html" class="extype" name="scalafx.animation.ScaleTransition">ScaleTransition</a>, <a href="../scene/chart/ScatterChart.html" class="extype" name="scalafx.scene.chart.ScatterChart">ScatterChart</a>, <a href="../scene/Scene.html" class="extype" name="scalafx.scene.Scene">Scene</a>, <a href="../scene/SceneAntialiasing.html" class="extype" name="scalafx.scene.SceneAntialiasing">SceneAntialiasing</a>, <a href="../scene/SceneProperty.html" class="extype" name="scalafx.scene.SceneProperty">SceneProperty</a>, <a href="../stage/Screen.html" class="extype" name="scalafx.stage.Screen">Screen</a>, <a href="../scene/control/ScrollBar.html" class="extype" name="scalafx.scene.control.ScrollBar">ScrollBar</a>, <a href="../scene/control/ScrollPane$$ScrollBarPolicy.html" class="extype" name="scalafx.scene.control.ScrollPane.ScrollBarPolicy">ScrollBarPolicy</a>, <a href="../scene/input/ScrollEvent.html" class="extype" name="scalafx.scene.input.ScrollEvent">ScrollEvent</a>, <a href="../scene/control/ScrollPane.html" class="extype" name="scalafx.scene.control.ScrollPane">ScrollPane</a>, <a href="../scene/control/ScrollToEvent.html" class="extype" name="scalafx.scene.control.ScrollToEvent">ScrollToEvent</a>, <a href="../scene/control/SelectionMode.html" class="extype" name="scalafx.scene.control.SelectionMode">SelectionMode</a>, <a href="../scene/control/SelectionModel.html" class="extype" name="scalafx.scene.control.SelectionModel">SelectionModel</a>, <a href="../scene/control/Separator.html" class="extype" name="scalafx.scene.control.Separator">Separator</a>, <a href="../scene/effect/SepiaTone.html" class="extype" name="scalafx.scene.effect.SepiaTone">SepiaTone</a>, <a href="../animation/SequentialTransition.html" class="extype" name="scalafx.animation.SequentialTransition">SequentialTransition</a>, <a href="../scene/chart/XYChart$$Series.html" class="extype" name="scalafx.scene.chart.XYChart.Series">Series</a>, <a href="../concurrent/Service.html" class="extype" name="scalafx.concurrent.Service">Service</a>, <a href="../scene/effect/Shadow.html" class="extype" name="scalafx.scene.effect.Shadow">Shadow</a>, <a href="../scene/shape/Shape.html" class="extype" name="scalafx.scene.shape.Shape">Shape</a>, <a href="../scene/shape/Shape3D.html" class="extype" name="scalafx.scene.shape.Shape3D">Shape3D</a>, <a href="../scene/transform/Shear.html" class="extype" name="scalafx.scene.transform.Shear">Shear</a>, <a href="../util/converter/ShortStringConverter.html" class="extype" name="scalafx.util.converter.ShortStringConverter">ShortStringConverter</a>, <a href="../geometry/Side.html" class="extype" name="scalafx.geometry.Side">Side</a>, <a href="../scene/control/SingleSelectionModel.html" class="extype" name="scalafx.scene.control.SingleSelectionModel">SingleSelectionModel</a>, <a href="../scene/control/Skin.html" class="extype" name="scalafx.scene.control.Skin">Skin</a>, <a href="../scene/control/SkinBase.html" class="extype" name="scalafx.scene.control.SkinBase">SkinBase</a>, <a href="../scene/control/Skinnable.html" class="extype" name="scalafx.scene.control.Skinnable">Skinnable</a>, <a href="../scene/control/Slider.html" class="extype" name="scalafx.scene.control.Slider">Slider</a>, <a href="../scene/SnapshotParameters.html" class="extype" name="scalafx.scene.SnapshotParameters">SnapshotParameters</a>, <a href="../scene/SnapshotResult.html" class="extype" name="scalafx.scene.SnapshotResult">SnapshotResult</a>, <a href="../scene/control/SortEvent.html" class="extype" name="scalafx.scene.control.SortEvent">SortEvent</a>, <a href="../scene/control/TableColumn$$SortType.html" class="extype" name="scalafx.scene.control.TableColumn.SortType">SortType</a>, <a href="../scene/shape/Sphere.html" class="extype" name="scalafx.scene.shape.Sphere">Sphere</a>, <a href="../scene/control/SplitMenuButton.html" class="extype" name="scalafx.scene.control.SplitMenuButton">SplitMenuButton</a>, <a href="../scene/control/SplitPane.html" class="extype" name="scalafx.scene.control.SplitPane">SplitPane</a>, <a href="../scene/effect/Light$$Spot.html" class="extype" name="scalafx.scene.effect.Light.Spot">Spot</a>, <a href="../scene/layout/StackPane.html" class="extype" name="scalafx.scene.layout.StackPane">StackPane</a>, <a href="../scene/chart/StackedAreaChart.html" class="extype" name="scalafx.scene.chart.StackedAreaChart">StackedAreaChart</a>, <a href="../scene/chart/StackedBarChart.html" class="extype" name="scalafx.scene.chart.StackedBarChart">StackedBarChart</a>, <a href="../stage/Stage.html" class="extype" name="scalafx.stage.Stage">Stage</a>, <a href="../stage/StageStyle.html" class="extype" name="scalafx.stage.StageStyle">StageStyle</a>, <a href="../concurrent/Worker$$State.html" class="extype" name="scalafx.concurrent.Worker.State">State</a>, <a href="../scene/input/TouchPoint$$State.html" class="extype" name="scalafx.scene.input.TouchPoint.State">State</a>, <a href="../scene/control/cell/package$$StateSelectableCell.html" class="extype" name="scalafx.scene.control.cell.StateSelectableCell">StateSelectableCell</a>, <a href="../scene/media/MediaPlayer$$Status.html" class="extype" name="scalafx.scene.media.MediaPlayer.Status">Status</a>, <a href="../animation/Animation$$Status.html" class="extype" name="scalafx.animation.Animation.Status">Status</a>, <a href="../scene/paint/Stop.html" class="extype" name="scalafx.scene.paint.Stop">Stop</a>, <a href="../beans/binding/StringBinding.html" class="extype" name="scalafx.beans.binding.StringBinding">StringBinding</a>, <a href="../util/converter/StringConverterDelegate.html" class="extype" name="scalafx.util.converter.StringConverterDelegate">StringConverterDelegate</a>, <a href="../util/converter/StringConverterJavaToJavaDelegate.html" class="extype" name="scalafx.util.converter.StringConverterJavaToJavaDelegate">StringConverterJavaToJavaDelegate</a>, <a href="../beans/property/StringProperty.html" class="extype" name="scalafx.beans.property.StringProperty">StringProperty</a>, <a href="../scene/shape/StrokeLineCap.html" class="extype" name="scalafx.scene.shape.StrokeLineCap">StrokeLineCap</a>, <a href="../scene/shape/StrokeLineJoin.html" class="extype" name="scalafx.scene.shape.StrokeLineJoin">StrokeLineJoin</a>, <a href="../animation/StrokeTransition.html" class="extype" name="scalafx.animation.StrokeTransition">StrokeTransition</a>, <a href="../scene/shape/StrokeType.html" class="extype" name="scalafx.scene.shape.StrokeType">StrokeType</a>, <a href="../css/StyleConverter.html" class="extype" name="scalafx.css.StyleConverter">StyleConverter</a>, <a href="../css/StyleOrigin.html" class="extype" name="scalafx.css.StyleOrigin">StyleOrigin</a>, <a href="../css/Styleable.html" class="extype" name="scalafx.css.Styleable">Styleable</a>, <a href="../scene/SubScene.html" class="extype" name="scalafx.scene.SubScene">SubScene</a>, <a href="../scene/media/SubtitleTrack.html" class="extype" name="scalafx.scene.media.SubtitleTrack">SubtitleTrack</a>, <a href="../embed/swing/SwingNode.html" class="extype" name="scalafx.embed.swing.SwingNode">SwingNode</a>, <a href="../scene/input/SwipeEvent.html" class="extype" name="scalafx.scene.input.SwipeEvent">SwipeEvent</a>, <a href="../scene/control/Tab.html" class="extype" name="scalafx.scene.control.Tab">Tab</a>, <a href="../scene/control/TabPane$$TabClosingPolicy.html" class="extype" name="scalafx.scene.control.TabPane.TabClosingPolicy">TabClosingPolicy</a>, <a href="../scene/control/TabPane.html" class="extype" name="scalafx.scene.control.TabPane">TabPane</a>, <a href="../scene/control/TableCell.html" class="extype" name="scalafx.scene.control.TableCell">TableCell</a>, <a href="../scene/control/TableColumn.html" class="extype" name="scalafx.scene.control.TableColumn">TableColumn</a>, <a href="../scene/control/TableColumnBase.html" class="extype" name="scalafx.scene.control.TableColumnBase">TableColumnBase</a>, <a href="../scene/control/TableFocusModel.html" class="extype" name="scalafx.scene.control.TableFocusModel">TableFocusModel</a>, <a href="../scene/control/TablePosition.html" class="extype" name="scalafx.scene.control.TablePosition">TablePosition</a>, <a href="../scene/control/TablePositionBase.html" class="extype" name="scalafx.scene.control.TablePositionBase">TablePositionBase</a>, <a href="../scene/control/TableRow.html" class="extype" name="scalafx.scene.control.TableRow">TableRow</a>, <a href="../scene/control/TableSelectionModel.html" class="extype" name="scalafx.scene.control.TableSelectionModel">TableSelectionModel</a>, <a href="../scene/control/TableView.html" class="extype" name="scalafx.scene.control.TableView">TableView</a>, <a href="../scene/control/TableView$$TableViewFocusModel.html" class="extype" name="scalafx.scene.control.TableView.TableViewFocusModel">TableViewFocusModel</a>, <a href="../scene/control/TableView$$TableViewSelectionModel.html" class="extype" name="scalafx.scene.control.TableView.TableViewSelectionModel">TableViewSelectionModel</a>, <a href="../concurrent/Task.html" class="extype" name="scalafx.concurrent.Task">Task</a>, <a href="../scene/text/Text.html" class="extype" name="scalafx.scene.text.Text">Text</a>, <a href="../scene/text/TextAlignment.html" class="extype" name="scalafx.scene.text.TextAlignment">TextAlignment</a>, <a href="../scene/control/TextArea.html" class="extype" name="scalafx.scene.control.TextArea">TextArea</a>, <a href="../scene/text/TextBoundsType.html" class="extype" name="scalafx.scene.text.TextBoundsType">TextBoundsType</a>, <a href="../scene/control/TextField.html" class="extype" name="scalafx.scene.control.TextField">TextField</a>, <a href="../scene/control/cell/TextFieldListCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldListCell">TextFieldListCell</a>, <a href="../scene/control/TextFieldProperty.html" class="extype" name="scalafx.scene.control.TextFieldProperty">TextFieldProperty</a>, <a href="../scene/control/cell/TextFieldTableCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTableCell">TextFieldTableCell</a>, <a href="../scene/control/cell/TextFieldTreeCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTreeCell">TextFieldTreeCell</a>, <a href="../scene/control/cell/TextFieldTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTreeTableCell">TextFieldTreeTableCell</a>, <a href="../scene/text/TextFlow.html" class="extype" name="scalafx.scene.text.TextFlow">TextFlow</a>, <a href="../scene/control/TextInputControl.html" class="extype" name="scalafx.scene.control.TextInputControl">TextInputControl</a>, <a href="../scene/chart/Axis$$TickMark.html" class="extype" name="scalafx.scene.chart.Axis.TickMark">TickMark</a>, <a href="../scene/layout/TilePane.html" class="extype" name="scalafx.scene.layout.TilePane">TilePane</a>, <a href="../animation/Timeline.html" class="extype" name="scalafx.animation.Timeline">Timeline</a>, <a href="../scene/control/TitledPane.html" class="extype" name="scalafx.scene.control.TitledPane">TitledPane</a>, <a href="../scene/control/Toggle.html" class="extype" name="scalafx.scene.control.Toggle">Toggle</a>, <a href="../scene/control/ToggleButton.html" class="extype" name="scalafx.scene.control.ToggleButton">ToggleButton</a>, <a href="../scene/control/ToggleGroup.html" class="extype" name="scalafx.scene.control.ToggleGroup">ToggleGroup</a>, <a href="../scene/control/ToolBar.html" class="extype" name="scalafx.scene.control.ToolBar">ToolBar</a>, <a href="../scene/control/Tooltip.html" class="extype" name="scalafx.scene.control.Tooltip">Tooltip</a>, <a href="../scene/input/TouchEvent.html" class="extype" name="scalafx.scene.input.TouchEvent">TouchEvent</a>, <a href="../scene/input/TouchPoint.html" class="extype" name="scalafx.scene.input.TouchPoint">TouchPoint</a>, <a href="../scene/media/Track.html" class="extype" name="scalafx.scene.media.Track">Track</a>, <a href="../scene/input/TransferMode.html" class="extype" name="scalafx.scene.input.TransferMode">TransferMode</a>, <a href="../scene/transform/Transform.html" class="extype" name="scalafx.scene.transform.Transform">Transform</a>, <a href="../scene/transform/TransformChangedEvent.html" class="extype" name="scalafx.scene.transform.TransformChangedEvent">TransformChangedEvent</a>, <a href="../animation/Transition.html" class="extype" name="scalafx.animation.Transition">Transition</a>, <a href="../scene/transform/Translate.html" class="extype" name="scalafx.scene.transform.Translate">Translate</a>, <a href="../animation/TranslateTransition.html" class="extype" name="scalafx.animation.TranslateTransition">TranslateTransition</a>, <a href="../scene/control/TreeCell.html" class="extype" name="scalafx.scene.control.TreeCell">TreeCell</a>, <a href="../scene/control/TreeItem.html" class="extype" name="scalafx.scene.control.TreeItem">TreeItem</a>, <a href="../scene/control/TreeItem$$TreeModificationEvent.html" class="extype" name="scalafx.scene.control.TreeItem.TreeModificationEvent">TreeModificationEvent</a>, <a href="../scene/control/TreeSortMode.html" class="extype" name="scalafx.scene.control.TreeSortMode">TreeSortMode</a>, <a href="../scene/control/TreeTableCell.html" class="extype" name="scalafx.scene.control.TreeTableCell">TreeTableCell</a>, <a href="../scene/control/TreeTablePosition.html" class="extype" name="scalafx.scene.control.TreeTablePosition">TreeTablePosition</a>, <a href="../scene/control/TreeTableRow.html" class="extype" name="scalafx.scene.control.TreeTableRow">TreeTableRow</a>, <a href="../scene/control/TreeView.html" class="extype" name="scalafx.scene.control.TreeView">TreeView</a>, <a href="../scene/shape/TriangleMesh.html" class="extype" name="scalafx.scene.shape.TriangleMesh">TriangleMesh</a>, <a href="../scene/media/MediaException$$Type.html" class="extype" name="scalafx.scene.media.MediaException.Type">Type</a>, <a href="../scene/image/PixelFormat$$Type.html" class="extype" name="scalafx.scene.image.PixelFormat.Type">Type</a>, <a href="../scene/control/cell/package$$UpdatableCell.html" class="extype" name="scalafx.scene.control.cell.UpdatableCell">UpdatableCell</a>, <a href="../scene/layout/VBox.html" class="extype" name="scalafx.scene.layout.VBox">VBox</a>, <a href="../scene/shape/VLineTo.html" class="extype" name="scalafx.scene.shape.VLineTo">VLineTo</a>, <a href="../geometry/VPos.html" class="extype" name="scalafx.geometry.VPos">VPos</a>, <a href="../scene/chart/ValueAxis.html" class="extype" name="scalafx.scene.chart.ValueAxis">ValueAxis</a>, <a href="../geometry/VerticalDirection.html" class="extype" name="scalafx.geometry.VerticalDirection">VerticalDirection</a>, <a href="../scene/input/ScrollEvent$$VerticalTextScrollUnits.html" class="extype" name="scalafx.scene.input.ScrollEvent.VerticalTextScrollUnits">VerticalTextScrollUnits</a>, <a href="../scene/media/VideoTrack.html" class="extype" name="scalafx.scene.media.VideoTrack">VideoTrack</a>, <a href="../event/WeakEventHandler.html" class="extype" name="scalafx.event.WeakEventHandler">WeakEventHandler</a>, <a href="../scene/web/WebEngine.html" class="extype" name="scalafx.scene.web.WebEngine">WebEngine</a>, <a href="../scene/web/WebErrorEvent.html" class="extype" name="scalafx.scene.web.WebErrorEvent">WebErrorEvent</a>, <a href="../scene/web/WebEvent.html" class="extype" name="scalafx.scene.web.WebEvent">WebEvent</a>, <a href="../scene/web/WebView.html" class="extype" name="scalafx.scene.web.WebView">WebView</a>, <a href="../stage/Window.html" class="extype" name="scalafx.stage.Window">Window</a>, <a href="../stage/WindowEvent.html" class="extype" name="scalafx.stage.WindowEvent">WindowEvent</a>, <a href="../concurrent/Worker.html" class="extype" name="scalafx.concurrent.Worker">Worker</a>, <a href="../concurrent/WorkerStateEvent.html" class="extype" name="scalafx.concurrent.WorkerStateEvent">WorkerStateEvent</a>, <a href="../scene/image/WritableImage.html" class="extype" name="scalafx.scene.image.WritableImage">WritableImage</a>, <a href="../scene/image/WritablePixelFormat.html" class="extype" name="scalafx.scene.image.WritablePixelFormat">WritablePixelFormat</a>, <a href="../scene/chart/XYChart.html" class="extype" name="scalafx.scene.chart.XYChart">XYChart</a>, <a href="../scene/input/ZoomEvent.html" class="extype" name="scalafx.scene.input.ZoomEvent">ZoomEvent</a></div>
+          </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scalafx.delegate.SFXDelegate"><span>SFXDelegate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="scalafx.delegate.SFXDelegate#delegate" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="delegate:D"></a>
+      <a id="delegate:D"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">delegate</span><span class="result">: <span class="extype" name="scalafx.delegate.SFXDelegate.D">D</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@delegate:D" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">JavaFX object to be wrapped.</p>
+    </li></ol>
+            </div>
+
+        <div id="values" class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(ref:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@equals(ref:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Verifies if a object is equals to this delegate.</p><div class="fullcomment"><div class="comment cmt"><p>Verifies if a object is equals to this delegate.
+</p></div><dl class="paramcmts block"><dt class="param">ref</dt><dd class="cmt"><p>Object to be compared.</p></dd><dt>returns</dt><dd class="cmt"><p>if the other object is equals to this delegate or not.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The delegate hashcode
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Returns the original delegate's <code>toString()</code> adding a <code>[SFX]</code> prefix.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.delegate.SFXDelegate@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

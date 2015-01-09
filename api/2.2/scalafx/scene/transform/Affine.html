@@ -1,0 +1,936 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>Affine - ScalaFX API 2.2.67-R10 - scalafx.scene.transform.Affine</title>
+          <meta name="description" content="Affine - ScalaFX API 2.2.67 - R10 - scalafx.scene.transform.Affine" />
+          <meta name="keywords" content="Affine ScalaFX API 2.2.67 R10 scalafx.scene.transform.Affine" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'scalafx.scene.transform.Affine';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <a href="Affine$.html" title="Go to companion"><img src="../../../lib/class_to_object_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../package.html" class="extype" name="scalafx.scene">scene</a>.<a href="package.html" class="extype" name="scalafx.scene.transform">transform</a></p>
+        <h1><a href="Affine$.html" title="Go to companion">Affine</a></h1> <span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Affine</span><span class="result"> extends <a href="Transform.html" class="extype" name="scalafx.scene.transform.Transform">Transform</a> with <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.transform.Affine">javafx.scene.transform.Affine</span>]</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Wraps <a href="http://docs.oracle.com/javafx/2/api/javafx/scene/scene/transform/Affine.html" target="_blank">http://docs.oracle.com/javafx/2/api/javafx/scene/scene/transform/Affine.html</a>
+</p></div><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="Transform.html" class="extype" name="scalafx.scene.transform.Transform">Transform</a>, <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.transform.Affine">javafx.scene.transform.Affine</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scalafx.scene.transform.Affine"><span>Affine</span></li><li class="in" name="scalafx.scene.transform.Transform"><span>Transform</span></li><li class="in" name="scalafx.delegate.SFXDelegate"><span>SFXDelegate</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="scalafx.scene.transform.Affine#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(delegate:javafx.scene.transform.Affine):scalafx.scene.transform.Affine"></a>
+      <a id="&lt;init&gt;:Affine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Affine</span><span class="params">(<span name="delegate">delegate: <span class="extype" name="javafx.scene.transform.Affine">javafx.scene.transform.Affine</span> = <span class="symbol">new jfxst.Affine</span></span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@&lt;init&gt;(delegate:javafx.scene.transform.Affine):scalafx.scene.transform.Affine" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scalafx.scene.transform.Affine#delegate" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="delegate:javafx.scene.transform.Affine"></a>
+      <a id="delegate:javafx.scene.transform.Affine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">delegate</span><span class="result">: <span class="extype" name="javafx.scene.transform.Affine">javafx.scene.transform.Affine</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@delegate:javafx.scene.transform.Affine" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">JavaFX object to be wrapped.</p><div class="fullcomment"><div class="comment cmt"><p>JavaFX object to be wrapped.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="scalafx.scene.transform.Affine">Affine</a> → <a href="Transform.html" class="extype" name="scalafx.scene.transform.Transform">Transform</a> → <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a></dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(ref:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@equals(ref:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Verifies if a object is equals to this delegate.</p><div class="fullcomment"><div class="comment cmt"><p>Verifies if a object is equals to this delegate.
+</p></div><dl class="paramcmts block"><dt class="param">ref</dt><dd class="cmt"><p>Object to be compared.</p></dd><dt>returns</dt><dd class="cmt"><p>if the other object is equals to this delegate or not.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>The delegate hashcode
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scalafx.scene.transform.Affine#mxx" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mxx:scalafx.beans.property.DoubleProperty"></a>
+      <a id="mxx:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mxx</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mxx:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the X coordinate scaling element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#mxx_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mxx_=(v:Double):Unit"></a>
+      <a id="mxx_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: mxx_$eq" class="name">mxx_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mxx_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.transform.Affine#mxy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mxy:scalafx.beans.property.DoubleProperty"></a>
+      <a id="mxy:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mxy</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mxy:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the XY coordinate element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#mxy_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mxy_=(v:Double):Unit"></a>
+      <a id="mxy_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: mxy_$eq" class="name">mxy_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mxy_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.transform.Affine#mxz" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mxz:scalafx.beans.property.DoubleProperty"></a>
+      <a id="mxz:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mxz</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mxz:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the XZ coordinate element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#mxz_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mxz_=(v:Double):Unit"></a>
+      <a id="mxz_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: mxz_$eq" class="name">mxz_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mxz_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.transform.Affine#myx" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="myx:scalafx.beans.property.DoubleProperty"></a>
+      <a id="myx:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">myx</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@myx:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the YX coordinate element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#myx_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="myx_=(v:Double):Unit"></a>
+      <a id="myx_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: myx_$eq" class="name">myx_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@myx_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.transform.Affine#myy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="myy:scalafx.beans.property.DoubleProperty"></a>
+      <a id="myy:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">myy</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@myy:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the Y coordinate scaling element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#myy_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="myy_=(v:Double):Unit"></a>
+      <a id="myy_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: myy_$eq" class="name">myy_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@myy_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.transform.Affine#myz" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="myz:scalafx.beans.property.DoubleProperty"></a>
+      <a id="myz:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">myz</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@myz:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the YZ coordinate element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#myz_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="myz_=(v:Double):Unit"></a>
+      <a id="myz_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: myz_$eq" class="name">myz_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@myz_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.transform.Affine#mzx" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mzx:scalafx.beans.property.DoubleProperty"></a>
+      <a id="mzx:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mzx</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mzx:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the ZX coordinate element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#mzx_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mzx_=(v:Double):Unit"></a>
+      <a id="mzx_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: mzx_$eq" class="name">mzx_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mzx_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.transform.Affine#mzy" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mzy:scalafx.beans.property.DoubleProperty"></a>
+      <a id="mzy:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mzy</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mzy:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the ZY coordinate element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#mzy_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mzy_=(v:Double):Unit"></a>
+      <a id="mzy_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: mzy_$eq" class="name">mzy_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mzy_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.transform.Affine#mzz" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mzz:scalafx.beans.property.DoubleProperty"></a>
+      <a id="mzz:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mzz</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mzz:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the Z coordinate scaling element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#mzz_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mzz_=(v:Double):Unit"></a>
+      <a id="mzz_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: mzz_$eq" class="name">mzz_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@mzz_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXDelegate#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>Returns the original delegate's <code>toString()</code> adding a <code>[SFX]</code> prefix.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.scene.transform.Affine#tx" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tx:scalafx.beans.property.DoubleProperty"></a>
+      <a id="tx:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tx</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@tx:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the X coordinate translation element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#tx_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tx_=(v:Double):Unit"></a>
+      <a id="tx_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: tx_$eq" class="name">tx_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@tx_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.transform.Affine#ty" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ty:scalafx.beans.property.DoubleProperty"></a>
+      <a id="ty:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ty</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@ty:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the Y coordinate translation element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#ty_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ty_=(v:Double):Unit"></a>
+      <a id="ty_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: ty_$eq" class="name">ty_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@ty_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scalafx.scene.transform.Affine#tz" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tz:scalafx.beans.property.DoubleProperty"></a>
+      <a id="tz:DoubleProperty"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tz</span><span class="result">: <a href="../../beans/property/DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@tz:scalafx.beans.property.DoubleProperty" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Defines the Z coordinate translation element of the 3x4 matrix.</p>
+    </li><li name="scalafx.scene.transform.Affine#tz_=" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="tz_=(v:Double):Unit"></a>
+      <a id="tz_=(Double):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: tz_$eq" class="name">tz_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@tz_=(v:Double):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.transform.Affine@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scalafx.scene.transform.Transform">
+              <h3>Inherited from <a href="Transform.html" class="extype" name="scalafx.scene.transform.Transform">Transform</a></h3>
+            </div><div class="parent" name="scalafx.delegate.SFXDelegate">
+              <h3>Inherited from <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.transform.Affine">javafx.scene.transform.Affine</span>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
