@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>ConvertableCell - ScalaFX API 2.2.67-R10 - scalafx.scene.control.cell.ConvertableCell</title>
-          <meta name="description" content="ConvertableCell - ScalaFX API 2.2.67 - R10 - scalafx.scene.control.cell.ConvertableCell" />
-          <meta name="keywords" content="ConvertableCell ScalaFX API 2.2.67 R10 scalafx.scene.control.cell.ConvertableCell" />
+          <title>ConvertableCell - ScalaFX API 2.2.76-R11 - scalafx.scene.control.cell.ConvertableCell</title>
+          <meta name="description" content="ConvertableCell - ScalaFX API 2.2.76 - R11 - scalafx.scene.control.cell.ConvertableCell" />
+          <meta name="keywords" content="ConvertableCell ScalaFX API 2.2.76 R11 scalafx.scene.control.cell.ConvertableCell" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../lib/trait_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../../package.html" class="extype" name="scalafx.scene">scene</a>.<a href="../package.html" class="extype" name="scalafx.scene.control">control</a>.<a href="package.html" class="extype" name="scalafx.scene.control.cell">cell</a></p>
-        <h1>ConvertableCell</h1> <span class="permalink">
+        <h1>ConvertableCell</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="scalafx.scene.control.cell">package cell</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
@@ -49,13 +51,17 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Cells which delegate contains the method <code>converterProperty(): jfxbp.ObjectProperty[jfxu.StringConverter[T]]</code>
 </p></div><dl class="paramcmts block"><dt class="tparam">C</dt><dd class="cmt"><p>Derivated type from JavaFX Cell</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>The type of the elements contained within the inner element inside the Cell.</p></dd><dt class="tparam">J</dt><dd class="cmt"><p>Original Java type used by converter.
-</p></dd></dl><div class="toggleContainer block">
+</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v2.2.76-R11/scalafx//src/main/scala/scalafx/scene/control/cell/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.scene.control.cell.ConvertableCell.C">C</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.scene.control.cell.ConvertableCell.C">C</span>], <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="CheckBoxListCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxListCell">CheckBoxListCell</a>, <a href="CheckBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTableCell">CheckBoxTableCell</a>, <a href="CheckBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTreeCell">CheckBoxTreeCell</a>, <a href="ChoiceBoxListCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxListCell">ChoiceBoxListCell</a>, <a href="ChoiceBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTableCell">ChoiceBoxTableCell</a>, <a href="ChoiceBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTreeCell">ChoiceBoxTreeCell</a>, <a href="ComboBoxListCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxListCell">ComboBoxListCell</a>, <a href="ComboBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTableCell">ComboBoxTableCell</a>, <a href="ComboBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTreeCell">ComboBoxTreeCell</a>, <a href="TextFieldListCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldListCell">TextFieldListCell</a>, <a href="TextFieldTableCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTableCell">TextFieldTableCell</a>, <a href="TextFieldTreeCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTreeCell">TextFieldTreeCell</a></div>
-          </div></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph217" viewBox="0.00 0.00 1910.00 158.00" height="158pt" width="1910pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 1907,-154 1907,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this trait" id="graph217_0"><a xlink:title="scalafx.scene.control.cell.ConvertableCell (this trait)" xlink:href="#inheritance-diagram"><polygon points="1030.25,-88 883.75,-88 883.75,-62 1030.25,-62 1030.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-83" x="894" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="916" text-anchor="start">ConvertableCell[C, T, J]</text></a></g><!-- node1 --><g class="node class" id="graph217_1"><a xlink:title="scalafx.scene.control.cell.CheckBoxListCell" xlink:href="CheckBoxListCell.html#inheritance-diagram"><polygon points="134,-26 0,-26 0,-0 134,-0 134,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="32" text-anchor="start">CheckBoxListCell[T]</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph217_0_1"><a xlink:title="CheckBoxListCell[T] is a subtype of ConvertableCell[C, T, J]"><path d="M878.457,-71.9194C732.994,-67.5 411.974,-55.0949 143,-26 140.078,-25.684 137.097,-25.3336 134.089,-24.9572" stroke="#d4d4d4" fill="none"></path><polygon points="878.507,-73.6716 883.557,-72.0733 878.612,-70.1732 878.507,-73.6716" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node class" id="graph217_2"><a xlink:title="scalafx.scene.control.cell.CheckBoxTableCell" xlink:href="CheckBoxTableCell.html#inheritance-diagram"><polygon points="306,-26 152,-26 152,-0 306,-0 306,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="162" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="184" text-anchor="start">CheckBoxTableCell[S, T]</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph217_0_2"><a xlink:title="CheckBoxTableCell[S, T] is a subtype of ConvertableCell[C, T, J]"><path d="M878.363,-69.7467C757.184,-62.8256 517.587,-47.6849 315,-26 312.152,-25.6951 309.253,-25.3694 306.326,-25.0277" stroke="#d4d4d4" fill="none"></path><polygon points="878.597,-71.5128 883.688,-70.0499 878.796,-68.0184 878.597,-71.5128" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph217_3"><a xlink:title="scalafx.scene.control.cell.CheckBoxTreeCell" xlink:href="CheckBoxTreeCell.html#inheritance-diagram"><polygon points="461.25,-26 324.75,-26 324.75,-0 461.25,-0 461.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="335" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="357" text-anchor="start">CheckBoxTreeCell[T]</text></a></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph217_0_3"><a xlink:title="CheckBoxTreeCell[T] is a subtype of ConvertableCell[C, T, J]"><path d="M878.488,-67.5641C782.281,-59.374 614.38,-44.0962 471,-26 467.874,-25.6054 464.679,-25.1849 461.455,-24.7462" stroke="#d4d4d4" fill="none"></path><polygon points="878.452,-69.3173 883.582,-67.9969 878.749,-65.8299 878.452,-69.3173" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node4 --><g class="node class" id="graph217_4"><a xlink:title="scalafx.scene.control.cell.ChoiceBoxListCell" xlink:href="ChoiceBoxListCell.html#inheritance-diagram"><polygon points="616,-26 480,-26 480,-0 616,-0 616,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="490" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="512" text-anchor="start">ChoiceBoxListCell[T]</text></a></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph217_0_4"><a xlink:title="ChoiceBoxListCell[T] is a subtype of ConvertableCell[C, T, J]"><path d="M878.257,-62.8645C810.964,-53.2887 711.58,-39.0049 625,-26 622.057,-25.5579 619.05,-25.1031 616.014,-24.6412" stroke="#d4d4d4" fill="none"></path><polygon points="878.254,-64.6316 883.45,-63.6032 878.746,-61.1665 878.254,-64.6316" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node class" id="graph217_5"><a xlink:title="scalafx.scene.control.cell.ChoiceBoxTableCell" xlink:href="ChoiceBoxTableCell.html#inheritance-diagram"><polygon points="791.25,-26 634.75,-26 634.75,-0 791.25,-0 791.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="645" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="667" text-anchor="start">ChoiceBoxTableCell[S, T]</text></a></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph217_0_5"><a xlink:title="ChoiceBoxTableCell[S, T] is a subtype of ConvertableCell[C, T, J]"><path d="M902.86,-60.6868C860.731,-50.3272 802.77,-36.0746 762.005,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="902.643,-62.4356 907.916,-61.9303 903.479,-59.0369 902.643,-62.4356" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6 --><g class="node class" id="graph217_6"><a xlink:title="scalafx.scene.control.cell.ChoiceBoxTreeCell" xlink:href="ChoiceBoxTreeCell.html#inheritance-diagram"><polygon points="948.25,-26 809.75,-26 809.75,-0 948.25,-0 948.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="820" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="842" text-anchor="start">ChoiceBoxTreeCell[T]</text></a></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph217_0_6"><a xlink:title="ChoiceBoxTreeCell[T] is a subtype of ConvertableCell[C, T, J]"><path d="M936.923,-58.5563C923.804,-48.4643 906.913,-35.4716 894.761,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="936.185,-60.1966 941.216,-61.8581 938.319,-57.4224 936.185,-60.1966" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7 --><g class="node class" id="graph217_7"><a xlink:title="scalafx.scene.control.cell.ComboBoxListCell" xlink:href="ComboBoxListCell.html#inheritance-diagram"><polygon points="1103.25,-26 966.75,-26 966.75,-0 1103.25,-0 1103.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="977" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="999" text-anchor="start">ComboBoxListCell[T]</text></a></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph217_0_7"><a xlink:title="ComboBoxListCell[T] is a subtype of ConvertableCell[C, T, J]"><path d="M977.077,-58.5563C990.196,-48.4643 1007.09,-35.4716 1019.24,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="975.681,-57.4224 972.784,-61.8581 977.815,-60.1966 975.681,-57.4224" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node8 --><g class="node class" id="graph217_8"><a xlink:title="scalafx.scene.control.cell.ComboBoxTableCell" xlink:href="ComboBoxTableCell.html#inheritance-diagram"><polygon points="1278.25,-26 1121.75,-26 1121.75,-0 1278.25,-0 1278.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1132" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1154" text-anchor="start">ComboBoxTableCell[S, T]</text></a></g><!-- node0&#45;&gt;node8 --><g class="edge inheritance" id="graph217_0_8"><a xlink:title="ComboBoxTableCell[S, T] is a subtype of ConvertableCell[C, T, J]"><path d="M1010.92,-60.6868C1052.87,-50.3272 1110.6,-36.0746 1151.2,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="1010.32,-59.0327 1005.88,-61.9303 1011.16,-62.4306 1010.32,-59.0327" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node9 --><g class="node class" id="graph217_9"><a xlink:title="scalafx.scene.control.cell.ComboBoxTreeCell" xlink:href="ComboBoxTreeCell.html#inheritance-diagram"><polygon points="1437,-26 1297,-26 1297,-0 1437,-0 1437,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1307" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1329" text-anchor="start">ComboBoxTreeCell[T]</text></a></g><!-- node0&#45;&gt;node9 --><g class="edge inheritance" id="graph217_0_9"><a xlink:title="ComboBoxTreeCell[T] is a subtype of ConvertableCell[C, T, J]"><path d="M1035.57,-62.6715C1102.44,-53.0064 1201.04,-38.6987 1287,-26 1290.2,-25.5279 1293.46,-25.0438 1296.76,-24.5537" stroke="#d4d4d4" fill="none"></path><polygon points="1035.11,-60.9701 1030.41,-63.4173 1035.61,-64.4341 1035.11,-60.9701" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node10 --><g class="node class" id="graph217_10"><a xlink:title="scalafx.scene.control.cell.TextFieldListCell" xlink:href="TextFieldListCell.html#inheritance-diagram"><polygon points="1584.25,-26 1455.75,-26 1455.75,-0 1584.25,-0 1584.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1466" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1488" text-anchor="start">TextFieldListCell[T]</text></a></g><!-- node0&#45;&gt;node10 --><g class="edge inheritance" id="graph217_0_10"><a xlink:title="TextFieldListCell[T] is a subtype of ConvertableCell[C, T, J]"><path d="M1035.6,-67.8171C1132.36,-59.8534 1301.61,-44.7756 1446,-26 1449.1,-25.5972 1452.26,-25.1645 1455.46,-24.711" stroke="#d4d4d4" fill="none"></path><polygon points="1035.32,-66.0844 1030.48,-68.2377 1035.61,-69.5727 1035.32,-66.0844" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node11 --><g class="node class" id="graph217_11"><a xlink:title="scalafx.scene.control.cell.TextFieldTableCell" xlink:href="TextFieldTableCell.html#inheritance-diagram"><polygon points="1751.25,-26 1602.75,-26 1602.75,-0 1751.25,-0 1751.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1613" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1635" text-anchor="start">TextFieldTableCell[S, T]</text></a></g><!-- node0&#45;&gt;node11 --><g class="edge inheritance" id="graph217_0_11"><a xlink:title="TextFieldTableCell[S, T] is a subtype of ConvertableCell[C, T, J]"><path d="M1035.89,-69.7396C1156.25,-62.8568 1392.88,-47.8214 1593,-26 1596.08,-25.6647 1599.21,-25.3036 1602.38,-24.9232" stroke="#d4d4d4" fill="none"></path><polygon points="1035.49,-68.0094 1030.6,-70.0412 1035.69,-71.5037 1035.49,-68.0094" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node12 --><g class="node class" id="graph217_12"><a xlink:title="scalafx.scene.control.cell.TextFieldTreeCell" xlink:href="TextFieldTreeCell.html#inheritance-diagram"><polygon points="1902,-26 1770,-26 1770,-0 1902,-0 1902,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1780" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1802" text-anchor="start">TextFieldTreeCell[T]</text></a></g><!-- node0&#45;&gt;node12 --><g class="edge inheritance" id="graph217_0_12"><a xlink:title="TextFieldTreeCell[T] is a subtype of ConvertableCell[C, T, J]"><path d="M1035.32,-71.8382C1179.21,-67.3067 1495.17,-54.754 1760,-26 1763.19,-25.6539 1766.44,-25.2673 1769.73,-24.8507" stroke="#d4d4d4" fill="none"></path><polygon points="1035.22,-70.0904 1030.27,-71.996 1035.32,-73.5887 1035.22,-70.0904" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node13 --><g class="node trait" id="graph217_13"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="../../../delegate/SFXDelegate.html#inheritance-diagram"><polygon points="1014.25,-150 899.75,-150 899.75,-124 1014.25,-124 1014.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-145" x="910" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="932" text-anchor="start">SFXDelegate[C]</text></a></g><!-- node13&#45;&gt;node0 --><g class="edge inheritance" id="graph217_13_0"><a xlink:title="ConvertableCell[C, T, J] is a subtype of SFXDelegate[C]"><path d="M957,-118.683C957,-108.896 957,-96.9026 957,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="955.25,-118.858 957,-123.858 958.75,-118.858 955.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -128,7 +134,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -145,7 +151,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@##():Int" title="Permalink" target="_top">
@@ -162,7 +168,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -196,7 +202,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@clone():Object" title="Permalink" target="_top">
@@ -236,7 +242,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: converter_$eq" class="name">converter_=</span><span class="params">(<span name="v">v: <a href="../../../util/StringConverter.html" class="extype" name="scalafx.util.StringConverter">StringConverter</a>[<span class="extype" name="scalafx.scene.control.cell.ConvertableCell.J">J</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: converter_$eq" class="name">converter_=</span><span class="params">(<span name="v">v: <a href="../../../util/StringConverter.html" class="extype" name="scalafx.util.StringConverter">StringConverter</a>[<span class="extype" name="scalafx.scene.control.cell.ConvertableCell.J">J</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@converter_=(v:scalafx.util.StringConverter[J]):Unit" title="Permalink" target="_top">
@@ -253,7 +259,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -270,7 +276,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -289,7 +295,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@finalize():Unit" title="Permalink" target="_top">
@@ -329,7 +335,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@hashCode():Int" title="Permalink" target="_top">
@@ -347,7 +353,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -364,7 +370,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -381,7 +387,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@notify():Unit" title="Permalink" target="_top">
@@ -398,7 +404,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@notifyAll():Unit" title="Permalink" target="_top">
@@ -450,7 +456,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@wait():Unit" title="Permalink" target="_top">
@@ -473,7 +479,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -496,7 +502,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$ConvertableCell@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -522,9 +528,9 @@
         <div class="parent" name="scalafx.delegate.SFXDelegate">
               <h3>Inherited from <a href="../../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.scene.control.cell.ConvertableCell.C">C</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -540,7 +546,7 @@
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.2.2.76-R11 </div>
 
 
     </body>

@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>UpdatableCell - ScalaFX API 2.2.67-R10 - scalafx.scene.control.cell.UpdatableCell</title>
-          <meta name="description" content="UpdatableCell - ScalaFX API 2.2.67 - R10 - scalafx.scene.control.cell.UpdatableCell" />
-          <meta name="keywords" content="UpdatableCell ScalaFX API 2.2.67 R10 scalafx.scene.control.cell.UpdatableCell" />
+          <title>UpdatableCell - ScalaFX API 2.2.76-R11 - scalafx.scene.control.cell.UpdatableCell</title>
+          <meta name="description" content="UpdatableCell - ScalaFX API 2.2.76 - R11 - scalafx.scene.control.cell.UpdatableCell" />
+          <meta name="keywords" content="UpdatableCell ScalaFX API 2.2.76 R11 scalafx.scene.control.cell.UpdatableCell" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../lib/trait_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../../package.html" class="extype" name="scalafx.scene">scene</a>.<a href="../package.html" class="extype" name="scalafx.scene.control">control</a>.<a href="package.html" class="extype" name="scalafx.scene.control.cell">cell</a></p>
-        <h1>UpdatableCell</h1> <span class="permalink">
+        <h1>UpdatableCell</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="scalafx.scene.control.cell">package cell</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
@@ -49,13 +51,17 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Cells which delegate contains the method <code>updateItem(item: Any, empty: Boolean): Unit</code>.
 </p></div><dl class="paramcmts block"><dt class="tparam">C</dt><dd class="cmt"><p>Derivated type from JavaFX Cell
-</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>The type of the elements contained within the inner element inside the Cell.</p></dd></dl><div class="toggleContainer block">
+</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>The type of the elements contained within the inner element inside the Cell.</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v2.2.76-R11/scalafx//src/main/scala/scalafx/scene/control/cell/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.scene.control.cell.UpdatableCell.C">C</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.scene.control.cell.UpdatableCell.C">C</span>], <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="CheckBoxListCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxListCell">CheckBoxListCell</a>, <a href="CheckBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTableCell">CheckBoxTableCell</a>, <a href="CheckBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTreeCell">CheckBoxTreeCell</a>, <a href="ChoiceBoxListCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxListCell">ChoiceBoxListCell</a>, <a href="ChoiceBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTableCell">ChoiceBoxTableCell</a>, <a href="ChoiceBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTreeCell">ChoiceBoxTreeCell</a>, <a href="ComboBoxListCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxListCell">ComboBoxListCell</a>, <a href="ComboBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTableCell">ComboBoxTableCell</a>, <a href="ComboBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTreeCell">ComboBoxTreeCell</a>, <a href="ProgressBarTableCell.html" class="extype" name="scalafx.scene.control.cell.ProgressBarTableCell">ProgressBarTableCell</a>, <a href="TextFieldListCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldListCell">TextFieldListCell</a>, <a href="TextFieldTableCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTableCell">TextFieldTableCell</a>, <a href="TextFieldTreeCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTreeCell">TextFieldTreeCell</a></div>
-          </div></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph215" viewBox="0.00 0.00 2080.00 158.00" height="158pt" width="2080pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 2077,-154 2077,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this trait" id="graph215_0"><a xlink:title="scalafx.scene.control.cell.UpdatableCell (this trait)" xlink:href="#inheritance-diagram"><polygon points="1100,-88 970,-88 970,-62 1100,-62 1100,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-83" x="980" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="1002" text-anchor="start">UpdatableCell[C, T]</text></a></g><!-- node1 --><g class="node class" id="graph215_1"><a xlink:title="scalafx.scene.control.cell.CheckBoxListCell" xlink:href="CheckBoxListCell.html#inheritance-diagram"><polygon points="134,-26 0,-26 0,-0 134,-0 134,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="32" text-anchor="start">CheckBoxListCell[T]</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph215_0_1"><a xlink:title="CheckBoxListCell[T] is a subtype of UpdatableCell[C, T]"><path d="M964.626,-72.6716C813.698,-69.2833 447.841,-58.1822 143,-26 140.078,-25.6915 137.096,-25.3473 134.087,-24.976" stroke="#d4d4d4" fill="none"></path><polygon points="964.866,-74.4273 969.904,-72.789 964.944,-70.9282 964.866,-74.4273" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node class" id="graph215_2"><a xlink:title="scalafx.scene.control.cell.CheckBoxTableCell" xlink:href="CheckBoxTableCell.html#inheritance-diagram"><polygon points="306,-26 152,-26 152,-0 306,-0 306,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="162" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="184" text-anchor="start">CheckBoxTableCell[S, T]</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph215_0_2"><a xlink:title="CheckBoxTableCell[S, T] is a subtype of UpdatableCell[C, T]"><path d="M964.56,-70.9917C835.498,-65.1047 552.533,-50.4577 315,-26 312.151,-25.7066 309.251,-25.3907 306.323,-25.0572" stroke="#d4d4d4" fill="none"></path><polygon points="964.763,-72.7527 969.837,-71.2315 964.922,-69.2563 964.763,-72.7527" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph215_3"><a xlink:title="scalafx.scene.control.cell.CheckBoxTreeCell" xlink:href="CheckBoxTreeCell.html#inheritance-diagram"><polygon points="461.25,-26 324.75,-26 324.75,-0 461.25,-0 461.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="335" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="357" text-anchor="start">CheckBoxTreeCell[T]</text></a></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph215_0_3"><a xlink:title="CheckBoxTreeCell[T] is a subtype of UpdatableCell[C, T]"><path d="M964.709,-69.5542C857.85,-62.4487 648.219,-47.1488 471,-26 467.871,-25.6266 464.675,-25.2234 461.448,-24.7988" stroke="#d4d4d4" fill="none"></path><polygon points="964.615,-71.3017 969.719,-69.8864 964.846,-67.8094 964.615,-71.3017" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node4 --><g class="node class" id="graph215_4"><a xlink:title="scalafx.scene.control.cell.ChoiceBoxListCell" xlink:href="ChoiceBoxListCell.html#inheritance-diagram"><polygon points="616,-26 480,-26 480,-0 616,-0 616,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="490" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="512" text-anchor="start">ChoiceBoxListCell[T]</text></a></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph215_0_4"><a xlink:title="ChoiceBoxListCell[T] is a subtype of UpdatableCell[C, T]"><path d="M964.628,-66.5849C882.876,-57.7798 743.991,-42.2313 625,-26 622.185,-25.616 619.313,-25.2142 616.414,-24.8002" stroke="#d4d4d4" fill="none"></path><polygon points="964.771,-68.3603 969.929,-67.155 965.145,-64.8803 964.771,-68.3603" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node class" id="graph215_5"><a xlink:title="scalafx.scene.control.cell.ChoiceBoxTableCell" xlink:href="ChoiceBoxTableCell.html#inheritance-diagram"><polygon points="791.25,-26 634.75,-26 634.75,-0 791.25,-0 791.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="645" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="667" text-anchor="start">ChoiceBoxTableCell[S, T]</text></a></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph215_0_5"><a xlink:title="ChoiceBoxTableCell[S, T] is a subtype of UpdatableCell[C, T]"><path d="M965.241,-61.0014C909.513,-50.6174 832.014,-36.1765 777.671,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="964.99,-62.7347 970.226,-61.9303 965.631,-59.2939 964.99,-62.7347" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6 --><g class="node class" id="graph215_6"><a xlink:title="scalafx.scene.control.cell.ChoiceBoxTreeCell" xlink:href="ChoiceBoxTreeCell.html#inheritance-diagram"><polygon points="948.25,-26 809.75,-26 809.75,-0 948.25,-0 948.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="820" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="842" text-anchor="start">ChoiceBoxTreeCell[T]</text></a></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph215_0_6"><a xlink:title="ChoiceBoxTreeCell[T] is a subtype of UpdatableCell[C, T]"><path d="M998.541,-59.9773C971.752,-49.6739 935.733,-35.8202 910.255,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="998.136,-61.6965 1003.43,-61.8581 999.393,-58.4298 998.136,-61.6965" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7 --><g class="node class" id="graph215_7"><a xlink:title="scalafx.scene.control.cell.ComboBoxListCell" xlink:href="ComboBoxListCell.html#inheritance-diagram"><polygon points="1103.25,-26 966.75,-26 966.75,-0 1103.25,-0 1103.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="977" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="999" text-anchor="start">ComboBoxListCell[T]</text></a></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph215_0_7"><a xlink:title="ComboBoxListCell[T] is a subtype of UpdatableCell[C, T]"><path d="M1035,-56.6826C1035,-46.8961 1035,-34.9026 1035,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1033.25,-56.8581 1035,-61.8581 1036.75,-56.8581 1033.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node8 --><g class="node class" id="graph215_8"><a xlink:title="scalafx.scene.control.cell.ComboBoxTableCell" xlink:href="ComboBoxTableCell.html#inheritance-diagram"><polygon points="1278.25,-26 1121.75,-26 1121.75,-0 1278.25,-0 1278.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1132" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1154" text-anchor="start">ComboBoxTableCell[S, T]</text></a></g><!-- node0&#45;&gt;node8 --><g class="edge inheritance" id="graph215_0_8"><a xlink:title="ComboBoxTableCell[S, T] is a subtype of UpdatableCell[C, T]"><path d="M1073.21,-60.1054C1101.58,-49.7889 1139.88,-35.8609 1166.94,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="1072.49,-58.5047 1068.39,-61.8581 1073.69,-61.794 1072.49,-58.5047" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node9 --><g class="node class" id="graph215_9"><a xlink:title="scalafx.scene.control.cell.ComboBoxTreeCell" xlink:href="ComboBoxTreeCell.html#inheritance-diagram"><polygon points="1437,-26 1297,-26 1297,-0 1437,-0 1437,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1307" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1329" text-anchor="start">ComboBoxTreeCell[T]</text></a></g><!-- node0&#45;&gt;node9 --><g class="edge inheritance" id="graph215_0_9"><a xlink:title="ComboBoxTreeCell[T] is a subtype of UpdatableCell[C, T]"><path d="M1105.35,-61.2862C1162.99,-50.8697 1243.98,-36.2329 1300.53,-26.0122" stroke="#d4d4d4" fill="none"></path><polygon points="1104.81,-59.6061 1100.2,-62.2175 1105.43,-63.0503 1104.81,-59.6061" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node10 --><g class="node class" id="graph215_10"><a xlink:title="scalafx.scene.control.cell.ProgressBarTableCell" xlink:href="ProgressBarTableCell.html#inheritance-diagram"><polygon points="1607,-26 1455,-26 1455,-0 1607,-0 1607,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1465" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1487" text-anchor="start">ProgressBarTableCell[S]</text></a></g><!-- node0&#45;&gt;node10 --><g class="edge inheritance" id="graph215_0_10"><a xlink:title="ProgressBarTableCell[S] is a subtype of UpdatableCell[C, T]"><path d="M1105.5,-66.2863C1187.42,-57.2037 1326.61,-41.3973 1446,-26 1448.81,-25.6378 1451.67,-25.2633 1454.56,-24.8803" stroke="#d4d4d4" fill="none"></path><polygon points="1104.97,-64.5848 1100.19,-66.8748 1105.35,-68.0635 1104.97,-64.5848" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node11 --><g class="node class" id="graph215_11"><a xlink:title="scalafx.scene.control.cell.TextFieldListCell" xlink:href="TextFieldListCell.html#inheritance-diagram"><polygon points="1754.25,-26 1625.75,-26 1625.75,-0 1754.25,-0 1754.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1636" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1658" text-anchor="start">TextFieldListCell[T]</text></a></g><!-- node0&#45;&gt;node11 --><g class="edge inheritance" id="graph215_0_11"><a xlink:title="TextFieldListCell[T] is a subtype of UpdatableCell[C, T]"><path d="M1105.21,-69.9806C1214.62,-63.3161 1432.3,-48.4475 1616,-26 1619.1,-25.6211 1622.27,-25.2078 1625.47,-24.7699" stroke="#d4d4d4" fill="none"></path><polygon points="1104.97,-68.242 1100.08,-70.2917 1105.18,-71.7356 1104.97,-68.242" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node12 --><g class="node class" id="graph215_12"><a xlink:title="scalafx.scene.control.cell.TextFieldTableCell" xlink:href="TextFieldTableCell.html#inheritance-diagram"><polygon points="1921.25,-26 1772.75,-26 1772.75,-0 1921.25,-0 1921.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1783" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1805" text-anchor="start">TextFieldTableCell[S, T]</text></a></g><!-- node0&#45;&gt;node12 --><g class="edge inheritance" id="graph215_0_12"><a xlink:title="TextFieldTableCell[S, T] is a subtype of UpdatableCell[C, T]"><path d="M1105.73,-71.1262C1236,-65.4352 1522.56,-51.0642 1763,-26 1766.08,-25.6793 1769.21,-25.3304 1772.38,-24.9601" stroke="#d4d4d4" fill="none"></path><polygon points="1105.32,-69.3922 1100.4,-71.3579 1105.47,-72.8889 1105.32,-69.3922" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node13 --><g class="node class" id="graph215_13"><a xlink:title="scalafx.scene.control.cell.TextFieldTreeCell" xlink:href="TextFieldTreeCell.html#inheritance-diagram"><polygon points="2072,-26 1940,-26 1940,-0 2072,-0 2072,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../../lib/class_diagram.png" y="-21" x="1950" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1972" text-anchor="start">TextFieldTreeCell[T]</text></a></g><!-- node0&#45;&gt;node13 --><g class="edge inheritance" id="graph215_0_13"><a xlink:title="TextFieldTreeCell[T] is a subtype of UpdatableCell[C, T]"><path d="M1105.33,-72.6905C1256.59,-69.3337 1623.94,-58.2828 1930,-26 1933.19,-25.6637 1936.45,-25.285 1939.73,-24.8748" stroke="#d4d4d4" fill="none"></path><polygon points="1105,-70.9472 1100.04,-72.8067 1105.08,-74.4463 1105,-70.9472" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node14 --><g class="node trait" id="graph215_14"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="../../../delegate/SFXDelegate.html#inheritance-diagram"><polygon points="1092.25,-150 977.75,-150 977.75,-124 1092.25,-124 1092.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-145" x="988" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="1010" text-anchor="start">SFXDelegate[C]</text></a></g><!-- node14&#45;&gt;node0 --><g class="edge inheritance" id="graph215_14_0"><a xlink:title="UpdatableCell[C, T] is a subtype of SFXDelegate[C]"><path d="M1035,-118.683C1035,-108.896 1035,-96.9026 1035,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1033.25,-118.858 1035,-123.858 1036.75,-118.858 1033.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -103,7 +109,7 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Updated</span><span class="result"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { def updateItem(item: Any,empty: Boolean): Unit }</span>
+        <span class="name">Updated</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a> { def updateItem(item: Any,empty: Boolean): Unit }</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@Updated=AnyRef{defupdateItem(item:Any,empty:Boolean):Unit}" title="Permalink" target="_top">
@@ -149,7 +155,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -166,7 +172,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@##():Int" title="Permalink" target="_top">
@@ -183,7 +189,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -217,7 +223,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@clone():Object" title="Permalink" target="_top">
@@ -240,7 +246,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -257,7 +263,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -276,7 +282,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@finalize():Unit" title="Permalink" target="_top">
@@ -316,7 +322,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@hashCode():Int" title="Permalink" target="_top">
@@ -334,7 +340,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -351,7 +357,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -368,7 +374,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@notify():Unit" title="Permalink" target="_top">
@@ -385,7 +391,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@notifyAll():Unit" title="Permalink" target="_top">
@@ -437,7 +443,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">updateItem</span><span class="params">(<span name="item">item: <span class="extype" name="scalafx.scene.control.cell.UpdatableCell.T">T</span></span>, <span name="empty">empty: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">updateItem</span><span class="params">(<span name="item">item: <span class="extype" name="scalafx.scene.control.cell.UpdatableCell.T">T</span></span>, <span name="empty">empty: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@updateItem(item:T,empty:Boolean):Unit" title="Permalink" target="_top">
@@ -457,7 +463,7 @@ represent any domain data, but is a cell being used to render an &quot;empty&quo
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@wait():Unit" title="Permalink" target="_top">
@@ -480,7 +486,7 @@ represent any domain data, but is a cell being used to render an &quot;empty&quo
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -503,7 +509,7 @@ represent any domain data, but is a cell being used to render an &quot;empty&quo
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -529,9 +535,9 @@ represent any domain data, but is a cell being used to render an &quot;empty&quo
         <div class="parent" name="scalafx.delegate.SFXDelegate">
               <h3>Inherited from <a href="../../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.scene.control.cell.UpdatableCell.C">C</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -547,7 +553,7 @@ represent any domain data, but is a cell being used to render an &quot;empty&quo
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.2.2.76-R11 </div>
 
 
     </body>

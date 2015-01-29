@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Event - ScalaFX API 2.2.67-R10 - scalafx.event.Event</title>
-          <meta name="description" content="Event - ScalaFX API 2.2.67 - R10 - scalafx.event.Event" />
-          <meta name="keywords" content="Event ScalaFX API 2.2.67 R10 scalafx.event.Event" />
+          <title>Event - ScalaFX API 2.2.76-R11 - scalafx.event.Event</title>
+          <meta name="description" content="Event - ScalaFX API 2.2.76 - R11 - scalafx.event.Event" />
+          <meta name="keywords" content="Event ScalaFX API 2.2.76 R11 scalafx.event.Event" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../lib/template.js"></script>
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -30,7 +30,11 @@
       <div id="definition">
         <a href="Event$.html" title="Go to companion"><img src="../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="scalafx">scalafx</a>.<a href="package.html" class="extype" name="scalafx.event">event</a></p>
-        <h1><a href="Event$.html" title="Go to companion">Event</a></h1> <span class="permalink">
+        <h1><a href="Event$.html" title="Go to companion">Event</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="Event$.html" title="See companion">object Event</a>
+            | <a href="package.html" class="extype" name="scalafx.event">package event</a>
+          </div></span></h3><span class="permalink">
       <a href="../../index.html#scalafx.event.Event" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
@@ -48,13 +52,17 @@
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Wrapper class for <a href="http://docs.oracle.com/javafx/2/api/javafx/event/Event.html" target="_blank">Event</a>.
-</p></div><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v2.2.76-R11/scalafx//src/main/scala/scalafx/event/Event.scala" target="_blank">Event.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.event.Event">javafx.event.Event</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.event.Event">javafx.event.Event</span>], <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="ActionEvent.html" class="extype" name="scalafx.event.ActionEvent">ActionEvent</a>, <a href="../scene/control/TableColumn$$CellEditEvent.html" class="extype" name="scalafx.scene.control.TableColumn.CellEditEvent">CellEditEvent</a>, <a href="../scene/input/ContextMenuEvent.html" class="extype" name="scalafx.scene.input.ContextMenuEvent">ContextMenuEvent</a>, <a href="../scene/input/DragEvent.html" class="extype" name="scalafx.scene.input.DragEvent">DragEvent</a>, <a href="../scene/control/ListView$$EditEvent.html" class="extype" name="scalafx.scene.control.ListView.EditEvent">EditEvent</a>, <a href="../scene/control/TreeView$$EditEvent.html" class="extype" name="scalafx.scene.control.TreeView.EditEvent">EditEvent</a>, <a href="../scene/input/GestureEvent.html" class="extype" name="scalafx.scene.input.GestureEvent">GestureEvent</a>, <a href="../scene/input/InputEvent.html" class="extype" name="scalafx.scene.input.InputEvent">InputEvent</a>, <a href="../scene/input/InputMethodEvent.html" class="extype" name="scalafx.scene.input.InputMethodEvent">InputMethodEvent</a>, <a href="../scene/input/KeyEvent.html" class="extype" name="scalafx.scene.input.KeyEvent">KeyEvent</a>, <a href="../scene/media/MediaErrorEvent.html" class="extype" name="scalafx.scene.media.MediaErrorEvent">MediaErrorEvent</a>, <a href="../scene/media/MediaMarkerEvent.html" class="extype" name="scalafx.scene.media.MediaMarkerEvent">MediaMarkerEvent</a>, <a href="../scene/input/MouseDragEvent.html" class="extype" name="scalafx.scene.input.MouseDragEvent">MouseDragEvent</a>, <a href="../scene/input/MouseEvent.html" class="extype" name="scalafx.scene.input.MouseEvent">MouseEvent</a>, <a href="../scene/input/RotateEvent.html" class="extype" name="scalafx.scene.input.RotateEvent">RotateEvent</a>, <a href="../scene/input/ScrollEvent.html" class="extype" name="scalafx.scene.input.ScrollEvent">ScrollEvent</a>, <a href="../scene/input/SwipeEvent.html" class="extype" name="scalafx.scene.input.SwipeEvent">SwipeEvent</a>, <a href="../scene/input/TouchEvent.html" class="extype" name="scalafx.scene.input.TouchEvent">TouchEvent</a>, <a href="../scene/control/TreeItem$$TreeModificationEvent.html" class="extype" name="scalafx.scene.control.TreeItem.TreeModificationEvent">TreeModificationEvent</a>, <a href="../scene/web/WebEvent.html" class="extype" name="scalafx.scene.web.WebEvent">WebEvent</a>, <a href="../stage/WindowEvent.html" class="extype" name="scalafx.stage.WindowEvent">WindowEvent</a>, <a href="../concurrent/WorkerStateEvent.html" class="extype" name="scalafx.concurrent.WorkerStateEvent">WorkerStateEvent</a>, <a href="../scene/input/ZoomEvent.html" class="extype" name="scalafx.scene.input.ZoomEvent">ZoomEvent</a></div>
-          </div></div>
+            <div class="subClasses hiddenContent"><a href="ActionEvent.html" class="extype" name="scalafx.event.ActionEvent">ActionEvent</a>, <a href="../scene/control/TableColumn$$CellEditEvent.html" class="extype" name="scalafx.scene.control.TableColumn.CellEditEvent">CellEditEvent</a>, <a href="../scene/input/ContextMenuEvent.html" class="extype" name="scalafx.scene.input.ContextMenuEvent">ContextMenuEvent</a>, <a href="../scene/input/DragEvent.html" class="extype" name="scalafx.scene.input.DragEvent">DragEvent</a>, <a href="../scene/control/TreeView$$EditEvent.html" class="extype" name="scalafx.scene.control.TreeView.EditEvent">EditEvent</a>, <a href="../scene/control/ListView$$EditEvent.html" class="extype" name="scalafx.scene.control.ListView.EditEvent">EditEvent</a>, <a href="../scene/input/GestureEvent.html" class="extype" name="scalafx.scene.input.GestureEvent">GestureEvent</a>, <a href="../scene/input/InputEvent.html" class="extype" name="scalafx.scene.input.InputEvent">InputEvent</a>, <a href="../scene/input/InputMethodEvent.html" class="extype" name="scalafx.scene.input.InputMethodEvent">InputMethodEvent</a>, <a href="../scene/input/KeyEvent.html" class="extype" name="scalafx.scene.input.KeyEvent">KeyEvent</a>, <a href="../scene/media/MediaErrorEvent.html" class="extype" name="scalafx.scene.media.MediaErrorEvent">MediaErrorEvent</a>, <a href="../scene/media/MediaMarkerEvent.html" class="extype" name="scalafx.scene.media.MediaMarkerEvent">MediaMarkerEvent</a>, <a href="../scene/input/MouseDragEvent.html" class="extype" name="scalafx.scene.input.MouseDragEvent">MouseDragEvent</a>, <a href="../scene/input/MouseEvent.html" class="extype" name="scalafx.scene.input.MouseEvent">MouseEvent</a>, <a href="../scene/input/RotateEvent.html" class="extype" name="scalafx.scene.input.RotateEvent">RotateEvent</a>, <a href="../scene/input/ScrollEvent.html" class="extype" name="scalafx.scene.input.ScrollEvent">ScrollEvent</a>, <a href="../scene/input/SwipeEvent.html" class="extype" name="scalafx.scene.input.SwipeEvent">SwipeEvent</a>, <a href="../scene/input/TouchEvent.html" class="extype" name="scalafx.scene.input.TouchEvent">TouchEvent</a>, <a href="../scene/control/TreeItem$$TreeModificationEvent.html" class="extype" name="scalafx.scene.control.TreeItem.TreeModificationEvent">TreeModificationEvent</a>, <a href="../scene/web/WebEvent.html" class="extype" name="scalafx.scene.web.WebEvent">WebEvent</a>, <a href="../stage/WindowEvent.html" class="extype" name="scalafx.stage.WindowEvent">WindowEvent</a>, <a href="../concurrent/WorkerStateEvent.html" class="extype" name="scalafx.concurrent.WorkerStateEvent">WorkerStateEvent</a>, <a href="../scene/input/ZoomEvent.html" class="extype" name="scalafx.scene.input.ZoomEvent">ZoomEvent</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph377" viewBox="0.00 0.00 1279.00 158.00" height="158pt" width="1279pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 1276,-154 1276,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this class" id="graph377_0"><a xlink:title="scalafx.event.Event (this class)" xlink:href="#inheritance-diagram"><polygon points="634,-88 564,-88 564,-62 634,-62 634,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-83" x="574" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="596" text-anchor="start">Event</text></a></g><!-- node1 --><g class="node class" id="graph377_1"><a xlink:title="scalafx.event.ActionEvent" xlink:href="ActionEvent.html#inheritance-diagram"><polygon points="96.25,-26 -0.25,-26 -0.25,-0 96.25,-0 96.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="32" text-anchor="start">ActionEvent</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph377_0_1"><a xlink:title="ActionEvent is a subtype of Event"><path d="M558.642,-71.597C474.124,-66.2316 272.476,-51.685 105,-26 102.201,-25.5708 99.3327,-25.0919 96.4433,-24.5793" stroke="#d4d4d4" fill="none"></path><polygon points="558.695,-73.3538 563.795,-71.922 558.915,-69.8607 558.695,-73.3538" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node class" id="graph377_2"><a xlink:title="scalafx.scene.control.TableColumn.CellEditEvent" xlink:href="../scene/control/TableColumn$$CellEditEvent.html#inheritance-diagram"><polygon points="241.25,-26 114.75,-26 114.75,-0 241.25,-0 241.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="125" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="147" text-anchor="start">CellEditEvent[S, T]</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph377_0_2"><a xlink:title="CellEditEvent[S, T] is a subtype of Event"><path d="M558.57,-68.7686C493.646,-60.2901 362.151,-42.7984 251,-26 247.825,-25.5202 244.574,-25.0196 241.292,-24.507" stroke="#d4d4d4" fill="none"></path><polygon points="558.702,-70.5505 563.886,-69.4621 559.154,-67.0799 558.702,-70.5505" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph377_3"><a xlink:title="scalafx.scene.control.ListView.EditEvent" xlink:href="../scene/control/ListView$$EditEvent.html#inheritance-diagram"><polygon points="358,-26 260,-26 260,-0 358,-0 358,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="270" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="292" text-anchor="start">EditEvent[T]</text></a></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph377_0_3"><a xlink:title="EditEvent[T] is a subtype of Event"><path d="M558.777,-65.678C506.3,-54.8206 414.533,-35.8344 358.038,-24.1457" stroke="#d4d4d4" fill="none"></path><polygon points="558.479,-67.4034 563.73,-66.7028 559.189,-63.976 558.479,-67.4034" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node4 --><g class="node class" id="graph377_4"><a xlink:title="scalafx.scene.control.TreeView.EditEvent" xlink:href="../scene/control/TreeView$$EditEvent.html#inheritance-diagram"><polygon points="474,-26 376,-26 376,-0 474,-0 474,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="386" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="408" text-anchor="start">EditEvent[T]</text></a></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph377_0_4"><a xlink:title="EditEvent[T] is a subtype of Event"><path d="M558.706,-60.1054C528.788,-49.7889 488.397,-35.8609 459.862,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="558.491,-61.8825 563.789,-61.8581 559.632,-58.5737 558.491,-61.8825" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node class" id="graph377_5"><a xlink:title="scalafx.scene.input.InputEvent" xlink:href="../scene/input/InputEvent.html#inheritance-diagram"><polygon points="583.25,-26 492.75,-26 492.75,-0 583.25,-0 583.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="503" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="525" text-anchor="start">InputEvent</text></a></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph377_0_5"><a xlink:title="InputEvent is a subtype of Event"><path d="M583.031,-58.2924C572.809,-48.2386 559.747,-35.3904 550.326,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="581.864,-59.5995 586.656,-61.8581 584.318,-57.1042 581.864,-59.5995" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6 --><g class="node class" id="graph377_6"><a xlink:title="scalafx.scene.media.MediaErrorEvent" xlink:href="../scene/media/MediaErrorEvent.html#inheritance-diagram"><polygon points="718.25,-26 601.75,-26 601.75,-0 718.25,-0 718.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="612" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="634" text-anchor="start">MediaErrorEvent</text></a></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph377_0_6"><a xlink:title="MediaErrorEvent is a subtype of Event"><path d="M614.969,-58.2924C625.191,-48.2386 638.253,-35.3904 647.674,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="613.682,-57.1042 611.344,-61.8581 616.136,-59.5995 613.682,-57.1042" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7 --><g class="node class" id="graph377_7"><a xlink:title="scalafx.scene.control.TreeItem.TreeModificationEvent" xlink:href="../scene/control/TreeItem$$TreeModificationEvent.html#inheritance-diagram"><polygon points="887.25,-26 736.75,-26 736.75,-0 887.25,-0 887.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="747" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="769" text-anchor="start">TreeModificationEvent[T]</text></a></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph377_0_7"><a xlink:title="TreeModificationEvent[T] is a subtype of Event"><path d="M639.055,-62.717C676.126,-52.2744 731.085,-36.793 769.052,-26.0979" stroke="#d4d4d4" fill="none"></path><polygon points="638.511,-61.052 634.173,-64.0922 639.46,-64.4209 638.511,-61.052" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node8 --><g class="node class" id="graph377_8"><a xlink:title="scalafx.scene.web.WebEvent" xlink:href="../scene/web/WebEvent.html#inheritance-diagram"><polygon points="1006.25,-26 905.75,-26 905.75,-0 1006.25,-0 1006.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="916" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="938" text-anchor="start">WebEvent[T]</text></a></g><!-- node0&#45;&gt;node8 --><g class="edge inheritance" id="graph377_0_8"><a xlink:title="WebEvent[T] is a subtype of Event"><path d="M639.314,-67.9707C696.511,-59.3061 804.446,-42.5477 896,-26 899.136,-25.4332 902.361,-24.8344 905.611,-24.219" stroke="#d4d4d4" fill="none"></path><polygon points="638.958,-66.2546 634.276,-68.7329 639.481,-69.7153 638.958,-66.2546" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node9 --><g class="node class" id="graph377_9"><a xlink:title="scalafx.stage.WindowEvent" xlink:href="../stage/WindowEvent.html#inheritance-diagram"><polygon points="1129,-26 1025,-26 1025,-0 1129,-0 1129,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="1035" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1057" text-anchor="start">WindowEvent</text></a></g><!-- node0&#45;&gt;node9 --><g class="edge inheritance" id="graph377_0_9"><a xlink:title="WindowEvent is a subtype of Event"><path d="M639.391,-70.3728C713.881,-63.4543 877.822,-47.1578 1015,-26 1018.25,-25.4986 1021.59,-24.95 1024.96,-24.372" stroke="#d4d4d4" fill="none"></path><polygon points="639.002,-68.6513 634.184,-70.8547 639.324,-72.1365 639.002,-68.6513" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node10 --><g class="node class" id="graph377_10"><a xlink:title="scalafx.concurrent.WorkerStateEvent" xlink:href="../concurrent/WorkerStateEvent.html#inheritance-diagram"><polygon points="1271,-26 1147,-26 1147,-0 1271,-0 1271,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="1157" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1179" text-anchor="start">WorkerStateEvent</text></a></g><!-- node0&#45;&gt;node10 --><g class="edge inheritance" id="graph377_0_10"><a xlink:title="WorkerStateEvent is a subtype of Event"><path d="M639.308,-71.4982C729.104,-65.6867 952.317,-49.9218 1138,-26 1140.85,-25.6326 1143.76,-25.2344 1146.7,-24.8138" stroke="#d4d4d4" fill="none"></path><polygon points="638.979,-69.7656 634.102,-71.8336 639.204,-73.2584 638.979,-69.7656" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node11 --><g class="node trait" id="graph377_11"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="../delegate/SFXDelegate.html#inheritance-diagram"><polygon points="691,-150 507,-150 507,-124 691,-124 691,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="517" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="539" text-anchor="start">SFXDelegate[javafx.event.Event]</text></a></g><!-- node11&#45;&gt;node0 --><g class="edge inheritance" id="graph377_11_0"><a xlink:title="Event is a subtype of SFXDelegate[javafx.event.Event]"><path d="M599,-118.683C599,-108.896 599,-96.9026 599,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="597.25,-118.858 599,-123.858 600.75,-118.858 597.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -100,7 +108,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Event</span><span class="params">(<span name="source">source: <span class="extype" name="scala.Any">Any</span></span>, <span name="target">target: <span class="extype" name="javafx.event.EventTarget">EventTarget</span></span>, <span name="eventType">eventType: <a href="EventType.html" class="extype" name="scalafx.event.EventType">EventType</a>[_ &lt;: <a href="" class="extype" name="scalafx.event.Event">Event</a>]</span>)</span>
+        <span class="name">Event</span><span class="params">(<span name="source">source: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>, <span name="target">target: <span class="extype" name="javafx.event.EventTarget">javafx.event.EventTarget</span></span>, <span name="eventType">eventType: <a href="EventType.html" class="extype" name="scalafx.event.EventType">EventType</a>[_ &lt;: <a href="" class="extype" name="scalafx.event.Event">Event</a>]</span>)</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@&lt;init&gt;(source:Any,target:javafx.event.EventTarget,eventType:scalafx.event.EventType[_&lt;:scalafx.event.Event]):scalafx.event.Event" title="Permalink" target="_top">
@@ -164,7 +172,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -181,7 +189,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@##():Int" title="Permalink" target="_top">
@@ -198,7 +206,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -232,7 +240,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@clone():Object" title="Permalink" target="_top">
@@ -255,7 +263,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">consume</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">consume</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@consume():Unit" title="Permalink" target="_top">
@@ -273,7 +281,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">consumed</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">consumed</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@consumed:Boolean" title="Permalink" target="_top">
@@ -283,14 +291,14 @@
       <p class="shortcomment cmt">Indicates whether this Event has been consumed by any filter or handler.</p>
     </li><li name="scalafx.event.Event#copyFor" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="copyFor(newSource:AnyRef,newTarget:javafx.event.EventTarget):scalafx.event.Event"></a>
-      <a id="copyFor(AnyRef,EventTarget):Event"></a>
+      <a id="copyFor(AnyRef,javafx.event.EventTarget):Event"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">copyFor</span><span class="params">(<span name="newSource">newSource: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="newTarget">newTarget: <span class="extype" name="javafx.event.EventTarget">EventTarget</span></span>)</span><span class="result">: <a href="" class="extype" name="scalafx.event.Event">Event</a></span>
+        <span class="name">copyFor</span><span class="params">(<span name="newSource">newSource: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>, <span name="newTarget">newTarget: <span class="extype" name="javafx.event.EventTarget">javafx.event.EventTarget</span></span>)</span><span class="result">: <a href="" class="extype" name="scalafx.event.Event">Event</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@copyFor(newSource:AnyRef,newTarget:javafx.event.EventTarget):scalafx.event.Event" title="Permalink" target="_top">
@@ -325,7 +333,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -342,7 +350,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -378,7 +386,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@finalize():Unit" title="Permalink" target="_top">
@@ -418,7 +426,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@hashCode():Int" title="Permalink" target="_top">
@@ -436,7 +444,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -453,7 +461,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -470,7 +478,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@notify():Unit" title="Permalink" target="_top">
@@ -487,7 +495,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@notifyAll():Unit" title="Permalink" target="_top">
@@ -504,7 +512,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">source</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">source</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@source:Object" title="Permalink" target="_top">
@@ -531,14 +539,14 @@
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
     </li><li name="scalafx.event.Event#target" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="target:javafx.event.EventTarget"></a>
-      <a id="target:EventTarget"></a>
+      <a id="target:javafx.event.EventTarget"></a>
       <h4 class="signature">
       <span class="modifier_kind">
         <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">target</span><span class="result">: <span class="extype" name="javafx.event.EventTarget">EventTarget</span></span>
+        <span class="name">target</span><span class="result">: <span class="extype" name="javafx.event.EventTarget">javafx.event.EventTarget</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@target:javafx.event.EventTarget" title="Permalink" target="_top">
@@ -573,7 +581,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@wait():Unit" title="Permalink" target="_top">
@@ -596,7 +604,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -619,7 +627,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.Event@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -645,9 +653,9 @@
         <div class="parent" name="scalafx.delegate.SFXDelegate">
               <h3>Inherited from <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.event.Event">javafx.event.Event</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -663,7 +671,7 @@
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.2.2.76-R11 </div>
 
 
     </body>

@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>ChartIncludes - ScalaFX API 2.2.67-R10 - scalafx.scene.chart.ChartIncludes</title>
-          <meta name="description" content="ChartIncludes - ScalaFX API 2.2.67 - R10 - scalafx.scene.chart.ChartIncludes" />
-          <meta name="keywords" content="ChartIncludes ScalaFX API 2.2.67 R10 scalafx.scene.chart.ChartIncludes" />
+          <title>ChartIncludes - ScalaFX API 2.2.76-R11 - scalafx.scene.chart.ChartIncludes</title>
+          <meta name="description" content="ChartIncludes - ScalaFX API 2.2.76 - R11 - scalafx.scene.chart.ChartIncludes" />
+          <meta name="keywords" content="ChartIncludes ScalaFX API 2.2.76 R11 scalafx.scene.chart.ChartIncludes" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,7 +30,11 @@
       <div id="definition">
         <a href="ChartIncludes$.html" title="Go to companion"><img src="../../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../package.html" class="extype" name="scalafx.scene">scene</a>.<a href="package.html" class="extype" name="scalafx.scene.chart">chart</a></p>
-        <h1><a href="ChartIncludes$.html" title="Go to companion">ChartIncludes</a></h1> <span class="permalink">
+        <h1><a href="ChartIncludes$.html" title="Go to companion">ChartIncludes</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="ChartIncludes$.html" title="See companion">object ChartIncludes</a>
+            | <a href="package.html" class="extype" name="scalafx.scene.chart">package chart</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
@@ -43,19 +47,23 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <span class="name">ChartIncludes</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">ChartIncludes</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains implicit methods to convert from
 <a href="http://docs.oracle.com/javafx/2/api/javafx/scene/chart/package-summary.html" target="_blank"><code>javafx.scene.chart</code></a>
-Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContainer block">
+Classes/Traits to their ScalaFX counterparts.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v2.2.76-R11/scalafx//src/main/scala/scalafx/scene/chart/ChartIncludes.scala" target="_blank">ChartIncludes.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="ChartIncludes$.html" class="extype" name="scalafx.scene.chart.ChartIncludes">ChartIncludes</a>, <a href="../../Includes.html" class="extype" name="scalafx.Includes">Includes</a>, <a href="../../Includes$.html" class="extype" name="scalafx.Includes">Includes</a>, <a href="../SceneIncludes.html" class="extype" name="scalafx.scene.SceneIncludes">SceneIncludes</a>, <a href="../SceneIncludes$.html" class="extype" name="scalafx.scene.SceneIncludes">SceneIncludes</a></div>
-          </div></div>
+            <div class="subClasses hiddenContent"><a href="ChartIncludes$.html" class="extype" name="scalafx.scene.chart.ChartIncludes">ChartIncludes</a>, <a href="../../Includes$.html" class="extype" name="scalafx.Includes">Includes</a>, <a href="../../Includes.html" class="extype" name="scalafx.Includes">Includes</a>, <a href="../SceneIncludes.html" class="extype" name="scalafx.scene.SceneIncludes">SceneIncludes</a>, <a href="../SceneIncludes$.html" class="extype" name="scalafx.scene.SceneIncludes">SceneIncludes</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph325" viewBox="0.00 0.00 239.00 158.00" height="158pt" width="239pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 236,-154 236,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this trait" id="graph325_0"><a xlink:title="scalafx.scene.chart.ChartIncludes (this trait)" xlink:href="#inheritance-diagram"><polygon points="166.25,-88 61.75,-88 61.75,-62 166.25,-62 166.25,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-83" x="72" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="94" text-anchor="start">ChartIncludes</text></a></g><!-- node1 --><g class="node object" id="graph325_1"><a xlink:title="scalafx.scene.chart.ChartIncludes" xlink:href="ChartIncludes$.html#inheritance-diagram"><polygon points="104.25,-26 -0.25,-26 -0.25,-0 104.25,-0 104.25,-26" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../lib/object_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="32" text-anchor="start">ChartIncludes</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph325_0_1"><a xlink:title="ChartIncludes is a subtype of ChartIncludes"><path d="M97.7688,-58.2924C87.3799,-48.2386 74.1034,-35.3904 64.528,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="96.6433,-59.6385 101.453,-61.8581 99.0773,-57.1234 96.6433,-59.6385" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node trait" id="graph325_2"><a xlink:title="scalafx.scene.SceneIncludes" xlink:href="../SceneIncludes.html#inheritance-diagram"><polygon points="231.25,-26 122.75,-26 122.75,-0 231.25,-0 231.25,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-21" x="133" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="155" text-anchor="start">SceneIncludes</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph325_0_2"><a xlink:title="SceneIncludes is a subtype of ChartIncludes"><path d="M130.493,-58.2924C141.049,-48.2386 154.54,-35.3904 164.27,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="129.163,-57.1425 126.749,-61.8581 131.577,-59.677 129.163,-57.1425" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph325_3"><a xlink:title="scala.AnyRef"><polygon points="152.25,-150 75.75,-150 75.75,-124 152.25,-124 152.25,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-145" x="86" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="108" text-anchor="start">AnyRef</text></a></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph325_3_0"><a xlink:title="ChartIncludes is a subtype of AnyRef"><path d="M114,-118.683C114,-108.896 114,-96.9026 114,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="112.25,-118.858 114,-123.858 115.75,-118.858 112.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -107,7 +115,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -124,7 +132,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@##():Int" title="Permalink" target="_top">
@@ -141,7 +149,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -175,7 +183,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@clone():Object" title="Permalink" target="_top">
@@ -198,7 +206,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -215,7 +223,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@equals(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -232,7 +240,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@finalize():Unit" title="Permalink" target="_top">
@@ -272,7 +280,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@hashCode():Int" title="Permalink" target="_top">
@@ -289,7 +297,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -648,7 +656,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -665,7 +673,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@notify():Unit" title="Permalink" target="_top">
@@ -682,7 +690,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@notifyAll():Unit" title="Permalink" target="_top">
@@ -733,7 +741,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@wait():Unit" title="Permalink" target="_top">
@@ -756,7 +764,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -779,7 +787,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.chart.ChartIncludes@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -803,9 +811,9 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -821,7 +829,7 @@ Classes/Traits to their ScalaFX counterparts.</p></div><div class="toggleContain
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.2.2.76-R11 </div>
 
 
     </body>

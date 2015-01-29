@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>BindingIncludes - ScalaFX API 2.2.67-R10 - scalafx.beans.binding.BindingIncludes</title>
-          <meta name="description" content="BindingIncludes - ScalaFX API 2.2.67 - R10 - scalafx.beans.binding.BindingIncludes" />
-          <meta name="keywords" content="BindingIncludes ScalaFX API 2.2.67 R10 scalafx.beans.binding.BindingIncludes" />
+          <title>BindingIncludes - ScalaFX API 2.2.76-R11 - scalafx.beans.binding.BindingIncludes</title>
+          <meta name="description" content="BindingIncludes - ScalaFX API 2.2.76 - R11 - scalafx.beans.binding.BindingIncludes" />
+          <meta name="keywords" content="BindingIncludes ScalaFX API 2.2.76 R11 scalafx.beans.binding.BindingIncludes" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,7 +30,11 @@
       <div id="definition">
         <a href="BindingIncludes$.html" title="Go to companion"><img src="../../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../package.html" class="extype" name="scalafx.beans">beans</a>.<a href="package.html" class="extype" name="scalafx.beans.binding">binding</a></p>
-        <h1><a href="BindingIncludes$.html" title="Go to companion">BindingIncludes</a></h1> <span class="permalink">
+        <h1><a href="BindingIncludes$.html" title="Go to companion">BindingIncludes</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="BindingIncludes$.html" title="See companion">object BindingIncludes</a>
+            | <a href="package.html" class="extype" name="scalafx.beans.binding">package binding</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
@@ -49,13 +53,17 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Contains implicit methods to convert from
 <a href="http://docs.oracle.com/javafx/2/api/javafx/beans/binding/package-summary.html" target="_blank"><code>javafx.beans.binding</code></a>
-Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer block">
+Classes to their ScalaFX counterparts.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v2.2.76-R11/scalafx//src/main/scala/scalafx/beans/binding/BindingIncludes.scala" target="_blank">BindingIncludes.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="Bindings.html" class="extype" name="scalafx.beans.binding.Bindings">Bindings</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="Bindings.html" class="extype" name="scalafx.beans.binding.Bindings">Bindings</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="../BeanIncludes.html" class="extype" name="scalafx.beans.BeanIncludes">BeanIncludes</a>, <a href="../BeanIncludes$.html" class="extype" name="scalafx.beans.BeanIncludes">BeanIncludes</a>, <a href="BindingIncludes$.html" class="extype" name="scalafx.beans.binding.BindingIncludes">BindingIncludes</a>, <a href="../../Includes.html" class="extype" name="scalafx.Includes">Includes</a>, <a href="../../Includes$.html" class="extype" name="scalafx.Includes">Includes</a></div>
-          </div></div>
+            <div class="subClasses hiddenContent"><a href="../BeanIncludes$.html" class="extype" name="scalafx.beans.BeanIncludes">BeanIncludes</a>, <a href="../BeanIncludes.html" class="extype" name="scalafx.beans.BeanIncludes">BeanIncludes</a>, <a href="BindingIncludes$.html" class="extype" name="scalafx.beans.binding.BindingIncludes">BindingIncludes</a>, <a href="../../Includes$.html" class="extype" name="scalafx.Includes">Includes</a>, <a href="../../Includes.html" class="extype" name="scalafx.Includes">Includes</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph462" viewBox="0.00 0.00 244.00 158.00" height="158pt" width="244pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 241,-154 241,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this trait" id="graph462_0"><a xlink:title="scalafx.beans.binding.BindingIncludes (this trait)" xlink:href="#inheritance-diagram"><polygon points="172,-88 58,-88 58,-62 172,-62 172,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-83" x="68" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="90" text-anchor="start">BindingIncludes</text></a></g><!-- node1 --><g class="node trait" id="graph462_1"><a xlink:title="scalafx.beans.BeanIncludes" xlink:href="../BeanIncludes.html#inheritance-diagram"><polygon points="104,-26 0,-26 0,-0 104,-0 104,-26" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="32" text-anchor="start">BeanIncludes</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph462_0_1"><a xlink:title="BeanIncludes is a subtype of BindingIncludes"><path d="M98.507,-58.2924C87.9506,-48.2386 74.4599,-35.3904 64.73,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="97.4234,-59.677 102.251,-61.8581 99.8372,-57.1425 97.4234,-59.677" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node object" id="graph462_2"><a xlink:title="scalafx.beans.binding.BindingIncludes" xlink:href="BindingIncludes$.html#inheritance-diagram"><polygon points="236,-26 122,-26 122,-0 236,-0 236,-26" stroke="#102966" fill="#3556a7"></polygon><image xlink:href="../../../lib/object_diagram.png" y="-21" x="132" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="154" text-anchor="start">BindingIncludes</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph462_0_2"><a xlink:title="BindingIncludes is a subtype of BindingIncludes"><path d="M131.755,-58.2924C142.479,-48.2386 156.184,-35.3904 166.068,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="130.402,-57.1617 127.951,-61.8581 132.796,-59.7151 130.402,-57.1617" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node trait" id="graph462_3"><a xlink:title="scalafx.beans.binding.Bindings" xlink:href="Bindings.html#inheritance-diagram"><polygon points="156.25,-150 73.75,-150 73.75,-124 156.25,-124 156.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-145" x="84" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="106" text-anchor="start">Bindings</text></a></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph462_3_0"><a xlink:title="BindingIncludes is a subtype of Bindings"><path d="M115,-118.683C115,-108.896 115,-96.9026 115,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="113.25,-118.858 115,-123.858 116.75,-118.858 113.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -103,7 +111,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Bindings$BooleanConditionBuilder.html"><span class="name">BooleanConditionBuilder</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Bindings$BooleanConditionBuilder.html"><span class="name">BooleanConditionBuilder</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.Bindings@BooleanConditionBuilderextendsAnyRef" title="Permalink" target="_top">
@@ -120,7 +128,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Bindings$ConditionBuilder.html"><span class="name">ConditionBuilder</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Bindings$ConditionBuilder.html"><span class="name">ConditionBuilder</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.Bindings@ConditionBuilderextendsAnyRef" title="Permalink" target="_top">
@@ -137,7 +145,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Bindings$NumberConditionBuilder.html"><span class="name">NumberConditionBuilder</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Bindings$NumberConditionBuilder.html"><span class="name">NumberConditionBuilder</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.Bindings@NumberConditionBuilderextendsAnyRef" title="Permalink" target="_top">
@@ -154,7 +162,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Bindings$ObjectConditionBuilder.html"><span class="name">ObjectConditionBuilder</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Bindings$ObjectConditionBuilder.html"><span class="name">ObjectConditionBuilder</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.Bindings@ObjectConditionBuilder[T]extendsAnyRef" title="Permalink" target="_top">
@@ -171,7 +179,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="Bindings$StringConditionBuilder.html"><span class="name">StringConditionBuilder</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="Bindings$StringConditionBuilder.html"><span class="name">StringConditionBuilder</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.Bindings@StringConditionBuilderextendsAnyRef" title="Permalink" target="_top">
@@ -195,7 +203,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -212,7 +220,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@##():Int" title="Permalink" target="_top">
@@ -229,7 +237,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -284,7 +292,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@clone():Object" title="Permalink" target="_top">
@@ -307,7 +315,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">closure2ChangedListener</span><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="cl">cl: (<span class="extype" name="javafx.beans.value.ObservableValue">ObservableValue</span>[_ &lt;: <span class="extype" name="scalafx.beans.binding.BindingIncludes.closure2ChangedListener.P">P</span>], <span class="extype" name="scalafx.beans.binding.BindingIncludes.closure2ChangedListener.P">P</span>, <span class="extype" name="scalafx.beans.binding.BindingIncludes.closure2ChangedListener.P">P</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.value.ChangeListener">ChangeListener</span>[<span class="extype" name="scalafx.beans.binding.BindingIncludes.closure2ChangedListener.P">P</span>]</span>
+        <span class="name">closure2ChangedListener</span><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="cl">cl: (<span class="extype" name="javafx.beans.value.ObservableValue">ObservableValue</span>[_ &lt;: <span class="extype" name="scalafx.beans.binding.BindingIncludes.closure2ChangedListener.P">P</span>], <span class="extype" name="scalafx.beans.binding.BindingIncludes.closure2ChangedListener.P">P</span>, <span class="extype" name="scalafx.beans.binding.BindingIncludes.closure2ChangedListener.P">P</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="result">: <span class="extype" name="javafx.beans.value.ChangeListener">ChangeListener</span>[<span class="extype" name="scalafx.beans.binding.BindingIncludes.closure2ChangedListener.P">P</span>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@closure2ChangedListener[P](cl:(javafx.beans.value.ObservableValue[_&lt;:P],P,P)=&gt;Unit):javafx.beans.value.ChangeListener[P]" title="Permalink" target="_top">
@@ -326,7 +334,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">closure2InvalidationListener</span><span class="params">(<span name="il">il: (<span class="extype" name="javafx.beans.Observable">javafx.beans.Observable</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.InvalidationListener">InvalidationListener</span></span>
+        <span class="name">closure2InvalidationListener</span><span class="params">(<span name="il">il: (<span class="extype" name="javafx.beans.Observable">javafx.beans.Observable</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="result">: <span class="extype" name="javafx.beans.InvalidationListener">InvalidationListener</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@closure2InvalidationListener(il:javafx.beans.Observable=&gt;Unit):javafx.beans.InvalidationListener" title="Permalink" target="_top">
@@ -345,7 +353,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">double2DoubleBinding</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.DoubleBinding">DoubleBinding</span></span>
+        <span class="name">double2DoubleBinding</span><span class="params">(<span name="i">i: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.DoubleBinding">DoubleBinding</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@double2DoubleBinding(i:Double):javafx.beans.binding.DoubleBinding" title="Permalink" target="_top">
@@ -365,7 +373,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">double2VariablePrecisionNumber</span><span class="params">(<span name="d">d: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <a href="NumberExpression$$VariablePrecisionNumber.html" class="extype" name="scalafx.beans.binding.NumberExpression.VariablePrecisionNumber">VariablePrecisionNumber</a></span>
+        <span class="name">double2VariablePrecisionNumber</span><span class="params">(<span name="d">d: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="NumberExpression$$VariablePrecisionNumber.html" class="extype" name="scalafx.beans.binding.NumberExpression.VariablePrecisionNumber">VariablePrecisionNumber</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@double2VariablePrecisionNumber(d:Double):scalafx.beans.binding.NumberExpression.VariablePrecisionNumber" title="Permalink" target="_top">
@@ -384,7 +392,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -401,7 +409,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@equals(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -418,7 +426,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@finalize():Unit" title="Permalink" target="_top">
@@ -441,7 +449,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">float2FloatBinding</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Float">Float</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.FloatBinding">FloatBinding</span></span>
+        <span class="name">float2FloatBinding</span><span class="params">(<span name="i">i: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Float" class="extype" target="_top">Float</a></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.FloatBinding">FloatBinding</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@float2FloatBinding(i:Float):javafx.beans.binding.FloatBinding" title="Permalink" target="_top">
@@ -478,7 +486,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@hashCode():Int" title="Permalink" target="_top">
@@ -495,7 +503,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">integer2IntegerBinding</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.IntegerBinding">IntegerBinding</span></span>
+        <span class="name">integer2IntegerBinding</span><span class="params">(<span name="i">i: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.IntegerBinding">IntegerBinding</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@integer2IntegerBinding(i:Int):javafx.beans.binding.IntegerBinding" title="Permalink" target="_top">
@@ -515,7 +523,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -676,7 +684,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">long2LongBinding</span><span class="params">(<span name="i">i: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.LongBinding">LongBinding</span></span>
+        <span class="name">long2LongBinding</span><span class="params">(<span name="i">i: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <span class="extype" name="javafx.beans.binding.LongBinding">LongBinding</span></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@long2LongBinding(i:Long):javafx.beans.binding.LongBinding" title="Permalink" target="_top">
@@ -738,7 +746,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -755,7 +763,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@notify():Unit" title="Permalink" target="_top">
@@ -772,7 +780,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@notifyAll():Unit" title="Permalink" target="_top">
@@ -823,7 +831,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@wait():Unit" title="Permalink" target="_top">
@@ -846,7 +854,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -869,7 +877,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.binding.BindingIncludes@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -914,9 +922,9 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
         <div class="parent" name="scalafx.beans.binding.Bindings">
               <h3>Inherited from <a href="Bindings.html" class="extype" name="scalafx.beans.binding.Bindings">Bindings</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -932,7 +940,7 @@ Classes to their ScalaFX counterparts.</p></div><div class="toggleContainer bloc
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.2.2.76-R11 </div>
 
 
     </body>

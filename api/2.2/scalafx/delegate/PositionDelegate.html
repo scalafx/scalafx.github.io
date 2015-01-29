@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>PositionDelegate - ScalaFX API 2.2.67-R10 - scalafx.delegate.PositionDelegate</title>
-          <meta name="description" content="PositionDelegate - ScalaFX API 2.2.67 - R10 - scalafx.delegate.PositionDelegate" />
-          <meta name="keywords" content="PositionDelegate ScalaFX API 2.2.67 R10 scalafx.delegate.PositionDelegate" />
+          <title>PositionDelegate - ScalaFX API 2.2.76-R11 - scalafx.delegate.PositionDelegate</title>
+          <meta name="description" content="PositionDelegate - ScalaFX API 2.2.76 - R11 - scalafx.delegate.PositionDelegate" />
+          <meta name="keywords" content="PositionDelegate ScalaFX API 2.2.76 R11 scalafx.delegate.PositionDelegate" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../lib/template.js"></script>
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -30,7 +30,11 @@
       <div id="definition">
         <a href="PositionDelegate$.html" title="Go to companion"><img src="../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="scalafx">scalafx</a>.<a href="package.html" class="extype" name="scalafx.delegate">delegate</a></p>
-        <h1><a href="PositionDelegate$.html" title="Go to companion">PositionDelegate</a></h1> <span class="permalink">
+        <h1><a href="PositionDelegate$.html" title="Go to companion">PositionDelegate</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="PositionDelegate$.html" title="See companion">object PositionDelegate</a>
+            | <a href="package.html" class="extype" name="scalafx.delegate">package delegate</a>
+          </div></span></h3><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
@@ -48,13 +52,17 @@
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Trait that unifies JavaFX classes that contains properties indicating localization in 2
-dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and their respective getter and setters.</p></div><div class="toggleContainer block">
+dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and their respective getter and setters.</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v2.2.76-R11/scalafx//src/main/scala/scalafx/delegate/PositionDelegate.scala" target="_blank">PositionDelegate.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.PositionDelegate.J">J</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.PositionDelegate.J">J</span>], <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="../scene/shape/ArcTo.html" class="extype" name="scalafx.scene.shape.ArcTo">ArcTo</a>, <a href="../scene/effect/ColorInput.html" class="extype" name="scalafx.scene.effect.ColorInput">ColorInput</a>, <a href="../scene/shape/CubicCurveTo.html" class="extype" name="scalafx.scene.shape.CubicCurveTo">CubicCurveTo</a>, <a href="../scene/effect/ImageInput.html" class="extype" name="scalafx.scene.effect.ImageInput">ImageInput</a>, <a href="../scene/image/ImageView.html" class="extype" name="scalafx.scene.image.ImageView">ImageView</a>, <a href="../scene/shape/LineTo.html" class="extype" name="scalafx.scene.shape.LineTo">LineTo</a>, <a href="../scene/media/MediaView.html" class="extype" name="scalafx.scene.media.MediaView">MediaView</a>, <a href="../scene/shape/MoveTo.html" class="extype" name="scalafx.scene.shape.MoveTo">MoveTo</a>, <a href="../scene/effect/Light$$Point.html" class="extype" name="scalafx.scene.effect.Light.Point">Point</a>, <a href="../scene/shape/QuadCurveTo.html" class="extype" name="scalafx.scene.shape.QuadCurveTo">QuadCurveTo</a>, <a href="../scene/shape/Rectangle.html" class="extype" name="scalafx.scene.shape.Rectangle">Rectangle</a>, <a href="../scene/transform/Scale.html" class="extype" name="scalafx.scene.transform.Scale">Scale</a>, <a href="../scene/transform/Shear.html" class="extype" name="scalafx.scene.transform.Shear">Shear</a>, <a href="../scene/effect/Light$$Spot.html" class="extype" name="scalafx.scene.effect.Light.Spot">Spot</a>, <a href="../scene/text/Text.html" class="extype" name="scalafx.scene.text.Text">Text</a>, <a href="../scene/transform/Translate.html" class="extype" name="scalafx.scene.transform.Translate">Translate</a></div>
-          </div></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph383" viewBox="0.00 0.00 1510.00 158.00" height="158pt" width="1510pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 1507,-154 1507,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this trait" id="graph383_0"><a xlink:title="scalafx.delegate.PositionDelegate (this trait)" xlink:href="#inheritance-diagram"><polygon points="849,-88 719,-88 719,-62 849,-62 849,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-83" x="729" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="751" text-anchor="start">PositionDelegate[J]</text></a></g><!-- node1 --><g class="node class" id="graph383_1"><a xlink:title="scalafx.scene.shape.ArcTo" xlink:href="../scene/shape/ArcTo.html#inheritance-diagram"><polygon points="70.25,-26 -0.25,-26 -0.25,-0 70.25,-0 70.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="32" text-anchor="start">ArcTo</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph383_0_1"><a xlink:title="ArcTo is a subtype of PositionDelegate[J]"><path d="M713.646,-73.8075C586.191,-72.4415 308.982,-64.7955 79,-26 76.1893,-25.5259 73.2989,-24.9478 70.407,-24.3043" stroke="#d4d4d4" fill="none"></path><polygon points="713.841,-75.5595 718.859,-73.8607 713.877,-72.0597 713.841,-75.5595" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node class" id="graph383_2"><a xlink:title="scalafx.scene.effect.ColorInput" xlink:href="../scene/effect/ColorInput.html#inheritance-diagram"><polygon points="177.25,-26 88.75,-26 88.75,-0 177.25,-0 177.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="99" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="121" text-anchor="start">ColorInput</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph383_0_2"><a xlink:title="ColorInput is a subtype of PositionDelegate[J]"><path d="M713.35,-71.5907C601.081,-67.0308 375.278,-54.8734 186,-26 183.202,-25.5732 180.332,-25.0816 177.445,-24.5463" stroke="#d4d4d4" fill="none"></path><polygon points="713.543,-73.3498 718.609,-71.8021 713.684,-69.8526 713.543,-73.3498" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph383_3"><a xlink:title="scalafx.scene.shape.CubicCurveTo" xlink:href="../scene/shape/CubicCurveTo.html#inheritance-diagram"><polygon points="300.25,-26 195.75,-26 195.75,-0 300.25,-0 300.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="206" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="228" text-anchor="start">CubicCurveTo</text></a></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph383_0_3"><a xlink:title="CubicCurveTo is a subtype of PositionDelegate[J]"><path d="M713.649,-68.959C620.7,-61.8265 452.025,-47.247 309,-26 306.224,-25.5876 303.383,-25.1353 300.518,-24.6553" stroke="#d4d4d4" fill="none"></path><polygon points="713.72,-70.7195 718.839,-69.3556 713.987,-67.2296 713.72,-70.7195" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node4 --><g class="node class" id="graph383_4"><a xlink:title="scalafx.scene.effect.ImageInput" xlink:href="../scene/effect/ImageInput.html#inheritance-diagram"><polygon points="411.25,-26 318.75,-26 318.75,-0 411.25,-0 411.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="329" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="351" text-anchor="start">ImageInput</text></a></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph383_0_4"><a xlink:title="ImageInput is a subtype of PositionDelegate[J]"><path d="M713.771,-66.5052C640.268,-58.2485 521.636,-43.7567 420,-26 417.208,-25.5122 414.343,-24.981 411.457,-24.4223" stroke="#d4d4d4" fill="none"></path><polygon points="713.82,-68.2716 718.984,-67.0889 714.21,-64.7934 713.82,-68.2716" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node class" id="graph383_5"><a xlink:title="scalafx.scene.image.ImageView" xlink:href="../scene/image/ImageView.html#inheritance-diagram"><polygon points="522.25,-26 429.75,-26 429.75,-0 522.25,-0 522.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="440" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="462" text-anchor="start">ImageView</text></a></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph383_0_5"><a xlink:title="ImageView is a subtype of PositionDelegate[J]"><path d="M713.773,-61.0685C663.175,-51.643 593.299,-38.4041 532,-26 528.881,-25.369 525.668,-24.7082 522.431,-24.0349" stroke="#d4d4d4" fill="none"></path><polygon points="713.68,-62.8314 718.916,-62.0259 714.321,-59.3904 713.68,-62.8314" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6 --><g class="node class" id="graph383_6"><a xlink:title="scalafx.scene.shape.LineTo" xlink:href="../scene/shape/LineTo.html#inheritance-diagram"><polygon points="615,-26 541,-26 541,-0 615,-0 615,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="551" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="573" text-anchor="start">LineTo</text></a></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph383_0_6"><a xlink:title="LineTo is a subtype of PositionDelegate[J]"><path d="M737.418,-60.4325C700.428,-49.6588 649.399,-34.7959 615.13,-24.8145" stroke="#d4d4d4" fill="none"></path><polygon points="737.023,-62.14 742.313,-61.8581 738.002,-58.7796 737.023,-62.14" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7 --><g class="node class" id="graph383_7"><a xlink:title="scalafx.scene.media.MediaView" xlink:href="../scene/media/MediaView.html#inheritance-diagram"><polygon points="726.25,-26 633.75,-26 633.75,-0 726.25,-0 726.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="644" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="666" text-anchor="start">MediaView</text></a></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph383_0_7"><a xlink:title="MediaView is a subtype of PositionDelegate[J]"><path d="M758.589,-59.34C740.917,-49.1447 717.64,-35.7155 701.015,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="757.749,-60.8753 762.954,-61.8581 759.498,-57.8436 757.749,-60.8753" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node8 --><g class="node class" id="graph383_8"><a xlink:title="scalafx.scene.shape.MoveTo" xlink:href="../scene/shape/MoveTo.html#inheritance-diagram"><polygon points="823.25,-26 744.75,-26 744.75,-0 823.25,-0 823.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="755" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="777" text-anchor="start">MoveTo</text></a></g><!-- node0&#45;&gt;node8 --><g class="edge inheritance" id="graph383_0_8"><a xlink:title="MoveTo is a subtype of PositionDelegate[J]"><path d="M784,-56.6826C784,-46.8961 784,-34.9026 784,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="782.25,-56.8581 784,-61.8581 785.75,-56.8581 782.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node9 --><g class="node class" id="graph383_9"><a xlink:title="scalafx.scene.effect.Light.Point" xlink:href="../scene/effect/Light$$Point.html#inheritance-diagram"><polygon points="910,-26 842,-26 842,-0 910,-0 910,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="852" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="874" text-anchor="start">Point</text></a></g><!-- node0&#45;&gt;node9 --><g class="edge inheritance" id="graph383_0_9"><a xlink:title="Point is a subtype of PositionDelegate[J]"><path d="M806.877,-59.0801C822.46,-48.9173 842.828,-35.6342 857.41,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="805.85,-57.6609 802.618,-61.8581 807.762,-60.5925 805.85,-57.6609" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node10 --><g class="node class" id="graph383_10"><a xlink:title="scalafx.scene.shape.QuadCurveTo" xlink:href="../scene/shape/QuadCurveTo.html#inheritance-diagram"><polygon points="1031.25,-26 928.75,-26 928.75,-0 1031.25,-0 1031.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="939" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="961" text-anchor="start">QuadCurveTo</text></a></g><!-- node0&#45;&gt;node10 --><g class="edge inheritance" id="graph383_0_10"><a xlink:title="QuadCurveTo is a subtype of PositionDelegate[J]"><path d="M828.556,-60.3604C862.337,-50.0194 908.322,-35.9422 940.73,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="827.932,-58.7211 823.664,-61.8581 828.957,-62.0678 827.932,-58.7211" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node11 --><g class="node class" id="graph383_11"><a xlink:title="scalafx.scene.shape.Rectangle" xlink:href="../scene/shape/Rectangle.html#inheritance-diagram"><polygon points="1138.25,-26 1049.75,-26 1049.75,-0 1138.25,-0 1138.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="1060" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1082" text-anchor="start">Rectangle</text></a></g><!-- node0&#45;&gt;node11 --><g class="edge inheritance" id="graph383_0_11"><a xlink:title="Rectangle is a subtype of PositionDelegate[J]"><path d="M854.01,-61.5228C905.534,-52.1823 977.237,-38.854 1040,-26 1043.1,-25.3641 1046.31,-24.6928 1049.53,-24.0057" stroke="#d4d4d4" fill="none"></path><polygon points="853.696,-59.8011 849.088,-62.4141 854.32,-63.2451 853.696,-59.8011" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node12 --><g class="node class" id="graph383_12"><a xlink:title="scalafx.scene.transform.Scale" xlink:href="../scene/transform/Scale.html#inheritance-diagram"><polygon points="1227,-26 1157,-26 1157,-0 1227,-0 1227,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="1167" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1189" text-anchor="start">Scale</text></a></g><!-- node0&#45;&gt;node12 --><g class="edge inheritance" id="graph383_0_12"><a xlink:title="Scale is a subtype of PositionDelegate[J]"><path d="M854.211,-67.4324C927.654,-59.9295 1046.07,-46.0425 1147,-26 1150.17,-25.37 1153.45,-24.644 1156.73,-23.8672" stroke="#d4d4d4" fill="none"></path><polygon points="853.799,-65.7151 849.002,-67.9616 854.153,-69.1972 853.799,-65.7151" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node13 --><g class="node class" id="graph383_13"><a xlink:title="scalafx.scene.transform.Shear" xlink:href="../scene/transform/Shear.html#inheritance-diagram"><polygon points="1316.25,-26 1245.75,-26 1245.75,-0 1316.25,-0 1316.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="1256" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1278" text-anchor="start">Shear</text></a></g><!-- node0&#45;&gt;node13 --><g class="edge inheritance" id="graph383_0_13"><a xlink:title="Shear is a subtype of PositionDelegate[J]"><path d="M854.457,-69.9074C943.793,-63.9437 1102.29,-50.7728 1236,-26 1239.18,-25.4108 1242.47,-24.7128 1245.74,-23.9543" stroke="#d4d4d4" fill="none"></path><polygon points="854.075,-68.1788 849.201,-70.2553 854.306,-71.6712 854.075,-68.1788" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node14 --><g class="node class" id="graph383_14"><a xlink:title="scalafx.scene.text.Text" xlink:href="../scene/text/Text.html#inheritance-diagram"><polygon points="1399,-26 1335,-26 1335,-0 1399,-0 1399,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="1345" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1367" text-anchor="start">Text</text></a></g><!-- node0&#45;&gt;node14 --><g class="edge inheritance" id="graph383_0_14"><a xlink:title="Text is a subtype of PositionDelegate[J]"><path d="M854.249,-72.018C957.992,-68.1346 1157.93,-56.9888 1325,-26 1328.13,-25.4191 1331.37,-24.7059 1334.59,-23.9193" stroke="#d4d4d4" fill="none"></path><polygon points="854.01,-70.2755 849.078,-72.2085 854.139,-73.7732 854.01,-70.2755" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node15 --><g class="node class" id="graph383_15"><a xlink:title="scalafx.scene.transform.Translate" xlink:href="../scene/transform/Translate.html#inheritance-diagram"><polygon points="1502.25,-26 1417.75,-26 1417.75,-0 1502.25,-0 1502.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-21" x="1428" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1450" text-anchor="start">Translate</text></a></g><!-- node0&#45;&gt;node15 --><g class="edge inheritance" id="graph383_0_15"><a xlink:title="Translate is a subtype of PositionDelegate[J]"><path d="M854.13,-72.0333C970.015,-68.0177 1208.51,-56.5145 1408,-26 1411.11,-25.5237 1414.32,-24.9622 1417.53,-24.3466" stroke="#d4d4d4" fill="none"></path><polygon points="853.98,-70.2873 849.043,-72.2075 854.1,-73.7853 853.98,-70.2873" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node16 --><g class="node trait" id="graph383_16"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="SFXDelegate.html#inheritance-diagram"><polygon points="840,-150 728,-150 728,-124 840,-124 840,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-145" x="738" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="760" text-anchor="start">SFXDelegate[J]</text></a></g><!-- node16&#45;&gt;node0 --><g class="edge inheritance" id="graph383_16_0"><a xlink:title="PositionDelegate[J] is a subtype of SFXDelegate[J]"><path d="M784,-118.683C784,-108.896 784,-96.9026 784,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="782.25,-118.858 784,-123.858 785.75,-118.858 782.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -127,7 +135,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -144,7 +152,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@##():Int" title="Permalink" target="_top">
@@ -161,7 +169,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -195,7 +203,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@clone():Object" title="Permalink" target="_top">
@@ -218,7 +226,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -235,7 +243,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -254,7 +262,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@finalize():Unit" title="Permalink" target="_top">
@@ -294,7 +302,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@hashCode():Int" title="Permalink" target="_top">
@@ -312,7 +320,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -329,7 +337,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -346,7 +354,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@notify():Unit" title="Permalink" target="_top">
@@ -363,7 +371,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@notifyAll():Unit" title="Permalink" target="_top">
@@ -415,7 +423,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@wait():Unit" title="Permalink" target="_top">
@@ -438,7 +446,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -461,7 +469,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -502,7 +510,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: x_$eq" class="name">x_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: x_$eq" class="name">x_=</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@x_=(v:Double):Unit" title="Permalink" target="_top">
@@ -537,7 +545,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: y_$eq" class="name">y_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: y_$eq" class="name">y_=</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.delegate.PositionDelegate@y_=(v:Double):Unit" title="Permalink" target="_top">
@@ -557,9 +565,9 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
         <div class="parent" name="scalafx.delegate.SFXDelegate">
               <h3>Inherited from <a href="SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.delegate.PositionDelegate.J">J</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -575,7 +583,7 @@ dimensions, represented by <code>xProperty</code> and <code>yProperty</code> and
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.2.2.76-R11 </div>
 
 
     </body>
