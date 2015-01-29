@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Property - ScalaFX API 8.0.20-R6 - scalafx.beans.property.Property</title>
-          <meta name="description" content="Property - ScalaFX API 8.0.20 - R6 - scalafx.beans.property.Property" />
-          <meta name="keywords" content="Property ScalaFX API 8.0.20 R6 scalafx.beans.property.Property" />
+          <title>Property - ScalaFX API 8.0.31-R7 - scalafx.beans.property.Property</title>
+          <meta name="description" content="Property - ScalaFX API 8.0.31 - R7 - scalafx.beans.property.Property" />
+          <meta name="keywords" content="Property ScalaFX API 8.0.31 R7 scalafx.beans.property.Property" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,7 +30,11 @@
       <div id="definition">
         <a href="Property$.html" title="Go to companion"><img src="../../../lib/trait_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../package.html" class="extype" name="scalafx.beans">beans</a>.<a href="package.html" class="extype" name="scalafx.beans.property">property</a></p>
-        <h1><a href="Property$.html" title="Go to companion">Property</a></h1> <span class="permalink">
+        <h1><a href="Property$.html" title="Go to companion">Property</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="Property$.html" title="See companion">object Property</a>
+            | <a href="package.html" class="extype" name="scalafx.beans.property">package property</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
@@ -50,13 +54,17 @@
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Generic trait that defines the methods common to all (writable) properties independent of their
 type.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>Indicates Scala type that will be returned for this property.</p></dd><dt class="tparam">J</dt><dd class="cmt"><p>Indicates Java type to be wrapped by T. Eventually T and J could be the same.
-</p></dd></dl><div class="toggleContainer block">
+</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.31-R7/scalafx//src/main/scala/scalafx/beans/property/Property.scala" target="_blank">Property.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="ReadOnlyProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyProperty">ReadOnlyProperty</a>[<span class="extype" name="scalafx.beans.property.Property.T">T</span>, <span class="extype" name="scalafx.beans.property.Property.J">J</span>], <a href="../value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[<span class="extype" name="scalafx.beans.property.Property.T">T</span>, <span class="extype" name="scalafx.beans.property.Property.J">J</span>], <a href="../Observable.html" class="extype" name="scalafx.beans.Observable">Observable</a>, <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.beans.property.Property">javafx.beans.property.Property</span>[<span class="extype" name="scalafx.beans.property.Property.J">J</span>]], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="ReadOnlyProperty.html" class="extype" name="scalafx.beans.property.ReadOnlyProperty">ReadOnlyProperty</a>[<span class="extype" name="scalafx.beans.property.Property.T">T</span>, <span class="extype" name="scalafx.beans.property.Property.J">J</span>], <a href="../value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[<span class="extype" name="scalafx.beans.property.Property.T">T</span>, <span class="extype" name="scalafx.beans.property.Property.J">J</span>], <a href="../Observable.html" class="extype" name="scalafx.beans.Observable">Observable</a>, <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.beans.property.Property">javafx.beans.property.Property</span>[<span class="extype" name="scalafx.beans.property.Property.J">J</span>]], <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="BooleanProperty.html" class="extype" name="scalafx.beans.property.BooleanProperty">BooleanProperty</a>, <a href="DoubleProperty.html" class="extype" name="scalafx.beans.property.DoubleProperty">DoubleProperty</a>, <a href="FloatProperty.html" class="extype" name="scalafx.beans.property.FloatProperty">FloatProperty</a>, <a href="IntegerProperty.html" class="extype" name="scalafx.beans.property.IntegerProperty">IntegerProperty</a>, <a href="LongProperty.html" class="extype" name="scalafx.beans.property.LongProperty">LongProperty</a>, <a href="ObjectProperty.html" class="extype" name="scalafx.beans.property.ObjectProperty">ObjectProperty</a>, <a href="ReadOnlyBooleanWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyBooleanWrapper">ReadOnlyBooleanWrapper</a>, <a href="ReadOnlyDoubleWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyDoubleWrapper">ReadOnlyDoubleWrapper</a>, <a href="ReadOnlyFloatWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyFloatWrapper">ReadOnlyFloatWrapper</a>, <a href="ReadOnlyIntegerWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyIntegerWrapper">ReadOnlyIntegerWrapper</a>, <a href="ReadOnlyLongWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyLongWrapper">ReadOnlyLongWrapper</a>, <a href="ReadOnlyObjectWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyObjectWrapper">ReadOnlyObjectWrapper</a>, <a href="ReadOnlyStringWrapper.html" class="extype" name="scalafx.beans.property.ReadOnlyStringWrapper">ReadOnlyStringWrapper</a>, <a href="StringProperty.html" class="extype" name="scalafx.beans.property.StringProperty">StringProperty</a></div>
-          </div></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph534" viewBox="0.00 0.00 896.00 158.00" height="158pt" width="896pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 893,-154 893,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this trait" id="graph534_0"><a xlink:title="scalafx.beans.property.Property (this trait)" xlink:href="#inheritance-diagram"><polygon points="496,-88 392,-88 392,-62 496,-62 496,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-83" x="402" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="424" text-anchor="start">Property[T, J]</text></a></g><!-- node1 --><g class="node class" id="graph534_1"><a xlink:title="scalafx.beans.property.BooleanProperty" xlink:href="BooleanProperty.html#inheritance-diagram"><polygon points="118,-26 0,-26 0,-0 118,-0 118,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="32" text-anchor="start">BooleanProperty</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph534_0_1"><a xlink:title="BooleanProperty is a subtype of Property[T, J]"><path d="M386.511,-65.7255C322.95,-56.4767 217.559,-40.8444 127,-26 124.161,-25.5346 121.256,-25.051 118.324,-24.5567" stroke="#d4d4d4" fill="none"></path><polygon points="386.572,-67.5026 391.771,-66.4902 387.075,-64.039 386.572,-67.5026" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node class" id="graph534_2"><a xlink:title="scalafx.beans.property.DoubleProperty" xlink:href="DoubleProperty.html#inheritance-diagram"><polygon points="248,-26 136,-26 136,-0 248,-0 248,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="146" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="168" text-anchor="start">DoubleProperty</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph534_0_2"><a xlink:title="DoubleProperty is a subtype of Property[T, J]"><path d="M388.35,-60.7499C344.818,-50.3852 284.799,-36.095 242.612,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="388.038,-62.4745 393.307,-61.9303 388.849,-59.0697 388.038,-62.4745" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph534_3"><a xlink:title="scalafx.beans.property.FloatProperty" xlink:href="FloatProperty.html#inheritance-diagram"><polygon points="370,-26 266,-26 266,-0 370,-0 370,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="276" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="298" text-anchor="start">FloatProperty</text></a></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph534_0_3"><a xlink:title="FloatProperty is a subtype of Property[T, J]"><path d="M413.757,-59.5985C392.282,-49.3726 363.773,-35.7968 343.46,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="413.235,-61.2884 418.502,-61.8581 414.74,-58.1284 413.235,-61.2884" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node4 --><g class="node class" id="graph534_4"><a xlink:title="scalafx.beans.property.IntegerProperty" xlink:href="IntegerProperty.html#inheritance-diagram"><polygon points="500,-26 388,-26 388,-0 500,-0 500,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="398" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="420" text-anchor="start">IntegerProperty</text></a></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph534_0_4"><a xlink:title="IntegerProperty is a subtype of Property[T, J]"><path d="M444,-56.6826C444,-46.8961 444,-34.9026 444,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="442.25,-56.8581 444,-61.8581 445.75,-56.8581 442.25,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node class" id="graph534_5"><a xlink:title="scalafx.beans.property.LongProperty" xlink:href="LongProperty.html#inheritance-diagram"><polygon points="621.25,-26 518.75,-26 518.75,-0 621.25,-0 621.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="529" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="551" text-anchor="start">LongProperty</text></a></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph534_0_5"><a xlink:title="LongProperty is a subtype of Property[T, J]"><path d="M474.243,-59.5985C495.718,-49.3726 524.227,-35.7968 544.54,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="473.26,-58.1284 469.498,-61.8581 474.765,-61.2884 473.26,-58.1284" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6 --><g class="node class" id="graph534_6"><a xlink:title="scalafx.beans.property.ObjectProperty" xlink:href="ObjectProperty.html#inheritance-diagram"><polygon points="762,-26 640,-26 640,-0 762,-0 762,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="650" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="672" text-anchor="start">ObjectProperty[T]</text></a></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph534_0_6"><a xlink:title="ObjectProperty[T] is a subtype of Property[T, J]"><path d="M500.755,-60.7499C545.15,-50.3852 606.36,-36.095 649.384,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="500.17,-59.0893 495.699,-61.9303 500.966,-62.4976 500.17,-59.0893" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7 --><g class="node class" id="graph534_7"><a xlink:title="scalafx.beans.property.StringProperty" xlink:href="StringProperty.html#inheritance-diagram"><polygon points="888,-26 780,-26 780,-0 888,-0 888,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="790" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="812" text-anchor="start">StringProperty</text></a></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph534_0_7"><a xlink:title="StringProperty is a subtype of Property[T, J]"><path d="M501.228,-66.3495C566.596,-57.4368 676.703,-41.8942 771,-26 773.855,-25.5188 776.779,-25.0116 779.73,-24.4886" stroke="#d4d4d4" fill="none"></path><polygon points="500.929,-64.6239 496.211,-67.0325 501.401,-68.092 500.929,-64.6239" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node8 --><g class="node trait" id="graph534_8"><a xlink:title="scalafx.beans.property.ReadOnlyProperty" xlink:href="ReadOnlyProperty.html#inheritance-diagram"><polygon points="409.25,-150 262.75,-150 262.75,-124 409.25,-124 409.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-145" x="273" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="295" text-anchor="start">ReadOnlyProperty[T, J]</text></a></g><!-- node8&#45;&gt;node0 --><g class="edge inheritance" id="graph534_8_0"><a xlink:title="Property[T, J] is a subtype of ReadOnlyProperty[T, J]"><path d="M362.388,-121.34C380.74,-111.145 404.912,-97.7155 422.177,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="361.376,-119.9 357.855,-123.858 363.076,-122.96 361.376,-119.9" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node9 --><g class="node trait" id="graph534_9"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="../../delegate/SFXDelegate.html#inheritance-diagram"><polygon points="678,-150 428,-150 428,-124 678,-124 678,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-145" x="438" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="460" text-anchor="start">SFXDelegate[javafx.beans.property.Property[J]]</text></a></g><!-- node9&#45;&gt;node0 --><g class="edge inheritance" id="graph534_9_0"><a xlink:title="Property[T, J] is a subtype of SFXDelegate[javafx.beans.property.Property[J]]"><path d="M526.368,-121.34C507.846,-111.145 483.45,-97.7155 466.025,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="525.718,-122.98 530.942,-123.858 527.406,-119.914 525.718,-122.98" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -144,7 +152,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: value_$eq" class="name">value_=</span><span class="params">(<span name="v">v: <span class="extype" name="scalafx.beans.property.Property.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: value_$eq" class="name">value_=</span><span class="params">(<span name="v">v: <span class="extype" name="scalafx.beans.property.Property.T">T</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@value_=(v:T):Unit" title="Permalink" target="_top">
@@ -168,7 +176,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -185,7 +193,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@##():Int" title="Permalink" target="_top">
@@ -222,7 +230,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $less$eq$eq" class="name">&lt;==</span><span class="params">(<span name="v">v: <a href="../value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[_ &lt;: <span class="extype" name="scalafx.beans.property.Property.T">T</span>, _ &lt;: <span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: $less$eq$eq" class="name">&lt;==</span><span class="params">(<span name="v">v: <a href="../value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[_ &lt;: <span class="extype" name="scalafx.beans.property.Property.T">T</span>, _ &lt;: <span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@&lt;==(v:scalafx.beans.value.ObservableValue[_&lt;:T,_&lt;:J]):Unit" title="Permalink" target="_top">
@@ -241,7 +249,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $less$eq$eq" class="name">&lt;==</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.beans.value.ObservableValue">ObservableValue</span>[_ &lt;: <span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: $less$eq$eq" class="name">&lt;==</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.beans.value.ObservableValue">ObservableValue</span>[_ &lt;: <span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@&lt;==(v:javafx.beans.value.ObservableValue[_&lt;:J]):Unit" title="Permalink" target="_top">
@@ -260,7 +268,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $less$eq$eq$greater" class="name">&lt;==&gt;</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.beans.property.Property">javafx.beans.property.Property</span>[<span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: $less$eq$eq$greater" class="name">&lt;==&gt;</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.beans.property.Property">javafx.beans.property.Property</span>[<span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@&lt;==&gt;(v:javafx.beans.property.Property[J]):Unit" title="Permalink" target="_top">
@@ -279,7 +287,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $less$eq$eq$greater" class="name">&lt;==&gt;</span><span class="params">(<span name="v">v: <a href="" class="extype" name="scalafx.beans.property.Property">Property</a>[<span class="extype" name="scalafx.beans.property.Property.T">T</span>, <span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: $less$eq$eq$greater" class="name">&lt;==&gt;</span><span class="params">(<span name="v">v: <a href="" class="extype" name="scalafx.beans.property.Property">Property</a>[<span class="extype" name="scalafx.beans.property.Property.T">T</span>, <span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@&lt;==&gt;(v:scalafx.beans.property.Property[T,J]):Unit" title="Permalink" target="_top">
@@ -298,7 +306,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -352,7 +360,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">bean</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">bean</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@bean:Object" title="Permalink" target="_top">
@@ -370,7 +378,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@clone():Object" title="Permalink" target="_top">
@@ -393,7 +401,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -410,7 +418,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -429,7 +437,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@finalize():Unit" title="Permalink" target="_top">
@@ -469,7 +477,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@hashCode():Int" title="Permalink" target="_top">
@@ -487,7 +495,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -522,7 +530,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -539,7 +547,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@notify():Unit" title="Permalink" target="_top">
@@ -556,7 +564,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@notifyAll():Unit" title="Permalink" target="_top">
@@ -573,7 +581,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onChange</span><span class="tparams">[<span name="J1">J1 &gt;: <span class="extype" name="scalafx.beans.property.Property.J">J</span></span>]</span><span class="params">(<span name="op">op: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="../../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
+        <span class="name">onChange</span><span class="tparams">[<span name="J1">J1 &gt;: <span class="extype" name="scalafx.beans.property.Property.J">J</span></span>]</span><span class="params">(<span name="op">op: ⇒ <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="result">: <a href="../../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@onChange[J1&gt;:J](op:=&gt;Unit):scalafx.event.subscriptions.Subscription" title="Permalink" target="_top">
@@ -592,7 +600,7 @@ type.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onChange</span><span class="tparams">[<span name="J1">J1 &gt;: <span class="extype" name="scalafx.beans.property.Property.J">J</span></span>]</span><span class="params">(<span name="op">op: (<a href="../value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[<span class="extype" name="scalafx.beans.property.Property.T">T</span>, <span class="extype" name="scalafx.beans.property.Property.J">J</span>], <span class="extype" name="scalafx.beans.value.ObservableValue.onChange.J1">J1</span>, <span class="extype" name="scalafx.beans.value.ObservableValue.onChange.J1">J1</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="../../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
+        <span class="name">onChange</span><span class="tparams">[<span name="J1">J1 &gt;: <span class="extype" name="scalafx.beans.property.Property.J">J</span></span>]</span><span class="params">(<span name="op">op: (<a href="../value/ObservableValue.html" class="extype" name="scalafx.beans.value.ObservableValue">ObservableValue</a>[<span class="extype" name="scalafx.beans.property.Property.T">T</span>, <span class="extype" name="scalafx.beans.property.Property.J">J</span>], <span class="extype" name="scalafx.beans.value.ObservableValue.onChange.J1">J1</span>, <span class="extype" name="scalafx.beans.value.ObservableValue.onChange.J1">J1</span>) ⇒ <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="result">: <a href="../../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@onChange[J1&gt;:J](op:(scalafx.beans.value.ObservableValue[T,J],J1,J1)=&gt;Unit):scalafx.event.subscriptions.Subscription" title="Permalink" target="_top">
@@ -615,7 +623,7 @@ the old value and the new value. It will be called when value changes.</p></dd><
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onInvalidate</span><span class="params">(<span name="op">op: ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="../../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
+        <span class="name">onInvalidate</span><span class="params">(<span name="op">op: ⇒ <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="result">: <a href="../../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@onInvalidate(op:=&gt;Unit):scalafx.event.subscriptions.Subscription" title="Permalink" target="_top">
@@ -635,7 +643,7 @@ invalidated values.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">onInvalidate</span><span class="params">(<span name="op">op: (<a href="../Observable.html" class="extype" name="scalafx.beans.Observable">Observable</a>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <a href="../../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
+        <span class="name">onInvalidate</span><span class="params">(<span name="op">op: (<a href="../Observable.html" class="extype" name="scalafx.beans.Observable">Observable</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>)</span><span class="result">: <a href="../../event/subscriptions/Subscription.html" class="extype" name="scalafx.event.subscriptions.Subscription">Subscription</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@onInvalidate(op:scalafx.beans.Observable=&gt;Unit):scalafx.event.subscriptions.Subscription" title="Permalink" target="_top">
@@ -691,7 +699,7 @@ method from <code>InvalidationListener</code>.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">unbind</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.beans.property.Property">javafx.beans.property.Property</span>[<span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">unbind</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.beans.property.Property">javafx.beans.property.Property</span>[<span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@unbind(v:javafx.beans.property.Property[J]):Unit" title="Permalink" target="_top">
@@ -711,7 +719,7 @@ bidirectional binding between the properties exists, calling this method has no 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">unbind</span><span class="params">(<span name="v">v: <a href="" class="extype" name="scalafx.beans.property.Property">Property</a>[<span class="extype" name="scalafx.beans.property.Property.T">T</span>, <span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">unbind</span><span class="params">(<span name="v">v: <a href="" class="extype" name="scalafx.beans.property.Property">Property</a>[<span class="extype" name="scalafx.beans.property.Property.T">T</span>, <span class="extype" name="scalafx.beans.property.Property.J">J</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@unbind(v:scalafx.beans.property.Property[T,J]):Unit" title="Permalink" target="_top">
@@ -731,7 +739,7 @@ bidirectional binding between the properties exists, calling this method has no 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">unbind</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">unbind</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@unbind():Unit" title="Permalink" target="_top">
@@ -750,7 +758,7 @@ calling this method has no effect.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">update</span><span class="params">(<span name="v">v: <span class="extype" name="scalafx.beans.property.Property.T">T</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">update</span><span class="params">(<span name="v">v: <span class="extype" name="scalafx.beans.property.Property.T">T</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@update(v:T):Unit" title="Permalink" target="_top">
@@ -769,7 +777,7 @@ calling this method has no effect.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@wait():Unit" title="Permalink" target="_top">
@@ -792,7 +800,7 @@ calling this method has no effect.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -815,7 +823,7 @@ calling this method has no effect.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.beans.property.Property@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -847,9 +855,9 @@ calling this method has no effect.
             </div><div class="parent" name="scalafx.delegate.SFXDelegate">
               <h3>Inherited from <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.beans.property.Property">javafx.beans.property.Property</span>[<span class="extype" name="scalafx.beans.property.Property.J">J</span>]]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -865,7 +873,7 @@ calling this method has no effect.
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.8.0.31-R7 </div>
 
 
     </body>

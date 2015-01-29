@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>StringConverterDelegate - ScalaFX API 8.0.20-R6 - scalafx.util.converter.StringConverterDelegate</title>
-          <meta name="description" content="StringConverterDelegate - ScalaFX API 8.0.20 - R6 - scalafx.util.converter.StringConverterDelegate" />
-          <meta name="keywords" content="StringConverterDelegate ScalaFX API 8.0.20 R6 scalafx.util.converter.StringConverterDelegate" />
+          <title>StringConverterDelegate - ScalaFX API 8.0.31-R7 - scalafx.util.converter.StringConverterDelegate</title>
+          <meta name="description" content="StringConverterDelegate - ScalaFX API 8.0.31 - R7 - scalafx.util.converter.StringConverterDelegate" />
+          <meta name="keywords" content="StringConverterDelegate ScalaFX API 8.0.31 R7 scalafx.util.converter.StringConverterDelegate" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../lib/class_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../package.html" class="extype" name="scalafx.util">util</a>.<a href="package.html" class="extype" name="scalafx.util.converter">converter</a></p>
-        <h1>StringConverterDelegate</h1> <span class="permalink">
+        <h1>StringConverterDelegate</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="scalafx.util.converter">package converter</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
@@ -43,7 +45,7 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">StringConverterDelegate</span><span class="tparams">[<span name="J">J &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="S">S</span>, <span name="C">C &lt;: <span class="extype" name="javafx.util.StringConverter">javafx.util.StringConverter</span>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.J">J</span>]</span>]</span><span class="result"> extends <a href="../StringConverter.html" class="extype" name="scalafx.util.StringConverter">StringConverter</a>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.S">S</span>] with <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.C">C</span>]</span>
+        <span class="name">StringConverterDelegate</span><span class="tparams">[<span name="J">J &lt;: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>, <span name="S">S</span>, <span name="C">C &lt;: <span class="extype" name="javafx.util.StringConverter">javafx.util.StringConverter</span>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.J">J</span>]</span>]</span><span class="result"> extends <a href="../StringConverter.html" class="extype" name="scalafx.util.StringConverter">StringConverter</a>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.S">S</span>] with <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.C">C</span>]</span>
       </span>
       </h4>
       
@@ -53,13 +55,17 @@ the same (like java.util.Date or java.lang.Number), so it must be used
 StringConverterJavaToJavaDelegate class.
 </p></div><dl class="paramcmts block"><dt class="tparam">J</dt><dd class="cmt"><p>Java Class (e.g. java.lang.Integer, java.lang.Number, java.util.BigInteger, java.util.Date)</p></dd><dt class="tparam">S</dt><dd class="cmt"><p>Scala CLass (e.g. Int, BigInt)</p></dd><dt class="tparam">C</dt><dd class="cmt"><p>JavaFX StringConverter using type J (e.g. javafx.util.converter.IntegerStringConverter,
 javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStringConverter)
-</p></dd></dl><div class="toggleContainer block">
+</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.31-R7/scalafx//src/main/scala/scalafx/util/converter/StringConverterDelegate.scala" target="_blank">StringConverterDelegate.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.C">C</span>], <a href="../StringConverter.html" class="extype" name="scalafx.util.StringConverter">StringConverter</a>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.S">S</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.C">C</span>], <a href="../StringConverter.html" class="extype" name="scalafx.util.StringConverter">StringConverter</a>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.S">S</span>], <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="BigDecimalStringConverter.html" class="extype" name="scalafx.util.converter.BigDecimalStringConverter">BigDecimalStringConverter</a>, <a href="BigIntStringConverter.html" class="extype" name="scalafx.util.converter.BigIntStringConverter">BigIntStringConverter</a>, <a href="BooleanStringConverter.html" class="extype" name="scalafx.util.converter.BooleanStringConverter">BooleanStringConverter</a>, <a href="ByteStringConverter.html" class="extype" name="scalafx.util.converter.ByteStringConverter">ByteStringConverter</a>, <a href="CharStringConverter.html" class="extype" name="scalafx.util.converter.CharStringConverter">CharStringConverter</a>, <a href="../../scene/chart/NumberAxis$$DefaultFormatter.html" class="extype" name="scalafx.scene.chart.NumberAxis.DefaultFormatter">DefaultFormatter</a>, <a href="DefaultStringConverter.html" class="extype" name="scalafx.util.converter.DefaultStringConverter">DefaultStringConverter</a>, <a href="DoubleStringConverter.html" class="extype" name="scalafx.util.converter.DoubleStringConverter">DoubleStringConverter</a>, <a href="FloatStringConverter.html" class="extype" name="scalafx.util.converter.FloatStringConverter">FloatStringConverter</a>, <a href="IntStringConverter.html" class="extype" name="scalafx.util.converter.IntStringConverter">IntStringConverter</a>, <a href="LongStringConverter.html" class="extype" name="scalafx.util.converter.LongStringConverter">LongStringConverter</a>, <a href="ShortStringConverter.html" class="extype" name="scalafx.util.converter.ShortStringConverter">ShortStringConverter</a>, <a href="StringConverterJavaToJavaDelegate.html" class="extype" name="scalafx.util.converter.StringConverterJavaToJavaDelegate">StringConverterJavaToJavaDelegate</a></div>
-          </div></div>
+            <div class="subClasses hiddenContent"><a href="BigDecimalStringConverter.html" class="extype" name="scalafx.util.converter.BigDecimalStringConverter">BigDecimalStringConverter</a>, <a href="BigIntStringConverter.html" class="extype" name="scalafx.util.converter.BigIntStringConverter">BigIntStringConverter</a>, <a href="BooleanStringConverter.html" class="extype" name="scalafx.util.converter.BooleanStringConverter">BooleanStringConverter</a>, <a href="ByteStringConverter.html" class="extype" name="scalafx.util.converter.ByteStringConverter">ByteStringConverter</a>, <a href="CharStringConverter.html" class="extype" name="scalafx.util.converter.CharStringConverter">CharStringConverter</a>, <a href="../../scene/chart/NumberAxis$$DefaultFormatter.html" class="extype" name="scalafx.scene.chart.NumberAxis.DefaultFormatter">DefaultFormatter</a>, <a href="DefaultStringConverter.html" class="extype" name="scalafx.util.converter.DefaultStringConverter">DefaultStringConverter</a>, <a href="DoubleStringConverter.html" class="extype" name="scalafx.util.converter.DoubleStringConverter">DoubleStringConverter</a>, <a href="FloatStringConverter.html" class="extype" name="scalafx.util.converter.FloatStringConverter">FloatStringConverter</a>, <a href="FormatStringConverter.html" class="extype" name="scalafx.util.converter.FormatStringConverter">FormatStringConverter</a>, <a href="IntStringConverter.html" class="extype" name="scalafx.util.converter.IntStringConverter">IntStringConverter</a>, <a href="LongStringConverter.html" class="extype" name="scalafx.util.converter.LongStringConverter">LongStringConverter</a>, <a href="ShortStringConverter.html" class="extype" name="scalafx.util.converter.ShortStringConverter">ShortStringConverter</a>, <a href="StringConverterJavaToJavaDelegate.html" class="extype" name="scalafx.util.converter.StringConverterJavaToJavaDelegate">StringConverterJavaToJavaDelegate</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph6" viewBox="0.00 0.00 2252.00 158.00" height="158pt" width="2252pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 2249,-154 2249,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this class" id="graph6_0"><a xlink:title="scalafx.util.converter.StringConverterDelegate (this class)" xlink:href="#inheritance-diagram"><polygon points="1179,-88 993,-88 993,-62 1179,-62 1179,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-83" x="1003" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="1025" text-anchor="start">StringConverterDelegate[J, S, C]</text></a></g><!-- node1 --><g class="node class" id="graph6_1"><a xlink:title="scalafx.util.converter.BigDecimalStringConverter" xlink:href="BigDecimalStringConverter.html#inheritance-diagram"><polygon points="160.25,-26 -0.25,-26 -0.25,-0 160.25,-0 160.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="32" text-anchor="start">BigDecimalStringConverter</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph6_0_1"><a xlink:title="BigDecimalStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M987.446,-71.4276C819.423,-66.4621 466.862,-53.5242 170,-26 166.861,-25.7089 163.663,-25.3901 160.434,-25.0497" stroke="#d4d4d4" fill="none"></path><polygon points="987.805,-73.1888 992.854,-71.5865 987.908,-69.6903 987.805,-73.1888" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node class" id="graph6_2"><a xlink:title="scalafx.util.converter.BigIntStringConverter" xlink:href="BigIntStringConverter.html#inheritance-diagram"><polygon points="315,-26 179,-26 179,-0 315,-0 315,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="189" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="211" text-anchor="start">BigIntStringConverter</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph6_0_2"><a xlink:title="BigIntStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M987.689,-70.6898C842.292,-65.142 561.501,-51.9317 324,-26 321.176,-25.6916 318.296,-25.3531 315.391,-24.9914" stroke="#d4d4d4" fill="none"></path><polygon points="987.741,-72.443 992.804,-70.884 987.874,-68.9455 987.741,-72.443" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph6_3"><a xlink:title="scalafx.util.converter.BooleanStringConverter" xlink:href="BooleanStringConverter.html#inheritance-diagram"><polygon points="480.25,-26 333.75,-26 333.75,-0 480.25,-0 480.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="344" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="366" text-anchor="start">BooleanStringConverter</text></a></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph6_0_3"><a xlink:title="BooleanStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M987.695,-67.9943C869.394,-60.3258 664.831,-45.6587 490,-26 486.817,-25.6421 483.568,-25.2571 480.288,-24.8522" stroke="#d4d4d4" fill="none"></path><polygon points="987.811,-69.7554 992.914,-68.3317 988.037,-66.2627 987.811,-69.7554" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node4 --><g class="node class" id="graph6_4"><a xlink:title="scalafx.util.converter.ByteStringConverter" xlink:href="ByteStringConverter.html#inheritance-diagram"><polygon points="631,-26 499,-26 499,-0 631,-0 631,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="509" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="531" text-anchor="start">ByteStringConverter</text></a></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph6_0_4"><a xlink:title="ByteStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M987.642,-64.8807C897.155,-56.1433 759.319,-41.9556 640,-26 637.125,-25.6155 634.189,-25.2085 631.226,-24.7856" stroke="#d4d4d4" fill="none"></path><polygon points="987.578,-66.6325 992.723,-65.3704 987.913,-63.1487 987.578,-66.6325" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node class" id="graph6_5"><a xlink:title="scalafx.util.converter.CharStringConverter" xlink:href="CharStringConverter.html#inheritance-diagram"><polygon points="781,-26 649,-26 649,-0 781,-0 781,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="659" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="681" text-anchor="start">CharStringConverter</text></a></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph6_0_5"><a xlink:title="CharStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M1006.18,-61.0906C939.008,-50.2278 844.101,-34.8789 781.118,-24.693" stroke="#d4d4d4" fill="none"></path><polygon points="1006.15,-62.8595 1011.37,-61.9303 1006.71,-59.4044 1006.15,-62.8595" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6 --><g class="node class" id="graph6_6"><a xlink:title="scalafx.scene.chart.NumberAxis.DefaultFormatter" xlink:href="../../scene/chart/NumberAxis$$DefaultFormatter.html#inheritance-diagram"><polygon points="917,-26 799,-26 799,-0 917,-0 917,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="809" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="831" text-anchor="start">DefaultFormatter</text></a></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph6_0_6"><a xlink:title="DefaultFormatter is a subtype of StringConverterDelegate[J, S, C]"><path d="M1034.93,-60.5602C995.603,-50.2114 941.729,-36.0339 903.792,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="1034.85,-62.3501 1040.14,-61.9303 1035.75,-58.9654 1034.85,-62.3501" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7 --><g class="node class" id="graph6_7"><a xlink:title="scalafx.util.converter.DefaultStringConverter" xlink:href="DefaultStringConverter.html#inheritance-diagram"><polygon points="1077,-26 935,-26 935,-0 1077,-0 1077,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="945" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="967" text-anchor="start">DefaultStringConverter</text></a></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph6_0_7"><a xlink:title="DefaultStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M1065.76,-58.8189C1052.25,-48.6906 1034.74,-35.5529 1022.17,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1064.76,-60.2581 1069.81,-61.8581 1066.86,-57.4581 1064.76,-60.2581" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node8 --><g class="node class" id="graph6_8"><a xlink:title="scalafx.util.converter.DoubleStringConverter" xlink:href="DoubleStringConverter.html#inheritance-diagram"><polygon points="1237,-26 1095,-26 1095,-0 1237,-0 1237,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="1105" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1127" text-anchor="start">DoubleStringConverter</text></a></g><!-- node0&#45;&gt;node8 --><g class="edge inheritance" id="graph6_0_8"><a xlink:title="DoubleStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M1106.24,-58.8189C1119.75,-48.6906 1137.26,-35.5529 1149.83,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1105.14,-57.4581 1102.19,-61.8581 1107.24,-60.2581 1105.14,-57.4581" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node9 --><g class="node class" id="graph6_9"><a xlink:title="scalafx.util.converter.FloatStringConverter" xlink:href="FloatStringConverter.html#inheritance-diagram"><polygon points="1388.25,-26 1255.75,-26 1255.75,-0 1388.25,-0 1388.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="1266" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1288" text-anchor="start">FloatStringConverter</text></a></g><!-- node0&#45;&gt;node9 --><g class="edge inheritance" id="graph6_0_9"><a xlink:title="FloatStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M1138.37,-60.6868C1179.11,-50.3272 1235.17,-36.0746 1274.6,-26.0504" stroke="#d4d4d4" fill="none"></path><polygon points="1137.89,-59.0022 1133.47,-61.9303 1138.75,-62.3943 1137.89,-59.0022" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node10 --><g class="node class" id="graph6_10"><a xlink:title="scalafx.util.converter.FormatStringConverter" xlink:href="FormatStringConverter.html#inheritance-diagram"><polygon points="1561,-26 1407,-26 1407,-0 1561,-0 1561,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="1417" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1439" text-anchor="start">FormatStringConverter[T]</text></a></g><!-- node0&#45;&gt;node10 --><g class="edge inheritance" id="graph6_0_10"><a xlink:title="FormatStringConverter[T] is a subtype of StringConverterDelegate[J, S, C]"><path d="M1171.04,-61.1792C1240.93,-50.643 1339.11,-35.8428 1406.77,-25.6424" stroke="#d4d4d4" fill="none"></path><polygon points="1170.75,-59.4544 1166.06,-61.9303 1171.27,-62.9153 1170.75,-59.4544" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node11 --><g class="node class" id="graph6_11"><a xlink:title="scalafx.util.converter.IntStringConverter" xlink:href="IntStringConverter.html#inheritance-diagram"><polygon points="1701,-26 1579,-26 1579,-0 1701,-0 1701,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="1589" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1611" text-anchor="start">IntStringConverter</text></a></g><!-- node0&#45;&gt;node11 --><g class="edge inheritance" id="graph6_0_11"><a xlink:title="IntStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M1184.22,-66.3153C1282.17,-58.1681 1436.82,-43.996 1570,-26 1572.93,-25.6037 1575.93,-25.1763 1578.96,-24.727" stroke="#d4d4d4" fill="none"></path><polygon points="1183.85,-64.5895 1179.01,-66.7469 1184.14,-68.0775 1183.85,-64.5895" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node12 --><g class="node class" id="graph6_12"><a xlink:title="scalafx.util.converter.LongStringConverter" xlink:href="LongStringConverter.html#inheritance-diagram"><polygon points="1852.25,-26 1719.75,-26 1719.75,-0 1852.25,-0 1852.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="1730" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1752" text-anchor="start">LongStringConverter</text></a></g><!-- node0&#45;&gt;node12 --><g class="edge inheritance" id="graph6_0_12"><a xlink:title="LongStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M1184.32,-68.869C1307.47,-61.8837 1524.8,-47.7095 1710,-26 1713.18,-25.6268 1716.44,-25.218 1719.72,-24.7838" stroke="#d4d4d4" fill="none"></path><polygon points="1184.15,-67.1259 1179.26,-69.1554 1184.35,-70.6203 1184.15,-67.1259" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node13 --><g class="node class" id="graph6_13"><a xlink:title="scalafx.util.converter.ShortStringConverter" xlink:href="ShortStringConverter.html#inheritance-diagram"><polygon points="2005.25,-26 1870.75,-26 1870.75,-0 2005.25,-0 2005.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="1881" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="1903" text-anchor="start">ShortStringConverter</text></a></g><!-- node0&#45;&gt;node13 --><g class="edge inheritance" id="graph6_0_13"><a xlink:title="ShortStringConverter is a subtype of StringConverterDelegate[J, S, C]"><path d="M1184.47,-70.8279C1331.91,-65.4171 1618.62,-52.3351 1861,-26 1864.09,-25.6639 1867.25,-25.2913 1870.44,-24.8915" stroke="#d4d4d4" fill="none"></path><polygon points="1184.22,-69.0859 1179.29,-71.0172 1184.35,-72.5836 1184.22,-69.0859" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node14 --><g class="node class" id="graph6_14"><a xlink:title="scalafx.util.converter.StringConverterJavaToJavaDelegate" xlink:href="StringConverterJavaToJavaDelegate.html#inheritance-diagram"><polygon points="2244.25,-26 2023.75,-26 2023.75,-0 2244.25,-0 2244.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="2034" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="2056" text-anchor="start">StringConverterJavaToJavaDelegate[J, C]</text></a></g><!-- node0&#45;&gt;node14 --><g class="edge inheritance" id="graph6_0_14"><a xlink:title="StringConverterJavaToJavaDelegate[J, C] is a subtype of StringConverterDelegate[J, S, C]"><path d="M1184.49,-70.4597C1354.08,-64.0165 1712.09,-48.8904 2014,-26 2017.13,-25.7626 2020.31,-25.5118 2023.51,-25.25" stroke="#d4d4d4" fill="none"></path><polygon points="1184.22,-68.7189 1179.29,-70.6571 1184.35,-72.2164 1184.22,-68.7189" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node15 --><g class="node class" id="graph6_15"><a xlink:title="scalafx.util.StringConverter" xlink:href="../StringConverter.html#inheritance-diagram"><polygon points="1079,-150 955,-150 955,-124 1079,-124 1079,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-145" x="965" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="987" text-anchor="start">StringConverter[S]</text></a></g><!-- node15&#45;&gt;node0 --><g class="edge inheritance" id="graph6_15_0"><a xlink:title="StringConverterDelegate[J, S, C] is a subtype of StringConverter[S]"><path d="M1034.76,-120.556C1046.37,-110.464 1061.31,-97.4716 1072.06,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1033.59,-119.257 1030.96,-123.858 1035.88,-121.898 1033.59,-119.257" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node16 --><g class="node trait" id="graph6_16"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="../../delegate/SFXDelegate.html#inheritance-diagram"><polygon points="1212.25,-150 1097.75,-150 1097.75,-124 1212.25,-124 1212.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-145" x="1108" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="1130" text-anchor="start">SFXDelegate[C]</text></a></g><!-- node16&#45;&gt;node0 --><g class="edge inheritance" id="graph6_16_0"><a xlink:title="StringConverterDelegate[J, S, C] is a subtype of SFXDelegate[C]"><path d="M1137.24,-120.556C1125.63,-110.464 1110.69,-97.4716 1099.94,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="1136.12,-121.898 1141.04,-123.858 1138.41,-119.257 1136.12,-121.898" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -132,7 +138,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -149,7 +155,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@##():Int" title="Permalink" target="_top">
@@ -166,7 +172,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -200,7 +206,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@clone():Object" title="Permalink" target="_top">
@@ -241,7 +247,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -258,7 +264,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -277,7 +283,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@finalize():Unit" title="Permalink" target="_top">
@@ -336,7 +342,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@hashCode():Int" title="Permalink" target="_top">
@@ -354,7 +360,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -371,7 +377,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -388,7 +394,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@notify():Unit" title="Permalink" target="_top">
@@ -405,7 +411,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@notifyAll():Unit" title="Permalink" target="_top">
@@ -476,7 +482,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@wait():Unit" title="Permalink" target="_top">
@@ -499,7 +505,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -522,7 +528,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.util.converter.StringConverterDelegate@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -550,9 +556,9 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
             </div><div class="parent" name="scalafx.util.StringConverter">
               <h3>Inherited from <a href="../StringConverter.html" class="extype" name="scalafx.util.StringConverter">StringConverter</a>[<span class="extype" name="scalafx.util.converter.StringConverterDelegate.S">S</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -568,7 +574,7 @@ javafx.util.converter.BigIntegerStringConverter, javafx.util.converter.DateStrin
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.8.0.31-R7 </div>
 
 
     </body>

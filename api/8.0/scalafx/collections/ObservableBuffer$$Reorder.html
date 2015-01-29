@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>Reorder - ScalaFX API 8.0.20-R6 - scalafx.collections.ObservableBuffer.Reorder</title>
-          <meta name="description" content="Reorder - ScalaFX API 8.0.20 - R6 - scalafx.collections.ObservableBuffer.Reorder" />
-          <meta name="keywords" content="Reorder ScalaFX API 8.0.20 R6 scalafx.collections.ObservableBuffer.Reorder" />
+          <title>Reorder - ScalaFX API 8.0.31-R7 - scalafx.collections.ObservableBuffer.Reorder</title>
+          <meta name="description" content="Reorder - ScalaFX API 8.0.31 - R7 - scalafx.collections.ObservableBuffer.Reorder" />
+          <meta name="keywords" content="Reorder ScalaFX API 8.0.31 R7 scalafx.collections.ObservableBuffer.Reorder" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../lib/template.js"></script>
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../lib/class_big.png" />
         <p id="owner"><a href="../package.html" class="extype" name="scalafx">scalafx</a>.<a href="package.html" class="extype" name="scalafx.collections">collections</a>.<a href="ObservableBuffer$.html" class="extype" name="scalafx.collections.ObservableBuffer">ObservableBuffer</a></p>
-        <h1>Reorder</h1> <span class="permalink">
+        <h1>Reorder</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="ObservableBuffer$.html" class="extype" name="scalafx.collections.ObservableBuffer">package ObservableBuffer</a>
+          </div></span></h3><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
@@ -43,17 +45,22 @@
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">Reorder</span><span class="params">(<span name="start">start: <span class="extype" name="scala.Int">Int</span></span>, <span name="end">end: <span class="extype" name="scala.Int">Int</span></span>, <span name="permutation">permutation: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result"> extends <a href="ObservableBuffer$$Change.html" class="extype" name="scalafx.collections.ObservableBuffer.Change">Change</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+        <span class="name">Reorder</span><span class="params">(<span name="start">start: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="end">end: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="permutation">permutation: (<a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result"> extends <a href="ObservableBuffer$$Change.html" class="extype" name="scalafx.collections.ObservableBuffer.Change">Change</a> with <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Indicates a Reordering in an <code>ObservableBuffer</code>.
-</p></div><dl class="paramcmts block"><dt class="param">start</dt><dd class="cmt"><p>The start of the change interval.</p></dd><dt class="param">end</dt><dd class="cmt"><p>The end of the change interval.</p></dd><dt class="param">permutation</dt><dd class="cmt"><p>Function thst indicates the permutation that happened. The argument indicates the old index
-that contained the element prior to this change. Its return is the new index of the same element.</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="http://docs.oracle.com/javase/8/javafx/api/javafx/collections/ListChangeListener.Change.html#getPermutation(int)" target="_blank"><code>ListChangeListener.Change.getPermutation(int)</code></a>
-</p></span><span class="cmt"><p><a href="http://docs.oracle.com/javase/8/javafx/api/javafx/collections/ListChangeListener.Change.html#getTo()" target="_blank"><code>ListChangeListener.Change.getTo()</code></a></p></span><span class="cmt"><p><a href="http://docs.oracle.com/javase/8/javafx/api/javafx/collections/ListChangeListener.Change.html#getFrom()" target="_blank"><code>ListChangeListener.Change.getFrom()</code></a></p></span></dd></dl><div class="toggleContainer block">
+</p></div><dl class="paramcmts block"><dt class="param">start</dt><dd class="cmt"><p>The start of the change interval.</p></dd><dt class="param">end</dt><dd class="cmt"><p>The end of the change interval.</p></dd><dt class="param">permutation</dt><dd class="cmt"><p>Function that indicates the permutation that happened. The argument indicates the old index
+                   that contained the element prior to this change. Its return is the new index of the same element.
+</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.31-R7/scalafx//src/main/scala/scalafx/collections/ObservableBuffer.scala" target="_blank">ObservableBuffer.scala</a></dd><dt>See also</dt><dd><span class="cmt"><p><a href="http://docs.oracle.com/javase/8/javafx/api/javafx/collections/ListChangeListener.Change.html#getPermutation(int)" target="_blank"><code>ListChangeListener.Change.getPermutation(int)</code></a>
+</p></span><span class="cmt"><p><a href="http://docs.oracle.com/javase/8/javafx/api/javafx/collections/ListChangeListener.Change.html#getTo()" target="_blank"><code>ListChangeListener.Change.getTo()</code></a></p></span><span class="cmt"><p><a href="http://docs.oracle.com/javase/8/javafx/api/javafx/collections/ListChangeListener.Change.html#getFrom()" target="_blank"><code>ListChangeListener.Change.getFrom()</code></a></p></span><span class="cmt"><p><a href="http://docs.oracle.com/javase/8/javafx/api/javafx/collections/ListChangeListener.Change.html#wasUpdated()" target="_blank"><code>ListChangeListener.Change.wasPermutated()</code></a></p></span></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><span class="extype" name="scala.Serializable">Serializable</span>, <span class="extype" name="java.io.Serializable">Serializable</span>, <span class="extype" name="scala.Product">Product</span>, <span class="extype" name="scala.Equals">Equals</span>, <a href="ObservableBuffer$$Change.html" class="extype" name="scalafx.collections.ObservableBuffer.Change">Change</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Product" class="extype" target="_top">Product</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Equals" class="extype" target="_top">Equals</a>, <a href="ObservableBuffer$$Change.html" class="extype" name="scalafx.collections.ObservableBuffer.Change">Change</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph506" viewBox="0.00 0.00 298.00 120.00" height="120pt" width="298pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 116)" class="graph" id="graph1"><polygon points="-4,5 -4,-116 295,-116 295,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this class" id="graph506_0"><a xlink:title="scalafx.collections.ObservableBuffer.Reorder (this class)" xlink:href="#inheritance-diagram"><polygon points="175.25,-50 96.75,-50 96.75,-24 175.25,-24 175.25,-50" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-45" x="107" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-35" x="129" text-anchor="start">Reorder</text></a></g><!-- node1 --><g class="node trait" id="graph506_1"><a xlink:title="scalafx.collections.ObservableBuffer.Change" xlink:href="ObservableBuffer$$Change.html#inheritance-diagram"><polygon points="78.25,-112 -0.25,-112 -0.25,-86 78.25,-86 78.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-107" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-97" x="32" text-anchor="start">Change</text></a></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph506_1_0"><a xlink:title="Reorder is a subtype of Change"><path d="M63.1204,-83.0801C79.5503,-72.9173 101.025,-59.6342 116.4,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="61.9611,-81.7395 58.6294,-85.8581 63.8023,-84.7161 61.9611,-81.7395" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node trait" id="graph506_2"><a xlink:title="scala.Product"><polygon points="175.25,-112 96.75,-112 96.75,-86 175.25,-86 175.25,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-107" x="107" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-97" x="129" text-anchor="start">Product</text></a></g><!-- node2&#45;&gt;node0 --><g class="edge inheritance" id="graph506_2_0"><a xlink:title="Reorder is a subtype of Product"><path d="M136,-80.6826C136,-70.8961 136,-58.9026 136,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="134.25,-80.8581 136,-85.8581 137.75,-80.8581 134.25,-80.8581" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node trait" id="graph506_3"><a xlink:title="scala.Serializable"><polygon points="290,-112 194,-112 194,-86 290,-86 290,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-107" x="204" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-97" x="226" text-anchor="start">Serializable</text></a></g><!-- node3&#45;&gt;node0 --><g class="edge inheritance" id="graph506_3_0"><a xlink:title="Reorder is a subtype of Serializable"><path d="M216.101,-83.34C198.089,-73.1447 174.364,-59.7155 157.419,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="215.336,-84.918 220.549,-85.8581 217.06,-81.8721 215.336,-84.918" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -99,15 +106,16 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">Reorder</span><span class="params">(<span name="start">start: <span class="extype" name="scala.Int">Int</span></span>, <span name="end">end: <span class="extype" name="scala.Int">Int</span></span>, <span name="permutation">permutation: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Int">Int</span></span>)</span>
+        <span class="name">Reorder</span><span class="params">(<span name="start">start: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="end">end: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>, <span name="permutation">permutation: (<a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@&lt;init&gt;(start:Int,end:Int,permutation:Int=&gt;Int):scalafx.collections.ObservableBuffer.Reorder" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">start</dt><dd class="cmt"><p>The start of the change interval.</p></dd><dt class="param">end</dt><dd class="cmt"><p>The end of the change interval.</p></dd><dt class="param">permutation</dt><dd class="cmt"><p>Function thst indicates the permutation that happened. The argument indicates the old index
-that contained the element prior to this change. Its return is the new index of the same element.</p></dd></dl></div>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">start</dt><dd class="cmt"><p>The start of the change interval.</p></dd><dt class="param">end</dt><dd class="cmt"><p>The end of the change interval.</p></dd><dt class="param">permutation</dt><dd class="cmt"><p>Function that indicates the permutation that happened. The argument indicates the old index
+                   that contained the element prior to this change. Its return is the new index of the same element.
+</p></dd></dl></div>
     </li></ol>
             </div>
 
@@ -126,7 +134,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -143,7 +151,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@##():Int" title="Permalink" target="_top">
@@ -160,7 +168,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -194,7 +202,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@clone():Object" title="Permalink" target="_top">
@@ -217,7 +225,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">end</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">end</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@end:Int" title="Permalink" target="_top">
@@ -234,7 +242,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -251,7 +259,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@finalize():Unit" title="Permalink" target="_top">
@@ -291,7 +299,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -308,7 +316,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -325,7 +333,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@notify():Unit" title="Permalink" target="_top">
@@ -342,7 +350,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@notifyAll():Unit" title="Permalink" target="_top">
@@ -359,15 +367,16 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">permutation</span><span class="result">: (<span class="extype" name="scala.Int">Int</span>) ⇒ <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">permutation</span><span class="result">: (<a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a>) ⇒ <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@permutation:Int=&gt;Int" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
     </span>
-      <p class="shortcomment cmt">Function thst indicates the permutation that happened.</p><div class="fullcomment"><div class="comment cmt"><p>Function thst indicates the permutation that happened. The argument indicates the old index
-that contained the element prior to this change. Its return is the new index of the same element.</p></div></div>
+      <p class="shortcomment cmt">Function that indicates the permutation that happened.</p><div class="fullcomment"><div class="comment cmt"><p>Function that indicates the permutation that happened. The argument indicates the old index
+                   that contained the element prior to this change. Its return is the new index of the same element.
+</p></div></div>
     </li><li name="scalafx.collections.ObservableBuffer.Reorder#start" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="start:Int"></a>
       <a id="start:Int"></a>
@@ -377,7 +386,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">start</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">start</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@start:Int" title="Permalink" target="_top">
@@ -411,7 +420,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@wait():Unit" title="Permalink" target="_top">
@@ -434,7 +443,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -457,7 +466,7 @@ that contained the element prior to this change. Its return is the new index of 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.collections.ObservableBuffer$$Reorder@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -481,19 +490,19 @@ that contained the element prior to this change. Its return is the new index of 
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.Serializable">
-              <h3>Inherited from <span class="extype" name="scala.Serializable">Serializable</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
             </div><div class="parent" name="java.io.Serializable">
               <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
             </div><div class="parent" name="scala.Product">
-              <h3>Inherited from <span class="extype" name="scala.Product">Product</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Product" class="extype" target="_top">Product</a></h3>
             </div><div class="parent" name="scala.Equals">
-              <h3>Inherited from <span class="extype" name="scala.Equals">Equals</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Equals" class="extype" target="_top">Equals</a></h3>
             </div><div class="parent" name="scalafx.collections.ObservableBuffer.Change">
               <h3>Inherited from <a href="ObservableBuffer$$Change.html" class="extype" name="scalafx.collections.ObservableBuffer.Change">Change</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -509,7 +518,7 @@ that contained the element prior to this change. Its return is the new index of 
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.8.0.31-R7 </div>
 
 
     </body>

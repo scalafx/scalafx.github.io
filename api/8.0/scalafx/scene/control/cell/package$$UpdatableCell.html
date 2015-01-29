@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>UpdatableCell - ScalaFX API 8.0.20-R6 - scalafx.scene.control.cell.UpdatableCell</title>
-          <meta name="description" content="UpdatableCell - ScalaFX API 8.0.20 - R6 - scalafx.scene.control.cell.UpdatableCell" />
-          <meta name="keywords" content="UpdatableCell ScalaFX API 8.0.20 R6 scalafx.scene.control.cell.UpdatableCell" />
+          <title>UpdatableCell - ScalaFX API 8.0.31-R7 - scalafx.scene.control.cell.UpdatableCell</title>
+          <meta name="description" content="UpdatableCell - ScalaFX API 8.0.31 - R7 - scalafx.scene.control.cell.UpdatableCell" />
+          <meta name="keywords" content="UpdatableCell ScalaFX API 8.0.31 R7 scalafx.scene.control.cell.UpdatableCell" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../../index.html';
@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../../../lib/trait_big.png" />
         <p id="owner"><a href="../../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../../package.html" class="extype" name="scalafx.scene">scene</a>.<a href="../package.html" class="extype" name="scalafx.scene.control">control</a>.<a href="package.html" class="extype" name="scalafx.scene.control.cell">cell</a></p>
-        <h1>UpdatableCell</h1> <span class="permalink">
+        <h1>UpdatableCell</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="scalafx.scene.control.cell">package cell</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell" title="Permalink" target="_top">
         <img src="../../../../lib/permalink.png" />
       </a>
@@ -49,13 +51,17 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Cells which delegate contains the method <code>updateItem(item: Any, empty: Boolean): Unit</code>.
 </p></div><dl class="paramcmts block"><dt class="tparam">C</dt><dd class="cmt"><p>Derivated type from JavaFX Cell
-</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>The type of the elements contained within the inner element inside the Cell.</p></dd></dl><div class="toggleContainer block">
+</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>The type of the elements contained within the inner element inside the Cell.</p></dd></dl><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.31-R7/scalafx//src/main/scala/scalafx/scene/control/cell/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.scene.control.cell.UpdatableCell.C">C</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.scene.control.cell.UpdatableCell.C">C</span>], <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="CheckBoxListCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxListCell">CheckBoxListCell</a>, <a href="CheckBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTableCell">CheckBoxTableCell</a>, <a href="CheckBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTreeCell">CheckBoxTreeCell</a>, <a href="CheckBoxTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.CheckBoxTreeTableCell">CheckBoxTreeTableCell</a>, <a href="ChoiceBoxListCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxListCell">ChoiceBoxListCell</a>, <a href="ChoiceBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTableCell">ChoiceBoxTableCell</a>, <a href="ChoiceBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTreeCell">ChoiceBoxTreeCell</a>, <a href="ChoiceBoxTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.ChoiceBoxTreeTableCell">ChoiceBoxTreeTableCell</a>, <a href="ComboBoxListCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxListCell">ComboBoxListCell</a>, <a href="ComboBoxTableCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTableCell">ComboBoxTableCell</a>, <a href="ComboBoxTreeCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTreeCell">ComboBoxTreeCell</a>, <a href="ComboBoxTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.ComboBoxTreeTableCell">ComboBoxTreeTableCell</a>, <a href="ProgressBarTableCell.html" class="extype" name="scalafx.scene.control.cell.ProgressBarTableCell">ProgressBarTableCell</a>, <a href="TextFieldListCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldListCell">TextFieldListCell</a>, <a href="TextFieldTableCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTableCell">TextFieldTableCell</a>, <a href="TextFieldTreeCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTreeCell">TextFieldTreeCell</a>, <a href="TextFieldTreeTableCell.html" class="extype" name="scalafx.scene.control.cell.TextFieldTreeTableCell">TextFieldTreeTableCell</a></div>
-          </div></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph247" viewBox="0.00 0.00 186.00 158.00" height="158pt" width="186pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 183,-154 183,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this trait" id="graph247_0"><a xlink:title="scalafx.scene.control.cell.UpdatableCell (this trait)" xlink:href="#inheritance-diagram"><polygon points="154,-88 24,-88 24,-62 154,-62 154,-88" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-83" x="34" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="56" text-anchor="start">UpdatableCell[C, T]</text></a></g><!-- node1 --><g class="node default" id="graph247_1"><a xlink:title="CheckBoxListCell[T], CheckBoxTableCell[S, T], CheckBoxTreeCell[T], CheckBoxTreeTableCell[S, T], ChoiceBoxListCell[T], ChoiceBoxTableCell[S, T], ChoiceBoxTreeCell[T], ChoiceBoxTreeTableCell[S, T], ComboBoxListCell[T], ComboBoxTableCell[S, T], ComboBoxTreeCell[T], ComboBoxTreeTableCell[S, T], ProgressBarTableCell[S], TextFieldListCell[T], TextFieldTableCell[S, T], TextFieldTreeCell[T], TextFieldTreeTableCell[S, T]"><polygon points="137,-25.5 41,-25.5 41,-0.5 137,-0.5 137,-25.5" stroke="#ababab" fill="#e1e1e1"></polygon><text fill="#7d7d7d" font-size="10.00" font-family="Arial" y="-10.5" x="52.5" text-anchor="start">17 classes/traits</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph247_0_1"><a xlink:title="17 classes/traits are subtypes of UpdatableCell[C, T]"><path d="M89,-56.6111C89,-46.6849 89,-34.5069 89,-25.7155" stroke="#d4d4d4" fill="none"></path><polygon points="87.2501,-56.8581 89,-61.8581 90.7501,-56.8581 87.2501,-56.8581" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node trait" id="graph247_2"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="../../../delegate/SFXDelegate.html#inheritance-diagram"><polygon points="146.25,-150 31.75,-150 31.75,-124 146.25,-124 146.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../../lib/trait_diagram.png" y="-145" x="42" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="64" text-anchor="start">SFXDelegate[C]</text></a></g><!-- node2&#45;&gt;node0 --><g class="edge inheritance" id="graph247_2_0"><a xlink:title="UpdatableCell[C, T] is a subtype of SFXDelegate[C]"><path d="M89,-118.683C89,-108.896 89,-96.9026 89,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="87.2501,-118.858 89,-123.858 90.7501,-118.858 87.2501,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -103,7 +109,7 @@
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">Updated</span><span class="result"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { def updateItem(item: Any,empty: Boolean): Unit }</span>
+        <span class="name">Updated</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a> { def updateItem(item: Any,empty: Boolean): Unit }</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@Updated=AnyRef{defupdateItem(item:Any,empty:Boolean):Unit}" title="Permalink" target="_top">
@@ -149,7 +155,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -166,7 +172,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@##():Int" title="Permalink" target="_top">
@@ -183,7 +189,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -217,7 +223,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@clone():Object" title="Permalink" target="_top">
@@ -240,7 +246,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -257,7 +263,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -276,7 +282,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@finalize():Unit" title="Permalink" target="_top">
@@ -316,7 +322,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@hashCode():Int" title="Permalink" target="_top">
@@ -334,7 +340,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -351,7 +357,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -368,7 +374,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@notify():Unit" title="Permalink" target="_top">
@@ -385,7 +391,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@notifyAll():Unit" title="Permalink" target="_top">
@@ -437,7 +443,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">updateItem</span><span class="params">(<span name="item">item: <span class="extype" name="scalafx.scene.control.cell.UpdatableCell.T">T</span></span>, <span name="empty">empty: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">updateItem</span><span class="params">(<span name="item">item: <span class="extype" name="scalafx.scene.control.cell.UpdatableCell.T">T</span></span>, <span name="empty">empty: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@updateItem(item:T,empty:Boolean):Unit" title="Permalink" target="_top">
@@ -457,7 +463,7 @@ represent any domain data, but is a cell being used to render an &quot;empty&quo
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@wait():Unit" title="Permalink" target="_top">
@@ -480,7 +486,7 @@ represent any domain data, but is a cell being used to render an &quot;empty&quo
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -503,7 +509,7 @@ represent any domain data, but is a cell being used to render an &quot;empty&quo
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../../index.html#scalafx.scene.control.cell.package$$UpdatableCell@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -529,9 +535,9 @@ represent any domain data, but is a cell being used to render an &quot;empty&quo
         <div class="parent" name="scalafx.delegate.SFXDelegate">
               <h3>Inherited from <a href="../../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.scene.control.cell.UpdatableCell.C">C</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -547,7 +553,7 @@ represent any domain data, but is a cell being used to render an &quot;empty&quo
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.8.0.31-R7 </div>
 
 
     </body>

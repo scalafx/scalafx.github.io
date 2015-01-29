@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>PrimaryStage - ScalaFX API 8.0.20-R6 - scalafx.application.JFXApp.PrimaryStage</title>
-          <meta name="description" content="PrimaryStage - ScalaFX API 8.0.20 - R6 - scalafx.application.JFXApp.PrimaryStage" />
-          <meta name="keywords" content="PrimaryStage ScalaFX API 8.0.20 R6 scalafx.application.JFXApp.PrimaryStage" />
+          <title>PrimaryStage - ScalaFX API 8.0.31-R7 - scalafx.application.JFXApp.PrimaryStage</title>
+          <meta name="description" content="PrimaryStage - ScalaFX API 8.0.31 - R7 - scalafx.application.JFXApp.PrimaryStage" />
+          <meta name="keywords" content="PrimaryStage ScalaFX API 8.0.31 R7 scalafx.application.JFXApp.PrimaryStage" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../lib/template.js"></script>
       <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../index.html';
@@ -30,7 +30,9 @@
       <div id="definition">
         <img src="../../lib/class_big.png" />
         <p id="owner"><a href="../package.html" class="extype" name="scalafx">scalafx</a>.<a href="package.html" class="extype" name="scalafx.application">application</a>.<a href="JFXApp$.html" class="extype" name="scalafx.application.JFXApp">JFXApp</a></p>
-        <h1>PrimaryStage</h1> <span class="permalink">
+        <h1>PrimaryStage</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="JFXApp$.html" class="extype" name="scalafx.application.JFXApp">package JFXApp</a>
+          </div></span></h3><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage" title="Permalink" target="_top">
         <img src="../../lib/permalink.png" />
       </a>
@@ -49,23 +51,27 @@
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Simple helper class for construction of primary application stages.</p><p>The primary stage has to wrap an instance of a JavaFX primary stage created by JavaFX when application
 is initialized.</p><pre><span class="kw">object</span> SimpleScalaFXApp <span class="kw">extends</span> JFXApp {
-stage = <span class="kw">new</span> PrimaryStage {
-  title = <span class="lit">"Simple ScalaFX App"</span>
-  scene = <span class="kw">new</span> Scene {
-    root = <span class="kw">new</span> StackPane {
-      padding = Insets(<span class="num">20</span>)
-      content = <span class="kw">new</span> Rectangle {
-        width = <span class="num">200</span>
-        height = <span class="num">200</span>
-        fill = Color.DEEPSKYBLUE
-      }
-    }
-  }
-}
-}</pre></div><div class="toggleContainer block">
+   stage = <span class="kw">new</span> PrimaryStage {
+     title = <span class="lit">"Simple ScalaFX App"</span>
+     scene = <span class="kw">new</span> Scene {
+       root = <span class="kw">new</span> StackPane {
+         padding = Insets(<span class="num">20</span>)
+         content = <span class="kw">new</span> Rectangle {
+           width = <span class="num">200</span>
+           height = <span class="num">200</span>
+           fill = Color.DEEPSKYBLUE
+         }
+       }
+     }
+   }
+}</pre></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.31-R7/scalafx//src/main/scala/scalafx/application/JFXApp.scala" target="_blank">JFXApp.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../stage/Stage.html" class="extype" name="scalafx.stage.Stage">Stage</a>, <a href="../stage/Window.html" class="extype" name="scalafx.stage.Window">Window</a>, <span class="extype" name="javafx.event.EventTarget">EventTarget</span>, <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.stage.Stage">Stage</span>], <a href="../event/EventHandlerDelegate.html" class="extype" name="scalafx.event.EventHandlerDelegate">EventHandlerDelegate</a>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
-        </div></div>
+          <div class="superTypes hiddenContent"><a href="../stage/Stage.html" class="extype" name="scalafx.stage.Stage">Stage</a>, <a href="../stage/Window.html" class="extype" name="scalafx.stage.Window">Window</a>, <span class="extype" name="javafx.event.EventTarget">EventTarget</span>, <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.stage.Stage">Stage</span>], <a href="../event/EventHandlerDelegate.html" class="extype" name="scalafx.event.EventHandlerDelegate">EventHandlerDelegate</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph563" viewBox="0.00 0.00 162.00 120.00" height="120pt" width="162pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 116)" class="graph" id="graph1"><polygon points="-4,5 -4,-116 159,-116 159,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this class" id="graph563_0"><a xlink:title="scalafx.application.JFXApp.PrimaryStage (this class)" xlink:href="#inheritance-diagram"><polygon points="129.25,-50 24.75,-50 24.75,-24 129.25,-24 129.25,-50" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-45" x="35" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-35" x="57" text-anchor="start">PrimaryStage</text></a></g><!-- node1 --><g class="node class" id="graph563_1"><a xlink:title="scalafx.stage.Stage" xlink:href="../stage/Stage.html#inheritance-diagram"><polygon points="112.25,-112 41.75,-112 41.75,-86 112.25,-86 112.25,-112" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-107" x="52" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-97" x="74" text-anchor="start">Stage</text></a></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph563_1_0"><a xlink:title="PrimaryStage is a subtype of Stage"><path d="M77,-80.6826C77,-70.8961 77,-58.9026 77,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="75.2501,-80.8581 77,-85.8581 78.7501,-80.8581 75.2501,-80.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -133,7 +139,7 @@ stage = <span class="kw">new</span> PrimaryStage {
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">EventHandled</span><span class="result"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { ... /* 5 definitions in type refinement */ }</span>
+        <span class="name">EventHandled</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a> { ... /* 5 definitions in type refinement */ }</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@EventHandled=AnyRef{defaddEventHandler[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_]):Unit;defremoveEventHandler[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_]):Unit;defaddEventFilter[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_]):Unit;defremoveEventFilter[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_]):Unit;defbuildEventDispatchChain(chain:javafx.event.EventDispatchChain):javafx.event.EventDispatchChain}" title="Permalink" target="_top">
@@ -150,7 +156,7 @@ stage = <span class="kw">new</span> PrimaryStage {
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="../event/EventHandlerDelegate$FilterMagnet.html"><span class="name">FilterMagnet</span></a><span class="tparams">[<span name="J">J &lt;: <span class="extype" name="javafx.event.Event">javafx.event.Event</span></span>, <span name="S">S &lt;: <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.event.EventHandlerDelegate.FilterMagnet.J">J</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="../event/EventHandlerDelegate$FilterMagnet.html"><span class="name">FilterMagnet</span></a><span class="tparams">[<span name="J">J &lt;: <span class="extype" name="javafx.event.Event">javafx.event.Event</span></span>, <span name="S">S &lt;: <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.event.EventHandlerDelegate.FilterMagnet.J">J</span>]</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.EventHandlerDelegate@FilterMagnet[J&lt;:javafx.event.Event,S&lt;:scalafx.delegate.SFXDelegate[J]]extendsAnyRef" title="Permalink" target="_top">
@@ -171,7 +177,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="../event/EventHandlerDelegate$HandlerMagnet.html"><span class="name">HandlerMagnet</span></a><span class="tparams">[<span name="J">J &lt;: <span class="extype" name="javafx.event.Event">javafx.event.Event</span></span>, <span name="S">S &lt;: <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.event.EventHandlerDelegate.HandlerMagnet.J">J</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="../event/EventHandlerDelegate$HandlerMagnet.html"><span class="name">HandlerMagnet</span></a><span class="tparams">[<span name="J">J &lt;: <span class="extype" name="javafx.event.Event">javafx.event.Event</span></span>, <span name="S">S &lt;: <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.event.EventHandlerDelegate.HandlerMagnet.J">J</span>]</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.EventHandlerDelegate@HandlerMagnet[J&lt;:javafx.event.Event,S&lt;:scalafx.delegate.SFXDelegate[J]]extendsAnyRef" title="Permalink" target="_top">
@@ -199,7 +205,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -216,7 +222,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@##():Int" title="Permalink" target="_top">
@@ -233,7 +239,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -292,7 +298,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addEventFilter</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.addEventFilter.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.addEventFilter.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">addEventFilter</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.addEventFilter.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.addEventFilter.E">E</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@addEventFilter[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_&gt;:E]):Unit" title="Permalink" target="_top">
@@ -312,7 +318,7 @@ associated event handlers.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addEventHandler</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.addEventHandler.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.addEventHandler.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">addEventHandler</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.addEventHandler.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.addEventHandler.E">E</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@addEventHandler[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_&gt;:E]):Unit" title="Permalink" target="_top">
@@ -356,7 +362,7 @@ value will be restored to &quot;false&quot;.</p><p>The property is read only bec
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: alwaysOnTop_$eq" class="name">alwaysOnTop_=</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: alwaysOnTop_$eq" class="name">alwaysOnTop_=</span><span class="params">(<span name="value">value: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@alwaysOnTop_=(value:Boolean):Unit" title="Permalink" target="_top">
@@ -408,7 +414,7 @@ value will be restored to &quot;false&quot;.</p><p>The property is read only bec
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">centerOnScreen</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">centerOnScreen</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@centerOnScreen():Unit" title="Permalink" target="_top">
@@ -426,7 +432,7 @@ value will be restored to &quot;false&quot;.</p><p>The property is read only bec
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@clone():Object" title="Permalink" target="_top">
@@ -449,7 +455,7 @@ value will be restored to &quot;false&quot;.</p><p>The property is read only bec
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">close</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">close</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@close():Unit" title="Permalink" target="_top">
@@ -485,7 +491,7 @@ value will be restored to &quot;false&quot;.</p><p>The property is read only bec
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -502,7 +508,7 @@ value will be restored to &quot;false&quot;.</p><p>The property is read only bec
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -539,7 +545,7 @@ value will be restored to &quot;false&quot;.</p><p>The property is read only bec
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: eventDispatcher_$eq" class="name">eventDispatcher_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventDispatcher">EventDispatcher</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: eventDispatcher_$eq" class="name">eventDispatcher_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventDispatcher">EventDispatcher</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@eventDispatcher_=(v:javafx.event.EventDispatcher):Unit" title="Permalink" target="_top">
@@ -582,19 +588,19 @@ value will be restored to &quot;false&quot;.</p><p>The property is read only bec
       </a>
     </span>
       <p class="shortcomment cmt">Registers an event filter.</p><div class="fullcomment"><div class="comment cmt"><p>Registers an event filter. Registered event filters get an event before any associated event handlers.</p><p>Example of filtering mouse events</p><pre>pane.filterEvent(MouseEvent.<span class="std">Any</span>) {
-me: MouseEvent <span class="kw">=&gt;</span> {
-  me.eventType <span class="kw">match</span> {
-    <span class="kw">case</span> MouseEvent.MousePressed <span class="kw">=&gt;</span> {
-      ...
-    }
-    <span class="kw">case</span> MouseEvent.MouseDragged <span class="kw">=&gt;</span> {
-      ...
-    }
-    <span class="kw">case</span> _ <span class="kw">=&gt;</span> {
-      ...
+  me: MouseEvent <span class="kw">=&gt;</span> {
+    me.eventType <span class="kw">match</span> {
+      <span class="kw">case</span> MouseEvent.MousePressed <span class="kw">=&gt;</span> {
+        ...
+      }
+      <span class="kw">case</span> MouseEvent.MouseDragged <span class="kw">=&gt;</span> {
+        ...
+      }
+      <span class="kw">case</span> _ <span class="kw">=&gt;</span> {
+        ...
+      }
     }
   }
-}
 }</pre><p>or</p><pre>pane.filterEvent(MouseEvent.<span class="std">Any</span>) { () <span class="kw">=&gt;</span> println(<span class="lit">"Some mouse event handled"</span>) }</pre></div><dl class="paramcmts block"><dt class="tparam">J</dt><dd class="cmt"><p>type JavaFX delegate of the event</p></dd><dt class="tparam">S</dt><dd class="cmt"><p>ScalaFX type for <code>J</code> type wrapper.
 </p></dd><dt class="param">eventType</dt><dd class="cmt"><p>type of events that will be handled.</p></dd><dt class="param">filter</dt><dd class="cmt"><p>code handling the event, see examples above.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../event/EventHandlerDelegate.html" class="extype" name="scalafx.event.EventHandlerDelegate">EventHandlerDelegate</a></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -606,7 +612,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@finalize():Unit" title="Permalink" target="_top">
@@ -629,7 +635,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fireEvent</span><span class="params">(<span name="event">event: <a href="../event/Event.html" class="extype" name="scalafx.event.Event">Event</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">fireEvent</span><span class="params">(<span name="event">event: <a href="../event/Event.html" class="extype" name="scalafx.event.Event">Event</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@fireEvent(event:scalafx.event.Event):Unit" title="Permalink" target="_top">
@@ -700,7 +706,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: fullScreenExitHint_$eq" class="name">fullScreenExitHint_=</span><span class="params">(<span name="value">value: <a href="../scene/input/KeyCombination.html" class="extype" name="scalafx.scene.input.KeyCombination">KeyCombination</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: fullScreenExitHint_$eq" class="name">fullScreenExitHint_=</span><span class="params">(<span name="value">value: <a href="../scene/input/KeyCombination.html" class="extype" name="scalafx.scene.input.KeyCombination">KeyCombination</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@fullScreenExitHint_=(value:scalafx.scene.input.KeyCombination):Unit" title="Permalink" target="_top">
@@ -717,7 +723,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: fullScreenExitHint_$eq" class="name">fullScreenExitHint_=</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: fullScreenExitHint_$eq" class="name">fullScreenExitHint_=</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@fullScreenExitHint_=(value:String):Unit" title="Permalink" target="_top">
@@ -753,7 +759,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: fullScreen_$eq" class="name">fullScreen_=</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: fullScreen_$eq" class="name">fullScreen_=</span><span class="params">(<span name="value">value: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@fullScreen_=(value:Boolean):Unit" title="Permalink" target="_top">
@@ -795,13 +801,13 @@ me: MouseEvent <span class="kw">=&gt;</span> {
       </a>
     </span>
       <p class="shortcomment cmt">Registers an event handler.</p><div class="fullcomment"><div class="comment cmt"><p>Registers an event handler. The handler is called when the node receives an Event of the specified type during the bubbling phase of event delivery.</p><p>Example of handling mouse events</p><pre>pane.handleEvent(MouseEvent.<span class="std">Any</span>) {
-me: MouseEvent <span class="kw">=&gt;</span> {
-  me.eventType <span class="kw">match</span> {
-    <span class="kw">case</span> MouseEvent.MousePressed <span class="kw">=&gt;</span> ...
-    <span class="kw">case</span> MouseEvent.MouseDragged <span class="kw">=&gt;</span> ...
-    <span class="kw">case</span> _                       <span class="kw">=&gt;</span> {}
+  me: MouseEvent <span class="kw">=&gt;</span> {
+    me.eventType <span class="kw">match</span> {
+      <span class="kw">case</span> MouseEvent.MousePressed <span class="kw">=&gt;</span> ...
+      <span class="kw">case</span> MouseEvent.MouseDragged <span class="kw">=&gt;</span> ...
+      <span class="kw">case</span> _                       <span class="kw">=&gt;</span> {}
+    }
   }
-}
 }</pre><p>or</p><pre>pane.handleEvent(MouseEvent.<span class="std">Any</span>) { () <span class="kw">=&gt;</span> println(<span class="lit">"Some mouse event handled"</span>) }</pre></div><dl class="paramcmts block"><dt class="tparam">J</dt><dd class="cmt"><p>type JavaFX delegate of the event</p></dd><dt class="tparam">S</dt><dd class="cmt"><p>ScalaFX type for <code>J</code> type wrapper.</p></dd><dt class="param">eventType</dt><dd class="cmt"><p>type of events that will be handled.</p></dd><dt class="param">handler</dt><dd class="cmt"><p>code handling the event, see examples above.</p></dd><dt>returns</dt><dd class="cmt"><p>Returns a subscription that can be used to cancel/remove this event handler
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../event/EventHandlerDelegate.html" class="extype" name="scalafx.event.EventHandlerDelegate">EventHandlerDelegate</a></dd></dl></div>
     </li><li name="scalafx.delegate.SFXDelegate#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -813,7 +819,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@hashCode():Int" title="Permalink" target="_top">
@@ -849,7 +855,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: height_$eq" class="name">height_=</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: height_$eq" class="name">height_=</span><span class="params">(<span name="h">h: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@height_=(h:Double):Unit" title="Permalink" target="_top">
@@ -866,7 +872,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hide</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">hide</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@hide():Unit" title="Permalink" target="_top">
@@ -920,7 +926,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">initModality</span><span class="params">(<span name="modality">modality: <a href="../stage/Modality.html" class="extype" name="scalafx.stage.Modality">Modality</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">initModality</span><span class="params">(<span name="modality">modality: <a href="../stage/Modality.html" class="extype" name="scalafx.stage.Modality">Modality</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@initModality(modality:scalafx.stage.Modality):Unit" title="Permalink" target="_top">
@@ -938,7 +944,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">initOwner</span><span class="params">(<span name="owner">owner: <a href="../stage/Window.html" class="extype" name="scalafx.stage.Window">Window</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">initOwner</span><span class="params">(<span name="owner">owner: <a href="../stage/Window.html" class="extype" name="scalafx.stage.Window">Window</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@initOwner(owner:scalafx.stage.Window):Unit" title="Permalink" target="_top">
@@ -958,7 +964,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">initStyle</span><span class="params">(<span name="style">style: <a href="../stage/StageStyle.html" class="extype" name="scalafx.stage.StageStyle">StageStyle</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">initStyle</span><span class="params">(<span name="style">style: <a href="../stage/StageStyle.html" class="extype" name="scalafx.stage.StageStyle">StageStyle</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@initStyle(style:scalafx.stage.StageStyle):Unit" title="Permalink" target="_top">
@@ -976,7 +982,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -993,7 +999,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">maxHeight</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">maxHeight</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@maxHeight:Double" title="Permalink" target="_top">
@@ -1011,7 +1017,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: maxHeight_$eq" class="name">maxHeight_=</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: maxHeight_$eq" class="name">maxHeight_=</span><span class="params">(<span name="h">h: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@maxHeight_=(h:Double):Unit" title="Permalink" target="_top">
@@ -1028,7 +1034,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">maxWidth</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">maxWidth</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@maxWidth:Double" title="Permalink" target="_top">
@@ -1046,7 +1052,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: maxWidth_$eq" class="name">maxWidth_=</span><span class="params">(<span name="w">w: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: maxWidth_$eq" class="name">maxWidth_=</span><span class="params">(<span name="w">w: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@maxWidth_=(w:Double):Unit" title="Permalink" target="_top">
@@ -1080,7 +1086,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">minHeight</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">minHeight</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@minHeight:Double" title="Permalink" target="_top">
@@ -1098,7 +1104,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: minHeight_$eq" class="name">minHeight_=</span><span class="params">(<span name="h">h: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: minHeight_$eq" class="name">minHeight_=</span><span class="params">(<span name="h">h: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@minHeight_=(h:Double):Unit" title="Permalink" target="_top">
@@ -1115,7 +1121,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">minWidth</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+        <span class="name">minWidth</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@minWidth:Double" title="Permalink" target="_top">
@@ -1133,7 +1139,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: minWidth_$eq" class="name">minWidth_=</span><span class="params">(<span name="w">w: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: minWidth_$eq" class="name">minWidth_=</span><span class="params">(<span name="w">w: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@minWidth_=(w:Double):Unit" title="Permalink" target="_top">
@@ -1168,7 +1174,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -1185,7 +1191,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@notify():Unit" title="Permalink" target="_top">
@@ -1202,7 +1208,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@notifyAll():Unit" title="Permalink" target="_top">
@@ -1237,7 +1243,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: onCloseRequest_$eq" class="name">onCloseRequest_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.stage.WindowEvent">WindowEvent</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: onCloseRequest_$eq" class="name">onCloseRequest_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.stage.WindowEvent">WindowEvent</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@onCloseRequest_=(v:javafx.event.EventHandler[javafx.stage.WindowEvent]):Unit" title="Permalink" target="_top">
@@ -1272,7 +1278,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: onHidden_$eq" class="name">onHidden_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.stage.WindowEvent">WindowEvent</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: onHidden_$eq" class="name">onHidden_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.stage.WindowEvent">WindowEvent</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@onHidden_=(v:javafx.event.EventHandler[javafx.stage.WindowEvent]):Unit" title="Permalink" target="_top">
@@ -1307,7 +1313,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: onHiding_$eq" class="name">onHiding_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.stage.WindowEvent">WindowEvent</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: onHiding_$eq" class="name">onHiding_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.stage.WindowEvent">WindowEvent</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@onHiding_=(v:javafx.event.EventHandler[javafx.stage.WindowEvent]):Unit" title="Permalink" target="_top">
@@ -1342,7 +1348,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: onShowing_$eq" class="name">onShowing_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.stage.WindowEvent">WindowEvent</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: onShowing_$eq" class="name">onShowing_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.stage.WindowEvent">WindowEvent</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@onShowing_=(v:javafx.event.EventHandler[javafx.stage.WindowEvent]):Unit" title="Permalink" target="_top">
@@ -1377,7 +1383,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: onShown_$eq" class="name">onShown_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.stage.WindowEvent">WindowEvent</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: onShown_$eq" class="name">onShown_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.stage.WindowEvent">WindowEvent</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@onShown_=(v:javafx.event.EventHandler[javafx.stage.WindowEvent]):Unit" title="Permalink" target="_top">
@@ -1412,7 +1418,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: opacity_$eq" class="name">opacity_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: opacity_$eq" class="name">opacity_=</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@opacity_=(v:Double):Unit" title="Permalink" target="_top">
@@ -1429,7 +1435,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">owner</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../stage/Window.html" class="extype" name="scalafx.stage.Window">Window</a>]</span>
+        <span class="name">owner</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Option" class="extype" target="_top">Option</a>[<a href="../stage/Window.html" class="extype" name="scalafx.stage.Window">Window</a>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@owner:Option[scalafx.stage.Window]" title="Permalink" target="_top">
@@ -1437,8 +1443,8 @@ unowned stage.
       </a>
     </span>
       <p class="shortcomment cmt">Retrieves a <span class="extype" name="scala.Some">scala.Some</span> with the owner Window for this stage, or
-<span class="extype" name="scala.None">scala.None</span> for an unowned stage.</p><div class="fullcomment"><div class="comment cmt"><p>Retrieves a <span class="extype" name="scala.Some">scala.Some</span> with the owner Window for this stage, or
-<span class="extype" name="scala.None">scala.None</span> for an unowned stage.
+<a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.None$" class="extype" target="_top">scala.None</a> for an unowned stage.</p><div class="fullcomment"><div class="comment cmt"><p>Retrieves a <span class="extype" name="scala.Some">scala.Some</span> with the owner Window for this stage, or
+<a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.None$" class="extype" target="_top">scala.None</a> for an unowned stage.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../stage/Stage.html" class="extype" name="scalafx.stage.Stage">Stage</a></dd></dl></div>
     </li><li name="scalafx.event.EventHandlerDelegate#removeEventFilter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="removeEventFilter[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_&gt;:E]):Unit"></a>
@@ -1449,7 +1455,7 @@ unowned stage.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">removeEventFilter</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventFilter.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventFilter.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">removeEventFilter</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventFilter.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventFilter.E">E</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@removeEventFilter[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_&gt;:E]):Unit" title="Permalink" target="_top">
@@ -1470,7 +1476,7 @@ type from which to unregister the filter.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">removeEventHandler</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventHandler.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventHandler.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">removeEventHandler</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventHandler.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventHandler.E">E</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@removeEventHandler[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_&gt;:E]):Unit" title="Permalink" target="_top">
@@ -1491,7 +1497,7 @@ from which to unregister the handler.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">requestFocus</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">requestFocus</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@requestFocus():Unit" title="Permalink" target="_top">
@@ -1527,7 +1533,7 @@ from which to unregister the handler.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: resizable_$eq" class="name">resizable_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: resizable_$eq" class="name">resizable_=</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@resizable_=(v:Boolean):Unit" title="Permalink" target="_top">
@@ -1562,7 +1568,7 @@ from which to unregister the handler.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: scene_$eq" class="name">scene_=</span><span class="params">(<span name="s">s: <a href="../scene/Scene.html" class="extype" name="scalafx.scene.Scene">Scene</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: scene_$eq" class="name">scene_=</span><span class="params">(<span name="s">s: <a href="../scene/Scene.html" class="extype" name="scalafx.scene.Scene">Scene</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@scene_=(s:scalafx.scene.Scene):Unit" title="Permalink" target="_top">
@@ -1580,7 +1586,7 @@ from which to unregister the handler.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">show</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">show</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@show():Unit" title="Permalink" target="_top">
@@ -1598,7 +1604,7 @@ from which to unregister the handler.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">showAndWait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">showAndWait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@showAndWait():Unit" title="Permalink" target="_top">
@@ -1636,7 +1642,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: showing_$eq" class="name">showing_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: showing_$eq" class="name">showing_=</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@showing_=(v:Boolean):Unit" title="Permalink" target="_top">
@@ -1654,7 +1660,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">sizeToScene</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">sizeToScene</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@sizeToScene():Unit" title="Permalink" target="_top">
@@ -1725,7 +1731,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: title_$eq" class="name">title_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: title_$eq" class="name">title_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@title_=(v:String):Unit" title="Permalink" target="_top">
@@ -1742,7 +1748,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toBack</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">toBack</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@toBack():Unit" title="Permalink" target="_top">
@@ -1760,7 +1766,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toFront</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">toFront</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@toFront():Unit" title="Permalink" target="_top">
@@ -1796,7 +1802,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@wait():Unit" title="Permalink" target="_top">
@@ -1819,7 +1825,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -1842,7 +1848,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -1883,7 +1889,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: width_$eq" class="name">width_=</span><span class="params">(<span name="w">w: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: width_$eq" class="name">width_=</span><span class="params">(<span name="w">w: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@width_=(w:Double):Unit" title="Permalink" target="_top">
@@ -1918,7 +1924,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: x_$eq" class="name">x_=</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: x_$eq" class="name">x_=</span><span class="params">(<span name="value">value: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@x_=(value:Double):Unit" title="Permalink" target="_top">
@@ -1953,7 +1959,7 @@ This method must be called on the FX Application thread.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: y_$eq" class="name">y_=</span><span class="params">(<span name="value">value: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: y_$eq" class="name">y_=</span><span class="params">(<span name="value">value: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Double" class="extype" target="_top">Double</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.application.JFXApp$$PrimaryStage@y_=(value:Double):Unit" title="Permalink" target="_top">
@@ -1981,9 +1987,9 @@ This method must be called on the FX Application thread.
             </div><div class="parent" name="scalafx.event.EventHandlerDelegate">
               <h3>Inherited from <a href="../event/EventHandlerDelegate.html" class="extype" name="scalafx.event.EventHandlerDelegate">EventHandlerDelegate</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -1999,7 +2005,7 @@ This method must be called on the FX Application thread.
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.8.0.31-R7 </div>
 
 
     </body>

@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>InputEvent - ScalaFX API 8.0.20-R6 - scalafx.scene.input.InputEvent</title>
-          <meta name="description" content="InputEvent - ScalaFX API 8.0.20 - R6 - scalafx.scene.input.InputEvent" />
-          <meta name="keywords" content="InputEvent ScalaFX API 8.0.20 R6 scalafx.scene.input.InputEvent" />
+          <title>InputEvent - ScalaFX API 8.0.31-R7 - scalafx.scene.input.InputEvent</title>
+          <meta name="description" content="InputEvent - ScalaFX API 8.0.31 - R7 - scalafx.scene.input.InputEvent" />
+          <meta name="keywords" content="InputEvent ScalaFX API 8.0.31 R7 scalafx.scene.input.InputEvent" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,7 +30,11 @@
       <div id="definition">
         <a href="InputEvent$.html" title="Go to companion"><img src="../../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../package.html" class="extype" name="scalafx.scene">scene</a>.<a href="package.html" class="extype" name="scalafx.scene.input">input</a></p>
-        <h1><a href="InputEvent$.html" title="Go to companion">InputEvent</a></h1> <span class="permalink">
+        <h1><a href="InputEvent$.html" title="Go to companion">InputEvent</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="InputEvent$.html" title="See companion">object InputEvent</a>
+            | <a href="package.html" class="extype" name="scalafx.scene.input">package input</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
@@ -47,13 +51,17 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.31-R7/scalafx//src/main/scala/scalafx/scene/input/InputEvent.scala" target="_blank">InputEvent.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../../event/Event.html" class="extype" name="scalafx.event.Event">Event</a>, <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.input.InputEvent">javafx.scene.input.InputEvent</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../event/Event.html" class="extype" name="scalafx.event.Event">Event</a>, <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.input.InputEvent">javafx.scene.input.InputEvent</span>], <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
             <div class="subClasses hiddenContent"><a href="ContextMenuEvent.html" class="extype" name="scalafx.scene.input.ContextMenuEvent">ContextMenuEvent</a>, <a href="DragEvent.html" class="extype" name="scalafx.scene.input.DragEvent">DragEvent</a>, <a href="GestureEvent.html" class="extype" name="scalafx.scene.input.GestureEvent">GestureEvent</a>, <a href="InputMethodEvent.html" class="extype" name="scalafx.scene.input.InputMethodEvent">InputMethodEvent</a>, <a href="KeyEvent.html" class="extype" name="scalafx.scene.input.KeyEvent">KeyEvent</a>, <a href="MouseDragEvent.html" class="extype" name="scalafx.scene.input.MouseDragEvent">MouseDragEvent</a>, <a href="MouseEvent.html" class="extype" name="scalafx.scene.input.MouseEvent">MouseEvent</a>, <a href="RotateEvent.html" class="extype" name="scalafx.scene.input.RotateEvent">RotateEvent</a>, <a href="ScrollEvent.html" class="extype" name="scalafx.scene.input.ScrollEvent">ScrollEvent</a>, <a href="SwipeEvent.html" class="extype" name="scalafx.scene.input.SwipeEvent">SwipeEvent</a>, <a href="TouchEvent.html" class="extype" name="scalafx.scene.input.TouchEvent">TouchEvent</a>, <a href="ZoomEvent.html" class="extype" name="scalafx.scene.input.ZoomEvent">ZoomEvent</a></div>
-          </div></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph195" viewBox="0.00 0.00 959.00 158.00" height="158pt" width="959pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 956,-154 956,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this class" id="graph195_0"><a xlink:title="scalafx.scene.input.InputEvent (this class)" xlink:href="#inheritance-diagram"><polygon points="543.25,-88 452.75,-88 452.75,-62 543.25,-62 543.25,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-83" x="463" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="485" text-anchor="start">InputEvent</text></a></g><!-- node1 --><g class="node class" id="graph195_1"><a xlink:title="scalafx.scene.input.ContextMenuEvent" xlink:href="ContextMenuEvent.html#inheritance-diagram"><polygon points="126.25,-26 -0.25,-26 -0.25,-0 126.25,-0 126.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="32" text-anchor="start">ContextMenuEvent</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph195_0_1"><a xlink:title="ContextMenuEvent is a subtype of InputEvent"><path d="M447.149,-67.7636C377.038,-59.0498 246.776,-42.4451 136,-26 132.824,-25.5285 129.572,-25.0346 126.289,-24.5273" stroke="#d4d4d4" fill="none"></path><polygon points="447.327,-69.5491 452.505,-68.4284 447.758,-66.0757 447.327,-69.5491" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node class" id="graph195_2"><a xlink:title="scalafx.scene.input.DragEvent" xlink:href="DragEvent.html#inheritance-diagram"><polygon points="235,-26 145,-26 145,-0 235,-0 235,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="155" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="177" text-anchor="start">DragEvent</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph195_0_2"><a xlink:title="DragEvent is a subtype of InputEvent"><path d="M447.31,-64.9123C395.974,-55.5935 314.336,-40.4572 244,-26 241.084,-25.4006 238.082,-24.7704 235.058,-24.1256" stroke="#d4d4d4" fill="none"></path><polygon points="447.258,-66.6814 452.49,-65.8516 447.882,-63.2375 447.258,-66.6814" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph195_3"><a xlink:title="scalafx.scene.input.GestureEvent" xlink:href="GestureEvent.html#inheritance-diagram"><polygon points="357,-26 253,-26 253,-0 357,-0 357,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="263" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="285" text-anchor="start">GestureEvent</text></a></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph195_0_3"><a xlink:title="GestureEvent is a subtype of InputEvent"><path d="M454.126,-60.3604C420.863,-50.0194 375.581,-35.9422 343.669,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="453.649,-62.0448 458.944,-61.8581 454.689,-58.7026 453.649,-62.0448" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node4 --><g class="node class" id="graph195_4"><a xlink:title="scalafx.scene.input.InputMethodEvent" xlink:href="InputMethodEvent.html#inheritance-diagram"><polygon points="498.25,-26 375.75,-26 375.75,-0 498.25,-0 498.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="386" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="408" text-anchor="start">InputMethodEvent</text></a></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph195_0_4"><a xlink:title="InputMethodEvent is a subtype of InputEvent"><path d="M482.031,-58.2924C471.809,-48.2386 458.747,-35.3904 449.326,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="480.864,-59.5995 485.656,-61.8581 483.318,-57.1042 480.864,-59.5995" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node class" id="graph195_5"><a xlink:title="scalafx.scene.input.KeyEvent" xlink:href="KeyEvent.html#inheritance-diagram"><polygon points="603.25,-26 516.75,-26 516.75,-0 603.25,-0 603.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="527" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="549" text-anchor="start">KeyEvent</text></a></g><!-- node0&#45;&gt;node5 --><g class="edge inheritance" id="graph195_0_5"><a xlink:title="KeyEvent is a subtype of InputEvent"><path d="M514.231,-58.2924C524.62,-48.2386 537.897,-35.3904 547.472,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="512.923,-57.1234 510.547,-61.8581 515.357,-59.6385 512.923,-57.1234" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6 --><g class="node class" id="graph195_6"><a xlink:title="scalafx.scene.input.MouseEvent" xlink:href="MouseEvent.html#inheritance-diagram"><polygon points="720.25,-26 621.75,-26 621.75,-0 720.25,-0 720.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="632" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="654" text-anchor="start">MouseEvent</text></a></g><!-- node0&#45;&gt;node6 --><g class="edge inheritance" id="graph195_0_6"><a xlink:title="MouseEvent is a subtype of InputEvent"><path d="M538.063,-60.1054C567.809,-49.7889 607.968,-35.8609 636.339,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="537.16,-58.5663 533.009,-61.8581 538.307,-61.8731 537.16,-58.5663" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7 --><g class="node class" id="graph195_7"><a xlink:title="scalafx.scene.input.RotateEvent" xlink:href="RotateEvent.html#inheritance-diagram"><polygon points="837,-26 739,-26 739,-0 837,-0 837,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="749" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="771" text-anchor="start">RotateEvent</text></a></g><!-- node0&#45;&gt;node7 --><g class="edge inheritance" id="graph195_0_7"><a xlink:title="RotateEvent is a subtype of InputEvent"><path d="M548.385,-63.5756C601.8,-52.5242 685.619,-35.1822 738.641,-24.2122" stroke="#d4d4d4" fill="none"></path><polygon points="547.854,-61.8982 543.313,-64.625 548.563,-65.3256 547.854,-61.8982" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node8 --><g class="node class" id="graph195_8"><a xlink:title="scalafx.scene.input.TouchEvent" xlink:href="TouchEvent.html#inheritance-diagram"><polygon points="951,-26 855,-26 855,-0 951,-0 951,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="865" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="887" text-anchor="start">TouchEvent</text></a></g><!-- node0&#45;&gt;node8 --><g class="edge inheritance" id="graph195_0_8"><a xlink:title="TouchEvent is a subtype of InputEvent"><path d="M548.674,-68.1457C616.575,-60.0423 740.738,-44.3162 846,-26 848.889,-25.4972 851.855,-24.9544 854.844,-24.387" stroke="#d4d4d4" fill="none"></path><polygon points="548.241,-66.4348 543.483,-68.7635 548.655,-69.9103 548.241,-66.4348" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node9 --><g class="node class" id="graph195_9"><a xlink:title="scalafx.event.Event" xlink:href="../../event/Event.html#inheritance-diagram"><polygon points="448,-150 378,-150 378,-124 448,-124 448,-150" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-145" x="388" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="410" text-anchor="start">Event</text></a></g><!-- node9&#45;&gt;node0 --><g class="edge inheritance" id="graph195_9_0"><a xlink:title="InputEvent is a subtype of Event"><path d="M434.507,-120.819C448.855,-110.691 467.467,-97.5529 480.825,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="433.277,-119.545 430.201,-123.858 435.295,-122.404 433.277,-119.545" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node10 --><g class="node trait" id="graph195_10"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="../../delegate/SFXDelegate.html#inheritance-diagram"><polygon points="699.25,-150 466.75,-150 466.75,-124 699.25,-124 699.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-145" x="477" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="499" text-anchor="start">SFXDelegate[javafx.scene.input.InputEvent]</text></a></g><!-- node10&#45;&gt;node0 --><g class="edge inheritance" id="graph195_10_0"><a xlink:title="InputEvent is a subtype of SFXDelegate[javafx.scene.input.InputEvent]"><path d="M561.493,-120.819C547.145,-110.691 528.533,-97.5529 515.175,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="560.705,-122.404 565.799,-123.858 562.723,-119.545 560.705,-122.404" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -99,7 +107,7 @@
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">InputEvent</span><span class="params">(<span name="source">source: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="target">target: <span class="extype" name="javafx.event.EventTarget">EventTarget</span></span>, <span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="javafx.scene.input.InputEvent">javafx.scene.input.InputEvent</span>]</span>)</span>
+        <span class="name">InputEvent</span><span class="params">(<span name="source">source: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>, <span name="target">target: <span class="extype" name="javafx.event.EventTarget">EventTarget</span></span>, <span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="javafx.scene.input.InputEvent">javafx.scene.input.InputEvent</span>]</span>)</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@&lt;init&gt;(source:AnyRef,target:javafx.event.EventTarget,eventType:javafx.event.EventType[javafx.scene.input.InputEvent]):scalafx.scene.input.InputEvent" title="Permalink" target="_top">
@@ -159,7 +167,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -176,7 +184,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@##():Int" title="Permalink" target="_top">
@@ -193,7 +201,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -227,7 +235,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@clone():Object" title="Permalink" target="_top">
@@ -250,7 +258,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">consume</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">consume</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@consume():Unit" title="Permalink" target="_top">
@@ -268,7 +276,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">consumed</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">consumed</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@consumed:Boolean" title="Permalink" target="_top">
@@ -286,7 +294,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">copyFor</span><span class="params">(<span name="newSource">newSource: <span class="extype" name="scala.AnyRef">AnyRef</span></span>, <span name="newTarget">newTarget: <span class="extype" name="javafx.event.EventTarget">EventTarget</span></span>)</span><span class="result">: <a href="../../event/Event.html" class="extype" name="scalafx.event.Event">Event</a></span>
+        <span class="name">copyFor</span><span class="params">(<span name="newSource">newSource: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>, <span name="newTarget">newTarget: <span class="extype" name="javafx.event.EventTarget">EventTarget</span></span>)</span><span class="result">: <a href="../../event/Event.html" class="extype" name="scalafx.event.Event">Event</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@copyFor(newSource:AnyRef,newTarget:javafx.event.EventTarget):scalafx.event.Event" title="Permalink" target="_top">
@@ -322,7 +330,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -339,7 +347,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -376,7 +384,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@finalize():Unit" title="Permalink" target="_top">
@@ -416,7 +424,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@hashCode():Int" title="Permalink" target="_top">
@@ -434,7 +442,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -451,7 +459,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -468,7 +476,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@notify():Unit" title="Permalink" target="_top">
@@ -485,7 +493,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@notifyAll():Unit" title="Permalink" target="_top">
@@ -502,7 +510,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">source</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">source</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@source:Object" title="Permalink" target="_top">
@@ -573,7 +581,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@wait():Unit" title="Permalink" target="_top">
@@ -596,7 +604,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -619,7 +627,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.InputEvent@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -647,9 +655,9 @@
             </div><div class="parent" name="scalafx.delegate.SFXDelegate">
               <h3>Inherited from <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.input.InputEvent">javafx.scene.input.InputEvent</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -665,7 +673,7 @@
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.8.0.31-R7 </div>
 
 
     </body>

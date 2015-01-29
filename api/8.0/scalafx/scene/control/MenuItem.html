@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>MenuItem - ScalaFX API 8.0.20-R6 - scalafx.scene.control.MenuItem</title>
-          <meta name="description" content="MenuItem - ScalaFX API 8.0.20 - R6 - scalafx.scene.control.MenuItem" />
-          <meta name="keywords" content="MenuItem ScalaFX API 8.0.20 R6 scalafx.scene.control.MenuItem" />
+          <title>MenuItem - ScalaFX API 8.0.31-R7 - scalafx.scene.control.MenuItem</title>
+          <meta name="description" content="MenuItem - ScalaFX API 8.0.31 - R7 - scalafx.scene.control.MenuItem" />
+          <meta name="keywords" content="MenuItem ScalaFX API 8.0.31 R7 scalafx.scene.control.MenuItem" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -12,7 +12,7 @@
       <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
       <script type="text/javascript" src="../../../lib/template.js"></script>
       <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
-      
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
       <script type="text/javascript">
          if(top === self) {
             var url = '../../../index.html';
@@ -30,7 +30,11 @@
       <div id="definition">
         <a href="MenuItem$.html" title="Go to companion"><img src="../../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../package.html" class="extype" name="scalafx.scene">scene</a>.<a href="package.html" class="extype" name="scalafx.scene.control">control</a></p>
-        <h1><a href="MenuItem$.html" title="Go to companion">MenuItem</a></h1> <span class="permalink">
+        <h1><a href="MenuItem$.html" title="Go to companion">MenuItem</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="MenuItem$.html" title="See companion">object MenuItem</a>
+            | <a href="package.html" class="extype" name="scalafx.scene.control">package control</a>
+          </div></span></h3><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem" title="Permalink" target="_top">
         <img src="../../../lib/permalink.png" />
       </a>
@@ -47,13 +51,17 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <div id="comment" class="fullcommenttop"><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.31-R7/scalafx//src/main/scala/scalafx/scene/control/MenuItem.scala" target="_blank">MenuItem.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../../delegate/FireDelegate.html" class="extype" name="scalafx.delegate.FireDelegate">FireDelegate</a>[<span class="extype" name="javafx.scene.control.MenuItem">javafx.scene.control.MenuItem</span>], <a href="../../event/EventHandlerDelegate.html" class="extype" name="scalafx.event.EventHandlerDelegate">EventHandlerDelegate</a>, <a href="../../css/Styleable.html" class="extype" name="scalafx.css.Styleable">Styleable</a>, <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.control.MenuItem">javafx.scene.control.MenuItem</span>], <span class="extype" name="javafx.event.EventTarget">EventTarget</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+          <div class="superTypes hiddenContent"><a href="../../delegate/FireDelegate.html" class="extype" name="scalafx.delegate.FireDelegate">FireDelegate</a>[<span class="extype" name="javafx.scene.control.MenuItem">javafx.scene.control.MenuItem</span>], <a href="../../event/EventHandlerDelegate.html" class="extype" name="scalafx.event.EventHandlerDelegate">EventHandlerDelegate</a>, <a href="../../css/Styleable.html" class="extype" name="scalafx.css.Styleable">Styleable</a>, <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.control.MenuItem">javafx.scene.control.MenuItem</span>], <span class="extype" name="javafx.event.EventTarget">EventTarget</span>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">Known Subclasses</span>
-            <div class="subClasses hiddenContent"><a href="CheckMenuItem.html" class="extype" name="scalafx.scene.control.CheckMenuItem">CheckMenuItem</a>, <a href="Menu.html" class="extype" name="scalafx.scene.control.Menu">Menu</a>, <a href="RadioMenuItem.html" class="extype" name="scalafx.scene.control.RadioMenuItem">RadioMenuItem</a></div>
-          </div></div>
+            <div class="subClasses hiddenContent"><a href="CheckMenuItem.html" class="extype" name="scalafx.scene.control.CheckMenuItem">CheckMenuItem</a>, <a href="CustomMenuItem.html" class="extype" name="scalafx.scene.control.CustomMenuItem">CustomMenuItem</a>, <a href="Menu.html" class="extype" name="scalafx.scene.control.Menu">Menu</a>, <a href="RadioMenuItem.html" class="extype" name="scalafx.scene.control.RadioMenuItem">RadioMenuItem</a>, <a href="SeparatorMenuItem.html" class="extype" name="scalafx.scene.control.SeparatorMenuItem">SeparatorMenuItem</a></div>
+          </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
+                <span class="toggle diagram-link">Type Hierarchy</span>
+                <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph332" viewBox="0.00 0.00 882.00 158.00" height="158pt" width="882pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 154)" class="graph" id="graph1"><polygon points="-4,5 -4,-154 879,-154 879,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this class" id="graph332_0"><a xlink:title="scalafx.scene.control.MenuItem (this class)" xlink:href="#inheritance-diagram"><polygon points="334,-88 246,-88 246,-62 334,-62 334,-88" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-83" x="256" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-73" x="278" text-anchor="start">MenuItem</text></a></g><!-- node1 --><g class="node class" id="graph332_1"><a xlink:title="scalafx.scene.control.CheckMenuItem" xlink:href="CheckMenuItem.html#inheritance-diagram"><polygon points="154,-26 38,-26 38,-0 154,-0 154,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="48" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="70" text-anchor="start">CheckMenuItem</text></a></g><!-- node0&#45;&gt;node1 --><g class="edge inheritance" id="graph332_0_1"><a xlink:title="CheckMenuItem is a subtype of MenuItem"><path d="M245.899,-60.3604C212.463,-50.0194 166.947,-35.9422 134.869,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="245.447,-62.0526 250.741,-61.8581 246.482,-58.7088 245.447,-62.0526" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node2 --><g class="node class" id="graph332_2"><a xlink:title="scalafx.scene.control.CustomMenuItem" xlink:href="CustomMenuItem.html#inheritance-diagram"><polygon points="294,-26 172,-26 172,-0 294,-0 294,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="182" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="204" text-anchor="start">CustomMenuItem</text></a></g><!-- node0&#45;&gt;node2 --><g class="edge inheritance" id="graph332_0_2"><a xlink:title="CustomMenuItem is a subtype of MenuItem"><path d="M274.826,-58.0271C265.313,-48.0135 253.244,-35.3091 244.518,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="273.753,-59.4384 278.465,-61.8581 276.29,-57.0278 273.753,-59.4384" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node3 --><g class="node class" id="graph332_3"><a xlink:title="scalafx.scene.control.Menu" xlink:href="Menu.html#inheritance-diagram"><polygon points="382,-26 312,-26 312,-0 382,-0 382,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="322" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="344" text-anchor="start">Menu</text></a></g><!-- node0&#45;&gt;node3 --><g class="edge inheritance" id="graph332_0_3"><a xlink:title="Menu is a subtype of MenuItem"><path d="M305.174,-58.0271C314.687,-48.0135 326.756,-35.3091 335.482,-26.1238" stroke="#d4d4d4" fill="none"></path><polygon points="303.71,-57.0278 301.535,-61.8581 306.247,-59.4384 303.71,-57.0278" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node4 --><g class="node class" id="graph332_4"><a xlink:title="scalafx.scene.control.RadioMenuItem" xlink:href="RadioMenuItem.html#inheritance-diagram"><polygon points="513.25,-26 400.75,-26 400.75,-0 513.25,-0 513.25,-26" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../../lib/class_diagram.png" y="-21" x="411" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-11" x="433" text-anchor="start">RadioMenuItem</text></a></g><!-- node0&#45;&gt;node4 --><g class="edge inheritance" id="graph332_0_4"><a xlink:title="RadioMenuItem is a subtype of MenuItem"><path d="M328.673,-60.1054C357.387,-49.7889 396.154,-35.8609 423.541,-26.0213" stroke="#d4d4d4" fill="none"></path><polygon points="327.909,-58.5205 323.795,-61.8581 329.092,-61.8144 327.909,-58.5205" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node5 --><g class="node trait" id="graph332_5"><a xlink:title="javafx.event.EventTarget"><polygon points="96.25,-150 -0.25,-150 -0.25,-124 96.25,-124 96.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-145" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="32" text-anchor="start">EventTarget</text></a></g><!-- node5&#45;&gt;node0 --><g class="edge inheritance" id="graph332_5_0"><a xlink:title="MenuItem is a subtype of EventTarget"><path d="M101.323,-122.779C144.664,-112.034 205.08,-97.0546 245.767,-86.9668" stroke="#d4d4d4" fill="none"></path><polygon points="100.823,-121.1 96.3907,-124.002 101.665,-124.498 100.823,-121.1" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node6 --><g class="node trait" id="graph332_6"><a xlink:title="scalafx.css.Styleable" xlink:href="../../css/Styleable.html#inheritance-diagram"><polygon points="201,-150 115,-150 115,-124 201,-124 201,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-145" x="125" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="147" text-anchor="start">Styleable</text></a></g><!-- node6&#45;&gt;node0 --><g class="edge inheritance" id="graph332_6_0"><a xlink:title="MenuItem is a subtype of Styleable"><path d="M189.4,-121.727C211.929,-111.487 241.958,-97.8374 263.328,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="188.54,-120.196 184.712,-123.858 189.988,-123.382 188.54,-120.196" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node7 --><g class="node trait" id="graph332_7"><a xlink:title="scalafx.event.EventHandlerDelegate" xlink:href="../../event/EventHandlerDelegate.html#inheritance-diagram"><polygon points="360.25,-150 219.75,-150 219.75,-124 360.25,-124 360.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-145" x="230" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="252" text-anchor="start">EventHandlerDelegate</text></a></g><!-- node7&#45;&gt;node0 --><g class="edge inheritance" id="graph332_7_0"><a xlink:title="MenuItem is a subtype of EventHandlerDelegate"><path d="M290,-118.683C290,-108.896 290,-96.9026 290,-88.1238" stroke="#d4d4d4" fill="none"></path><polygon points="288.25,-118.858 290,-123.858 291.75,-118.858 288.25,-118.858" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node8 --><g class="node trait" id="graph332_8"><a xlink:title="scalafx.delegate.FireDelegate" xlink:href="../../delegate/FireDelegate.html#inheritance-diagram"><polygon points="617,-150 379,-150 379,-124 617,-124 617,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-145" x="389" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="411" text-anchor="start">FireDelegate[javafx.scene.control.MenuItem]</text></a></g><!-- node8&#45;&gt;node0 --><g class="edge inheritance" id="graph332_8_0"><a xlink:title="MenuItem is a subtype of FireDelegate[javafx.scene.control.MenuItem]"><path d="M450.716,-122.36C414.867,-112.019 366.066,-97.9422 331.674,-88.0213" stroke="#d4d4d4" fill="none"></path><polygon points="450.619,-124.154 455.908,-123.858 451.589,-120.791 450.619,-124.154" stroke="#d4d4d4" fill="none"></polygon></a></g><!-- node9 --><g class="node trait" id="graph332_9"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="../../delegate/SFXDelegate.html#inheritance-diagram"><polygon points="874.25,-150 635.75,-150 635.75,-124 874.25,-124 874.25,-150" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../../lib/trait_diagram.png" y="-145" x="646" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-135" x="668" text-anchor="start">SFXDelegate[javafx.scene.control.MenuItem]</text></a></g><!-- node9&#45;&gt;node0 --><g class="edge inheritance" id="graph332_9_0"><a xlink:title="MenuItem is a subtype of SFXDelegate[javafx.scene.control.MenuItem]"><path d="M656.743,-123.322C557.252,-110.484 407.874,-91.2095 334.249,-81.7095" stroke="#d4d4d4" fill="none"></path><polygon points="656.556,-125.062 661.739,-123.966 657.004,-121.591 656.556,-125.062" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+              </div></div>
         
 
       <div id="mbrsel">
@@ -157,7 +165,7 @@ Node to the given node.</p>
         <span class="kind">type</span>
       </span>
       <span class="symbol">
-        <span class="name">EventHandled</span><span class="result"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { ... /* 5 definitions in type refinement */ }</span>
+        <span class="name">EventHandled</span><span class="result"> = <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a> { ... /* 5 definitions in type refinement */ }</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@EventHandled=AnyRef{defaddEventHandler[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_]):Unit;defremoveEventHandler[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_]):Unit;defaddEventFilter[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_]):Unit;defremoveEventFilter[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_]):Unit;defbuildEventDispatchChain(chain:javafx.event.EventDispatchChain):javafx.event.EventDispatchChain}" title="Permalink" target="_top">
@@ -174,7 +182,7 @@ Node to the given node.</p>
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="../../event/EventHandlerDelegate$FilterMagnet.html"><span class="name">FilterMagnet</span></a><span class="tparams">[<span name="J">J &lt;: <span class="extype" name="javafx.event.Event">javafx.event.Event</span></span>, <span name="S">S &lt;: <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.event.EventHandlerDelegate.FilterMagnet.J">J</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="../../event/EventHandlerDelegate$FilterMagnet.html"><span class="name">FilterMagnet</span></a><span class="tparams">[<span name="J">J &lt;: <span class="extype" name="javafx.event.Event">javafx.event.Event</span></span>, <span name="S">S &lt;: <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.event.EventHandlerDelegate.FilterMagnet.J">J</span>]</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.EventHandlerDelegate@FilterMagnet[J&lt;:javafx.event.Event,S&lt;:scalafx.delegate.SFXDelegate[J]]extendsAnyRef" title="Permalink" target="_top">
@@ -195,7 +203,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="../../event/EventHandlerDelegate$HandlerMagnet.html"><span class="name">HandlerMagnet</span></a><span class="tparams">[<span name="J">J &lt;: <span class="extype" name="javafx.event.Event">javafx.event.Event</span></span>, <span name="S">S &lt;: <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.event.EventHandlerDelegate.HandlerMagnet.J">J</span>]</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <a href="../../event/EventHandlerDelegate$HandlerMagnet.html"><span class="name">HandlerMagnet</span></a><span class="tparams">[<span name="J">J &lt;: <span class="extype" name="javafx.event.Event">javafx.event.Event</span></span>, <span name="S">S &lt;: <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="scalafx.event.EventHandlerDelegate.HandlerMagnet.J">J</span>]</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.event.EventHandlerDelegate@HandlerMagnet[J&lt;:javafx.event.Event,S&lt;:scalafx.delegate.SFXDelegate[J]]extendsAnyRef" title="Permalink" target="_top">
@@ -223,7 +231,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -240,7 +248,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@##():Int" title="Permalink" target="_top">
@@ -257,7 +265,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -333,7 +341,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: accelerator_$eq" class="name">accelerator_=</span><span class="params">(<span name="v">v: <a href="../input/KeyCombination.html" class="extype" name="scalafx.scene.input.KeyCombination">KeyCombination</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: accelerator_$eq" class="name">accelerator_=</span><span class="params">(<span name="v">v: <a href="../input/KeyCombination.html" class="extype" name="scalafx.scene.input.KeyCombination">KeyCombination</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@accelerator_=(v:scalafx.scene.input.KeyCombination):Unit" title="Permalink" target="_top">
@@ -350,7 +358,7 @@ to avoid compilation error &quot;ambiguous reference to overloaded definition&qu
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addEventFilter</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.addEventFilter.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.addEventFilter.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">addEventFilter</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.addEventFilter.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.addEventFilter.E">E</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@addEventFilter[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_&gt;:E]):Unit" title="Permalink" target="_top">
@@ -370,7 +378,7 @@ associated event handlers.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">addEventHandler</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.addEventHandler.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.addEventHandler.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">addEventHandler</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.addEventHandler.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.addEventHandler.E">E</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@addEventHandler[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_&gt;:E]):Unit" title="Permalink" target="_top">
@@ -427,7 +435,7 @@ dispatching.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@clone():Object" title="Permalink" target="_top">
@@ -503,7 +511,7 @@ dispatching.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: disable_$eq" class="name">disable_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: disable_$eq" class="name">disable_=</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@disable_=(v:Boolean):Unit" title="Permalink" target="_top">
@@ -520,7 +528,7 @@ dispatching.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -537,7 +545,7 @@ dispatching.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -582,19 +590,19 @@ dispatching.
       </a>
     </span>
       <p class="shortcomment cmt">Registers an event filter.</p><div class="fullcomment"><div class="comment cmt"><p>Registers an event filter. Registered event filters get an event before any associated event handlers.</p><p>Example of filtering mouse events</p><pre>pane.filterEvent(MouseEvent.<span class="std">Any</span>) {
-me: MouseEvent <span class="kw">=&gt;</span> {
-  me.eventType <span class="kw">match</span> {
-    <span class="kw">case</span> MouseEvent.MousePressed <span class="kw">=&gt;</span> {
-      ...
-    }
-    <span class="kw">case</span> MouseEvent.MouseDragged <span class="kw">=&gt;</span> {
-      ...
-    }
-    <span class="kw">case</span> _ <span class="kw">=&gt;</span> {
-      ...
+  me: MouseEvent <span class="kw">=&gt;</span> {
+    me.eventType <span class="kw">match</span> {
+      <span class="kw">case</span> MouseEvent.MousePressed <span class="kw">=&gt;</span> {
+        ...
+      }
+      <span class="kw">case</span> MouseEvent.MouseDragged <span class="kw">=&gt;</span> {
+        ...
+      }
+      <span class="kw">case</span> _ <span class="kw">=&gt;</span> {
+        ...
+      }
     }
   }
-}
 }</pre><p>or</p><pre>pane.filterEvent(MouseEvent.<span class="std">Any</span>) { () <span class="kw">=&gt;</span> println(<span class="lit">"Some mouse event handled"</span>) }</pre></div><dl class="paramcmts block"><dt class="tparam">J</dt><dd class="cmt"><p>type JavaFX delegate of the event</p></dd><dt class="tparam">S</dt><dd class="cmt"><p>ScalaFX type for <code>J</code> type wrapper.
 </p></dd><dt class="param">eventType</dt><dd class="cmt"><p>type of events that will be handled.</p></dd><dt class="param">filter</dt><dd class="cmt"><p>code handling the event, see examples above.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../event/EventHandlerDelegate.html" class="extype" name="scalafx.event.EventHandlerDelegate">EventHandlerDelegate</a></dd></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -606,7 +614,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@finalize():Unit" title="Permalink" target="_top">
@@ -629,7 +637,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fire</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">fire</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@fire():Unit" title="Permalink" target="_top">
@@ -721,7 +729,7 @@ conflict with its subclasses already have a method with this name which returns 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: graphic_$eq" class="name">graphic_=</span><span class="params">(<span name="v">v: <a href="../Node.html" class="extype" name="scalafx.scene.Node">Node</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: graphic_$eq" class="name">graphic_=</span><span class="params">(<span name="v">v: <a href="../Node.html" class="extype" name="scalafx.scene.Node">Node</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@graphic_=(v:scalafx.scene.Node):Unit" title="Permalink" target="_top">
@@ -746,13 +754,13 @@ conflict with its subclasses already have a method with this name which returns 
       </a>
     </span>
       <p class="shortcomment cmt">Registers an event handler.</p><div class="fullcomment"><div class="comment cmt"><p>Registers an event handler. The handler is called when the node receives an Event of the specified type during the bubbling phase of event delivery.</p><p>Example of handling mouse events</p><pre>pane.handleEvent(MouseEvent.<span class="std">Any</span>) {
-me: MouseEvent <span class="kw">=&gt;</span> {
-  me.eventType <span class="kw">match</span> {
-    <span class="kw">case</span> MouseEvent.MousePressed <span class="kw">=&gt;</span> ...
-    <span class="kw">case</span> MouseEvent.MouseDragged <span class="kw">=&gt;</span> ...
-    <span class="kw">case</span> _                       <span class="kw">=&gt;</span> {}
+  me: MouseEvent <span class="kw">=&gt;</span> {
+    me.eventType <span class="kw">match</span> {
+      <span class="kw">case</span> MouseEvent.MousePressed <span class="kw">=&gt;</span> ...
+      <span class="kw">case</span> MouseEvent.MouseDragged <span class="kw">=&gt;</span> ...
+      <span class="kw">case</span> _                       <span class="kw">=&gt;</span> {}
+    }
   }
-}
 }</pre><p>or</p><pre>pane.handleEvent(MouseEvent.<span class="std">Any</span>) { () <span class="kw">=&gt;</span> println(<span class="lit">"Some mouse event handled"</span>) }</pre></div><dl class="paramcmts block"><dt class="tparam">J</dt><dd class="cmt"><p>type JavaFX delegate of the event</p></dd><dt class="tparam">S</dt><dd class="cmt"><p>ScalaFX type for <code>J</code> type wrapper.</p></dd><dt class="param">eventType</dt><dd class="cmt"><p>type of events that will be handled.</p></dd><dt class="param">handler</dt><dd class="cmt"><p>code handling the event, see examples above.</p></dd><dt>returns</dt><dd class="cmt"><p>Returns a subscription that can be used to cancel/remove this event handler
 </p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../event/EventHandlerDelegate.html" class="extype" name="scalafx.event.EventHandlerDelegate">EventHandlerDelegate</a></dd></dl></div>
     </li><li name="scalafx.delegate.SFXDelegate#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -764,7 +772,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@hashCode():Int" title="Permalink" target="_top">
@@ -799,7 +807,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: id_$eq" class="name">id_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: id_$eq" class="name">id_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@id_=(v:String):Unit" title="Permalink" target="_top">
@@ -816,7 +824,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -850,7 +858,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: mnemonicParsing_$eq" class="name">mnemonicParsing_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: mnemonicParsing_$eq" class="name">mnemonicParsing_=</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@mnemonicParsing_=(v:Boolean):Unit" title="Permalink" target="_top">
@@ -867,7 +875,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -884,7 +892,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@notify():Unit" title="Permalink" target="_top">
@@ -901,7 +909,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@notifyAll():Unit" title="Permalink" target="_top">
@@ -935,7 +943,7 @@ me: MouseEvent <span class="kw">=&gt;</span> {
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: onAction_$eq" class="name">onAction_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.event.ActionEvent">ActionEvent</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: onAction_$eq" class="name">onAction_=</span><span class="params">(<span name="v">v: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.event.ActionEvent">ActionEvent</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@onAction_=(v:javafx.event.EventHandler[javafx.event.ActionEvent]):Unit" title="Permalink" target="_top">
@@ -972,7 +980,7 @@ The event handler is also invoked when onShowing event handler is called.</p></d
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: onMenuValidation_$eq" class="name">onMenuValidation_=</span><span class="params">(<span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.event.Event">Event</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: onMenuValidation_$eq" class="name">onMenuValidation_=</span><span class="params">(<span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[<span class="extype" name="javafx.event.Event">Event</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@onMenuValidation_=(eventHandler:javafx.event.EventHandler[javafx.event.Event]):Unit" title="Permalink" target="_top">
@@ -1023,7 +1031,7 @@ The event handler is also invoked when onShowing event handler is called.</p></d
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">properties</span><span class="result">: <span class="extype" name="javafx.collections.ObservableMap">ObservableMap</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>]</span>
+        <span class="name">properties</span><span class="result">: <span class="extype" name="javafx.collections.ObservableMap">ObservableMap</span>[<a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>]</span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@properties:javafx.collections.ObservableMap[Object,Object]" title="Permalink" target="_top">
@@ -1059,7 +1067,7 @@ developers.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">removeEventFilter</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventFilter.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventFilter.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">removeEventFilter</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventFilter.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventFilter.E">E</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@removeEventFilter[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_&gt;:E]):Unit" title="Permalink" target="_top">
@@ -1080,7 +1088,7 @@ type from which to unregister the filter.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">removeEventHandler</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventHandler.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventHandler.E">E</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">removeEventHandler</span><span class="tparams">[<span name="E">E &lt;: <span class="extype" name="javafx.event.Event">Event</span></span>]</span><span class="params">(<span name="eventType">eventType: <span class="extype" name="javafx.event.EventType">EventType</span>[<span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventHandler.E">E</span>]</span>, <span name="eventHandler">eventHandler: <span class="extype" name="javafx.event.EventHandler">EventHandler</span>[_ &gt;: <span class="extype" name="scalafx.event.EventHandlerDelegate.removeEventHandler.E">E</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@removeEventHandler[E&lt;:javafx.event.Event](eventType:javafx.event.EventType[E],eventHandler:javafx.event.EventHandler[_&gt;:E]):Unit" title="Permalink" target="_top">
@@ -1138,7 +1146,7 @@ external style engine.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: style_$eq" class="name">style_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: style_$eq" class="name">style_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@style_=(v:String):Unit" title="Permalink" target="_top">
@@ -1207,7 +1215,7 @@ external style engine.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: text_$eq" class="name">text_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: text_$eq" class="name">text_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@text_=(v:String):Unit" title="Permalink" target="_top">
@@ -1260,7 +1268,7 @@ external style engine.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">userData</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+        <span class="name">userData</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@userData:AnyRef" title="Permalink" target="_top">
@@ -1278,7 +1286,7 @@ setUserData(java.lang.Object) method.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: userData_$eq" class="name">userData_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: userData_$eq" class="name">userData_=</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@userData_=(v:AnyRef):Unit" title="Permalink" target="_top">
@@ -1312,7 +1320,7 @@ setUserData(java.lang.Object) method.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: visible_$eq" class="name">visible_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span title="gt4s: visible_$eq" class="name">visible_=</span><span class="params">(<span name="v">v: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@visible_=(v:Boolean):Unit" title="Permalink" target="_top">
@@ -1329,7 +1337,7 @@ setUserData(java.lang.Object) method.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@wait():Unit" title="Permalink" target="_top">
@@ -1352,7 +1360,7 @@ setUserData(java.lang.Object) method.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -1375,7 +1383,7 @@ setUserData(java.lang.Object) method.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.control.MenuItem@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -1409,9 +1417,9 @@ setUserData(java.lang.Object) method.</p>
             </div><div class="parent" name="javafx.event.EventTarget">
               <h3>Inherited from <span class="extype" name="javafx.event.EventTarget">EventTarget</span></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -1427,7 +1435,7 @@ setUserData(java.lang.Object) method.</p>
 
       <div id="tooltip"></div>
 
-      <div id="footer">  </div>
+      <div id="footer"> ScalaFX API v.8.0.31-R7 </div>
 
 
     </body>
