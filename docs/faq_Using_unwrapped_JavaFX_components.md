@@ -33,7 +33,7 @@ import scalafx.scene.layout.GridPane
 
   // Bind JavaFX property to ScalaFX property using ScalaFX operator
   marginsListSpinner.valueProperty <==> model.chipMarginPercent
-   
+
   // Insert ScalaFX and JavaFX controls into ScalaFX grid pane
   gp.addRow(row,
     new Label("Chip margin %"),
@@ -43,13 +43,13 @@ import scalafx.scene.layout.GridPane
 
 
 
-Here is another example. This one is using `Dialog` from ColorolFX. Notice that `parentStage` passed as an argument to ColorolFX method owner is a ScalaFX control (remember `import scalafx.Includes._`):
+Here is another example. This one is using `Dialog` from ControlsFX. Notice that `parentStage` passed as an argument to ControlsFX method owner is a ScalaFX control (remember `import scalafx.Includes._`):
 
 {% highlight scala %}
 import org.controlsfx.dialog.Dialogs
 import scalafx.Includes._
 import scalafx.stage.Stage
- 
+
   val parentStage : Stage = ...
   ...
 
