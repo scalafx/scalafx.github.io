@@ -110,4 +110,4 @@ object TableWithCustomCellDemo extends JFXApp {
 
 {% endhighlight %}
 
-You can find the code for this example in [scalafx-demos](https://github.com/scalafx/scalafx/tree/master/scalafx-demos).
+You can find the code for this example in [scalafx-demos](https://github.com/scalafx/scalafx/tree/master/scalafx-demos/src/main/scala/scalafx/controls/tableview).
