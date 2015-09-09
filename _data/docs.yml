@@ -6,7 +6,8 @@
 - title: FAQ
   docs:
   - faq_TableView_with_Custom_cell
-  - faq_Using_unwrapped_JavaFX_components 
+  - faq_Using_unwrapped_JavaFX_components
+  - faq_Using_Ambiguous_Methods.md
 
 - title: Meta
   docs:
