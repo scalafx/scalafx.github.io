@@ -1,0 +1,1409 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>AccessibleRole - ScalaFX API 8.0.40-R8 - scalafx.scene.AccessibleRole</title>
+          <meta name="description" content="AccessibleRole - ScalaFX API 8.0.40 - R8 - scalafx.scene.AccessibleRole" />
+          <meta name="keywords" content="AccessibleRole ScalaFX API 8.0.40 R8 scalafx.scene.AccessibleRole" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'scalafx.scene.AccessibleRole$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <a href="AccessibleRole.html" title="See companion class"><img src="../../lib/object_to_class_big.png" /></a>
+        <p id="owner"><a href="../package.html" class="extype" name="scalafx">scalafx</a>.<a href="package.html" class="extype" name="scalafx.scene">scene</a></p>
+        <h1><a href="AccessibleRole.html" title="See companion class">AccessibleRole</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="AccessibleRole.html" title="See companion class">class AccessibleRole</a>
+            | <a href="package.html" class="extype" name="scalafx.scene">package scene</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AccessibleRole</span><span class="result"> extends <a href="../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.AccessibleRole">javafx.scene.AccessibleRole</span>, <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a>] with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This enum describes the accessible role for a <code>Node</code>.</p><p>The role is used by assistive technologies such as screen readers
+to decide the set of actions and attributes for a node.  For example,
+when the screen reader needs the current value of a slider, it
+will request it using the value attribute.  When the screen reader
+changes the value of the slider, it will use an action to set
+the current value of the slider.  The slider must respond
+appropriately to both these requests.</p><p>Wraps <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/AccessibleRole.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/AccessibleRole.html</a>
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.40-R8/scalafx//src/main/scala/scalafx/scene/AccessibleRole.scala" target="_blank">AccessibleRole.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.AccessibleRole">javafx.scene.AccessibleRole</span>, <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a>], <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scalafx.scene.AccessibleRole"><span>AccessibleRole</span></li><li class="in" name="scala.Serializable"><span>Serializable</span></li><li class="in" name="java.io.Serializable"><span>Serializable</span></li><li class="in" name="scalafx.delegate.SFXEnumDelegateCompanion"><span>SFXEnumDelegateCompanion</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@##():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.scene.AccessibleRole#Button" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Button:scalafx.scene.AccessibleRole"></a>
+      <a id="Button:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Button</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Button:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Button role.</p><div class="fullcomment"><div class="comment cmt"><p>Button role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#CheckBox" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CheckBox:scalafx.scene.AccessibleRole"></a>
+      <a id="CheckBox:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CheckBox</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@CheckBox:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Check Box role.</p><div class="fullcomment"><div class="comment cmt"><p>Check Box role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#INDETERMINATE">AccessibleAttribute#INDETERMINATE</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#CheckMenuItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CheckMenuItem:scalafx.scene.AccessibleRole"></a>
+      <a id="CheckMenuItem:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CheckMenuItem</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@CheckMenuItem:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Check Menu Item role.</p><div class="fullcomment"><div class="comment cmt"><p>Check Menu Item role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ACCELERATOR">AccessibleAttribute#ACCELERATOR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MNEMONIC">AccessibleAttribute#MNEMONIC</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#DISABLED">AccessibleAttribute#DISABLED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#ComboBox" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ComboBox:scalafx.scene.AccessibleRole"></a>
+      <a id="ComboBox:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ComboBox</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ComboBox:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Combo Box role.</p><div class="fullcomment"><div class="comment cmt"><p>Combo Box role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#EXPANDED">AccessibleAttribute#EXPANDED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#EDITABLE">AccessibleAttribute#EDITABLE</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#EXPAND">AccessibleAction#EXPAND</span></code></li><li> <code><span class="extype" name="AccessibleAction#COLLAPSE">AccessibleAction#COLLAPSE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#ContextMenu" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ContextMenu:scalafx.scene.AccessibleRole"></a>
+      <a id="ContextMenu:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ContextMenu</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ContextMenu:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Context Menu role.</p><div class="fullcomment"><div class="comment cmt"><p>Context Menu role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#PARENT_MENU">AccessibleAttribute#PARENT_MENU</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#VISIBLE">AccessibleAttribute#VISIBLE</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#DatePicker" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DatePicker:scalafx.scene.AccessibleRole"></a>
+      <a id="DatePicker:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DatePicker</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@DatePicker:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Date Picker role.</p><div class="fullcomment"><div class="comment cmt"><p>Date Picker role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#DATE">AccessibleAttribute#DATE</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#DecrementButton" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DecrementButton:scalafx.scene.AccessibleRole"></a>
+      <a id="DecrementButton:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DecrementButton</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@DecrementButton:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Decrement Button role.</p><div class="fullcomment"><div class="comment cmt"><p>Decrement Button role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#Hyperlink" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Hyperlink:scalafx.scene.AccessibleRole"></a>
+      <a id="Hyperlink:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Hyperlink</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Hyperlink:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Hyperlink role.</p><div class="fullcomment"><div class="comment cmt"><p>Hyperlink role.</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#VISITED">AccessibleAttribute#VISITED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#ImageView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ImageView:scalafx.scene.AccessibleRole"></a>
+      <a id="ImageView:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ImageView</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ImageView:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Image View role.</p><div class="fullcomment"><div class="comment cmt"><p>Image View role.</p><p>Attributes:</p><p>Actions:</p><p>It is strongly recommended that a text description of the image be provided
+for each <code><a href="#ImageView:scalafx.scene.AccessibleRole" class="extmbr" name="scalafx.scene.AccessibleRole#ImageView">ImageView</a></code>.  This can be done by setting either
+<code><span class="extype" name="Node#accessibleTextProperty()">Node#accessibleTextProperty()</span></code> for the <code><a href="#ImageView:scalafx.scene.AccessibleRole" class="extmbr" name="scalafx.scene.AccessibleRole#ImageView">ImageView</a></code>
+or by using <code><span class="extype" name="AccessibleAttribute#LABELED_BY">AccessibleAttribute#LABELED_BY</span></code>.</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#IncrementButton" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="IncrementButton:scalafx.scene.AccessibleRole"></a>
+      <a id="IncrementButton:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">IncrementButton</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@IncrementButton:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Increment Button role.</p><div class="fullcomment"><div class="comment cmt"><p>Increment Button role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#ListItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ListItem:scalafx.scene.AccessibleRole"></a>
+      <a id="ListItem:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ListItem</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ListItem:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">List Item role.</p><div class="fullcomment"><div class="comment cmt"><p>List Item role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#INDEX">AccessibleAttribute#INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#REQUEST_FOCUS">AccessibleAction#REQUEST_FOCUS</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#ListView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ListView:scalafx.scene.AccessibleRole"></a>
+      <a id="ListView:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ListView</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ListView:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">List View role.</p><div class="fullcomment"><div class="comment cmt"><p>List View role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#ITEM_AT_INDEX">AccessibleAttribute#ITEM_AT_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ITEM_COUNT">AccessibleAttribute#ITEM_COUNT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED_ITEMS">AccessibleAttribute#SELECTED_ITEMS</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MULTIPLE_SELECTION">AccessibleAttribute#MULTIPLE_SELECTION</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#VERTICAL_SCROLLBAR">AccessibleAttribute#VERTICAL_SCROLLBAR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#HORIZONTAL_SCROLLBAR">AccessibleAttribute#HORIZONTAL_SCROLLBAR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#FOCUS_ITEM">AccessibleAttribute#FOCUS_ITEM</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#SHOW_ITEM">AccessibleAction#SHOW_ITEM</span></code></li><li> <code><span class="extype" name="AccessibleAction#SET_SELECTED_ITEMS">AccessibleAction#SET_SELECTED_ITEMS</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#Menu" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Menu:scalafx.scene.AccessibleRole"></a>
+      <a id="Menu:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Menu</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Menu:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Menu role.</p><div class="fullcomment"><div class="comment cmt"><p>Menu role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ACCELERATOR">AccessibleAttribute#ACCELERATOR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MNEMONIC">AccessibleAttribute#MNEMONIC</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#DISABLED">AccessibleAttribute#DISABLED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SUBMENU">AccessibleAttribute#SUBMENU</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#MenuBar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MenuBar:scalafx.scene.AccessibleRole"></a>
+      <a id="MenuBar:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MenuBar</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@MenuBar:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Menu Bar role.</p><div class="fullcomment"><div class="comment cmt"><p>Menu Bar role.</p><p>Attributes:</p><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#MenuButton" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MenuButton:scalafx.scene.AccessibleRole"></a>
+      <a id="MenuButton:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MenuButton</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@MenuButton:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Menu Button role.</p><div class="fullcomment"><div class="comment cmt"><p>Menu Button role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#MenuItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MenuItem:scalafx.scene.AccessibleRole"></a>
+      <a id="MenuItem:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MenuItem</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@MenuItem:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Menu Item role.</p><div class="fullcomment"><div class="comment cmt"><p>Menu Item role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ACCELERATOR">AccessibleAttribute#ACCELERATOR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MNEMONIC">AccessibleAttribute#MNEMONIC</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#DISABLED">AccessibleAttribute#DISABLED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#Node" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Node:scalafx.scene.AccessibleRole"></a>
+      <a id="Node:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Node</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Node:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Node role.</p><div class="fullcomment"><div class="comment cmt"><p>Node role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#ROLE">AccessibleAttribute#ROLE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#PARENT">AccessibleAttribute#PARENT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SCENE">AccessibleAttribute#SCENE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#BOUNDS">AccessibleAttribute#BOUNDS</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#DISABLED">AccessibleAttribute#DISABLED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#FOCUSED">AccessibleAttribute#FOCUSED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#VISIBLE">AccessibleAttribute#VISIBLE</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#REQUEST_FOCUS">AccessibleAction#REQUEST_FOCUS</span></code></li></ul><p>Optional Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#LABELED_BY">AccessibleAttribute#LABELED_BY</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ROLE_DESCRIPTION">AccessibleAttribute#ROLE_DESCRIPTION</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#HELP">AccessibleAttribute#HELP</span></code></li></ul><p>Optional Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#SHOW_MENU">AccessibleAction#SHOW_MENU</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#PageItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PageItem:scalafx.scene.AccessibleRole"></a>
+      <a id="PageItem:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PageItem</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@PageItem:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Page role.</p><div class="fullcomment"><div class="comment cmt"><p>Page role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#REQUEST_FOCUS">AccessibleAction#REQUEST_FOCUS</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#Pagination" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Pagination:scalafx.scene.AccessibleRole"></a>
+      <a id="Pagination:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Pagination</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Pagination:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Pagination role.</p><div class="fullcomment"><div class="comment cmt"><p>Pagination role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#ITEM_AT_INDEX">AccessibleAttribute#ITEM_AT_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ITEM_COUNT">AccessibleAttribute#ITEM_COUNT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#FOCUS_ITEM">AccessibleAttribute#FOCUS_ITEM</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#Parent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Parent:scalafx.scene.AccessibleRole"></a>
+      <a id="Parent:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Parent</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Parent:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Parent role.</p><div class="fullcomment"><div class="comment cmt"><p>Parent role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#CHILDREN">AccessibleAttribute#CHILDREN</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#PasswordField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PasswordField:scalafx.scene.AccessibleRole"></a>
+      <a id="PasswordField:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PasswordField</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@PasswordField:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Password Field role.</p><div class="fullcomment"><div class="comment cmt"><p>Password Field role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code> - must return null or empty string</li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#ProgressIndicator" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ProgressIndicator:scalafx.scene.AccessibleRole"></a>
+      <a id="ProgressIndicator:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ProgressIndicator</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ProgressIndicator:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Progress Indicator role.</p><div class="fullcomment"><div class="comment cmt"><p>Progress Indicator role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#VALUE">AccessibleAttribute#VALUE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MIN_VALUE">AccessibleAttribute#MIN_VALUE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MAX_VALUE">AccessibleAttribute#MAX_VALUE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#INDETERMINATE">AccessibleAttribute#INDETERMINATE</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#RadioButton" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RadioButton:scalafx.scene.AccessibleRole"></a>
+      <a id="RadioButton:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RadioButton</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@RadioButton:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Radio Button role.</p><div class="fullcomment"><div class="comment cmt"><p>Radio Button role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#RadioMenuItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RadioMenuItem:scalafx.scene.AccessibleRole"></a>
+      <a id="RadioMenuItem:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RadioMenuItem</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@RadioMenuItem:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Radio Menu Item role.</p><div class="fullcomment"><div class="comment cmt"><p>Radio Menu Item role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ACCELERATOR">AccessibleAttribute#ACCELERATOR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MNEMONIC">AccessibleAttribute#MNEMONIC</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#DISABLED">AccessibleAttribute#DISABLED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#ScrollBar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ScrollBar:scalafx.scene.AccessibleRole"></a>
+      <a id="ScrollBar:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ScrollBar</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ScrollBar:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Scroll Bar role.</p><div class="fullcomment"><div class="comment cmt"><p>Scroll Bar role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#VALUE">AccessibleAttribute#VALUE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MAX_VALUE">AccessibleAttribute#MAX_VALUE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MIN_VALUE">AccessibleAttribute#MIN_VALUE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ORIENTATION">AccessibleAttribute#ORIENTATION</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#INCREMENT">AccessibleAction#INCREMENT</span></code></li><li> <code><span class="extype" name="AccessibleAction#DECREMENT">AccessibleAction#DECREMENT</span></code></li><li> <code><span class="extype" name="AccessibleAction#BLOCK_INCREMENT">AccessibleAction#BLOCK_INCREMENT</span></code></li><li> <code><span class="extype" name="AccessibleAction#BLOCK_DECREMENT">AccessibleAction#BLOCK_DECREMENT</span></code></li><li> <code><span class="extype" name="AccessibleAction#SET_VALUE">AccessibleAction#SET_VALUE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#ScrollPane" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ScrollPane:scalafx.scene.AccessibleRole"></a>
+      <a id="ScrollPane:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ScrollPane</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ScrollPane:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Scroll Pane role.</p><div class="fullcomment"><div class="comment cmt"><p>Scroll Pane role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#CONTENTS">AccessibleAttribute#CONTENTS</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#HORIZONTAL_SCROLLBAR">AccessibleAttribute#HORIZONTAL_SCROLLBAR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#VERTICAL_SCROLLBAR">AccessibleAttribute#VERTICAL_SCROLLBAR</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#Slider" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Slider:scalafx.scene.AccessibleRole"></a>
+      <a id="Slider:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Slider</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Slider:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Slider role.</p><div class="fullcomment"><div class="comment cmt"><p>Slider role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#VALUE">AccessibleAttribute#VALUE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MIN_VALUE">AccessibleAttribute#MIN_VALUE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MAX_VALUE">AccessibleAttribute#MAX_VALUE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ORIENTATION">AccessibleAttribute#ORIENTATION</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#INCREMENT">AccessibleAction#INCREMENT</span></code></li><li> <code><span class="extype" name="AccessibleAction#DECREMENT">AccessibleAction#DECREMENT</span></code></li><li> <code><span class="extype" name="AccessibleAction#SET_VALUE">AccessibleAction#SET_VALUE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#Spinner" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Spinner:scalafx.scene.AccessibleRole"></a>
+      <a id="Spinner:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Spinner</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Spinner:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Spinner role.</p><div class="fullcomment"><div class="comment cmt"><p>Spinner role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#INCREMENT">AccessibleAction#INCREMENT</span></code></li><li> <code><span class="extype" name="AccessibleAction#DECREMENT">AccessibleAction#DECREMENT</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#SplitMenuButton" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SplitMenuButton:scalafx.scene.AccessibleRole"></a>
+      <a id="SplitMenuButton:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SplitMenuButton</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@SplitMenuButton:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Split Menu Button role.</p><div class="fullcomment"><div class="comment cmt"><p>Split Menu Button role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#EXPANDED">AccessibleAttribute#EXPANDED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li><li> <code><span class="extype" name="AccessibleAction#EXPAND">AccessibleAction#EXPAND</span></code></li><li> <code><span class="extype" name="AccessibleAction#COLLAPSE">AccessibleAction#COLLAPSE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TabItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TabItem:scalafx.scene.AccessibleRole"></a>
+      <a id="TabItem:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TabItem</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TabItem:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tab Item role.</p><div class="fullcomment"><div class="comment cmt"><p>Tab Item role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#REQUEST_FOCUS">AccessibleAction#REQUEST_FOCUS</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TabPane" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TabPane:scalafx.scene.AccessibleRole"></a>
+      <a id="TabPane:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TabPane</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TabPane:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tab Pane role.</p><div class="fullcomment"><div class="comment cmt"><p>Tab Pane role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#ITEM_AT_INDEX">AccessibleAttribute#ITEM_AT_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ITEM_COUNT">AccessibleAttribute#ITEM_COUNT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#FOCUS_ITEM">AccessibleAttribute#FOCUS_ITEM</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TableCell" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TableCell:scalafx.scene.AccessibleRole"></a>
+      <a id="TableCell:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TableCell</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TableCell:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Table Cell role.</p><div class="fullcomment"><div class="comment cmt"><p>Table Cell role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ROW_INDEX">AccessibleAttribute#ROW_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#COLUMN_INDEX">AccessibleAttribute#COLUMN_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#REQUEST_FOCUS">AccessibleAction#REQUEST_FOCUS</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TableColumn" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TableColumn:scalafx.scene.AccessibleRole"></a>
+      <a id="TableColumn:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TableColumn</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TableColumn:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Table Column role.</p><div class="fullcomment"><div class="comment cmt"><p>Table Column role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#INDEX">AccessibleAttribute#INDEX</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TableRow" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TableRow:scalafx.scene.AccessibleRole"></a>
+      <a id="TableRow:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TableRow</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TableRow:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Table Row role.</p><div class="fullcomment"><div class="comment cmt"><p>Table Row role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#INDEX">AccessibleAttribute#INDEX</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TableView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TableView:scalafx.scene.AccessibleRole"></a>
+      <a id="TableView:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TableView</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TableView:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Table View role.</p><div class="fullcomment"><div class="comment cmt"><p>Table View role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#ROW_COUNT">AccessibleAttribute#ROW_COUNT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ROW_AT_INDEX">AccessibleAttribute#ROW_AT_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#COLUMN_COUNT">AccessibleAttribute#COLUMN_COUNT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#COLUMN_AT_INDEX">AccessibleAttribute#COLUMN_AT_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED_ITEMS">AccessibleAttribute#SELECTED_ITEMS</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#CELL_AT_ROW_COLUMN">AccessibleAttribute#CELL_AT_ROW_COLUMN</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#HEADER">AccessibleAttribute#HEADER</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MULTIPLE_SELECTION">AccessibleAttribute#MULTIPLE_SELECTION</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#VERTICAL_SCROLLBAR">AccessibleAttribute#VERTICAL_SCROLLBAR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#HORIZONTAL_SCROLLBAR">AccessibleAttribute#HORIZONTAL_SCROLLBAR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#FOCUS_ITEM">AccessibleAttribute#FOCUS_ITEM</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#SHOW_ITEM">AccessibleAction#SHOW_ITEM</span></code></li><li> <code><span class="extype" name="AccessibleAction#SET_SELECTED_ITEMS">AccessibleAction#SET_SELECTED_ITEMS</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#Text" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Text:scalafx.scene.AccessibleRole"></a>
+      <a id="Text:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Text</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Text:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Text role.</p><div class="fullcomment"><div class="comment cmt"><p>Text role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#FONT">AccessibleAttribute#FONT</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#SET_TEXT">AccessibleAction#SET_TEXT</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TextArea" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TextArea:scalafx.scene.AccessibleRole"></a>
+      <a id="TextArea:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TextArea</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TextArea:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Text Area role.</p><div class="fullcomment"><div class="comment cmt"><p>Text Area role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#FONT">AccessibleAttribute#FONT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#EDITABLE">AccessibleAttribute#EDITABLE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTION_START">AccessibleAttribute#SELECTION_START</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTION_END">AccessibleAttribute#SELECTION_END</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#CARET_OFFSET">AccessibleAttribute#CARET_OFFSET</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#OFFSET_AT_POINT">AccessibleAttribute#OFFSET_AT_POINT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#LINE_START">AccessibleAttribute#LINE_START</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#LINE_END">AccessibleAttribute#LINE_END</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#LINE_FOR_OFFSET">AccessibleAttribute#LINE_FOR_OFFSET</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#BOUNDS_FOR_RANGE">AccessibleAttribute#BOUNDS_FOR_RANGE</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#SET_TEXT">AccessibleAction#SET_TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAction#SET_TEXT_SELECTION">AccessibleAction#SET_TEXT_SELECTION</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TextField" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TextField:scalafx.scene.AccessibleRole"></a>
+      <a id="TextField:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TextField</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TextField:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Text Field role.</p><div class="fullcomment"><div class="comment cmt"><p>Text Field role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#FONT">AccessibleAttribute#FONT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#EDITABLE">AccessibleAttribute#EDITABLE</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTION_START">AccessibleAttribute#SELECTION_START</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTION_END">AccessibleAttribute#SELECTION_END</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#CARET_OFFSET">AccessibleAttribute#CARET_OFFSET</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#OFFSET_AT_POINT">AccessibleAttribute#OFFSET_AT_POINT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#BOUNDS_FOR_RANGE">AccessibleAttribute#BOUNDS_FOR_RANGE</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#SET_TEXT">AccessibleAction#SET_TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAction#SET_TEXT_SELECTION">AccessibleAction#SET_TEXT_SELECTION</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#Thumb" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Thumb:scalafx.scene.AccessibleRole"></a>
+      <a id="Thumb:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Thumb</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Thumb:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Thumb role.</p><div class="fullcomment"><div class="comment cmt"><p>Thumb role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#VALUE">AccessibleAttribute#VALUE</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TitledPane" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TitledPane:scalafx.scene.AccessibleRole"></a>
+      <a id="TitledPane:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TitledPane</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TitledPane:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Titled Pane role.</p><div class="fullcomment"><div class="comment cmt"><p>Titled Pane role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#EXPANDED">AccessibleAttribute#EXPANDED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#EXPAND">AccessibleAction#EXPAND</span></code></li><li> <code><span class="extype" name="AccessibleAction#COLLAPSE">AccessibleAction#COLLAPSE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#ToggleButton" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ToggleButton:scalafx.scene.AccessibleRole"></a>
+      <a id="ToggleButton:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ToggleButton</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ToggleButton:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Toggle Button role.</p><div class="fullcomment"><div class="comment cmt"><p>Toggle Button role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#FIRE">AccessibleAction#FIRE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#ToolBar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ToolBar:scalafx.scene.AccessibleRole"></a>
+      <a id="ToolBar:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ToolBar</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ToolBar:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tool Bar role.</p><div class="fullcomment"><div class="comment cmt"><p>Tool Bar role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#OVERFLOW_BUTTON">AccessibleAttribute#OVERFLOW_BUTTON</span></code></li></ul><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#Tooltip" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Tooltip:scalafx.scene.AccessibleRole"></a>
+      <a id="Tooltip:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Tooltip</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@Tooltip:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tooltip role.</p><div class="fullcomment"><div class="comment cmt"><p>Tooltip role.</p><p>Attributes:</p><p>Actions:</p></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TreeItem" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TreeItem:scalafx.scene.AccessibleRole"></a>
+      <a id="TreeItem:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TreeItem</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TreeItem:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tree Item role.</p><div class="fullcomment"><div class="comment cmt"><p>Tree Item role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#INDEX">AccessibleAttribute#INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#EXPANDED">AccessibleAttribute#EXPANDED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#LEAF">AccessibleAttribute#LEAF</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#DISCLOSURE_LEVEL">AccessibleAttribute#DISCLOSURE_LEVEL</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#TREE_ITEM_COUNT">AccessibleAttribute#TREE_ITEM_COUNT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#TREE_ITEM_AT_INDEX">AccessibleAttribute#TREE_ITEM_AT_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#TREE_ITEM_PARENT">AccessibleAttribute#TREE_ITEM_PARENT</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#EXPAND">AccessibleAction#EXPAND</span></code></li><li> <code><span class="extype" name="AccessibleAction#COLLAPSE">AccessibleAction#COLLAPSE</span></code></li><li> <code><span class="extype" name="AccessibleAction#REQUEST_FOCUS">AccessibleAction#REQUEST_FOCUS</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TreeTableCell" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TreeTableCell:scalafx.scene.AccessibleRole"></a>
+      <a id="TreeTableCell:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TreeTableCell</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TreeTableCell:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tree Table Cell role.</p><div class="fullcomment"><div class="comment cmt"><p>Tree Table Cell role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#TEXT">AccessibleAttribute#TEXT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED">AccessibleAttribute#SELECTED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ROW_INDEX">AccessibleAttribute#ROW_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#COLUMN_INDEX">AccessibleAttribute#COLUMN_INDEX</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#REQUEST_FOCUS">AccessibleAction#REQUEST_FOCUS</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TreeTableRow" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TreeTableRow:scalafx.scene.AccessibleRole"></a>
+      <a id="TreeTableRow:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TreeTableRow</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TreeTableRow:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tree Table Row role.</p><div class="fullcomment"><div class="comment cmt"><p>Tree Table Row role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#INDEX">AccessibleAttribute#INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#EXPANDED">AccessibleAttribute#EXPANDED</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#LEAF">AccessibleAttribute#LEAF</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#DISCLOSURE_LEVEL">AccessibleAttribute#DISCLOSURE_LEVEL</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#TREE_ITEM_COUNT">AccessibleAttribute#TREE_ITEM_COUNT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#TREE_ITEM_AT_INDEX">AccessibleAttribute#TREE_ITEM_AT_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#TREE_ITEM_PARENT">AccessibleAttribute#TREE_ITEM_PARENT</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#EXPAND">AccessibleAction#EXPAND</span></code></li><li> <code><span class="extype" name="AccessibleAction#COLLAPSE">AccessibleAction#COLLAPSE</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TreeTableView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TreeTableView:scalafx.scene.AccessibleRole"></a>
+      <a id="TreeTableView:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TreeTableView</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TreeTableView:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tree Table View role.</p><div class="fullcomment"><div class="comment cmt"><p>Tree Table View role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#ROW_COUNT">AccessibleAttribute#ROW_COUNT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ROW_AT_INDEX">AccessibleAttribute#ROW_AT_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#COLUMN_COUNT">AccessibleAttribute#COLUMN_COUNT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#COLUMN_AT_INDEX">AccessibleAttribute#COLUMN_AT_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED_ITEMS">AccessibleAttribute#SELECTED_ITEMS</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#CELL_AT_ROW_COLUMN">AccessibleAttribute#CELL_AT_ROW_COLUMN</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#HEADER">AccessibleAttribute#HEADER</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MULTIPLE_SELECTION">AccessibleAttribute#MULTIPLE_SELECTION</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#VERTICAL_SCROLLBAR">AccessibleAttribute#VERTICAL_SCROLLBAR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#HORIZONTAL_SCROLLBAR">AccessibleAttribute#HORIZONTAL_SCROLLBAR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#FOCUS_ITEM">AccessibleAttribute#FOCUS_ITEM</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#SHOW_ITEM">AccessibleAction#SHOW_ITEM</span></code></li><li> <code><span class="extype" name="AccessibleAction#SET_SELECTED_ITEMS">AccessibleAction#SET_SELECTED_ITEMS</span></code></li></ul></div></div>
+    </li><li name="scalafx.scene.AccessibleRole#TreeView" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TreeView:scalafx.scene.AccessibleRole"></a>
+      <a id="TreeView:AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TreeView</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@TreeView:scalafx.scene.AccessibleRole" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Tree View role.</p><div class="fullcomment"><div class="comment cmt"><p>Tree View role.</p><p>Attributes:</p><ul><li> <code><span class="extype" name="AccessibleAttribute#ROW_COUNT">AccessibleAttribute#ROW_COUNT</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#ROW_AT_INDEX">AccessibleAttribute#ROW_AT_INDEX</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#SELECTED_ITEMS">AccessibleAttribute#SELECTED_ITEMS</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#MULTIPLE_SELECTION">AccessibleAttribute#MULTIPLE_SELECTION</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#VERTICAL_SCROLLBAR">AccessibleAttribute#VERTICAL_SCROLLBAR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#HORIZONTAL_SCROLLBAR">AccessibleAttribute#HORIZONTAL_SCROLLBAR</span></code></li><li> <code><span class="extype" name="AccessibleAttribute#FOCUS_ITEM">AccessibleAttribute#FOCUS_ITEM</span></code></li></ul><p>Actions:</p><ul><li> <code><span class="extype" name="AccessibleAction#SHOW_ITEM">AccessibleAction#SHOW_ITEM</span></code></li><li> <code><span class="extype" name="AccessibleAction#SET_SELECTED_ITEMS">AccessibleAction#SET_SELECTED_ITEMS</span></code></li></ul></div></div>
+    </li><li name="scalafx.delegate.SFXEnumDelegateCompanion#apply" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="apply(name:String):S"></a>
+      <a id="apply(String):AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@apply(name:String):S" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Returns the <code>enum</code> constant of this type with the specified name.</p><div class="fullcomment"><div class="comment cmt"><p> Returns the <code>enum</code> constant of this type with the specified name.
+</p></div><dl class="paramcmts block"><dt class="param">name</dt><dd class="cmt"><p>the name of the constant to return</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a></dd><dt>Exceptions thrown</dt><dd><span class="cmt"><p><span class="extype" name="IllegalArgumentException"><code>IllegalArgumentException</code></span> If the specified <code>enum</code> type has no constant with the specified name,
+or the specified class object does not represent an <code>enum</code> type.
+</p></span></dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@clone():Object" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXEnumDelegateCompanion#jfxEnum2sfx" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="jfxEnum2sfx(e:E):S"></a>
+      <a id="jfxEnum2sfx(javafx.scene.AccessibleRole):AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">jfxEnum2sfx</span><span class="params">(<span name="e">e: <span class="extype" name="javafx.scene.AccessibleRole">javafx.scene.AccessibleRole</span></span>)</span><span class="result">: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@jfxEnum2sfx(e:E):S" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Converts a JavaFX <code>enum</code> to its respective <code>SFXEnumDelegate</code>.</p><div class="fullcomment"><div class="comment cmt"><p> Converts a JavaFX <code>enum</code> to its respective <code>SFXEnumDelegate</code>.
+</p></div><dl class="paramcmts block"><dt class="param">e</dt><dd class="cmt"><p>JavaFX <code>enum</code></p></dd><dt>returns</dt><dd class="cmt"><p><code><a href="../delegate/SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">scalafx.delegate.SFXEnumDelegate</a></code> equivalent to argument.
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a></dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@notify():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.delegate.SFXEnumDelegateCompanion#sfxEnum2jfx" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sfxEnum2jfx(s:S):E"></a>
+      <a id="sfxEnum2jfx(AccessibleRole):javafx.scene.AccessibleRole"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sfxEnum2jfx</span><span class="params">(<span name="s">s: <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a></span>)</span><span class="result">: <span class="extype" name="javafx.scene.AccessibleRole">javafx.scene.AccessibleRole</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@sfxEnum2jfx(s:S):E" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"> Converts a <code>SFXEnumDelegate</code> to its respective JavaFX <code>Enum</code>.</p><div class="fullcomment"><div class="comment cmt"><p> Converts a <code>SFXEnumDelegate</code> to its respective JavaFX <code>Enum</code>.
+</p></div><dl class="paramcmts block"><dt class="param">s</dt><dd class="cmt"><p><code>SFXEnumDelegate</code> instance</p></dd><dt>returns</dt><dd class="cmt"><p>Delegated <code>enum</code>
+</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@toString():String" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.scene.AccessibleRole#unsortedValues" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unsortedValues:Array[scalafx.scene.AccessibleRole]"></a>
+      <a id="unsortedValues:Array[AccessibleRole]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unsortedValues</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Array" class="extype" target="_top">Array</a>[<a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@unsortedValues:Array[scalafx.scene.AccessibleRole]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Contain constants which will be source for <code>values</code> List</p><div class="fullcomment"><div class="comment cmt"><p>Contain constants which will be source for <code>values</code> List</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a> → <a href="../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a></dd></dl></div>
+    </li><li name="scalafx.delegate.SFXEnumDelegateCompanion#values" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="values:List[S]"></a>
+      <a id="values:List[AccessibleRole]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">values</span><span class="result">: <span class="extype" name="scala.List">List</span>[<a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@values:List[S]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Returns a List containing the constants of this <code>enum</code> type, in the order they are declared.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a List containing the constants of this <code>enum</code> type, in the order they are declared.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a></dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@wait():Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#scalafx.scene.AccessibleRole$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.Serializable">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></h3>
+            </div><div class="parent" name="java.io.Serializable">
+              <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
+            </div><div class="parent" name="scalafx.delegate.SFXEnumDelegateCompanion">
+              <h3>Inherited from <a href="../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.AccessibleRole">javafx.scene.AccessibleRole</span>, <a href="AccessibleRole.html" class="extype" name="scalafx.scene.AccessibleRole">AccessibleRole</a>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer"> ScalaFX API v.8.0.40-R8 </div>
+
+
+    </body>
+      </html>

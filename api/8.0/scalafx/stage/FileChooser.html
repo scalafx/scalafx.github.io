@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>FileChooser - ScalaFX API 8.0.31-R7 - scalafx.stage.FileChooser</title>
-          <meta name="description" content="FileChooser - ScalaFX API 8.0.31 - R7 - scalafx.stage.FileChooser" />
-          <meta name="keywords" content="FileChooser ScalaFX API 8.0.31 R7 scalafx.stage.FileChooser" />
+          <title>FileChooser - ScalaFX API 8.0.40-R8 - scalafx.stage.FileChooser</title>
+          <meta name="description" content="FileChooser - ScalaFX API 8.0.40 - R8 - scalafx.stage.FileChooser" />
+          <meta name="keywords" content="FileChooser ScalaFX API 8.0.40 R8 scalafx.stage.FileChooser" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,11 +28,11 @@
         </head>
         <body class="type">
       <div id="definition">
-        <a href="FileChooser$.html" title="Go to companion"><img src="../../lib/class_to_object_big.png" /></a>
+        <a href="FileChooser$.html" title="See companion object"><img src="../../lib/class_to_object_big.png" /></a>
         <p id="owner"><a href="../package.html" class="extype" name="scalafx">scalafx</a>.<a href="package.html" class="extype" name="scalafx.stage">stage</a></p>
-        <h1><a href="FileChooser$.html" title="Go to companion">FileChooser</a></h1><h3><span class="morelinks"><div>
+        <h1><a href="FileChooser$.html" title="See companion object">FileChooser</a></h1><h3><span class="morelinks"><div>
             Related Docs:
-            <a href="FileChooser$.html" title="See companion">object FileChooser</a>
+            <a href="FileChooser$.html" title="See companion object">object FileChooser</a>
             | <a href="package.html" class="extype" name="scalafx.stage">package stage</a>
           </div></span></h3><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser" title="Permalink" target="_top">
@@ -51,7 +51,8 @@
       </span>
       </h4>
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Provides support for standard platform file dialogs. These dialogs have look and feel of the platform UI components which is independent of JavaFX.</p><p>Example:</p><pre><span class="kw">val</span> fileChooser = <span class="kw">new</span> FileChooser {
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Provides support for standard platform file dialogs.
+These dialogs have look and feel of the platform UI components which is independent of JavaFX.</p><p>Example:</p><pre><span class="kw">val</span> fileChooser = <span class="kw">new</span> FileChooser {
  title = <span class="lit">"Open Resource File"</span>
  extensionFilters ++= <span class="std">Seq</span>(
    <span class="kw">new</span> ExtensionFilter(<span class="lit">"Text Files"</span>, <span class="lit">"*.txt"</span>),
@@ -63,13 +64,13 @@
 <span class="kw">val</span> selectedFile = fileChooser.showOpenDialog(stage)
 <span class="kw">if</span> (selectedFile != <span class="kw">null</span>) {
  stage.display(selectedFile);
-}</pre></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.31-R7/scalafx//src/main/scala/scalafx/stage/FileChooser.scala" target="_blank">FileChooser.scala</a></dd></dl><div class="toggleContainer block">
+}</pre></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.40-R8/scalafx//src/main/scala/scalafx/stage/FileChooser.scala" target="_blank">FileChooser.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.stage.FileChooser">javafx.stage.FileChooser</span>], <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.stage.FileChooser">javafx.stage.FileChooser</span>], <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block diagram-container" id="inheritance-diagram-container">
                 <span class="toggle diagram-link">Type Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
-                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph41" viewBox="0.00 0.00 222.00 120.00" height="120pt" width="222pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 116)" class="graph" id="graph1"><polygon points="-4,5 -4,-116 219,-116 219,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this class" id="graph41_0"><a xlink:title="scalafx.stage.FileChooser (this class)" xlink:href="#inheritance-diagram"><polygon points="155.25,-50 58.75,-50 58.75,-24 155.25,-24 155.25,-50" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-45" x="69" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-35" x="91" text-anchor="start">FileChooser</text></a></g><!-- node1 --><g class="node trait" id="graph41_1"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="../delegate/SFXDelegate.html#inheritance-diagram"><polygon points="214,-112 0,-112 0,-86 214,-86 214,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-107" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-97" x="32" text-anchor="start">SFXDelegate[javafx.stage.FileChooser]</text></a></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph41_1_0"><a xlink:title="FileChooser is a subtype of SFXDelegate[javafx.stage.FileChooser]"><path d="M107,-80.6826C107,-70.8961 107,-58.9026 107,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="105.25,-80.8581 107,-85.8581 108.75,-80.8581 105.25,-80.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
+                <div class="diagram" id="inheritance-diagram"><svg class="class-diagram" id="graph1" viewBox="0.00 0.00 222.00 120.00" height="120pt" width="222pt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="scale(1 1) rotate(0) translate(4 116)" class="graph" id="graph1"><polygon points="-4,5 -4,-116 219,-116 219,5 -4,5" stroke="white" fill="white"></polygon><g class="cluster" id="graph2"></g><g class="cluster" id="graph3"></g><!-- node0 --><g class="node this class" id="graph1_0"><a xlink:title="scalafx.stage.FileChooser (this class)" xlink:href="#inheritance-diagram"><polygon points="155.25,-50 58.75,-50 58.75,-24 155.25,-24 155.25,-50" stroke="#115f3b" fill="#0a955b"></polygon><image xlink:href="../../lib/class_diagram.png" y="-45" x="69" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-35" x="91" text-anchor="start">FileChooser</text></a></g><!-- node1 --><g class="node trait" id="graph1_1"><a xlink:title="scalafx.delegate.SFXDelegate" xlink:href="../delegate/SFXDelegate.html#inheritance-diagram"><polygon points="214,-112 0,-112 0,-86 214,-86 214,-112" stroke="#37657d" fill="#498aad"></polygon><image xlink:href="../../lib/trait_diagram.png" y="-107" x="10" preserveAspectRatio="xMinYMin meet" height="16px" width="16px"></image><text fill="#ffffff" font-size="10.00" font-family="Arial" y="-97" x="32" text-anchor="start">SFXDelegate[javafx.stage.FileChooser]</text></a></g><!-- node1&#45;&gt;node0 --><g class="edge inheritance" id="graph1_1_0"><a xlink:title="FileChooser is a subtype of SFXDelegate[javafx.stage.FileChooser]"><path d="M107,-80.6826C107,-70.8961 107,-58.9026 107,-50.1238" stroke="#d4d4d4" fill="none"></path><polygon points="105.25,-80.8581 107,-85.8581 108.75,-80.8581 105.25,-80.8581" stroke="#d4d4d4" fill="none"></polygon></a></g></g></svg></div>
               </div></div>
         
 
@@ -142,7 +143,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@!=(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -159,7 +160,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@##():Int" title="Permalink" target="_top">
@@ -176,7 +177,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@==(x$1:Any):Boolean" title="Permalink" target="_top">
@@ -210,7 +211,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@clone():Object" title="Permalink" target="_top">
@@ -251,7 +252,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -268,7 +269,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">equals</span><span class="params">(<span name="ref">ref: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@equals(ref:Any):Boolean" title="Permalink" target="_top">
@@ -304,7 +305,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@finalize():Unit" title="Permalink" target="_top">
@@ -344,7 +345,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Int" class="extype" target="_top">Int</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@hashCode():Int" title="Permalink" target="_top">
@@ -379,7 +380,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: initialDirectory_$eq" class="name">initialDirectory_=</span><span class="params">(<span name="v">v: <span class="extype" name="java.io.File">File</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span title="gt4s: initialDirectory_$eq" class="name">initialDirectory_=</span><span class="params">(<span name="v">v: <span class="extype" name="java.io.File">File</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@initialDirectory_=(v:java.io.File):Unit" title="Permalink" target="_top">
@@ -413,7 +414,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: initialFileName_$eq" class="name">initialFileName_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span title="gt4s: initialFileName_$eq" class="name">initialFileName_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@initialFileName_=(v:String):Unit" title="Permalink" target="_top">
@@ -430,7 +431,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
@@ -447,7 +448,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
@@ -464,7 +465,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@notify():Unit" title="Permalink" target="_top">
@@ -481,7 +482,7 @@
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@notifyAll():Unit" title="Permalink" target="_top">
@@ -516,7 +517,7 @@ and to read the user-selected extension filter from the dismissed dialog.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: selectedExtensionFilter_$eq" class="name">selectedExtensionFilter_=</span><span class="params">(<span name="v">v: <a href="FileChooser$$ExtensionFilter.html" class="extype" name="scalafx.stage.FileChooser.ExtensionFilter">ExtensionFilter</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span title="gt4s: selectedExtensionFilter_$eq" class="name">selectedExtensionFilter_=</span><span class="params">(<span name="v">v: <a href="FileChooser$$ExtensionFilter.html" class="extype" name="scalafx.stage.FileChooser.ExtensionFilter">ExtensionFilter</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@selectedExtensionFilter_=(v:scalafx.stage.FileChooser.ExtensionFilter):Unit" title="Permalink" target="_top">
@@ -624,7 +625,7 @@ and to read the user-selected extension filter from the dismissed dialog.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: title_$eq" class="name">title_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span title="gt4s: title_$eq" class="name">title_=</span><span class="params">(<span name="v">v: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@title_=(v:String):Unit" title="Permalink" target="_top">
@@ -659,7 +660,7 @@ and to read the user-selected extension filter from the dismissed dialog.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@wait():Unit" title="Permalink" target="_top">
@@ -682,7 +683,7 @@ and to read the user-selected extension filter from the dismissed dialog.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
@@ -705,7 +706,7 @@ and to read the user-selected extension filter from the dismissed dialog.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../index.html#scalafx.stage.FileChooser@wait(x$1:Long):Unit" title="Permalink" target="_top">
@@ -731,9 +732,9 @@ and to read the user-selected extension filter from the dismissed dialog.</p>
         <div class="parent" name="scalafx.delegate.SFXDelegate">
               <h3>Inherited from <a href="../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.stage.FileChooser">javafx.stage.FileChooser</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.5/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -749,7 +750,7 @@ and to read the user-selected extension filter from the dismissed dialog.</p>
 
       <div id="tooltip"></div>
 
-      <div id="footer"> ScalaFX API v.8.0.31-R7 </div>
+      <div id="footer"> ScalaFX API v.8.0.40-R8 </div>
 
 
     </body>
