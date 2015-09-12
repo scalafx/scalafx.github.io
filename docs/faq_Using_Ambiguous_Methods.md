@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: Custom cells
-prev_section: faq_Using_unwrapped_JavaFX_components
-next_section: contributing
 permalink: /docs/faq_Using_Ambiguous_Methods/
 ---
 

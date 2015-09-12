@@ -2,7 +2,6 @@
 layout: docs
 title: How donations work
 permalink: "/docs/how_donations_work/"
-prev_section: history
 ---
 
 ### Introduction

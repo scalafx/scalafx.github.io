@@ -1,7 +1,6 @@
 ---
 layout: docs
 title: What is ScalaFX?
-next_section: quickstart
 permalink: /docs/home/
 ---
 
