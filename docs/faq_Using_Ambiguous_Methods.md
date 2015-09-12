@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Custom cells
+title: Using_Ambiguous_Methods
 permalink: /docs/faq_Using_Ambiguous_Methods/
 ---
 
