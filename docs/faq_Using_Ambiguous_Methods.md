@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Using_Ambiguous_Methods
+title: Using Ambiguous Methods
 permalink: /docs/faq_Using_Ambiguous_Methods/
 ---
 
