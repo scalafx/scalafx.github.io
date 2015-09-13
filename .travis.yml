@@ -1,3 +1,5 @@
-sudo: false
 language: ruby
+sudo: false
+cache: bundler
+before_script: bundle update
 script: "bundle exec jekyll build"
