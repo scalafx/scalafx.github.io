@@ -10,3 +10,4 @@ repository: https://github.com/scalafx/scalafx
 markdown: kramdown
 permalink: pretty
 relative_permalinks: false
+exclude: [vendor]
