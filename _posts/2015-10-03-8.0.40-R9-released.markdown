@@ -1,7 +1,7 @@
 ---
 layout: news_item
 title: 'ScalaFX 8.0.40-R8 Released'
-date: 2015-10-02 23:59:99 -0400
+date: 2015-10-02 23:59:59 -0400
 author: jpsacha
 version: 8.0.60-R9
 categories: [release]
