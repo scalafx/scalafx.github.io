@@ -11,3 +11,6 @@ markdown: kramdown
 permalink: pretty
 relative_permalinks: false
 exclude: [vendor]
+
+gems:
+  - jekyll-feed

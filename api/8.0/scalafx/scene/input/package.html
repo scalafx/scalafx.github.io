@@ -1,9 +1,9 @@
 <!DOCTYPE html >
 <html>
         <head>
-          <title>input - ScalaFX API 8.0.40-R8 - scalafx.scene.input</title>
-          <meta name="description" content="input - ScalaFX API 8.0.40 - R8 - scalafx.scene.input" />
-          <meta name="keywords" content="input ScalaFX API 8.0.40 R8 scalafx.scene.input" />
+          <title>input - ScalaFX API 8.0.60-R9 - scalafx.scene.input</title>
+          <meta name="description" content="input - ScalaFX API 8.0.60 - R9 - scalafx.scene.input" />
+          <meta name="keywords" content="input ScalaFX API 8.0.60 R9 scalafx.scene.input" />
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           
       <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
@@ -28,11 +28,11 @@
         </head>
         <body class="value">
       <div id="definition">
-        <img src="../../../lib/package_big.png" />
+        <img alt="Package" src="../../../lib/package_big.png" />
         <p id="owner"><a href="../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../package.html" class="extype" name="scalafx.scene">scene</a></p>
         <h1>input</h1><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       </div>
@@ -48,9 +48,9 @@
       </h4>
       
           <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Wraps <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/package-summary.html" target="_blank"><code>javafx.scene.input</code></a> package.
-</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.40-R8/scalafx//src/main/scala/scalafx/scene/input/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.60-R9/scalafx//src/main/scala/scalafx/scene/input/package.scala" target="_blank">package.scala</a></dd></dl><div class="toggleContainer block">
           <span class="toggle">Linear Supertypes</span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></div>
         </div><div class="toggleContainer block diagram-container" id="content-diagram-container">
                 <span class="toggle diagram-link">Content Hierarchy</span>
                 <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#diagrams" target="_blank" class="diagram-help">Learn more about scaladoc diagrams</a>
@@ -80,7 +80,6 @@
               <li class="hideall out"><span>Hide All</span></li>
               <li class="showall in"><span>Show all</span></li>
             </ol>
-            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
           </div>
         <div id="visbl">
             <span class="filtertype">Visibility</span>
@@ -94,7 +93,7 @@
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="scalafx.scene.input.Clipboard" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="scalafx.scene.input.Clipboard" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ClipboardextendsSFXDelegate[javafx.scene.input.Clipboard]"></a>
       <a id="Clipboard:Clipboard"></a>
       <h4 class="signature">
@@ -107,12 +106,21 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@ClipboardextendsSFXDelegate[javafx.scene.input.Clipboard]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
-    </li><li name="scalafx.scene.input.ClipboardContent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="ClipboardContentextendsMapProxy[scalafx.scene.input.DataFormat,AnyRef]withSFXDelegate[javafx.scene.input.ClipboardContent]"></a>
+      <p class="shortcomment cmt">Represents an operating system clipboard, on which data may be placed during, for example, cut, copy, and paste operations.</p><div class="fullcomment"><div class="comment cmt"><p>Represents an operating system clipboard, on which data may be placed during, for example, cut, copy, and paste operations.</p><p>To access the general system clipboard, use the following code:</p><pre><span class="kw">val</span> clipboard = Clipboard.systemClipboard</pre><p>There is only ever one instance of the system clipboard in the application, so it is perfectly acceptable to stash a reference to it somewhere handy if you so choose.</p><p>The Clipboard operates on the concept of having a single conceptual item on the clipboard at any one time -- though it may be placed on the clipboard in different formats.</p><p>Example use:</p><pre><span class="kw">val</span> clipboard = Clipboard.systemClipboard
+<span class="kw">val</span> content = <span class="kw">new</span> ClipboardContent()
+content.putString(<span class="lit">"Some text"</span>)
+content.putHtml(<span class="lit">"<b>Some</b> text"</span>)
+clipboard.content = content</pre><p>Alternative use:</p><pre>Clipboard.systemClipboard.content = ClipboardContent(
+  DataFormat.PlainText -&gt; <span class="lit">"Some text"</span>,
+  DataFormat.Html -&gt; <span class="lit">"<b>Some</b> text"</span>
+)</pre><p>Caution when putting files into the clipboard. The recommended method is:</p><pre><span class="kw">val</span> content = <span class="kw">new</span> ClipboardContent()
+content.putString(<span class="lit">"Some text"</span>)</pre><p>Wraps a JavaFX <a href="http://docs.oracle.com/javase/8/javafx/scene/input/Clipboard.html" target="_blank">Clipboard</a>.
+</p></div></div>
+    </li><li name="scalafx.scene.input.ClipboardContent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ClipboardContentextendsJMapWrapperLike[javafx.scene.input.DataFormat,AnyRef,scalafx.scene.input.ClipboardContent]withSFXDelegate[javafx.scene.input.ClipboardContent]"></a>
       <a id="ClipboardContent:ClipboardContent"></a>
       <h4 class="signature">
       <span class="modifier_kind">
@@ -120,14 +128,24 @@
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a href="ClipboardContent.html"><span class="name">ClipboardContent</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.collection.MapProxy" class="extype" target="_top">MapProxy</a>[<a href="DataFormat.html" class="extype" name="scalafx.scene.input.DataFormat">DataFormat</a>, <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>] with <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.input.ClipboardContent">javafx.scene.input.ClipboardContent</span>]</span>
+        <a href="ClipboardContent.html"><span class="name">ClipboardContent</span></a><span class="result"> extends <span class="extype" name="scalafx.scene.input.JMapWrapperLike">JMapWrapperLike</span>[<span class="extype" name="javafx.scene.input.DataFormat">javafx.scene.input.DataFormat</span>, <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="ClipboardContent.html" class="extype" name="scalafx.scene.input.ClipboardContent">ClipboardContent</a>] with <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.input.ClipboardContent">javafx.scene.input.ClipboardContent</span>]</span>
       </span>
       </h4><span class="permalink">
-      <a href="../../../index.html#scalafx.scene.input.package@ClipboardContentextendsMapProxy[scalafx.scene.input.DataFormat,AnyRef]withSFXDelegate[javafx.scene.input.ClipboardContent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+      <a href="../../../index.html#scalafx.scene.input.package@ClipboardContentextendsJMapWrapperLike[javafx.scene.input.DataFormat,AnyRef,scalafx.scene.input.ClipboardContent]withSFXDelegate[javafx.scene.input.ClipboardContent]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Data container for Clipboard data.</p><div class="fullcomment"><div class="comment cmt"><p>Data container for Clipboard data. It can hold multiple data in several data formats.</p><p>Example use:</p><pre><span class="kw">val</span> content = <span class="kw">new</span> ClipboardContent()
+content.putString(<span class="lit">"Some text"</span>)
+content.putHtml(<span class="lit">"<b>Some</b> text"</span>)</pre><p>Alternative use:</p><pre><span class="kw">val</span> content = ClipboardContent(
+  DataFormat.PlainText -&gt; <span class="lit">"Some text"</span>,
+  DataFormat.Html -&gt; <span class="lit">"<b>Some</b> text"</span>
+)</pre><p>Caution when putting files into the clipboard. The recommended way is to use <code>putFiles</code> method:</p><pre>content.putFiles(<span class="std">Seq</span>(<span class="kw">new</span> File(<span class="lit">"one"</span>), <span class="kw">new</span> File(<span class="lit">"two"</span>))) *</pre><p>When using with <code>DataFormat.Files</code> you have to use Java <code>List</code> as a container, which is less convenient:</p><pre><span class="kw">import</span> scala.collection.JavaConverters._
+
+<span class="kw">val</span> content = ClipboardContent(
+  DataFormat.Files -&gt; <span class="std">Seq</span>(<span class="kw">new</span> File(<span class="lit">"one"</span>), <span class="kw">new</span> File(<span class="lit">"two"</span>)).asJava,
+)</pre><p>Wraps a JavaFX <a href="http://docs.oracle.com/javase/8/javafx/scene/input/ClipboardContent.html" target="_blank">ClipboardContent</a>.
+</p></div></div>
     </li><li name="scalafx.scene.input.ContextMenuEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ContextMenuEventextendsInputEventwithSFXDelegate[javafx.scene.input.ContextMenuEvent]"></a>
       <a id="ContextMenuEvent:ContextMenuEvent"></a>
@@ -141,11 +159,11 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@ContextMenuEventextendsInputEventwithSFXDelegate[javafx.scene.input.ContextMenuEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
-    </li><li name="scalafx.scene.input.DataFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+    </li><li name="scalafx.scene.input.DataFormat" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="DataFormatextendsSFXDelegate[javafx.scene.input.DataFormat]"></a>
       <a id="DataFormat:DataFormat"></a>
       <h4 class="signature">
@@ -158,10 +176,11 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@DataFormatextendsSFXDelegate[javafx.scene.input.DataFormat]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Data format identifier used as means of identifying the data stored on a clipboard/dragboard.</p><div class="fullcomment"><div class="comment cmt"><p>Data format identifier used as means of identifying the data stored on a clipboard/dragboard.</p><p>Wraps a JavaFX <a href="http://docs.oracle.com/javase/8/javafx/scene/input/DataFormat.html" target="_blank">DataFormat</a>.
+</p></div></div>
     </li><li name="scalafx.scene.input.DragEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="DragEventextendsInputEventwithSFXDelegate[javafx.scene.input.DragEvent]"></a>
       <a id="DragEvent:DragEvent"></a>
@@ -175,7 +194,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@DragEventextendsInputEventwithSFXDelegate[javafx.scene.input.DragEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -192,10 +211,10 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@DragboardextendsClipboardwithSFXDelegate[javafx.scene.input.Dragboard]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Wraps a JavaFX <a href="http://docs.oracle.com/javase/8/javafx/scene/input/Dragboard.html" target="_blank">Dragboard</a>.</p>
     </li><li name="scalafx.scene.input.GestureEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="GestureEventextendsInputEventwithSFXDelegate[javafx.scene.input.GestureEvent]"></a>
       <a id="GestureEvent:GestureEvent"></a>
@@ -209,7 +228,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@GestureEventextendsInputEventwithSFXDelegate[javafx.scene.input.GestureEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wraps <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/GestureEvent.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/GestureEvent.html</a></p>
@@ -226,7 +245,7 @@
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@InputEventextendsEventwithSFXDelegate[javafx.scene.input.InputEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -239,11 +258,11 @@
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a href="InputIncludes.html"><span class="name">InputIncludes</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+        <a href="InputIncludes.html"><span class="name">InputIncludes</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@InputIncludesextendsAnyRef" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Contains implcit methods to convert from
@@ -262,7 +281,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@InputMethodEventextendsInputEventwithSFXDelegate[javafx.scene.input.InputMethodEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -275,11 +294,11 @@ Classes/Traits to their ScalaFX counterparts.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="InputMethodHighlight.html"><span class="name">InputMethodHighlight</span></a><span class="params">(<span name="delegate">delegate: <span class="extype" name="javafx.scene.input.InputMethodHighlight">javafx.scene.input.InputMethodHighlight</span></span>)</span><span class="result"> extends <a href="../../delegate/SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">SFXEnumDelegate</a>[<span class="extype" name="javafx.scene.input.InputMethodHighlight">javafx.scene.input.InputMethodHighlight</span>] with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="InputMethodHighlight.html"><span class="name">InputMethodHighlight</span></a><span class="params">(<span name="delegate">delegate: <span class="extype" name="javafx.scene.input.InputMethodHighlight">javafx.scene.input.InputMethodHighlight</span></span>)</span><span class="result"> extends <a href="../../delegate/SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">SFXEnumDelegate</a>[<span class="extype" name="javafx.scene.input.InputMethodHighlight">javafx.scene.input.InputMethodHighlight</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@InputMethodHighlightextendsSFXEnumDelegate[javafx.scene.input.InputMethodHighlight]withProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -296,7 +315,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@InputMethodTextRunextendsSFXDelegate[javafx.scene.input.InputMethodTextRun]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -313,7 +332,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@KeyCharacterCombinationextendsKeyCombinationwithSFXDelegate[javafx.scene.input.KeyCharacterCombination]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -326,11 +345,11 @@ Classes/Traits to their ScalaFX counterparts.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="KeyCode.html"><span class="name">KeyCode</span></a><span class="params">(<span name="delegate">delegate: <span class="extype" name="javafx.scene.input.KeyCode">javafx.scene.input.KeyCode</span></span>)</span><span class="result"> extends <a href="../../delegate/SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">SFXEnumDelegate</a>[<span class="extype" name="javafx.scene.input.KeyCode">javafx.scene.input.KeyCode</span>] with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="KeyCode.html"><span class="name">KeyCode</span></a><span class="params">(<span name="delegate">delegate: <span class="extype" name="javafx.scene.input.KeyCode">javafx.scene.input.KeyCode</span></span>)</span><span class="result"> extends <a href="../../delegate/SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">SFXEnumDelegate</a>[<span class="extype" name="javafx.scene.input.KeyCode">javafx.scene.input.KeyCode</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@KeyCodeextendsSFXEnumDelegate[javafx.scene.input.KeyCode]withProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -347,7 +366,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@KeyCodeCombinationextendsKeyCombinationwithSFXDelegate[javafx.scene.input.KeyCodeCombination]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -364,7 +383,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@KeyCombinationextendsSFXDelegate[javafx.scene.input.KeyCombination]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -381,7 +400,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@KeyEventextendsInputEventwithSFXDelegate[javafx.scene.input.KeyEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -398,7 +417,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@MnemonicextendsFireDelegate[javafx.scene.input.Mnemonic]withSFXDelegate[javafx.scene.input.Mnemonic]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -411,11 +430,11 @@ Classes/Traits to their ScalaFX counterparts.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="MouseButton.html"><span class="name">MouseButton</span></a><span class="params">(<span name="delegate">delegate: <span class="extype" name="javafx.scene.input.MouseButton">javafx.scene.input.MouseButton</span></span>)</span><span class="result"> extends <a href="../../delegate/SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">SFXEnumDelegate</a>[<span class="extype" name="javafx.scene.input.MouseButton">javafx.scene.input.MouseButton</span>] with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="MouseButton.html"><span class="name">MouseButton</span></a><span class="params">(<span name="delegate">delegate: <span class="extype" name="javafx.scene.input.MouseButton">javafx.scene.input.MouseButton</span></span>)</span><span class="result"> extends <a href="../../delegate/SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">SFXEnumDelegate</a>[<span class="extype" name="javafx.scene.input.MouseButton">javafx.scene.input.MouseButton</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@MouseButtonextendsSFXEnumDelegate[javafx.scene.input.MouseButton]withProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -432,7 +451,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@MouseDragEventextendsMouseEventwithSFXDelegate[javafx.scene.input.MouseDragEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -449,7 +468,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@MouseEventextendsInputEventwithSFXDelegate[javafx.scene.input.MouseEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -466,7 +485,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@PickResultextendsSFXDelegate[javafx.scene.input.PickResult]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">A container for the result of a pick event.</p><div class="fullcomment"><div class="comment cmt"><p>A container for the result of a pick event. Wrapper for JavaFX's
@@ -484,7 +503,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@RotateEventextendsInputEventwithSFXDelegate[javafx.scene.input.RotateEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wraps <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/RotateEvent.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/RotateEvent.html</a>
@@ -502,7 +521,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@ScrollEventextendsGestureEventwithSFXDelegate[javafx.scene.input.ScrollEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wraps <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/ScrollEvent.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/ScrollEvent.html</a>
@@ -520,7 +539,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@SwipeEventextendsGestureEventwithSFXDelegate[javafx.scene.input.SwipeEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wraps <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/SwipeEvent.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/SwipeEvent.html</a>
@@ -538,7 +557,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@TouchEventextendsInputEventwithSFXDelegate[javafx.scene.input.TouchEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wraps <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/TouchEvent.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/TouchEvent.html</a>
@@ -556,7 +575,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@TouchPointextendsSFXDelegate[javafx.scene.input.TouchPoint]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -569,11 +588,11 @@ Classes/Traits to their ScalaFX counterparts.</p>
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a href="TransferMode.html"><span class="name">TransferMode</span></a><span class="params">(<span name="delegate">delegate: <span class="extype" name="javafx.scene.input.TransferMode">javafx.scene.input.TransferMode</span></span>)</span><span class="result"> extends <a href="../../delegate/SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">SFXEnumDelegate</a>[<span class="extype" name="javafx.scene.input.TransferMode">javafx.scene.input.TransferMode</span>] with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="TransferMode.html"><span class="name">TransferMode</span></a><span class="params">(<span name="delegate">delegate: <span class="extype" name="javafx.scene.input.TransferMode">javafx.scene.input.TransferMode</span></span>)</span><span class="result"> extends <a href="../../delegate/SFXEnumDelegate.html" class="extype" name="scalafx.delegate.SFXEnumDelegate">SFXEnumDelegate</a>[<span class="extype" name="javafx.scene.input.TransferMode">javafx.scene.input.TransferMode</span>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Product" class="extype" target="_top">Product</a> with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@TransferModeextendsSFXEnumDelegate[javafx.scene.input.TransferMode]withProductwithSerializable" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -590,7 +609,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@ZoomEventextendsGestureEventwithSFXDelegate[javafx.scene.input.ZoomEvent]" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wraps <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/ZoomEvent.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/ZoomEvent.html</a>
@@ -615,7 +634,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@Clipboard" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -632,7 +651,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@ClipboardContent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -649,7 +668,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@ContextMenuEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -666,7 +685,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@DataFormat" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -683,7 +702,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@DragEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -700,10 +719,10 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@Dragboard" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
-      
+      <p class="shortcomment cmt">Object companion for <a href="Dragboard.html" class="extype" name="scalafx.scene.input.Dragboard">scalafx.scene.input.Dragboard</a>.</p>
     </li><li name="scalafx.scene.input.GestureEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="GestureEvent"></a>
       <a id="GestureEvent:GestureEvent"></a>
@@ -717,7 +736,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@GestureEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -734,7 +753,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@InputEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -751,7 +770,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@InputIncludes" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -768,7 +787,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@InputMethodEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -781,11 +800,11 @@ Classes/Traits to their ScalaFX counterparts.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="InputMethodHighlight$.html"><span class="name">InputMethodHighlight</span></a><span class="result"> extends <a href="../../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.input.InputMethodHighlight">javafx.scene.input.InputMethodHighlight</span>, <a href="InputMethodHighlight.html" class="extype" name="scalafx.scene.input.InputMethodHighlight">InputMethodHighlight</a>] with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="InputMethodHighlight$.html"><span class="name">InputMethodHighlight</span></a><span class="result"> extends <a href="../../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.input.InputMethodHighlight">javafx.scene.input.InputMethodHighlight</span>, <a href="InputMethodHighlight.html" class="extype" name="scalafx.scene.input.InputMethodHighlight">InputMethodHighlight</a>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@InputMethodHighlight" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wrapper for <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/InputMethodHighlight.html" target="_blank">javafx.scene.input.InputMethodHighlight</a></p>
@@ -802,7 +821,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@InputMethodTextRun" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -819,7 +838,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@KeyCharacterCombination" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -832,11 +851,11 @@ Classes/Traits to their ScalaFX counterparts.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="KeyCode$.html"><span class="name">KeyCode</span></a><span class="result"> extends <a href="../../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.input.KeyCode">javafx.scene.input.KeyCode</span>, <a href="KeyCode.html" class="extype" name="scalafx.scene.input.KeyCode">KeyCode</a>] with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="KeyCode$.html"><span class="name">KeyCode</span></a><span class="result"> extends <a href="../../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.input.KeyCode">javafx.scene.input.KeyCode</span>, <a href="KeyCode.html" class="extype" name="scalafx.scene.input.KeyCode">KeyCode</a>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@KeyCode" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wrapper for <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/KeyCode.html" target="_blank">javafx.scene.input.KeyCode</a></p>
@@ -853,7 +872,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@KeyCodeCombination" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -870,7 +889,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@KeyCombination" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -887,7 +906,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@KeyEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -904,7 +923,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@Mnemonic" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -917,11 +936,11 @@ Classes/Traits to their ScalaFX counterparts.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="MouseButton$.html"><span class="name">MouseButton</span></a><span class="result"> extends <a href="../../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.input.MouseButton">javafx.scene.input.MouseButton</span>, <a href="MouseButton.html" class="extype" name="scalafx.scene.input.MouseButton">MouseButton</a>] with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="MouseButton$.html"><span class="name">MouseButton</span></a><span class="result"> extends <a href="../../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.input.MouseButton">javafx.scene.input.MouseButton</span>, <a href="MouseButton.html" class="extype" name="scalafx.scene.input.MouseButton">MouseButton</a>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@MouseButton" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wrapper for <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/MouseButton.html" target="_blank">javafx.scene.input.MouseButton</a></p>
@@ -938,7 +957,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@MouseDragEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -955,7 +974,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@MouseEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -972,7 +991,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@PickResult" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -989,7 +1008,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@RotateEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -1006,7 +1025,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@ScrollEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -1023,7 +1042,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@SwipeEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -1040,7 +1059,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@TouchEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -1057,7 +1076,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@TouchPoint" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -1070,11 +1089,11 @@ Classes/Traits to their ScalaFX counterparts.</p>
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a href="TransferMode$.html"><span class="name">TransferMode</span></a><span class="result"> extends <a href="../../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.input.TransferMode">javafx.scene.input.TransferMode</span>, <a href="TransferMode.html" class="extype" name="scalafx.scene.input.TransferMode">TransferMode</a>] with <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
+        <a href="TransferMode$.html"><span class="name">TransferMode</span></a><span class="result"> extends <a href="../../delegate/SFXEnumDelegateCompanion.html" class="extype" name="scalafx.delegate.SFXEnumDelegateCompanion">SFXEnumDelegateCompanion</a>[<span class="extype" name="javafx.scene.input.TransferMode">javafx.scene.input.TransferMode</span>, <a href="TransferMode.html" class="extype" name="scalafx.scene.input.TransferMode">TransferMode</a>] with <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Serializable" class="extype" target="_top">Serializable</a></span>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@TransferMode" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       <p class="shortcomment cmt">Wrapper for <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/TransferMode.html" target="_blank">javafx.scene.input.TransferMode</a></p>
@@ -1091,7 +1110,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
       </span>
       </h4><span class="permalink">
       <a href="../../../index.html#scalafx.scene.input.package@ZoomEvent" title="Permalink" target="_top">
-        <img src="../../../lib/permalink.png" />
+        <img src="../../../lib/permalink.png" alt="Permalink" />
       </a>
     </span>
       
@@ -1105,9 +1124,9 @@ Classes/Traits to their ScalaFX counterparts.</p>
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.6/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.7/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
             </div>
         
         </div>
@@ -1123,7 +1142,7 @@ Classes/Traits to their ScalaFX counterparts.</p>
 
       <div id="tooltip"></div>
 
-      <div id="footer"> ScalaFX API v.8.0.40-R8 </div>
+      <div id="footer"> ScalaFX API v.8.0.60-R9 </div>
 
 
     </body>
