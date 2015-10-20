@@ -26,13 +26,13 @@ object HelloStageDemo extends JFXApp {
     width = 600
     height = 450
     scene = new Scene {
-      fill = Color.LightGreen
+      fill = Color.LIGHTGREEN
       content = new Rectangle {
         x = 25
         y = 40
         width = 100
         height = 100
-        fill <== when (hover) choose Color.Green otherwise Color.Red
+        fill <== when (hover) choose Color.GREEN otherwise Color.RED
       }
     }
   }
