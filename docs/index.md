@@ -17,7 +17,7 @@ ScalaFX uses a simple, hierarchical pattern for creating new objects and buildin
 import scalafx.Includes._
 import scalafx.application.JFXApp
 import scalafx.scene.Scene
-import scalafx.scene.paint.Color
+import scalafx.scene.paint.Color._
 import scalafx.scene.shape.Rectangle
 
 object HelloStageDemo extends JFXApp {
@@ -26,13 +26,13 @@ object HelloStageDemo extends JFXApp {
     width = 600
     height = 450
     scene = new Scene {
-      fill = Color.LightGreen
+      fill = LightGreen
       content = new Rectangle {
         x = 25
         y = 40
         width = 100
         height = 100
-        fill <== when (hover) choose Color.Green otherwise Color.Red
+        fill <== when (hover) choose Green otherwise Red
       }
     }
   }
@@ -66,7 +66,7 @@ width <== max(rect1.width, rect2.width, rect3.width)
 Conditional Expressions
 
 {% highlight scala %}
-color <== when (hover) choose Color.GREEN otherwise Color.RED
+color <== when (hover) choose Green otherwise Red
 {% endhighlight %}
 
 Complex Boolean Expressions and String Concatenation

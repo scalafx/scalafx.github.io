@@ -16,24 +16,10 @@ For JavaFX 8 (distributed with Java 8) you will need to add dependency on ScalaF
 For instance, if you are using Java8 and SBT as your build system, add the following line to `build.sbt`
 
 {% highlight scala %}
-libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.0-R4"
+libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.60-R9"
 {% endhighlight %}
 
 You can download ScalaFX releases from [Maven repository at Sonatype](http://search.maven.org/#search&#124;ga&#124;1&#124;scalafx).
-
-<div class="note">
-  <h5>If using Java 7..</h5>
-  <p>JavaFX 2 is distributed with Java 7, but it is not included in the classpath.
-     Yuu need to add it to your project's classpath yourself. 
-     JavaFX 2 is in "jre/lib/jfxrt.jar" in your JDK directory.
-     If you are using SBT, add following line to "build.sbt":
-     <pre>
-     unmanagedJars in Compile += 
-       Attributed.blank(
-         file(scala.util.Properties.javaHome) / "/lib/jfxrt.jar")
-     </pre>
-  </p>
-</div>
 
 Now you are ready to type-in and run you first ScalaFX application:
 
@@ -55,7 +41,7 @@ object ScalaFXHelloWorld extends JFXApp {
   stage = new PrimaryStage {
     title = "ScalaFX Hello World"
     scene = new Scene {
-      fill = BLACK
+      fill = Black
       content = new HBox {
         padding = Insets(20)
         content = Seq(
@@ -64,17 +50,17 @@ object ScalaFXHelloWorld extends JFXApp {
             style = "-fx-font-size: 48pt"
             fill = new LinearGradient(
               endX = 0,
-              stops = Stops(PALEGREEN, SEAGREEN))
+              stops = Stops(PaleGreen, SeaGreen))
           },
           new Text {
             text = "World!!!"
             style = "-fx-font-size: 48pt"
             fill = new LinearGradient(
               endX = 0,
-              stops = Stops(CYAN, DODGERBLUE)
+              stops = Stops(Cyan, DodgerBlue)
             )
             effect = new DropShadow {
-              color = DODGERBLUE
+              color = DodgerBlue
               radius = 25
               spread = 0.25
             }
