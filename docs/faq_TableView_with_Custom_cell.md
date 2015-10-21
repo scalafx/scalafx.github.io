@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: Custom cells
+prev_section: quickstart
+next_section: faq_Using_unwrapped_JavaFX_components
 permalink: /docs/faq_TableView_with_Custom_cell/
 ---
 
