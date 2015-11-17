@@ -46,7 +46,7 @@ object ScalaFXHelloWorld extends JFXApp {
       fill = Black
       content = new HBox {
         padding = Insets(20)
-        content = Seq(
+        children = Seq(
           new Text {
             text = "Hello "
             style = "-fx-font-size: 48pt"
