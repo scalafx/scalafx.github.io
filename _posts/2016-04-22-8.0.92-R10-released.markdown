@@ -11,14 +11,17 @@ categories: [release]
 It is contains some new features and bug-fix release. Scala 2.10, 2.11, and 2.12 are supported.
 
 Compatibility braking changes:
+
 * [Issue #107][107]: Remove code that was deprecated before release of ScalaFX 1.0.0 M1
 
 New features and improvements:
+
 * [Issue #218][218]: Missing access methods in JFXApp
 * [Issue #232][232]: Wrap missing `Bindings.create*Binding`.
 * [Issue #210][210]: Add `Tooltip` constructor with `String`.
 
 Bug fixes:
+
 * [Issue #69][69]: SFX-8: `ColorfulCircles` and `SimpleColorfulCircles` demos fail.
 * [Issue #184][184]: `ObservableBuffer.Change` has no generic type parameters, while the majority of its children do.
 * [Issue #217][217]: NPE when calling `Node#snapshot`
