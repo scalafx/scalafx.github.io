@@ -1,0 +1,812 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>TreeTableView - ScalaFX API 8.0.92-R10 - scalafx.scene.control.TreeTableView</title>
+          <meta name="description" content="TreeTableView - ScalaFX API 8.0.92 - R10 - scalafx.scene.control.TreeTableView" />
+          <meta name="keywords" content="TreeTableView ScalaFX API 8.0.92 R10 scalafx.scene.control.TreeTableView" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      <script type="text/javascript" src="../../../lib/modernizr.custom.js"></script><script type="text/javascript" src="../../../lib/diagrams.js" id="diagrams-js"></script>
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'scalafx.scene.control.TreeTableView$';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <a href="TreeTableView.html" title="See companion class"><img alt="Object/Class" src="../../../lib/object_to_class_big.png" /></a>
+        <p id="owner"><a href="../../package.html" class="extype" name="scalafx">scalafx</a>.<a href="../package.html" class="extype" name="scalafx.scene">scene</a>.<a href="package.html" class="extype" name="scalafx.scene.control">control</a></p>
+        <h1><a href="TreeTableView.html" title="See companion class">TreeTableView</a></h1><h3><span class="morelinks"><div>
+            Related Docs:
+            <a href="TreeTableView.html" title="See companion class">class TreeTableView</a>
+            | <a href="package.html" class="extype" name="scalafx.scene.control">package control</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <span class="name">TreeTableView</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Object companion for <a href="TreeTableView.html" class="extype" name="scalafx.scene.control.TreeTableView">scalafx.scene.control.TreeTableView</a>
+</p></div><dl class="attributes block"> <dt>Source</dt><dd><a href="https://github.com/scalafx/scalafx/blob/v8.0.92-R10/scalafx//src/main/scala/scalafx/scene/control/TreeTableView.scala" target="_blank">TreeTableView.scala</a></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By Inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="scalafx.scene.control.TreeTableView"><span>TreeTableView</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show All</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="scalafx.scene.control.TreeTableView.EditEvent" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="EditEvent[T]extendsEventwithSFXDelegate[javafx.scene.control.TreeTableView.EditEvent[T]]"></a>
+      <a id="EditEvent[T]:EditEvent[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TreeTableView$$EditEvent.html"><span class="name">EditEvent</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="../../event/Event.html" class="extype" name="scalafx.event.Event">Event</a> with <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.control.TreeTableView.EditEvent">javafx.scene.control.TreeTableView.EditEvent</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.EditEvent.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@EditEvent[T]extendsEventwithSFXDelegate[javafx.scene.control.TreeTableView.EditEvent[T]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An Event subclass used specifically in TreeTableView for representing edit-related events.</p><div class="fullcomment"><div class="comment cmt"><p>An Event subclass used specifically in TreeTableView for representing edit-related events.
+It provides additional API to easily access the TreeItem that the edit event took place on,
+as well as the input provided by the end user.</p><p>Wraps a JavaFX <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TreeTableView.EditEvent.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TreeTableView.EditEvent.html</a>
+</p></div></div>
+    </li><li name="scalafx.scene.control.TreeTableView.ResizeFeatures" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ResizeFeatures[S]extendsResizeFeaturesBase[javafx.scene.control.TreeItem[S]]withSFXDelegate[javafx.scene.control.TreeTableView.ResizeFeatures[S]]"></a>
+      <a id="ResizeFeatures[S]:ResizeFeatures[S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TreeTableView$$ResizeFeatures.html"><span class="name">ResizeFeatures</span></a><span class="tparams">[<span name="S">S</span>]</span><span class="result"> extends <a href="ResizeFeaturesBase.html" class="extype" name="scalafx.scene.control.ResizeFeaturesBase">ResizeFeaturesBase</a>[<span class="extype" name="javafx.scene.control.TreeItem">javafx.scene.control.TreeItem</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.ResizeFeatures.S">S</span>]] with <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.control.TreeTableView.ResizeFeatures">javafx.scene.control.TreeTableView.ResizeFeatures</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.ResizeFeatures.S">S</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@ResizeFeatures[S]extendsResizeFeaturesBase[javafx.scene.control.TreeItem[S]]withSFXDelegate[javafx.scene.control.TreeTableView.ResizeFeatures[S]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An immutable wrapper class for use in the TableView column resize functionality.</p><div class="fullcomment"><div class="comment cmt"><p>An immutable wrapper class for use in the TableView column resize functionality.</p><p>Wraps a JavaFX <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TreeTableView.ResizeFeatures.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TreeTableView.ResizeFeatures.html</a>
+</p></div></div>
+    </li><li name="scalafx.scene.control.TreeTableView.TreeTableViewFocusModel" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TreeTableViewFocusModel[S]extendsTableFocusModel[javafx.scene.control.TreeItem[S],javafx.scene.control.TreeTableColumn[S,_]]withSFXDelegate[javafx.scene.control.TreeTableView.TreeTableViewFocusModel[S]]"></a>
+      <a id="TreeTableViewFocusModel[S]:TreeTableViewFocusModel[S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TreeTableView$$TreeTableViewFocusModel.html"><span class="name">TreeTableViewFocusModel</span></a><span class="tparams">[<span name="S">S</span>]</span><span class="result"> extends <a href="TableFocusModel.html" class="extype" name="scalafx.scene.control.TableFocusModel">TableFocusModel</a>[<span class="extype" name="javafx.scene.control.TreeItem">javafx.scene.control.TreeItem</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.TreeTableViewFocusModel.S">S</span>], <span class="extype" name="javafx.scene.control.TreeTableColumn">javafx.scene.control.TreeTableColumn</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.TreeTableViewFocusModel.S">S</span>, _]] with <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.control.TreeTableView.TreeTableViewFocusModel">javafx.scene.control.TreeTableView.TreeTableViewFocusModel</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.TreeTableViewFocusModel.S">S</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@TreeTableViewFocusModel[S]extendsTableFocusModel[javafx.scene.control.TreeItem[S],javafx.scene.control.TreeTableColumn[S,_]]withSFXDelegate[javafx.scene.control.TreeTableView.TreeTableViewFocusModel[S]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A FocusModel with additional functionality to support the requirements of a TableView control.</p><div class="fullcomment"><div class="comment cmt"><p>A FocusModel with additional functionality to support the requirements of a TableView control.</p><p>Wraps a JavaFX <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TreeTableView.TreeTableViewFocusModel.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TreeTableView.TreeTableViewFocusModel.html</a>
+</p></div></div>
+    </li><li name="scalafx.scene.control.TreeTableView.TreeTableViewSelectionModel" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TreeTableViewSelectionModel[S]extendsSFXDelegate[javafx.scene.control.TreeTableView.TreeTableViewSelectionModel[S]]"></a>
+      <a id="TreeTableViewSelectionModel[S]:TreeTableViewSelectionModel[S]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="TreeTableView$$TreeTableViewSelectionModel.html"><span class="name">TreeTableViewSelectionModel</span></a><span class="tparams">[<span name="S">S</span>]</span><span class="result"> extends <a href="../../delegate/SFXDelegate.html" class="extype" name="scalafx.delegate.SFXDelegate">SFXDelegate</a>[<span class="extype" name="javafx.scene.control.TreeTableView.TreeTableViewSelectionModel">javafx.scene.control.TreeTableView.TreeTableViewSelectionModel</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.TreeTableViewSelectionModel.S">S</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@TreeTableViewSelectionModel[S]extendsSFXDelegate[javafx.scene.control.TreeTableView.TreeTableViewSelectionModel[S]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A simple extension of the SelectionModel abstract class to allow for special support for TreeTableView controls.</p><div class="fullcomment"><div class="comment cmt"><p>A simple extension of the SelectionModel abstract class to allow for special support for TreeTableView controls.</p><p>Wraps a JavaFX <a href="http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TreeTableView.TreeTableViewSelectionModel.html" target="_blank">http://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TreeTableView.TreeTableViewSelectionModel.html</a>
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>8.0</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scalafx.scene.control.TreeTableView#ConstrainedResizePolicy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ConstrainedResizePolicy:scalafx.scene.control.TreeTableView.ResizeFeatures[_]=&gt;Boolean"></a>
+      <a id="ConstrainedResizePolicy:(ResizeFeatures[_])⇒Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ConstrainedResizePolicy</span><span class="result">: (<a href="TreeTableView$$ResizeFeatures.html" class="extype" name="scalafx.scene.control.TreeTableView.ResizeFeatures">ResizeFeatures</a>[_]) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@ConstrainedResizePolicy:scalafx.scene.control.TreeTableView.ResizeFeatures[_]=&gt;Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Simple policy that ensures the width of all visible leaf columns in this table sum up to equal the width of the
+table itself.</p><div class="fullcomment"><div class="comment cmt"><p>Simple policy that ensures the width of all visible leaf columns in this table sum up to equal the width of the
+table itself.</p><p>When the user resizes a column width with this policy, the table automatically adjusts the width of the right hand
+side columns. When the user increases a column width, the table decreases the width of the rightmost column until
+it reaches its minimum width. Then it decreases the width of the second rightmost column until it reaches minimum
+width and so on. When all right hand side columns reach minimum size, the user cannot increase the size of resized
+column any more.
+</p></div></div>
+    </li><li name="scalafx.scene.control.TreeTableView#DefaultSortPolicy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultSortPolicy:scalafx.scene.control.TreeTableView[_]=&gt;Boolean"></a>
+      <a id="DefaultSortPolicy:(TreeTableView[_])⇒Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultSortPolicy</span><span class="result">: (<a href="TreeTableView.html" class="extype" name="scalafx.scene.control.TreeTableView">TreeTableView</a>[_]) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@DefaultSortPolicy:scalafx.scene.control.TreeTableView[_]=&gt;Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The default sort policy that this TreeTableView will use if no other policy is specified.</p><div class="fullcomment"><div class="comment cmt"><p>The default sort policy that this TreeTableView will use if no other policy is specified. The sort policy is a
+simple Callback that accepts a TreeTableView as the sole argument and expects a Boolean response representing
+whether the sort succeeded or not. A Boolean response of true represents success, and a response of false (or null)
+will be considered to represent failure.
+</p></div></div>
+    </li><li name="scalafx.scene.control.TreeTableView.EditEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="EditEvent"></a>
+      <a id="EditEvent:EditEvent"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TreeTableView$$EditEvent$.html"><span class="name">EditEvent</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@EditEvent" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Object companion for <a href="TreeTableView$$EditEvent.html" class="extype" name="scalafx.scene.control.TreeTableView.EditEvent">scalafx.scene.control.TreeTableView.EditEvent</a>
+</p>
+    </li><li name="scalafx.scene.control.TreeTableView.ResizeFeatures" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ResizeFeatures"></a>
+      <a id="ResizeFeatures:ResizeFeatures"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TreeTableView$$ResizeFeatures$.html"><span class="name">ResizeFeatures</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@ResizeFeatures" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Object companion for <a href="TreeTableView$$ResizeFeatures.html" class="extype" name="scalafx.scene.control.TreeTableView.ResizeFeatures">scalafx.scene.control.TreeTableView.ResizeFeatures</a>
+</p>
+    </li><li name="scalafx.scene.control.TreeTableView.TreeTableViewFocusModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TreeTableViewFocusModel"></a>
+      <a id="TreeTableViewFocusModel:TreeTableViewFocusModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TreeTableView$$TreeTableViewFocusModel$.html"><span class="name">TreeTableViewFocusModel</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@TreeTableViewFocusModel" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Object companion for <a href="TreeTableView$$TreeTableViewFocusModel.html" class="extype" name="scalafx.scene.control.TreeTableView.TreeTableViewFocusModel">scalafx.scene.control.TreeTableView.TreeTableViewFocusModel</a>
+</p>
+    </li><li name="scalafx.scene.control.TreeTableView.TreeTableViewSelectionModel" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="TreeTableViewSelectionModel"></a>
+      <a id="TreeTableViewSelectionModel:TreeTableViewSelectionModel"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="TreeTableView$$TreeTableViewSelectionModel$.html"><span class="name">TreeTableViewSelectionModel</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@TreeTableViewSelectionModel" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Object companion for <a href="TreeTableView$$TreeTableViewFocusModel.html" class="extype" name="scalafx.scene.control.TreeTableView.TreeTableViewFocusModel">scalafx.scene.control.TreeTableView.TreeTableViewFocusModel</a>
+</p>
+    </li><li name="scalafx.scene.control.TreeTableView#UnconstrainedResizePolicy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="UnconstrainedResizePolicy:scalafx.scene.control.TreeTableView.ResizeFeatures[_]=&gt;Boolean"></a>
+      <a id="UnconstrainedResizePolicy:(ResizeFeatures[_])⇒Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UnconstrainedResizePolicy</span><span class="result">: (<a href="TreeTableView$$ResizeFeatures.html" class="extype" name="scalafx.scene.control.TreeTableView.ResizeFeatures">ResizeFeatures</a>[_]) ⇒ <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@UnconstrainedResizePolicy:scalafx.scene.control.TreeTableView.ResizeFeatures[_]=&gt;Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Very simple resize policy that just resizes the specified column by the provided delta and shifts all other columns
+(to the right of the given column) further to the right (when the delta is positive) or to the left (when the delta
+is negative).</p><div class="fullcomment"><div class="comment cmt"><p>Very simple resize policy that just resizes the specified column by the provided delta and shifts all other columns
+(to the right of the given column) further to the right (when the delta is positive) or to the left (when the delta
+is negative).</p><p>It also handles the case where we have nested columns by sharing the new space, or subtracting the removed space,
+evenly between all immediate children columns. Of course, the immediate children may themselves be nested, and they
+would then use this policy on their children.
+</p></div></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scalafx.scene.control.TreeTableView#classCssMetaData" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="classCssMetaData:scala.collection.mutable.Buffer[javafx.css.CssMetaData[_&lt;:javafx.css.Styleable,_]]"></a>
+      <a id="classCssMetaData:Buffer[CssMetaData[_&lt;:Styleable,_]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">classCssMetaData</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.collection.mutable.Buffer" class="extype" target="_top">Buffer</a>[<span class="extype" name="javafx.css.CssMetaData">CssMetaData</span>[_ &lt;: <span class="extype" name="javafx.css.Styleable">Styleable</span>, _]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@classCssMetaData:scala.collection.mutable.Buffer[javafx.css.CssMetaData[_&lt;:javafx.css.Styleable,_]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The CssMetaData associated with this class, which may include the CssMetaData of its super
+classes.</p><div class="fullcomment"><div class="comment cmt"><p>The CssMetaData associated with this class, which may include the CssMetaData of its super
+classes.
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>8.0</p></dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scalafx.scene.control.TreeTableView#editAnyEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editAnyEvent[T]:scalafx.event.EventType[javafx.scene.control.TreeTableView.EditEvent[T]]"></a>
+      <a id="editAnyEvent[T]:EventType[javafx.scene.control.TreeTableView.EditEvent[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editAnyEvent</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="../../event/EventType.html" class="extype" name="scalafx.event.EventType">EventType</a>[<span class="extype" name="javafx.scene.control.TreeTableView.EditEvent">javafx.scene.control.TreeTableView.EditEvent</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.editAnyEvent.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@editAnyEvent[T]:scalafx.event.EventType[javafx.scene.control.TreeTableView.EditEvent[T]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An EventType that indicates some edit event has occurred.</p>
+    </li><li name="scalafx.scene.control.TreeTableView#editCancelEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editCancelEvent[T]:scalafx.event.EventType[javafx.scene.control.TreeTableView.EditEvent[T]]"></a>
+      <a id="editCancelEvent[T]:EventType[javafx.scene.control.TreeTableView.EditEvent[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editCancelEvent</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="../../event/EventType.html" class="extype" name="scalafx.event.EventType">EventType</a>[<span class="extype" name="javafx.scene.control.TreeTableView.EditEvent">javafx.scene.control.TreeTableView.EditEvent</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.editCancelEvent.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@editCancelEvent[T]:scalafx.event.EventType[javafx.scene.control.TreeTableView.EditEvent[T]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An EventType used to indicate that an edit event has just been canceled
+within the TreeTableView upon which the event was fired.</p>
+    </li><li name="scalafx.scene.control.TreeTableView#editCommitEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editCommitEvent[T]:scalafx.event.EventType[javafx.scene.control.TreeTableView.EditEvent[T]]"></a>
+      <a id="editCommitEvent[T]:EventType[javafx.scene.control.TreeTableView.EditEvent[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editCommitEvent</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="../../event/EventType.html" class="extype" name="scalafx.event.EventType">EventType</a>[<span class="extype" name="javafx.scene.control.TreeTableView.EditEvent">javafx.scene.control.TreeTableView.EditEvent</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.editCommitEvent.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@editCommitEvent[T]:scalafx.event.EventType[javafx.scene.control.TreeTableView.EditEvent[T]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An EventType that is used to indicate that an edit in a TreeTableView has been
+committed.</p>
+    </li><li name="scalafx.scene.control.TreeTableView#editStartEvent" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="editStartEvent[T]:scalafx.event.EventType[javafx.scene.control.TreeTableView.EditEvent[T]]"></a>
+      <a id="editStartEvent[T]:EventType[javafx.scene.control.TreeTableView.EditEvent[T]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">editStartEvent</span><span class="tparams">[<span name="T">T</span>]</span><span class="result">: <a href="../../event/EventType.html" class="extype" name="scalafx.event.EventType">EventType</a>[<span class="extype" name="javafx.scene.control.TreeTableView.EditEvent">javafx.scene.control.TreeTableView.EditEvent</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.editStartEvent.T">T</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@editStartEvent[T]:scalafx.event.EventType[javafx.scene.control.TreeTableView.EditEvent[T]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An EventType used to indicate that an edit event has started within the
+TreeTableView upon which the event was fired.</p>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Boolean" class="extype" target="_top">Boolean</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scalafx.scene.control.TreeTableView#sfxTreeTableView2jfx" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sfxTreeTableView2jfx[T](v:scalafx.scene.control.TreeTableView[T]):javafx.scene.control.TreeTableView[T]"></a>
+      <a id="sfxTreeTableView2jfx[T](TreeTableView[T]):javafx.scene.control.TreeTableView[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sfxTreeTableView2jfx</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="v">v: <a href="TreeTableView.html" class="extype" name="scalafx.scene.control.TreeTableView">TreeTableView</a>[<span class="extype" name="scalafx.scene.control.TreeTableView.sfxTreeTableView2jfx.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="javafx.scene.control.TreeTableView">javafx.scene.control.TreeTableView</span>[<span class="extype" name="scalafx.scene.control.TreeTableView.sfxTreeTableView2jfx.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@sfxTreeTableView2jfx[T](v:scalafx.scene.control.TreeTableView[T]):javafx.scene.control.TreeTableView[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Converts a ScalaFX TreeTableView instance to its JavaFX counterpart.</p><div class="fullcomment"><div class="comment cmt"><p>Converts a ScalaFX TreeTableView instance to its JavaFX counterpart.
+</p></div><dl class="paramcmts block"><dt class="param">v</dt><dd class="cmt"><p>ScalaFX TreeTableView</p></dd><dt>returns</dt><dd class="cmt"><p>JavaFX TreeTableView</p></dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Int" class="extype" target="_top">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Long" class="extype" target="_top">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Unit" class="extype" target="_top">Unit</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#scalafx.scene.control.TreeTableView$@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.AnyRef" class="extype" target="_top">AnyRef</a></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.11.8/index.html#scala.Any" class="extype" target="_top">Any</a></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer"> ScalaFX API v.8.0.92-R10 </div>
+
+
+    </body>
+      </html>

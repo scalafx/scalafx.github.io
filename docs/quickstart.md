@@ -2,7 +2,7 @@
 layout: docs
 title: Quick-start guide
 prev_section: home
-next_section: faq_TableView_with_Custom_cell
+next_section: getting_started_properties
 permalink: /docs/quickstart/
 ---
 
