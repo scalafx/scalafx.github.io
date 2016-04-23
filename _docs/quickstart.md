@@ -75,7 +75,7 @@ object ScalaFXHelloWorld extends JFXApp {
 {% endhighlight %}
 
 It will display window like this:
-![ScalaFX Hello World!!!]({{ site.url }}/images/scalafx_hello_world.png)
+![ScalaFX Hello World!!!]({{ site.url }}/img/scalafx_hello_world.png)
 
 You can find complete project in the [scalafx-hello-world](https://github.com/scalafx/scalafx-hello-world) sample at GitHub.
 You can clone the repo or download sample code from the [Release](https://github.com/scalafx/scalafx-hello-world/releases) page.

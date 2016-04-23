@@ -53,7 +53,7 @@ new TableColumn[Person, Color] {
 {% endhighlight %}
 
 Below is a complete example that will display a table with custom cells:
-![TableView with custom cells]({{ site.url }}/images/faq_TableView_with_Custom_cell-1.png)
+![TableView with custom cells]({{ site.url }}/img/faq_TableView_with_Custom_cell-1.png)
 
 {% highlight scala %}
 import scalafx.application.JFXApp

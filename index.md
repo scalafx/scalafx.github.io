@@ -9,7 +9,7 @@ Every ScalaFX application is also a valid Scala application. It supports full in
 
 ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple, complete application example that creates a new stage (window) with a rectangle that changes color based on mouse events:
 
-{% highlight scala %}
+```scala
 import scalafx.Includes._
 import scalafx.application.JFXApp
 import scalafx.scene.Scene
@@ -28,12 +28,13 @@ object HelloStageDemo extends JFXApp {
         y = 40
         width = 100
         height = 100
-        fill <== when (hover) choose Color.Green otherwise Color.Red
+        fill <== when (hover) choose Color.Green 
+                              otherwise Color.Red
       }
     }
   }
 }
-{% endhighlight %}
+```
 
 Some of the features of ScalaFX include:
 

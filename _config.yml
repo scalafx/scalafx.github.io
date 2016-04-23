@@ -12,5 +12,16 @@ permalink: pretty
 relative_permalinks: false
 exclude: [vendor]
 
+timezone: America/New_York
+
+collections:
+  docs:
+    output: true
+logo: img/logo-2x.png
 gems:
   - jekyll-feed
+  - jekyll-redirect-from
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-avatar

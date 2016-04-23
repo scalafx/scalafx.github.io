@@ -1,8 +1,8 @@
 ---
 layout: docs
 title: What is ScalaFX?
-next_section: quickstart
 permalink: /docs/home/
+redirect_from: /docs/index.html
 ---
 
 ScalaFX is a UI DSL written within the Scala Language that sits on top of JavaFX 2 and 8 (not to be confused with [Ingo Maier’s](http://people.epfl.ch/ingo.maier) great work on [Functional Reactive Programming](http://lamp.epfl.ch/~imaier/pub/DeprecatingObserversTR2010.pdf) for Swing). 
@@ -40,7 +40,7 @@ object HelloStageDemo extends JFXApp {
 }
 {% endhighlight %}
 
-![HelloStageDemo-2]({{ site.url }}/images/HelloStageDemo-2.png) ![HelloStageDemo-1]({{ site.url }}/images/HelloStageDemo-1.png) 
+![HelloStageDemo-2]({{ site.url }}/img/HelloStageDemo-2.png) ![HelloStageDemo-1]({{ site.url }}/img/HelloStageDemo-1.png) 
 
 Unlike the builders you find in the core JavaFX APIs, the ScalaFX object declaration syntax uses the normal object API. This means that you can use the same operators and convenient syntax to create and modify your scene graph. Also, anything that is permissible in a Scala block (such as variable declarations, method calls, binding, etc.) can also be done inline while constructing objects. For JavaFX builders you need to declare binding after you finish creating your objects, which leads to disassociated and hard to maintain code.
 
