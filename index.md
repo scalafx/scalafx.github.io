@@ -46,7 +46,7 @@ Some of the features of ScalaFX include:
 
 To learn more watch the presentation below and read the [Documentation]({{ site.url }}/docs/home) section.
 
-##ScalaFX Overview Presentation
+### ScalaFX Overview Presentation
 
 [Stephen Chin](http://steveonjava.com) presentation [JavaFX 2 and Scala - Like Milk and Cookies (33 Degrees)](Https://www.slideshare.net/steveonjava/javafx-2-and-scala-like-milk-and-cookies-33rd-degrees) 
 

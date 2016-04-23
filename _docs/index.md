@@ -10,7 +10,7 @@ This means that every ScalaFX application is also a valid Scala application. By 
 
 Some of the features of ScalaFX include:
 
-###A Programmer-Friendly Object-Literal-Like Syntax
+### A Programmer-Friendly Object-Literal-Like Syntax
 
 ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple, complete application example that creates a new stage with a rectangle that changes color based on mouse events:
 
@@ -44,7 +44,7 @@ object HelloStageDemo extends JFXApp {
 
 Unlike the builders you find in the core JavaFX APIs, the ScalaFX object declaration syntax uses the normal object API. This means that you can use the same operators and convenient syntax to create and modify your scene graph. Also, anything that is permissible in a Scala block (such as variable declarations, method calls, binding, etc.) can also be done inline while constructing objects. For JavaFX builders you need to declare binding after you finish creating your objects, which leads to disassociated and hard to maintain code.
 
-###Natural Language Bind Expressions
+### Natural Language Bind Expressions
 
 One of the greatest advantages of using the Scala language as a DSL is the rich support for operators as methods. This is similar to the C++ concept of operator overloading, but much more uniform and clean in its application.
 
@@ -86,7 +86,7 @@ rect.hover onInvalidate {
 }
 {% endhighlight %}
 
-###Tailored Animation Syntax
+### Tailored Animation Syntax
 
 Animations are very commonly used in creating good UIs, which is why JavaFX Script had a built-in construct to simplify the creation of animations. ScalaFX has a similar syntax that allows you to quickly and easily create animations, which is used in the ColorfulCircles? example:
 
@@ -101,7 +101,7 @@ Seq(
 
 This makes it trivially easy to create complex animations.
 
-###Fully Type-Safe APIs
+### Fully Type-Safe APIs
 
 This may seem like an insignificant point… Type safety is something that Java developers have always had (and often take for granted), and developers in other scripting languages live without (and unknowingly suffer with runtime errors as a result). However, it is a critical feature if you are developing applications that cannot have unexpected runtime errors and bugs after deployment.
 
@@ -109,7 +109,7 @@ A good compiler will be able to pick up many common coding mistakes through comp
 
 ScalaFX gets the best of both worlds with a scripting-like DSL syntax where you can rarely have to explicitly type objects, with the strong type-safety of the Scala compiler that will infer and check the types of every expression and API call. This means less time spent debugging weird code bugs and misspellings, and higher quality code right out of the gate!
 
-###Seamless JavaFX/ScalaFX Interoperability
+### Seamless JavaFX/ScalaFX Interoperability
 
 It is often the case that you do not have complete freedom about the predominant language of the codebase, or of the libraries you are including functionality from. Even in a mixed environment codebase where you have Java, Scala, and possibly other JVM languages, ScalaFX will seamlessly convert and interoperate.
 

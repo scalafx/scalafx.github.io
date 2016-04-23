@@ -6,7 +6,7 @@ next_section: faq_Using_Ambiguous_Methods
 permalink: /docs/faq_Using_unwrapped_JavaFX_components/
 ---
 
-###**How can I use JavaFX controls that aren't wrapped by ScalaFX, like controls from JFXtras or ControlsFX?**
+### **How can I use JavaFX controls that aren't wrapped by ScalaFX, like controls from JFXtras or ControlsFX?**
 
 You easily can mix JavaFX and ScalaFX controls. Certain ScalaFX features, like binding, will work with "regular" JavaFX controls, like ones from JFXtras or ControlsFX. Just make sure that you bring in the magic using `import scalafx.Includes._`. Here is an example of using a `ListSpinner` from JFXtras:
 

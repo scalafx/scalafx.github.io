@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: Quick-start guide
-prev_section: home
-next_section: getting_started_properties
 permalink: /docs/quickstart/
 ---
 
@@ -18,7 +16,7 @@ For JavaFX 8 (distributed with Java 8) you will need to add dependency on ScalaF
 For instance, if you are using Java8 and SBT as your build system, add the following line to `build.sbt`
 
 {% highlight scala %}
-libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.60-R9"
+libraryDependencies += "org.scalafx" %% "scalafx" % "8.0.92-R10"
 {% endhighlight %}
 
 You can download ScalaFX releases from [Maven repository at Sonatype](http://search.maven.org/#search&#124;ga&#124;1&#124;scalafx).

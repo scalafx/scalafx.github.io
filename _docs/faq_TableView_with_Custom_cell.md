@@ -6,7 +6,7 @@ next_section: faq_Using_unwrapped_JavaFX_components
 permalink: /docs/faq_TableView_with_Custom_cell/
 ---
 
-###**How to create TableView that displays custom cells containing text and graphics?**
+### **How to create TableView that displays custom cells containing text and graphics?**
 
 To display custom content in `TableView` you create `TableColumn` and specify `cellValueFactory` and in needed `cellFactory`. Let's assume that data for each row in the table are represented by insdtances `Person` class:
 

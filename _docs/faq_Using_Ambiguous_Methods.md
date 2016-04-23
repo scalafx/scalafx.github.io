@@ -6,7 +6,7 @@ next_section: contributing
 permalink: /docs/faq_Using_Ambiguous_Methods/
 ---
 
-###**How to use methods that have the same signature?**
+### **How to use methods that have the same signature?**
 
 
 In Java there is a distinction between primitive types and their wrappers. For instance, `int` is a primitive type and `Integer` is its wrapper. In Scala they are expressed by the same type: `Int`.  Using ScalaFX classes that are parametrized with type corresponding to Java wrapper type, like `Integer`, can lead to compilation errors.

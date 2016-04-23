@@ -1,18 +1,15 @@
 ---
 layout: docs
 title: Properties
-prev_section: quickstart
-next_section: faq_TableView_with_Custom_cell
 permalink: /docs/getting_started_properties/
 ---
 
-Example code
-------------
+### Example code
+
 
 The source code for this tutorial can be found in the project [???](???)
 
-ScalaFX Properties
-------------------
+### ScalaFX Properties
 
 A property holds a value which changes can be observed. Properties can be bound together - when one changes the other changes too. You can also create binding expressions - when on of the component properties changes the value of whole expression changes too.
 

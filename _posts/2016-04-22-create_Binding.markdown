@@ -3,7 +3,7 @@ layout: news_item
 title: Bindings with arbitrary expressions
 date: 2016-04-22 16:59:59 -0400
 author: jpsacha
-categories: [examples]
+categories: [example]
 ---
 
 [ScalaFX][1] v.8.0.92-R10 brings ability to create bindings using custom expressions. For instance, you can binding expression that converts strings to lower case:
