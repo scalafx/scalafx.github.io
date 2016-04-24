@@ -1,8 +1,6 @@
 ---
 layout: docs
 title: Unwrapped components
-prev_section: faq_TableView_with_Custom_cell
-next_section: faq_Using_Ambiguous_Methods
 permalink: /docs/faq_Using_unwrapped_JavaFX_components/
 ---
 

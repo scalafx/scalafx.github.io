@@ -2,8 +2,6 @@
 layout: docs
 title: History
 permalink: "/docs/history/"
-prev_section: contributing
-next_section: how_donations_work
 ---
 
 ## 1.0.0-R8 and 8.0.0-R4 / 2014-03-06
