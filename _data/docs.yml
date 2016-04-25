@@ -2,7 +2,7 @@
   docs:
   - home
   - quickstart
-#  - getting_started_properties
+  - properties
 
 - title: FAQ
   docs:
