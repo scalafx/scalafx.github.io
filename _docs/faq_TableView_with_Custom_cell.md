@@ -40,10 +40,13 @@ new TableColumn[Person, Color] {
   cellFactory = { _ => 
     new TableCell[Person, Color] {
       item.onChange { (_, _, newColor) => 
-        graphic = new Circle {
-          fill = newColor; 
-          radius = 8
-        }
+        graphic = if (newColor != null)
+          new Circle {
+            fill = newColor
+            radius = 8
+          }    
+        else
+          null
       }
     }
   }
@@ -94,7 +97,13 @@ object TableWithCustomCellDemo extends JFXApp {
             cellFactory = { _ => 
               new TableCell[Person, Color] {
                 item.onChange { (_, _, newColor) => 
-                  graphic = new Circle {fill = newColor; radius = 8}
+                  graphic = if (newColor != null)
+                    new Circle {
+                      fill = newColor
+                      radius = 8
+                  }    
+                 else
+                   null
                 }
               }
             }
