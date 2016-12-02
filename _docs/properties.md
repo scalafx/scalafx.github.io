@@ -32,7 +32,9 @@ Value if a property can be accessed using `value` method or operator `()`. Follo
 ```scala
 speed()
 speed.value
-``` 
+```
+
+### Adding Listeners
 
 Value of property can be observed adding a listener. The listener is added passing a closure to `onChange` method:
 
@@ -66,6 +68,27 @@ Value of property 'speed' is changing from 75.0 to 25.0
 ```
 
 The complete code is in [Properties101](https://github.com/scalafx/ScalaFX-Tutorials/blob/master/properties/src/main/scala/org/scalafx/tutorials/properties/Properties101.scala) example.
+
+### Removing Listeners
+
+A subscription handle lets you remove a listener.
+A subscription is created for every listener added to a property.
+When you no longer need to the listen, you "cancel" the subscription:
+
+```scala
+val prop = DoubleProperty(0)
+
+val subscription = prop.onChange { (_, _, newValue) =>
+             println(s"Property changed value to $newValue")
+           }
+
+prop.value = 1
+subscription.cancel()
+
+// Listener will not be notified about this change
+prop.value = 2
+```
+
 
 ### Property Binding
 
