@@ -58,3 +58,7 @@ To learn more watch the presentation below and read the [Documentation]({{ site.
 </a>
 
 [How Donations Work]({{ site.url }}/docs/how_donations_work/)
+
+##Community Code of Conduct
+
+We request all the team members to follow the [Typelevel Code of Conduct](http://typelevel.org/conduct.html) in our mailinglist, issue discussion, Gitter room or any of ScalaFX meetups.
