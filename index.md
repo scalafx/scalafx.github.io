@@ -45,13 +45,13 @@ Some of the features of ScalaFX include:
 
 To learn more watch the presentation below and read the [Documentation]({{ site.url }}/docs/home) section.
 
-### ScalaFX Overview Presentation
+## ScalaFX Overview Presentation
 
 [Stephen Chin](http://steveonjava.com) presentation [JavaFX 2 and Scala - Like Milk and Cookies (33 Degrees)](Https://www.slideshare.net/steveonjava/javafx-2-and-scala-like-milk-and-cookies-33rd-degrees) 
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/12148807" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px">  </div>
 
-##Support ScalaFX Project
+## Support ScalaFX Project
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QTHP3D2X4F3W4">
   <img src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" alt="Donate">
@@ -59,6 +59,6 @@ To learn more watch the presentation below and read the [Documentation]({{ site.
 
 [How Donations Work]({{ site.url }}/docs/how_donations_work/)
 
-##Community Code of Conduct
+## Community Code of Conduct
 
 We request all the team members to follow the [Typelevel Code of Conduct](http://typelevel.org/conduct.html) in our mailinglist, issue discussion, Gitter room or any of ScalaFX meetups.
