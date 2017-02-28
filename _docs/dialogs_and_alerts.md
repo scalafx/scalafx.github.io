@@ -4,7 +4,7 @@ title: Dialogs and Alerts
 permalink: "/docs/dialogs_and_alerts/"
 ---
 
-ScalaFX 8.0.40 added support for Alerts and Dialogs. Dialog API allows for opening a dialog window and returning input from the user. The result can be as simple as type of button used to close the dialog. A custom dialog allows for returning an arbitrary result.
+ScalaFX 8.0.40 added support for Alerts and Dialogs. The Dialog API allows for opening a dialog window and returning input from the user. The result can be as simple as the type of button used to close the dialog. A custom dialog allows for returning an arbitrary result.
 
 
 Simple Alerts
@@ -14,7 +14,7 @@ There are several predefined dialogs called alerts that can be easily presented 
 
 ### Information
 
-A simplest alert can be shown with a single line of code:
+The simplest alert can be shown with a single line of code:
 
 ``` scala
  new Alert(AlertType.Information, "Hello Dialogs!!!").showAndWait()
@@ -37,9 +37,9 @@ new Alert(AlertType.Information) {
 ![Information alert]({{ site.url }}/img/dialogs/information_alert.png)
 
 
-`initOwner()` specifies the owner for a dialog. Its use is not required, but it is a good style. Setting owner for a dialog allows the dialog to use the same icon as the owner and, for modal dialogs, block the parent when dialog is shown.
+`initOwner()` specifies the owner for a dialog. Its use is not required, but it is considered good style. Setting the owner for a dialog allows the dialog to use the same icon as the owner and, for modal dialogs, block the parent when the dialog is shown.
 
-Here are some more ScalaFX examples of Alerts based on ones presented in [JavaFX Dialogs] blog post.
+Here are some more ScalaFX examples of Alerts based on ones presented in the [JavaFX Dialogs] blog post.
 
 
 ### Warning
@@ -76,7 +76,7 @@ new Alert(AlertType.Error) {
 
 ### Confirmation
 
-Alerts and dialogs can be used to query user for information. Every alert returns type of button that was pressed to close the dialog. A simplest form of a query is a confirmation dialog that indicates whether user pressed `OK` or `Cancel` buttons. Strictly speaking a dialog returns an `Option` containing type of button pressed or `None`.
+Alerts and dialogs can be used to query the user for information. Every alert returns the type of the button that was pressed to close the dialog. The simplest form of a query is a confirmation dialog that indicates whether the user pressed `OK` or `Cancel`. Strictly speaking, a dialog returns an `Option` containing the type of button pressed or `None`.
 
 ``` scala
 // Create and show confirmation alert
@@ -98,12 +98,12 @@ result match {
 
 ![Confirmation alert]({{ site.url }}/img/dialogs/confirmation_alert.png)
 
-A dialog can return any content; an example will be shown later. First, let see how to use custom buttons in an alert.
+A dialog can return any content; an example will be shown later. First, let us see how to use custom buttons in an alert.
 
 Alerts with Custom Buttons
 --------------------------
 
-We can customize the button on an alert by defining `ButtonType` objects and passing them to Alert's `buttonTypes` property. Notice that we overwrite the content of the property (rather than append to it):
+We can customize the buttons in an alert by defining `ButtonType` objects and passing them to the Alert's `buttonTypes` property. Notice that we overwrite the content of the property (rather than append to it):
 
 ``` scala
     val ButtonTypeOne = new ButtonType("One")
@@ -182,7 +182,7 @@ new Alert(AlertType.Error) {
 Text Input Dialog
 -----------------
 
-The `TextInputDialog` is used to obtain a simple text input. It works similar to alerts, but it returns an `Option` containing the text entered by the user:
+The `TextInputDialog` is used to obtain simple text input. It works similar to alerts, but it returns an `Option` containing the text entered by the user:
 
 ``` scala
 val dialog = new TextInputDialog(defaultValue = "walter") {
@@ -206,7 +206,7 @@ result match {
 Choice Box Dialog
 -----------------
 
-A `ChoiceDialog` is used for selecting from a list of available choices. The list can be collection of arbitrary objects. The choice dialog returns `Option` selected by the user.
+A `ChoiceDialog` is used for selecting from a list of available choices. The list can be a collection of arbitrary objects. The choice dialog returns an `Option` containing the item selected by the user.
 
 ``` scala
 val choices = Seq("a", "b", "c")
@@ -232,7 +232,7 @@ result match {
 Custom Dialog
 --------------
 
-Custom dialogs can be easily created using Dialog class. Below is an example that shows a login dialog. Class `Result` defines result returned by the dialog. The dialog contains a custom graphic, two input fields ("Username" and "Password"), and custom buttons ("Login" and "Cancel").
+Custom dialogs can be easily created using the Dialog class. Below is an example that shows a login dialog. The `Result` class defines the result returned by the dialog. The dialog contains a custom graphic, two input fields ("Username" and "Password"), and custom buttons ("Login" and "Cancel").
 
 ``` scala
 case class Result(username: String, password: String)
@@ -304,7 +304,7 @@ result match {
 Summary
 -------
 
-There are several predefined dialogs and alerts: Information, Warning, Error, Confirmation, Text Input, and Choice. The predefined dialogs allow some level of customization of their content and buttons. Source code for the examples of pre-defined dialog including customization are in [DialogsDemo]. A completely customized dialogs can be created using `Dialog` class. Source code for a custom dialog is in [LoginDialogDemo].
+There are several predefined dialogs and alerts: Information, Warning, Error, Confirmation, Text Input, and Choice. The predefined dialogs allow some level of customization of their content and buttons. Source code for the examples of pre-defined dialogs including customization are in [DialogsDemo]. A completely customized dialog can be created using the `Dialog` class. Source code for a custom dialog is in [LoginDialogDemo].
 
 [JavaFX Dialogs]: http://code.makery.ch/blog/javafx-dialogs-official/
 [DialogsDemo]: https://github.com/scalafx/scalafx/blob/master/scalafx-demos/src/main/scala/scalafx/controls/DialogsDemo.scala
