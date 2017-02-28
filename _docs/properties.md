@@ -7,27 +7,27 @@ permalink: /docs/properties/
 ### Example code
 
 
-The source code for this tutorial can be found in the [ScalaFX Tutorials](https://github.com/scalafx/ScalaFX-Tutorials) project [properties](https://github.com/scalafx/ScalaFX-Tutorials/tree/master/properties).
+The source code for this tutorial can be found in the the [ScalaFX Tutorials](https://github.com/scalafx/ScalaFX-Tutorials) project [properties](https://github.com/scalafx/ScalaFX-Tutorials/tree/master/properties).
 
 ### ScalaFX Properties
 
-A property holds a value which changes can be observed. Properties can be bound together - when one changes the other changes too. You can also create binding expressions - when on of the component properties changes the value of whole expression changes too.
+A property holds a value whose changes can be observed. Properties can be bound together - when one changes, the other changes too. You can also create binding expressions - when one of the component properties changes, the value of the whole expression changes too.
 
-There are predefined properties for basic types `BooleanProperty`, `DoubleProperty`, `FloatProperty`, `IntegerProperty`, `LongProperty`, and `StringProperty`. There is also a a generic property that can hold any object: `ObjectProperty`.
+There are predefined properties for the basic types: `BooleanProperty`, `DoubleProperty`, `FloatProperty`, `IntegerProperty`, `LongProperty`, and `StringProperty`. There is also a generic property that can hold any object: `ObjectProperty`.
 
-You quickly create property with a factory method:
+You quickly create a property with a factory method:
 
 ```scala
 val speed = DoubleProperty(55)
 ```
 
-Or using a constructor
+Or using a constructor:
 
 ```scala
 val speed = new DoubleProperty(this, "speed", 55)
 ```
 
-Value if a property can be accessed using `value` method or operator `()`. Following is equivalent:
+The value of a property can be accessed using the `value` method or the `()` operator. The following two statements are equivalent:
 
 ```scala
 speed()
@@ -36,15 +36,15 @@ speed.value
 
 ### Adding Listeners
 
-Value of property can be observed adding a listener. The listener is added passing a closure to `onChange` method:
+The value of a property can be observed by adding a listener. The listener is added by passing a closure to the `onChange` method:
 
 ```scala
 speed.onChange { (source, oldValue, newValue) => doSomething() }
 
 ```
-The first argument to the closure is a reference of the property that changes, the other two are the old and the new value. 
+The first argument to the closure is a reference to the changed property, the other two are the old and the new value. 
 
-Let's create a property with a listener that prints the old and new values then change the property value a couple of times to see what happens:
+Let's create a property with a listener that prints the old and new values, then change the property's value a few times to see what happens:
 
 ```scala
   val speed = new DoubleProperty(this, "speed", 55) {
@@ -67,7 +67,7 @@ Value of property 'speed' is changing from 60.0 to 75.0
 Value of property 'speed' is changing from 75.0 to 25.0
 ```
 
-The complete code is in [Properties101](https://github.com/scalafx/ScalaFX-Tutorials/blob/master/properties/src/main/scala/org/scalafx/tutorials/properties/Properties101.scala) example.
+The complete code is in the [Properties101](https://github.com/scalafx/ScalaFX-Tutorials/blob/master/properties/src/main/scala/org/scalafx/tutorials/properties/Properties101.scala) example.
 
 ### Removing Listeners
 
@@ -92,28 +92,28 @@ prop.value = 2
 
 ### Property Binding
 
-You can make a property to change its value when another propery changes, you can bind them together. The binding can be unidirectional:
+You can make a property change its value when another propery changes by binding them together. The binding can be unidirectional:
 
 ```scala
 a <== b
 ```
 
-when value of property `b` is changing value of property `a` will change to the same value, but not the other way around. 
+when the value of property `b` changes, the value of property `a` will change to the same value, but not the other way around. 
 
-Binding can be also bidirectional:
+Bindings can also be bidirectional:
 
 ```scala
  c <==> d
 ```
-When value of `c` change the value of `d` will change too. When `d` changes, `c` will change too.
+When the value of `c` changes, the value of `d` will change too. When `d` changes, `c` will change too.
 
 Binding are one of the most important features of JavaFX. ScalaFX makes binding notation much more expressive.
 
 ### Binding Expressions
 
-A property can also bind an expression created from other properties. Consider a formula for computing and area of a triangle: `area = (base * height) / 2`
+A property can also bind an expression created from other properties. Consider a formula for computing the area of a triangle: `area = (base * height) / 2`
 
-Assume that we want to recompute value of the area every time `base` or `height` changes. First define properties:
+Assume that we want to recompute the value of the area every time `base` or `height` changes. First define properties:
 
 ```scala
   val base   = DoubleProperty(15)
@@ -166,18 +166,18 @@ base = 20.0, height =  5.0, area =  50.0
 ```
 
 
-The complete code is in [BindingExpressions](https://github.com/scalafx/ScalaFX-Tutorials/blob/master/properties/src/main/scala/org/scalafx/tutorials/properties/BindingExpressions.scala) example.
+The complete code is in the [BindingExpressions](https://github.com/scalafx/ScalaFX-Tutorials/blob/master/properties/src/main/scala/org/scalafx/tutorials/properties/BindingExpressions.scala) example.
 
-You can also use `min` and `max` binding expressions. For comparison there are binding expressions expressions `<`, `<=`, `>`, `>=`, `===` (equals), `=!=` (not equals) that create boolean binding expressions. You can also use `&&`, `||`, and `!` in boolean binding expressions.
+You can also use `min` and `max` in binding expressions. For comparison, there are the binding expression operators `<`, `<=`, `>`, `>=`, `===` (equals), `=!=` (not equals) that create boolean binding expressions. You can also use `&&`, `||`, and `!` in boolean binding expressions.
 
 ### when (...) choose ... otherwise ...
 
-A ternary binding expression has a general form:
+A ternary binding expression has the general form:
 
 ```
   when(cond) choose(value1) otherwise(value2)
 ```
-you can think about it as a `if(cond) then(value1) else(value2)` expressions, though `if`/`then`/`else` are keywords in Scala and `when`/`choose`/`otherwise` are used instead. For instance, if we want to change a color of a `Rectangle` when a cursor is positioned above it, we can use `when`/`choose`/`otherwise` to select its color. A `Rectangle` has a property `hoover` that is `true` when a mouse is above the rectangle. Color of a rectangle is determined by the value of the property `fill`. Let's bind `fill` to an `when`/`choose`/`otherwise` expression that depending on the value of `hoover` property will change its color to `Green` or `Red`:
+you can think about it as a `if(cond) then(value1) else(value2)` expression, though `if`/`then`/`else` are keywords in Scala, so `when`/`choose`/`otherwise` are used instead. For instance, if we want to change the color of a `Rectangle` when the cursor is positioned above it, we can use `when`/`choose`/`otherwise` to select its color. The `Rectangle` has a `hover` property that is `true` when the cursor is above the rectangle. The color of the rectangle is determined by the value of the `fill` property. Let's bind `fill` to an `when`/`choose`/`otherwise` expression that, depending on the value of `hover` property, will change its color to `Green` or `Red`:
 
 ```scala
 new Rectangle {
@@ -185,11 +185,11 @@ new Rectangle {
 }
 ```
 
-In general, the condition can be any Boolean binding expression (here we just have a property `hoover`). The complete code is in [WhenChooseOtherwiseExpression](https://github.com/scalafx/ScalaFX-Tutorials/blob/master/properties/src/main/scala/org/scalafx/tutorials/properties/WhenChooseOtherwiseExpression.scala) example.
+In general, the condition can be any Boolean binding expression (here we just have a property `hover`). The complete code is in the [WhenChooseOtherwiseExpression](https://github.com/scalafx/ScalaFX-Tutorials/blob/master/properties/src/main/scala/org/scalafx/tutorials/properties/WhenChooseOtherwiseExpression.scala) example.
 
 ### There is more...
 
-Binding expressions can be created also for String and object properties. If you have some very specific need you can create a custom binding expression. Let say that you want the binding expression to convert source string to upper case. Custom binding is create using `Bindings.createStringBinding(func: () => String, dependencies: Observable*)`.
+Binding expressions can also be created for String and object properties. If you have some very specific need you can create a custom binding expression. Let's say that you want the binding expression to convert the source string to upper case. A custom binding is created using `Bindings.createStringBinding(func: () => String, dependencies: Observable*)`.
 
 ```
 val a = new StringProperty()
@@ -201,6 +201,6 @@ val b = Bindings.createStringBinding(
 a.value = "Hello"
 println(s"Setting `a` to ${a.value}, `b` = ${b.value}")
 ```
-Note, we use `Option` to guard against `NullPointerException`. The complete code is in [CustomStringBinding](https://github.com/scalafx/ScalaFX-Tutorials/blob/master/properties/src/main/scala/org/scalafx/tutorials/properties/CustomStringBinding.scala) example.
+Note, we use `Option` to guard against `NullPointerException`. The complete code is in the [CustomStringBinding](https://github.com/scalafx/ScalaFX-Tutorials/blob/master/properties/src/main/scala/org/scalafx/tutorials/properties/CustomStringBinding.scala) example.
 
-There are many additional example in [ProScalaFX](https://github.com/scalafx/ProScalaFX) project, [Chapter 3](https://github.com/scalafx/ProScalaFX/tree/master/src/proscalafx/ch03).
+There are many additional examples in the [ProScalaFX](https://github.com/scalafx/ProScalaFX) project, [Chapter 3](https://github.com/scalafx/ProScalaFX/tree/master/src/proscalafx/ch03).
