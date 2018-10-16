@@ -23,7 +23,7 @@ object HelloStageDemo extends JFXApp {
     height = 450
     scene = new Scene {
       fill = LightGreen
-      root = new Rectangle {
+      content = new Rectangle {
         x = 25
         y = 40
         width = 100
