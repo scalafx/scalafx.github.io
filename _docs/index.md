@@ -5,8 +5,8 @@ permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
-ScalaFX is a UI DSL written within the Scala Language that sits on top of JavaFX 2 and 8 (not to be confused with [Ingo Maier’s](http://people.epfl.ch/ingo.maier) great work on [Functional Reactive Programming](http://lamp.epfl.ch/~imaier/pub/DeprecatingObserversTR2010.pdf) for Swing). 
-This means that every ScalaFX application is also a valid Scala application. By extension it supports full interoperability with Java and can run anywhere the Java Virtual Machine (JVM) and JavaFX2 or JavaFX8 are supported.
+ScalaFX is a UI DSL written within the Scala Language that sits on top of [JavaFX](https://openjfx.io/). 
+This means that every ScalaFX application is also a valid Scala application. By extension it supports full interoperability with Java and can run anywhere the Java Virtual Machine (JVM) and JavaFX are supported.
 
 Some of the features of ScalaFX include:
 
