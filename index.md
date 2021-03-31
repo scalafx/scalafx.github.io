@@ -4,8 +4,7 @@ title: ScalaFX &bull; simpler way to use JavaFX from Scala
 overview: true
 ---
 
-ScalaFX is a UI DSL written within the Scala Language that sits on top of JavaFX 2 and JavaFX 8. 
-Every ScalaFX application is also a valid Scala application. It supports full interoperability with Java and can run anywhere the Java Virtual Machine (JVM) and JavaFX2 or JavaFX8 are supported.
+ScalaFX is a UI DSL written within the Scala Language that sits on top of JavaFX. Every ScalaFX application is also a valid Scala application. It supports full interoperability with Java and can run anywhere the Java Virtual Machine (JVM) and JavaFX are supported.
 
 ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple, complete application example that creates a new stage (window) with a rectangle that changes color based on mouse events:
 
