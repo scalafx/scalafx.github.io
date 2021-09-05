@@ -14,31 +14,34 @@ Some of the features of ScalaFX include:
 
 ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple, complete application example that creates a new stage with a rectangle that changes color based on mouse events:
 
-{% highlight scala %}
+```scala
 import scalafx.Includes._
-import scalafx.application.JFXApp
+import scalafx.application.JFXApp3
 import scalafx.scene.Scene
 import scalafx.scene.paint.Color._
 import scalafx.scene.shape.Rectangle
 
-object HelloStageDemo extends JFXApp {
-  stage = new JFXApp.PrimaryStage {
-    title.value = "Hello Stage"
-    width = 600
-    height = 450
-    scene = new Scene {
-      fill = LightGreen
-      content = new Rectangle {
-        x = 25
-        y = 40
-        width = 100
-        height = 100
-        fill <== when (hover) choose Green otherwise Red
+object HelloStageDemo extends JFXApp3 {
+
+  override def start(): Unit = {
+    stage = new JFXApp3.PrimaryStage {
+      title.value = "Hello Stage"
+      width = 600
+      height = 450
+      scene = new Scene {
+        fill = LightGreen
+        content = new Rectangle {
+          x = 25
+          y = 40
+          width = 100
+          height = 100
+          fill <== when(hover) choose Green otherwise Red
+        }
       }
     }
   }
 }
-{% endhighlight %}
+```
 
 ![HelloStageDemo-2]({{ site.url }}/img/HelloStageDemo-2.png) ![HelloStageDemo-1]({{ site.url }}/img/HelloStageDemo-1.png) 
 
