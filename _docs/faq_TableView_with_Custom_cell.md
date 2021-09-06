@@ -1,5 +1,7 @@
 ---
-layout: docs title: Custom cells permalink: /docs/faq_TableView_with_Custom_cell/
+layout: docs
+title: Custom cells
+permalink: /docs/faq_TableView_with_Custom_cell/
 ---
 
 ### **How to create TableView that displays custom cells containing text and graphics?**
@@ -56,6 +58,7 @@ new TableColumn[Person, Color] {
 ```
 
 Below is a complete example that will display a table with custom cells:
+
 ![TableView with custom cells]({{ site.url }}/img/faq_TableView_with_Custom_cell-1.png)
 
 ```scala
