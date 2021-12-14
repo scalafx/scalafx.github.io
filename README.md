@@ -1,7 +1,7 @@
 Source code of the future home of the ScalaFX home page. To preview go to 
 [http://scalafx.github.io/](http://scalafx.github.io/).
 
-[![Build Status](https://travis-ci.org/scalafx/scalafx.github.io.svg?branch=master)](https://travis-ci.org/scalafx/scalafx.github.io)
+[![Jekyll site CI](https://github.com/scalafx/scalafx.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/scalafx/scalafx.github.io/actions/workflows/jekyll.yml)
 
 Created with [Jekyll](http://jekyllrb.com/).
 
