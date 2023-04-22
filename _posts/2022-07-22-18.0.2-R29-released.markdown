@@ -1,3 +1,12 @@
+---
+layout: news_item
+title: 'ScalaFX 18.0.2-R29 Released'
+date: 2022-07-22 15:12:03 -0400
+author: jpsacha
+version: 18.0.2-R29
+categories: [release]
+---
+
 This release of [ScalaFX][1] removed need to explicitly add JavaFX dependencies.
 
 The release is intended for [JavaFX 18]. It was build to support Java 8 binary format, and was tested to work with Java
