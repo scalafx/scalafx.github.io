@@ -42,8 +42,8 @@ The `scalafx-extras-demos` subproject has a more elaborated example.
 
 Enhancements:
 
-* Support creation of custom dialogs, like ImageJ's GenericDialog #16
-* Let any standard dialog be displayed with a one-liner #17
+* Support creation of custom dialogs, like ImageJ's GenericDialog [Issue #16]
+* Let any standard dialog be displayed with a one-liner [Issue #17]
 
 [ScalaFX-Extras]: https://github.com/scalafx/scalafx-extras
 
