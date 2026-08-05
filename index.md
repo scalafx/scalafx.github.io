@@ -51,7 +51,7 @@ To learn more watch the presentation below and read the [Documentation]({{ site.
 
 [Stephen Chin](http://steveonjava.com) presentation [JavaFX 2 and Scala - Like Milk and Cookies (33 Degrees)](Https://www.slideshare.net/steveonjava/javafx-2-and-scala-like-milk-and-cookies-33rd-degrees) 
 
-<iframe src="http://www.slideshare.net/slideshow/embed_code/12148807" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px">  </div>
+<iframe src="https://www.slideshare.net/slideshow/embed_code/12148807" width="599" height="487" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px">  </div>
 
 ## Support ScalaFX Project
 
