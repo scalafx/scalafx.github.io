@@ -9,7 +9,6 @@ repository: https://github.com/scalafx/scalafx
 # Build settings
 markdown: kramdown
 permalink: pretty
-relative_permalinks: false
 exclude: [vendor]
 
 timezone: America/New_York
@@ -18,7 +17,7 @@ collections:
   docs:
     output: true
 logo: img/logo-2x.png
-gems:
+plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-sitemap
