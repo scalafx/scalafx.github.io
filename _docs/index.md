@@ -6,44 +6,48 @@ redirect_from: /docs/index.html
 ---
 
 ScalaFX is a UI DSL written within the Scala Language that sits on top of [JavaFX](https://openjfx.io/). 
-This means that every ScalaFX application is also a valid Scala application. By extension it supports full interoperability with Java and can run anywhere the Java Virtual Machine (JVM) and JavaFX are supported.
+This means that every ScalaFX application is also a valid Scala application. By extension, it supports full interoperability with Java and can run anywhere the Java Virtual Machine (JVM) and JavaFX are supported.
 
 Some of the features of ScalaFX include:
 
 ### A Programmer-Friendly Object-Literal-Like Syntax
 
-ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple, complete application example that creates a new stage with a rectangle that changes color based on mouse events:
+ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple, complete application example that creates a new stage with a button and a label that reactively updates as the button is clicked:
 
 ```scala
-import scalafx.Includes._
 import scalafx.application.JFXApp3
+import scalafx.beans.property.IntegerProperty
+import scalafx.geometry.Pos
 import scalafx.scene.Scene
-import scalafx.scene.paint.Color._
-import scalafx.scene.shape.Rectangle
+import scalafx.scene.control.{Button, Label}
+import scalafx.scene.layout.VBox
 
-object HelloStageDemo extends JFXApp3 {
+object HelloStageDemo extends JFXApp3:
 
-  override def start(): Unit = {
-    stage = new JFXApp3.PrimaryStage {
-      title.value = "Hello Stage"
-      width = 600
-      height = 450
-      scene = new Scene {
-        fill = LightGreen
-        content = new Rectangle {
-          x = 25
-          y = 40
-          width = 100
-          height = 100
-          fill <== when(hover) choose Green otherwise Red
-        }
-      }
-    }
-  }
-}
+  override def start(): Unit =
+    // A counter-property to track clicks
+    val clickCount = IntegerProperty(0)
+
+    // Dynamic label that automatically updates when clickCount changes
+    val messageLabel = new Label:
+      text <== clickCount.asString("Clicked %d times")
+
+    // Interactive button that increments clickCount
+    val button = new Button("Click Me"):
+      onAction = _ => clickCount.value += 1
+
+    // The primary stage
+    stage = new JFXApp3.PrimaryStage:
+      title = "Hello Stage"
+      width = 300
+      height = 150
+      scene = new Scene:
+        root = new VBox:
+          alignment = Pos.Center
+          spacing = 20
+          children = Seq(messageLabel, button)
 ```
-
-![HelloStageDemo-2]({{ site.url }}/img/HelloStageDemo-2.png) ![HelloStageDemo-1]({{ site.url }}/img/HelloStageDemo-1.png) 
+![HelloStageDemo-1]({{ site.url }}/img/HelloStageDemo-1.png){: width="300"}
 
 Unlike the builders you find in the core JavaFX APIs, the ScalaFX object declaration syntax uses the normal object API. This means that you can use the same operators and convenient syntax to create and modify your scene graph. Also, anything that is permissible in a Scala block (such as variable declarations, method calls, binding, etc.) can also be done inline while constructing objects. For JavaFX builders you need to declare binding after you finish creating your objects, which leads to disassociated and hard to maintain code.
 
@@ -70,15 +74,17 @@ width <== max(rect1.width, rect2.width, rect3.width)
 Conditional Expressions
 
 {% highlight scala %}
-color <== when (hover) choose Green otherwise Red
+width <== when (hover) choose 100 otherwise 50
 {% endhighlight %}
 
-Complex Boolean Expressions and String Concatenation
+Complex Boolean Expressions
 
 {% highlight scala %}
-text <== when (rect.hover || circle.hover && !disabled) 
-           choose textField.text + " is enabled" 
-           otherwise "disabled"
+text <== (
+  when (rect.hover || circle.hover && !disabled)
+    choose "enabled"
+    otherwise "disabled"
+)
 {% endhighlight %}
 
 Free-form Invalidation and Change Handlers
@@ -108,7 +114,7 @@ This makes it trivially easy to create complex animations.
 
 This may seem like an insignificant point… Type safety is something that Java developers have always had (and often take for granted), and developers in other scripting languages live without (and unknowingly suffer with runtime errors as a result). However, it is a critical feature if you are developing applications that cannot have unexpected runtime errors and bugs after deployment.
 
-A good compiler will be able to pick up many common coding mistakes through comparison of expected and actual types, and a great compiler (like Scala) will automatically infer types for you so you don’t have to tediouisly repeat them throughout your code.
+A good compiler will be able to pick up many common coding mistakes through comparison of expected and actual types, and a great compiler (like Scala) will automatically infer types for you so you don’t have to tediously repeat them throughout your code.
 
 ScalaFX gets the best of both worlds with a scripting-like DSL syntax where you can rarely have to explicitly type objects, with the strong type-safety of the Scala compiler that will infer and check the types of every expression and API call. This means less time spent debugging weird code bugs and misspellings, and higher quality code right out of the gate!
 

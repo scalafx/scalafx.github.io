@@ -73,7 +73,7 @@ The complete code is in the [Properties101](https://github.com/scalafx/ScalaFX-T
 
 A subscription handle lets you remove a listener.
 A subscription is created for every listener added to a property.
-When you no longer need to the listen, you "cancel" the subscription:
+When you no longer need to listen, you "cancel" the subscription:
 
 ```scala
 val prop = DoubleProperty(0)
@@ -92,7 +92,7 @@ prop.value = 2
 
 ### Property Binding
 
-You can make a property change its value when another propery changes by binding them together. The binding can be unidirectional:
+You can make a property change its value when another properly changes by binding them together. The binding can be unidirectional:
 
 ```scala
 a <== b
@@ -177,12 +177,11 @@ A ternary binding expression has the general form:
 ```
   when(cond) choose(value1) otherwise(value2)
 ```
-you can think about it as a `if(cond) then(value1) else(value2)` expression, though `if`/`then`/`else` are keywords in Scala, so `when`/`choose`/`otherwise` are used instead. For instance, if we want to change the color of a `Rectangle` when the cursor is positioned above it, we can use `when`/`choose`/`otherwise` to select its color. The `Rectangle` has a `hover` property that is `true` when the cursor is above the rectangle. The color of the rectangle is determined by the value of the `fill` property. Let's bind `fill` to an `when`/`choose`/`otherwise` expression that, depending on the value of `hover` property, will change its color to `Green` or `Red`:
+you can think about it as a `if(cond) then(value1) else(value2)` expression, though `if`/`then`/`else` are keywords in Scala, so `when`/`choose`/`otherwise` are used instead. For instance, if we want to highlight a `Rectangle` when the cursor is positioned above it, we can use `when`/`choose`/`otherwise` to select its opacity. The `Rectangle` has a `hover` property that is `true` when the cursor is above the rectangle. Let's bind `opacity` to an `when`/`choose`/`otherwise` expression that, depending on the value of `hover` property, will make the rectangle fully opaque or partially transparent:
 
 ```scala
-new Rectangle {
-  fill <== when (hover) choose Green otherwise Red
-}
+new Rectangle:
+  opacity <== when (hover) choose 1.0 otherwise 0.4
 ```
 
 In general, the condition can be any Boolean binding expression (here we just have a property `hover`). The complete code is in the [WhenChooseOtherwiseExpression](https://github.com/scalafx/ScalaFX-Tutorials/blob/master/properties/src/main/scala/org/scalafx/tutorials/properties/WhenChooseOtherwiseExpression.scala) example.

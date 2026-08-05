@@ -6,35 +6,36 @@ overview: true
 
 ScalaFX is a UI DSL written within the Scala Language that sits on top of JavaFX. Every ScalaFX application is also a valid Scala application. It supports full interoperability with Java and can run anywhere the Java Virtual Machine (JVM) and JavaFX are supported.
 
-ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple, complete application example that creates a new stage (window) with a rectangle that changes color based on mouse events:
+ScalaFX uses a simple, hierarchical pattern for creating new objects and building up the scene graph. Here is a simple, complete application example that creates a new stage (window) with a button and a label that updates as the button is clicked:
 
 ```scala
-import scalafx.Includes._
 import scalafx.application.JFXApp3
+import scalafx.beans.property.IntegerProperty
+import scalafx.geometry.Pos
 import scalafx.scene.Scene
-import scalafx.scene.paint.Color._
-import scalafx.scene.shape.Rectangle
+import scalafx.scene.control.{Button, Label}
+import scalafx.scene.layout.VBox
 
-object HelloStageDemo extends JFXApp3 {
+object HelloStageDemo extends JFXApp3:
 
-  override def start(): Unit = {
-    stage = new JFXApp3.PrimaryStage {
-      title.value = "Hello Stage"
-      width = 600
-      height = 450
-      scene = new Scene {
-        fill = LightGreen
-        content = new Rectangle {
-          x = 25
-          y = 40
-          width = 100
-          height = 100
-          fill <== when(hover) choose Green otherwise Red
-        }
-      }
-    }
-  }
-}
+  override def start(): Unit =
+    val clickCount = IntegerProperty(0)
+
+    val messageLabel = new Label:
+      text <== clickCount.asString("Clicked %d times")
+
+    val button = new Button("Click Me"):
+      onAction = _ => clickCount.value += 1
+
+    stage = new JFXApp3.PrimaryStage:
+      title = "Hello Stage"
+      width = 300
+      height = 150
+      scene = new Scene:
+        root = new VBox:
+          alignment = Pos.Center
+          spacing = 20
+          children = Seq(messageLabel, button)
 ```
 
 Some of the features of ScalaFX include:
@@ -63,4 +64,4 @@ To learn more watch the presentation below and read the [Documentation]({{ site.
 
 ## Community Code of Conduct
 
-We request all the team members to follow the [Typelevel Code of Conduct](http://typelevel.org/conduct.html) in our mailinglist, issue discussion, Gitter room or any of ScalaFX meetups.
+We request all the team members to follow the [Typelevel Code of Conduct](http://typelevel.org/conduct.html) in our mailing list, issue discussion, Gitter room or any of ScalaFX meetups.
