@@ -7,30 +7,17 @@ permalink: /docs/quickstart/
 For the impatient, here's how to get started using ScalaFX in your development (link to complete code at the bottom). 
 
 If you are reading this Quick-start Guide you probably already know how to use Scala in your project and probably have 
-your favorite IDE or build setup to program in Scala. If not, details will be explained later. Here we assume that project is defined using [SBT](https://www.scala-sbt.org/)
+your favorite IDE or build setup to program in Scala. 
  
-To create a ScalaFX application you need to add a dependency on the ScalaFX library and corresponding version of the JavaFX. In the example we will use JavaFX "16" and ScalaFX "16.0.0-R24".
-
-To add dependency on ScalaFX add the following line:
+To create a ScalaFX application you need to add the ScalaFX dependency using either [scala-cli](https://scala-cli.virtuslab.org/):
 ```scala
-libraryDependencies += "org.scalafx" %% "scalafx" % "16.0.0-R24"
+//> using dep "org.scalafx::scalafx:26.0.0-R38"
 ```
 
-JavaFX binaries are system dependent. We can detect the current system type and determined needed JavaFX binaries using following code:  
+Or [sbt](https://www.scala-sbt.org/):
 ```scala
-libraryDependencies ++= {
-  // Determine OS version of JavaFX binaries
-  lazy val osName = System.getProperty("os.name") match {
-    case n if n.startsWith("Linux") => "linux"
-    case n if n.startsWith("Mac") => "mac"
-    case n if n.startsWith("Windows") => "win"
-    case _ => throw new Exception("Unknown platform!")
-  }
-  Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
-    .map(m => "org.openjfx" % s"javafx-$m" % "16" classifier osName)
-}
+libraryDependencies += "org.scalafx" %% "scalafx" % "26.0.0-R38"
 ```
-
 
 Now you are ready to type-in and run you first ScalaFX application:
 
