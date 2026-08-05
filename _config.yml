@@ -21,7 +21,4 @@ logo: img/logo-2x.png
 gems:
   - jekyll-feed
   - jekyll-redirect-from
-  - jemoji
   - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-avatar
