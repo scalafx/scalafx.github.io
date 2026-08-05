@@ -47,7 +47,7 @@ object HelloStageDemo extends JFXApp3:
           spacing = 20
           children = Seq(messageLabel, button)
 ```
-![HelloStageDemo-1]({{ site.url }}/img/HelloStageDemo-1.png){: width="300"}
+![HelloStageDemo-1]({{ site.url }}/img/HelloStageDemo-1.png)
 
 Unlike the builders you find in the core JavaFX APIs, the ScalaFX object declaration syntax uses the normal object API. This means that you can use the same operators and convenient syntax to create and modify your scene graph. Also, anything that is permissible in a Scala block (such as variable declarations, method calls, binding, etc.) can also be done inline while constructing objects. For JavaFX builders you need to declare binding after you finish creating your objects, which leads to disassociated and hard to maintain code.
 
