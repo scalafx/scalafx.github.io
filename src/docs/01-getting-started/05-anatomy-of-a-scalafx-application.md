@@ -41,4 +41,4 @@ Nothing ScalaFX-specific here — it's the same layout any SBT/Scala project use
 
 ### Further exploration: where ScalaFX's design comes from
 
-If you're curious about *why* ScalaFX looks the way it does — the nested-builder syntax, the heavy use of implicit conversions — Stephen Chin's 2012 talk ["JavaFX 2 and Scala: Like Milk and Cookies"](https://www.slideshare.net/steveonjava/javafx-2-and-scala-like-milk-and-cookies-33rd-degrees) is the classic reference for the language-design motivations. Modern ScalaFX apps differ in small ways, but the core concepts remain the same.
+If you're curious about *why* ScalaFX looks the way it does — the nested-builder syntax, the heavy use of implicit conversions — Stephen Chin's 2012 talk ["JavaFX 2 and Scala: Like Milk and Cookies"](https://www.slideshare.net/steveonjava/javafx-2-and-scala-like-milk-and-cookies-33rd-degrees) is the classic reference for the language-design motivations. Modern ScalaFX apps differ in small ways, but the core concepts remain the same. More examples, books and community links are collected in [Further Resources](06-further-resources.md).
