@@ -1,0 +1,79 @@
+name: Deploy Pages (Jekyll site + Laika preview)
+
+# Builds the live Jekyll site from `master` and the in-progress Laika docs
+# from `Laika_Rewrite`, and publishes them together: Jekyll at /, Laika
+# preview at /laika. Requires repo Settings > Pages > Source = "GitHub
+# Actions" (not "Deploy from a branch").
+on:
+  push:
+    branches: [Laika_Rewrite]
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master (Jekyll site)
+        uses: actions/checkout@v4
+        with:
+          ref: master
+          path: site
+
+      - name: Checkout Laika_Rewrite (Laika docs preview)
+        uses: actions/checkout@v4
+        with:
+          ref: Laika_Rewrite
+          path: laika
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build Jekyll site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./site
+          destination: ./_combined
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '24'
+
+      - name: Set up sbt
+        uses: sbt/setup-sbt@v1
+
+      - name: Build Laika site
+        working-directory: ./laika
+        run: sbt laikaSite
+
+      - name: Add Laika preview under /laika
+        run: |
+          mkdir -p ./_combined/laika
+          cp -r ./laika/target/docs/site/. ./_combined/laika/
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_combined
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
