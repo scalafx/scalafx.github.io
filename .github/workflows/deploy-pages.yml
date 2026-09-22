@@ -44,6 +44,9 @@ jobs:
           destination: ./_combined
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Fix ownership of Jekyll output
+        run: sudo chown -R "$(id -u):$(id -g)" ./_combined
+
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
