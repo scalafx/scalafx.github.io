@@ -1,7 +1,41 @@
-/* Site-wide image sizing override: show every image in the page content at 50% width.
-   Scoped to `main.content` so the header/footer logo and icons are unaffected. */
+/* Site-wide image sizing override: show every image at 50% width. The landing-page logo has its
+   own more specific rule below (`#header-left > img`), so it isn't affected by this one. */
 
 img {
   width: 50%;
   height: auto;
+}
+
+/* Make the landing-page logo bigger and more prominent (its natural size is only 282x124). */
+
+#header-left > img {
+  max-width: 380px;
+  width: 100%;
+}
+
+/* Scale the Scaladex version badge to match the surrounding text height instead of the
+   site-wide 50%-width rule above, which still left it much taller than body text. */
+
+main img[src*="index.scala-lang.org"] {
+  width: auto;
+  height: 1.6em;
+}
+
+/* Landing page "Documentation" panel: this is the primary call to action, so make it stand out
+   more than the project links below it (which default to a larger, bolder style than this). */
+
+#docs {
+  font-size: 18px;
+}
+
+#header #docs a {
+  font-weight: bold;
+}
+
+/* Landing page project links (GitHub, Discussions, ...): secondary to Documentation, so tone
+   down the theme's default 20px bold styling. */
+
+#header-right .medium {
+  font-size: 16px;
+  font-weight: normal;
 }

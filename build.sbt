@@ -15,17 +15,32 @@ laikaExtensions := Seq(Markdown.GitHubFlavor, SyntaxHighlighting)
 // Configure theme and metadata
 laikaTheme := Helium.defaults
   .site.metadata(title =
-    Some("ScalaFX Library Docs"))
+    Some("ScalaFX Docs"))
   .site.internalCSS(Root / "custom.css")
   .site.landingPage(
     logo = Some(Image.internal(Root / "logo-2x.png")),
-    title = None, //Some("ScalaFX"),
+//    title = Some("ScalaFX"),
     subtitle = Some("A simpler way to use JavaFX in Scala"),
+//    titleLinks = Seq(
+//      IconLink.external("https://github.com/scalafx/scalafx", HeliumIcon.github, Some("GitHub")),
+//      IconLink.external("https://javadoc.io/doc/org.scalafx/scalafx_3", HeliumIcon.api, Some("API")),
+//      IconLink.external("https://github.com/scalafx/scalafx/discussions", HeliumIcon.chat, Some("Discussions"))
+//    ),
     linkPanel = Some(LinkPanel(
       "Documentation",
-      TextLink.external("/01-getting-started/01-for-the-impatient.html", "For the impatient"),
-      TextLink.external("/01-getting-started/02-what-is-scalafx.html", "What is ScalaFX?")
+      TextLink.external("/01-getting-started/01-for-the-impatient.html", "Getting Started"),
+      TextLink.external("/02-core-concepts/01-scala-and-javafx-interop.html", "Core Concepts"),
+      TextLink.external("/99-tips-and-tricks/01-tips-and-tricks.html", "Tips & Tricks"),
+      TextLink.external("https://javadoc.io/doc/org.scalafx/scalafx_3", "ScalaFX API")
     )),
+    projectLinks = Seq(
+      IconLink.external("https://github.com/scalafx/scalafx", HeliumIcon.github, Some("GitHub")),
+      IconLink.external("https://github.com/scalafx/scalafx/discussions", HeliumIcon.chat, Some("Discussions"))
+//      TextLink.external("https://github.com/scalafx/scalafx", "GitHub repository"),
+//      TextLink.external("https://github.com/scalafx/scalafx/releases", "Release notes"),
+//      TextLink.external("https://github.com/scalafx/scalafx/issues", "Issue tracker"),
+//      TextLink.external("https://github.com/scalafx/scalafx/discussions", "GitHub discussions")
+    ),
     teasers = Seq(
       Teaser(
         "Hierarchical Syntax",
