@@ -1,0 +1,7 @@
+/* Site-wide image sizing override: show every image in the page content at 50% width.
+   Scoped to `main.content` so the header/footer logo and icons are unaffected. */
+
+img {
+  width: 50%;
+  height: auto;
+}

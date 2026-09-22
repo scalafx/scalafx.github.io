@@ -16,6 +16,7 @@ laikaExtensions := Seq(Markdown.GitHubFlavor, SyntaxHighlighting)
 laikaTheme := Helium.defaults
   .site.metadata(title =
     Some("ScalaFX Library Docs"))
+  .site.internalCSS(Root / "custom.css")
   .site.landingPage(
     logo = Some(Image.internal(Root / "logo-2x.png")),
     title = None, //Some("ScalaFX"),
