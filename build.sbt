@@ -30,7 +30,7 @@ laikaTheme := Helium.defaults
       "Documentation",
       TextLink.internal(Root / "01-getting-started" / "01-for-the-impatient.md", "Getting Started"),
       TextLink.internal(Root / "02-core-concepts" / "01-scala-and-javafx-interop.md", "Core Concepts"),
-      TextLink.internal(Root / "03-building-basic-uis" / "01-layout-panes.md", "Building Basic UIs"),
+//      TextLink.internal(Root / "03-building-basic-uis" / "01-layout-panes.md", "Building Basic UIs"),
       TextLink.internal(Root / "99-tips-and-tricks" / "01-tips-and-tricks.md", "Tips & Tricks"),
       TextLink.external("https://javadoc.io/doc/org.scalafx/scalafx_3", "ScalaFX API")
     )),
